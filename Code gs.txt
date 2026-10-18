@@ -1,0 +1,164 @@
+// =====================================================================
+// Nihongo Adventure - Google Apps Script
+//
+// SHEET "Cerita" (baris 1 = header, data mulai baris 2)
+//  A id | B speaker | C text | D background | E character | F audio
+//  G pilihan1_teks | H pilihan1_next | I pilihan2_teks | J pilihan2_next
+//  K next            -> adegan lanjutan otomatis (jika tanpa pilihan)
+//  L terjemahan      -> terjemahan Indonesia dari kolom text
+//  M bab             -> label bab, mis. "1. Di Stasiun" (kosong = pakai bab sebelumnya)
+//  N ending          -> kosongkan jika bukan ending; isi "good" atau "challenge"
+//  O judul_ending    -> mis. "Ending 1 - Berhasil"
+//  P pilihan1_terjemahan
+//  Q pilihan2_terjemahan
+//  R tema            -> (opsional) ganti tema/backsound di tengah cerita; kosong = tetap
+//
+// Furigana: tulis kanji lalu cara bacanya dalam kurung siku, mis.
+//  駅[えき]はどこですか？   ->  tampil dengan furigana di atas 駅
+//
+// SHEET "Kosakata" (opsional): A kanji | B yomi | C romaji | D arti
+// SHEET "Tata Bahasa" (opsional): A pola | B arti | C contoh | D terjemahan_contoh
+// SHEET "Tema" (pilihan tema di menu): A NO | B Tema | C Assets (backsound) | D Mulai (id adegan awal)
+//                                      | E Judul | F Judul_JP | G Deskripsi | H Ikon (emoji)
+// =====================================================================
+
+function doGet() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var storySheet = ss.getSheetByName("Cerita") || ss.getSheets()[0];
+
+  var result = {
+    story: readStory_(storySheet),
+    vocab: readVocab_(ss.getSheetByName("Kosakata")),
+    grammar: readGrammar_(ss.getSheetByName("Tata Bahasa")),
+    themes: readThemes_(ss.getSheetByName("Tema") || ss.getSheetByName("Backsound"))
+  };
+
+  return ContentService.createTextOutput(JSON.stringify(result))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function clean_(v) {
+  return String(v === undefined || v === null ? "" : v).trim();
+}
+
+// Mengambil semua baris data (tanpa header); kosong jika sheet tidak ada
+function rowsOf_(sheet) {
+  if (!sheet) return [];
+  var data = sheet.getDataRange().getValues();
+  return data.slice(1);
+}
+function cekTautan() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("Cerita") || ss.getSheets()[0];
+  var rows = sheet.getDataRange().getValues().slice(1);
+  var ids = {};
+  rows.forEach(function (r) { if (r[0]) ids[String(r[0]).trim()] = true; });
+
+  rows.forEach(function (r, i) {
+    [[7, "choice1_next"], [9, "choice2_next"], [10, "next"]].forEach(function (c) {
+      var target = String(r[c[0]] || "").trim();
+      if (target && !ids[target]) {
+        Logger.log("Baris " + (i + 2) + " (" + r[0] + "): " + c[1] + " menuju '" + target + "' yang tidak ada");
+      }
+    });
+  });
+  Logger.log("Selesai diperiksa.");
+}
+
+function readStory_(sheet) {
+  var rows = rowsOf_(sheet);
+  var story = {};
+
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+    var id = clean_(row[0]);
+    if (!id) continue; // lewati baris kosong
+
+    var node = {
+      speaker: clean_(row[1]),
+      text: clean_(row[2]),
+      background: clean_(row[3]),
+      character: clean_(row[4]),
+      audio: clean_(row[5]),
+      next: clean_(row[10]),
+      translation: clean_(row[11]),
+      chapter: clean_(row[12]),
+      ending: clean_(row[13]),
+      endingTitle: clean_(row[14]),
+      theme: clean_(row[17]),
+      choices: []
+    };
+
+    if (clean_(row[6]) && clean_(row[7])) {
+      node.choices.push({
+        text: clean_(row[6]),
+        next: clean_(row[7]),
+        translation: clean_(row[15])
+      });
+    }
+
+    if (clean_(row[8]) && clean_(row[9])) {
+      node.choices.push({
+        text: clean_(row[8]),
+        next: clean_(row[9]),
+        translation: clean_(row[16])
+      });
+    }
+
+    story[id] = node;
+  }
+  return story;
+}
+
+function readVocab_(sheet) {
+  var rows = rowsOf_(sheet);
+  var list = [];
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i];
+    if (!clean_(r[0]) && !clean_(r[1])) continue;
+    list.push({
+      kanji: clean_(r[0]),
+      yomi: clean_(r[1]),
+      romaji: clean_(r[2]),
+      arti: clean_(r[3])
+    });
+  }
+  return list;
+}
+
+function readGrammar_(sheet) {
+  var rows = rowsOf_(sheet);
+  var list = [];
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i];
+    if (!clean_(r[0])) continue;
+    list.push({
+      pola: clean_(r[0]),
+      arti: clean_(r[1]),
+      contoh: clean_(r[2]),
+      terjemahan: clean_(r[3])
+    });
+  }
+  return list;
+}
+
+// Sheet "Tema" (atau "Backsound"):
+// A NO | B Tema | C Assets | D Mulai | E Judul | F Judul_JP | G Deskripsi | H Ikon
+function readThemes_(sheet) {
+  var rows = rowsOf_(sheet);
+  var list = [];
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i];
+    if (!clean_(r[1])) continue;
+    list.push({
+      tema: clean_(r[1]),
+      assets: clean_(r[2]),
+      start: clean_(r[3]),
+      title: clean_(r[4]),
+      titleJp: clean_(r[5]),
+      desc: clean_(r[6]),
+      icon: clean_(r[7])
+    });
+  }
+  return list;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#123a7a">
+  <title>Nihongo Adventure</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <main id="stage" class="stage is-menu">
+    <!-- Background (dua lapisan agar bisa crossfade) -->
+    <img id="bg-a" class="bg" alt="">
+    <img id="bg-b" class="bg" alt="">
+
+    <!-- Karakter -->
+    <img id="char-image" alt="">
+    <div id="shade"></div>
+
+    <!-- Label bab (kiri atas) & tombol HUD (kanan atas) -->
+    <div id="chapter" class="chapter"></div>
+    <div class="hud">
+      <button id="vocab-btn" class="hud-btn" type="button" aria-label="Kosakata dan penjelasan"></button>
+      <button id="mute-btn" class="hud-btn" type="button" aria-label="Matikan suara"></button>
+      <button id="settings-btn" class="hud-btn" type="button" aria-label="Pengaturan"></button>
+    </div>
+
+    <!-- Pilihan jawaban + kotak dialog -->
+    <div id="ui">
+      <div id="choices-box" class="choices"></div>
+
+      <div id="dialog-box">
+        <div id="speaker-name"></div>
+        <button id="speak-btn" type="button" aria-label="Putar ulang suara" hidden></button>
+        <p id="dialog-text" lang="ja"></p>
+        <p id="dialog-trans" class="dialog-trans"></p>
+        <div class="dialog-foot">
+          <button id="next-btn" class="next-btn" type="button">Lanjutkan</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kartu ending -->
+    <section id="ending" class="ending is-hidden">
+      <div id="ending-card" class="ending-card is-good">
+        <div id="ending-icon" class="ending-icon"></div>
+        <h2 id="ending-title" class="ending-title" lang="ja"></h2>
+        <span id="ending-badge" class="ending-badge"></span>
+        <p id="ending-desc" class="ending-desc"></p>
+        <div id="ending-actions" class="ending-actions"></div>
+      </div>
+    </section>
+
+    <!-- Layar judul -->
+    <section id="title" class="title is-hidden">
+      <img id="title-char" class="title-char" alt="">
+      <div class="title-main">
+        <h1 class="logo">
+          <span class="logo-en">Nihongo<br>Adventure</span>
+          <span class="logo-sakura" aria-hidden="true">🌸</span>
+        </h1>
+        <p class="logo-jp" lang="ja">日本語アドベンチャー</p>
+        <p class="tagline">Belajar bahasa Jepang melalui cerita dan percakapan interaktif</p>
+        <div class="title-actions">
+          <button id="btn-start" class="t-btn t-primary" type="button">Mulai</button>
+          <button id="btn-continue" class="t-btn t-primary" type="button" hidden>Lanjutkan</button>
+          <button id="btn-settings" class="t-btn" type="button">Pengaturan</button>
+          <button id="btn-about" class="t-btn" type="button">Tentang</button>
+        </div>
+        <p class="title-foot" lang="ja">一緒にがんばりましょう！<span>Mari belajar bersama!</span></p>
+      </div>
+    </section>
+
+    <!-- Layar pilih tema -->
+    <section id="themes" class="themes is-hidden">
+      <div class="themes-head">
+        <button id="themes-back" class="back-btn" type="button">‹ Kembali</button>
+        <h2 class="themes-title">Pilih Tema</h2>
+        <p class="themes-sub">Setiap tema punya cerita dan musik latarnya sendiri.</p>
+      </div>
+      <div id="themes-grid" class="themes-grid"></div>
+    </section>
+
+    <!-- Jendela (kosakata, pengaturan, tentang) -->
+    <div id="modal" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-card">
+        <header class="modal-head">
+          <h2 id="modal-title"></h2>
+          <button id="modal-close" class="modal-close" type="button" aria-label="Tutup">✕</button>
+        </header>
+        <nav id="modal-tabs" class="tabs" role="tablist" hidden></nav>
+        <div id="modal-body" class="modal-body"></div>
+        <footer id="modal-foot" class="modal-foot"></footer>
+      </div>
+    </div>
+
+    <!-- Layar memuat / error -->
+    <div id="overlay" class="overlay is-loading">
+      <div class="overlay-card">
+        <div class="spinner" aria-hidden="true"></div>
+        <p id="ov-msg" class="ov-msg">Memuat cerita…</p>
+        <div id="ov-actions" class="ov-actions"></div>
+      </div>
+    </div>
+  </main>
+
+  <noscript>Game ini membutuhkan JavaScript agar bisa berjalan.</noscript>
+  <script src="Script.js"></script>
+</body>
+</html>
