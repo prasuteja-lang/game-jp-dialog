@@ -110,6 +110,51 @@
     </div>
   </main>
 
+  <!-- Diagnostik: tampilkan penyebab di layar jika game macet / ada error -->
+  <script>
+    (function () {
+      var errors = [];
+      function overlayEl() { return document.getElementById("overlay"); }
+      function show(msg) {
+        var o = overlayEl(), m = document.getElementById("ov-msg"), a = document.getElementById("ov-actions");
+        if (!o || !m || o.classList.contains("is-hidden")) return;
+        o.classList.remove("is-loading");
+        m.textContent = msg;
+        if (a && !a.children.length) {
+          var b = document.createElement("button");
+          b.type = "button"; b.className = "t-btn t-primary"; b.textContent = "Muat ulang";
+          b.onclick = function () { try { localStorage.clear(); } catch (e) {} location.reload(); };
+          a.appendChild(b);
+        }
+      }
+      window.addEventListener("error", function (e) {
+        var t = e.target;
+        if (t && t !== window) {
+          if (t.tagName === "SCRIPT") errors.push("File gagal dimuat: " + t.src);
+          else if (t.tagName === "LINK") errors.push("Stylesheet gagal dimuat: " + t.href);
+          else return;
+        } else {
+          errors.push((e.message || "Error tidak dikenal") + (e.lineno ? " (baris " + e.lineno + ")" : ""));
+        }
+        show("Terjadi masalah: " + errors.join(" | "));
+      }, true);
+      window.addEventListener("unhandledrejection", function (e) {
+        var r = e.reason;
+        errors.push("Error: " + (r && r.message ? r.message : String(r)));
+        show("Terjadi masalah: " + errors.join(" | "));
+      });
+      setTimeout(function () {
+        var o = overlayEl();
+        if (!o || o.classList.contains("is-hidden") || !o.classList.contains("is-loading")) return;
+        if (!window.__nihongoStarted) {
+          show("Script.js tidak berjalan (tidak termuat atau error). " + (errors.join(" | ") || "Periksa apakah file Script.js ada di GitHub dan namanya sama persis."));
+        } else {
+          show("Masih memuat setelah 25 detik. Tahap terakhir: " + (window.__nihongoStep || "?") + ". Coba muat ulang.");
+        }
+      }, 25000);
+    })();
+  </script>
+
   <noscript>Game ini membutuhkan JavaScript agar bisa berjalan.</noscript>
   <script src="Script.js"></script>
 </body>

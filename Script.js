@@ -1199,6 +1199,8 @@ async function init() {
   el.btnAbout.insertAdjacentHTML("afterbegin", ICON.book);
   applySettings();
 
+  window.__nihongoStarted = true;
+  window.__nihongoStep = "menyiapkan tampilan";
   showOverlay({ msg: "Memuat cerita…", loading: true });
 
   // Pakai data tersimpan (jika ada) agar langsung siap, lalu perbarui di latar belakang
@@ -1218,10 +1220,13 @@ async function init() {
   }
 
   try {
+    window.__nihongoStep = "mengambil data dari Google Sheets (Apps Script)";
     const data = await fetchStory();
+    window.__nihongoStep = "memproses data";
     useData(data);
     writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
     console.log("Data berhasil dimuat dari Google Sheets:", data);
+    window.__nihongoStep = "menyiapkan menu utama (memuat gambar)";
     await showTitle();
   } catch (err) {
     console.error("Gagal mengambil data dari Google Sheets:", err);
