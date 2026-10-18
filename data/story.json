@@ -1,0 +1,1377 @@
+{
+ "story": {
+  "stasiun_awal": {
+   "speaker": "まるこ駅員",
+   "text": "いらっしゃいませ！JRステーションへようこそ。本日はどちらへお出かけですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/irasshaimase_doko.wav",
+   "next": "",
+   "translation": "Selamat datang! Selamat datang di Stasiun JR. Hari ini Anda hendak pergi ke mana?",
+   "chapter": "1. Di Stasiun",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "東京へ行きたいです。",
+     "next": "tokyo_1_shinkansen",
+     "translation": "Saya ingin pergi ke Tokyo."
+    },
+    {
+     "text": "京都へ行きたいです。",
+     "next": "kyoto_1_tokkyu",
+     "translation": "Saya ingin pergi ke Kyoto."
+    }
+   ]
+  },
+  "tokyo_1_shinkansen": {
+   "speaker": "まるこ駅員",
+   "text": "東京ですね！新幹線をご利用されますか？それとも通常の在来線ですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko.png",
+   "audio": "assets/audio/tokyo_shinkansen_nanmai.wav",
+   "next": "",
+   "translation": "Tokyo ya! Apakah Anda akan naik Shinkansen? Atau kereta lokal biasa?",
+   "chapter": "2. Memilih Kereta",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "新幹線で行きたいです！",
+     "next": "tokyo_2_seat_type",
+     "translation": "Saya ingin naik Shinkansen!"
+    },
+    {
+     "text": "普通の電車でゆっくり行きます。",
+     "next": "tokyo_alt_local",
+     "translation": "Saya akan naik kereta biasa dengan santai."
+    }
+   ]
+  },
+  "tokyo_2_seat_type": {
+   "speaker": "まるこ駅員",
+   "text": "承知いたしました。指定席と自由席、どちらがよろしいですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_think.png",
+   "audio": "assets/audio/tokyo_seat_type.wav",
+   "next": "",
+   "translation": "Baik, saya mengerti. Anda ingin kursi reserved atau kursi bebas?",
+   "chapter": "3. Memilih Kursi",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "ゆったり座れる指定席で！",
+     "next": "tokyo_3_fuji_seat",
+     "translation": "Kursi reserved yang nyaman untuk duduk!"
+    },
+    {
+     "text": "少し安い自由席でお願いします。",
+     "next": "tokyo_3_jiyuuseki",
+     "translation": "Kursi bebas yang sedikit lebih murah, tolong."
+    }
+   ]
+  },
+  "tokyo_3_fuji_seat": {
+   "speaker": "まるこ駅員",
+   "text": "指定席ですね。窓側の席（E席）にすると、途中で富士山がきれいに見えますよ！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/tokyo_fuji_seat.wav",
+   "next": "",
+   "translation": "Kursi reserved ya. Kalau memilih kursi dekat jendela (kursi E), Gunung Fuji terlihat indah di tengah perjalanan!",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "ぜひ富士山が見えるE席で！",
+     "next": "tokyo_4_count",
+     "translation": "Tentu, kursi E yang bisa melihat Gunung Fuji!"
+    },
+    {
+     "text": "どちらの席でも大丈夫です。",
+     "next": "tokyo_4_count",
+     "translation": "Kursi mana pun tidak masalah."
+    }
+   ]
+  },
+  "tokyo_3_jiyuuseki": {
+   "speaker": "まるこ駅員",
+   "text": "自由席ですね。本日は混雑しておりますので、早めにホームにお並びくださいね。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_warn.png",
+   "audio": "assets/audio/tokyo_jiyuuseki_warn.wav",
+   "next": "",
+   "translation": "Kursi bebas ya. Hari ini sedang ramai, jadi mohon antre di peron lebih awal.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "アドバイスありがとうございます！",
+     "next": "tokyo_4_count",
+     "translation": "Terima kasih atas sarannya!"
+    },
+    {
+     "text": "何分前にならべばいいですか？",
+     "next": "tokyo_jiyuu_tip",
+     "translation": "Sebaiknya antre berapa menit sebelumnya?"
+    }
+   ]
+  },
+  "tokyo_jiyuu_tip": {
+   "speaker": "まるこ駅員",
+   "text": "発車時刻の15分ほど前から並ばれると、座れる確率が高くなりますよ。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/tokyo_jiyuu_tip.wav",
+   "next": "",
+   "translation": "Kalau Anda antre sekitar 15 menit sebelum jam keberangkatan, peluang untuk mendapat tempat duduk lebih besar.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "なるほど！早めに行きます。",
+     "next": "tokyo_4_count",
+     "translation": "Oh begitu! Saya akan datang lebih awal."
+    },
+    {
+     "text": "分かりました！ありがとうございます。",
+     "next": "tokyo_4_count",
+     "translation": "Mengerti! Terima kasih."
+    }
+   ]
+  },
+  "tokyo_4_count": {
+   "speaker": "まるこ駅員",
+   "text": "それでは、切符は何枚ご用意いたしましょうか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko.png",
+   "audio": "assets/audio/tokyo_count.wav",
+   "next": "",
+   "translation": "Kalau begitu, berapa lembar tiket yang Anda perlukan?",
+   "chapter": "4. Membeli Tiket",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "大人1枚お願いします。",
+     "next": "tokyo_5_pay_1",
+     "translation": "Dewasa 1 lembar, tolong."
+    },
+    {
+     "text": "大人2枚お願いします。",
+     "next": "tokyo_5_pay_2",
+     "translation": "Dewasa 2 lembar, tolong."
+    }
+   ]
+  },
+  "tokyo_5_pay_1": {
+   "speaker": "まるこ駅員",
+   "text": "大人1枚で、合計13,000円になります。お支払いは現金ですか、クレジットカードですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_point.png",
+   "audio": "assets/audio/tokyo_pay_ichibansen.wav",
+   "next": "",
+   "translation": "Untuk 1 tiket dewasa, totalnya 13.000 yen. Apakah Anda membayar dengan tunai atau kartu kredit?",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "ICカード（Suica）で払えますか？",
+     "next": "tokyo_6_suica",
+     "translation": "Bisakah saya bayar dengan kartu IC (Suica)?"
+    },
+    {
+     "text": "現金で支払います。",
+     "next": "tokyo_6_cash",
+     "translation": "Saya bayar tunai."
+    }
+   ]
+  },
+  "tokyo_5_pay_2": {
+   "speaker": "まるこ駅員",
+   "text": "大人2枚で、合計26,000円になります。領収書はお分けしますか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_point.png",
+   "audio": "assets/audio/tokyo_pay2_ichibansen.wav",
+   "next": "",
+   "translation": "Untuk 2 tiket dewasa, totalnya 26.000 yen. Apakah kuitansinya dipisah?",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "まとめて1枚でお願いします。",
+     "next": "tokyo_6_cash",
+     "translation": "Tolong jadikan satu saja."
+    },
+    {
+     "text": "領収書は結構です。",
+     "next": "tokyo_6_cash",
+     "translation": "Tidak perlu kuitansi."
+    }
+   ]
+  },
+  "tokyo_6_suica": {
+   "speaker": "まるこ駅員",
+   "text": "あいにく新幹線の乗車券はSuicaチャージ残高から直接引き落とせません。別決済となります。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_think.png",
+   "audio": "assets/audio/tokyo_suica_notice.wav",
+   "next": "",
+   "translation": "Maaf, tiket Shinkansen tidak bisa dipotong langsung dari saldo Suica. Pembayarannya terpisah.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "それなら現金で払います！",
+     "next": "tokyo_6_cash",
+     "translation": "Kalau begitu saya bayar tunai!"
+    },
+    {
+     "text": "クレジットカードでお願いします。",
+     "next": "tokyo_6_card",
+     "translation": "Tolong dengan kartu kredit."
+    }
+   ]
+  },
+  "tokyo_6_card": {
+   "speaker": "まるこ駅員",
+   "text": "クレジットカードですね。暗証番号の入力をお願いいたします。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_point.png",
+   "audio": "assets/audio/tokyo_card_pin.wav",
+   "next": "",
+   "translation": "Kartu kredit ya. Silakan masukkan PIN Anda.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "（暗証番号を入力する）",
+     "next": "tokyo_7_platform",
+     "translation": "(Memasukkan PIN)"
+    },
+    {
+     "text": "サインでお願いできますか？",
+     "next": "tokyo_7_platform",
+     "translation": "Bisakah saya pakai tanda tangan saja?"
+    }
+   ]
+  },
+  "tokyo_6_cash": {
+   "speaker": "まるこ駅員",
+   "text": "はい、ちょうどお預かりいたしました。こちらが切符と領収書になります。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/tokyo_cash_done.wav",
+   "next": "",
+   "translation": "Baik, uangnya pas, saya terima. Ini tiket dan kuitansinya.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "ありがとうございます！",
+     "next": "tokyo_7_platform",
+     "translation": "Terima kasih banyak!"
+    },
+    {
+     "text": "発車ホームはどこですか？",
+     "next": "tokyo_7_platform",
+     "translation": "Peron keberangkatannya di mana?"
+    }
+   ]
+  },
+  "tokyo_7_platform": {
+   "speaker": "まるこ駅員",
+   "text": "新幹線は1番線ホームからの発車となります。エレベーターはあちらの奥にございます。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_point.png",
+   "audio": "assets/audio/tokyo_platform_info.wav",
+   "next": "",
+   "translation": "Shinkansen berangkat dari peron jalur 1. Lift ada di bagian dalam sebelah sana.",
+   "chapter": "5. Menuju Peron",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "車内で食べる駅弁はどこで買えますか？",
+     "next": "tokyo_8_ekiben",
+     "translation": "Di mana saya bisa membeli ekiben untuk dimakan di kereta?"
+    },
+    {
+     "text": "ICカードの精算もしておきたいです。",
+     "next": "tokyo_ic_trouble",
+     "translation": "Saya juga ingin melakukan seisan (penyesuaian saldo) kartu IC."
+    }
+   ]
+  },
+  "tokyo_ic_trouble": {
+   "speaker": "まるこ駅員",
+   "text": "改札横の「精算機」にてチャージが可能ですので、ご利用ください。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_point.png",
+   "audio": "assets/audio/tokyo_seisanki_info.wav",
+   "next": "",
+   "translation": "Anda bisa mengisi saldo di “mesin seisan” di samping gerbang tiket, silakan dimanfaatkan.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "助かりました！行ってきます。",
+     "next": "tokyo_8_ekiben",
+     "translation": "Sangat membantu! Saya berangkat dulu."
+    },
+    {
+     "text": "精算機へ行ってきます。",
+     "next": "tokyo_8_ekiben",
+     "translation": "Saya akan ke mesin seisan."
+    }
+   ]
+  },
+  "tokyo_8_ekiben": {
+   "speaker": "まるこ駅員",
+   "text": "1番ホームにある「のぞみ売店」の『名物・牛めし弁当』がとても美味しいですよ！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/tokyo_ekiben_recommend.wav",
+   "next": "",
+   "translation": "Di peron 1 ada “Toko Nozomi”, dan 『bento nasi daging sapi (gyuumeshi) andalan』 di sana enak sekali!",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "美味しそう！絶対買ってみます！",
+     "next": "tokyo_9_tea",
+     "translation": "Kelihatannya enak! Pasti saya beli!"
+    },
+    {
+     "text": "お茶も一緒に買えますか？",
+     "next": "tokyo_9_tea",
+     "translation": "Bisakah saya beli teh juga?"
+    }
+   ]
+  },
+  "tokyo_9_tea": {
+   "speaker": "まるこ駅員",
+   "text": "ええ、冷たい静岡茶も一緒に売っていますよ。旅のお供にぴったりですね！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/tokyo_tea_recommend.wav",
+   "next": "",
+   "translation": "Tentu, teh Shizuoka dingin juga dijual. Cocok sekali untuk menemani perjalanan!",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "最高の旅になりそうです！",
+     "next": "tokyo_10_ending",
+     "translation": "Sepertinya akan jadi perjalanan terbaik!"
+    },
+    {
+     "text": "親切に教えてくれてありがとう！",
+     "next": "tokyo_10_ending",
+     "translation": "Terima kasih sudah memberi tahu dengan ramah!"
+    }
+   ]
+  },
+  "tokyo_10_ending": {
+   "speaker": "システム",
+   "text": "1番線ホームから新幹線に乗り込みました。富士山を眺めながら東京へ向かいます！",
+   "background": "assets/background/tokyo.png",
+   "character": "assets/character/none.png",
+   "audio": "assets/audio/train_departure.wav",
+   "next": "",
+   "translation": "Anda naik Shinkansen dari peron jalur 1. Sambil memandang Gunung Fuji, Anda menuju Tokyo!",
+   "chapter": "",
+   "ending": "good",
+   "endingTitle": "Ending 1 - Shinkansen ke Tokyo",
+   "theme": "",
+   "choices": [
+    {
+     "text": "最初からもう一度プレイする",
+     "next": "stasiun_awal",
+     "translation": "Main lagi dari awal"
+    },
+    {
+     "text": "タイトル画面に戻る",
+     "next": "stasiun_awal",
+     "translation": "Kembali ke layar judul"
+    }
+   ]
+  },
+  "tokyo_alt_local": {
+   "speaker": "まるこ駅員",
+   "text": "普通列車ですね。東京までは乗り換えが何回かあって、8時間ほどかかりますが、大丈夫ですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_think.png",
+   "audio": "assets/audio/tokyo_alt_local.wav",
+   "next": "",
+   "translation": "Kereta biasa ya. Sampai Tokyo harus beberapa kali transit dan memakan waktu sekitar 8 jam, apakah tidak masalah?",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "それは長いですね。新幹線にします！",
+     "next": "tokyo_2_seat_type",
+     "translation": "Itu lama sekali ya. Saya pilih Shinkansen saja!"
+    },
+    {
+     "text": "景色を楽しみたいので、普通列車で行きます。",
+     "next": "tokyo_alt_local_2",
+     "translation": "Saya ingin menikmati pemandangan, jadi saya naik kereta biasa."
+    }
+   ]
+  },
+  "tokyo_alt_local_2": {
+   "speaker": "まるこ駅員",
+   "text": "かしこまりました。普通列車でしたら、乗車券だけでご利用いただけますので、新幹線よりお安くなりますよ。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/tokyo_alt_local_ticket.wav",
+   "next": "",
+   "translation": "Baik. Kalau kereta biasa, cukup dengan tiket perjalanan saja, jadi lebih murah daripada Shinkansen.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "ありがとうございます！ゆっくり楽しみます。",
+     "next": "tokyo_alt_ending",
+     "translation": "Terima kasih! Saya akan menikmatinya dengan santai."
+    },
+    {
+     "text": "車内で食べるお弁当を買っていきます！",
+     "next": "tokyo_alt_ending",
+     "translation": "Saya akan membeli bento untuk dimakan di kereta!"
+    }
+   ]
+  },
+  "tokyo_alt_ending": {
+   "speaker": "システム",
+   "text": "普通列車に乗り込みました。窓の外の景色を眺めながら、のんびり東京へ向かいます！",
+   "background": "assets/background/tokyo.png",
+   "character": "assets/character/none.png",
+   "audio": "assets/audio/train_departure_local.wav",
+   "next": "",
+   "translation": "Anda naik kereta biasa. Sambil memandang pemandangan di luar jendela, Anda menuju Tokyo dengan santai!",
+   "chapter": "",
+   "ending": "good",
+   "endingTitle": "Ending 3 - Perjalanan Santai ke Tokyo",
+   "theme": "",
+   "choices": [
+    {
+     "text": "最初からもう一度プレイする",
+     "next": "stasiun_awal",
+     "translation": "Main lagi dari awal"
+    },
+    {
+     "text": "タイトル画面に戻る",
+     "next": "stasiun_awal",
+     "translation": "Kembali ke layar judul"
+    }
+   ]
+  },
+  "kyoto_1_tokkyu": {
+   "speaker": "まるこ駅員",
+   "text": "京都ですね！風情ある素敵な街です。特急電車と普通列車、どちらに乗りたいですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko.png",
+   "audio": "assets/audio/kyoto_tokkyu_or_futsuu.wav",
+   "next": "",
+   "translation": "Kyoto ya! Kotanya indah dan penuh pesona. Anda ingin naik kereta ekspres terbatas atau kereta biasa?",
+   "chapter": "2. Memilih Kereta",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "快適な特急電車で！",
+     "next": "kyoto_2_schedule",
+     "translation": "Kereta ekspres terbatas yang nyaman!"
+    },
+    {
+     "text": "のんびり普通列車で！",
+     "next": "kyoto_2_futsuu_info",
+     "translation": "Kereta biasa yang santai!"
+    }
+   ]
+  },
+  "kyoto_2_schedule": {
+   "speaker": "まるこ駅員",
+   "text": "特急ですね！次の発車は10:15発の「サンダーバード号」になりますが、よろしいですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_think.png",
+   "audio": "assets/audio/kyoto_schedule_info.wav",
+   "next": "",
+   "translation": "Ekspres terbatas ya! Keberangkatan berikutnya adalah “Thunderbird” pukul 10:15, apakah tidak masalah?",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "はい、その時間でお願いします！",
+     "next": "kyoto_3_luggage",
+     "translation": "Ya, tolong jam itu!"
+    },
+    {
+     "text": "もう少し遅い時間はありますか？",
+     "next": "kyoto_2_later_time",
+     "translation": "Apakah ada yang lebih siang?"
+    }
+   ]
+  },
+  "kyoto_2_later_time": {
+   "speaker": "まるこ駅員",
+   "text": "次は10:45発となります。どちらの便にいたしますか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko.png",
+   "audio": "assets/audio/kyoto_later_schedule.wav",
+   "next": "",
+   "translation": "Berikutnya berangkat pukul 10:45. Anda pilih yang mana?",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "やっぱり10:15発にします！",
+     "next": "kyoto_3_luggage",
+     "translation": "Ternyata saya pilih yang 10:15!"
+    },
+    {
+     "text": "10:45発でお願いします。",
+     "next": "kyoto_3_luggage",
+     "translation": "Tolong yang 10:45."
+    }
+   ]
+  },
+  "kyoto_2_futsuu_info": {
+   "speaker": "まるこ駅員",
+   "text": "普通列車ですと約1時間半かかりますが、途中下車して散策するのも楽しいですよ。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/kyoto_futsuu_info.wav",
+   "next": "",
+   "translation": "Dengan kereta biasa memakan waktu sekitar 1,5 jam, tetapi turun di tengah jalan untuk berjalan-jalan juga menyenangkan.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "時間に余裕があるので普通列車で！",
+     "next": "kyoto_3_luggage",
+     "translation": "Waktu saya longgar, jadi kereta biasa!"
+    },
+    {
+     "text": "やっぱり時間を節約して特急にします！",
+     "next": "kyoto_2_schedule",
+     "translation": "Ternyata saya hemat waktu, pilih ekspres terbatas!"
+    }
+   ]
+  },
+  "kyoto_3_luggage": {
+   "speaker": "まるこ駅員",
+   "text": "かしこまりました。お客様、その大きなお荷物も一緒にお持ちですか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_think.png",
+   "audio": "assets/audio/kyoto_luggage_ask.wav",
+   "next": "",
+   "translation": "Baik. Apakah Anda juga membawa bagasi besar itu?",
+   "chapter": "3. Urusan Bagasi",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "はい、特急の中に置くスペースはありますか？",
+     "next": "kyoto_4_luggage_space",
+     "translation": "Ya, apakah ada tempat menaruhnya di ekspres terbatas?"
+    },
+    {
+     "text": "駅のコインロッカーに預けたいです。",
+     "next": "kyoto_4_locker_info",
+     "translation": "Saya ingin menitipkannya di loker koin stasiun."
+    }
+   ]
+  },
+  "kyoto_4_luggage_space": {
+   "speaker": "まるこ駅員",
+   "text": "車両の最後部座席の後ろに専用の荷物置き場がございますので、ご安心ください。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/kyoto_luggage_space_info.wav",
+   "next": "",
+   "translation": "Di belakang kursi paling belakang gerbong ada tempat bagasi khusus, jadi tenang saja.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "それは安心しました！",
+     "next": "kyoto_5_ticket_pay",
+     "translation": "Syukurlah, saya lega!"
+    },
+    {
+     "text": "念のためロッカーに預けようかな……",
+     "next": "kyoto_4_locker_info",
+     "translation": "Untuk jaga-jaga, sepertinya saya titip di loker saja..."
+    }
+   ]
+  },
+  "kyoto_4_locker_info": {
+   "speaker": "まるこ駅員",
+   "text": "コインロッカーは改札を出て右手にございます。100円玉専用となっております。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_point.png",
+   "audio": "assets/audio/kyoto_locker_info.wav",
+   "next": "",
+   "translation": "Loker koin ada di sebelah kanan setelah keluar gerbang tiket. Hanya menerima koin 100 yen.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "小銭がないのですが両替できますか？",
+     "next": "kyoto_change_money",
+     "translation": "Saya tidak punya uang receh, bisakah menukar uang?"
+    },
+    {
+     "text": "ロッカーを探してきます！",
+     "next": "kyoto_5_ticket_pay",
+     "translation": "Saya akan mencari lokernya!"
+    }
+   ]
+  },
+  "kyoto_change_money": {
+   "speaker": "まるこ駅員",
+   "text": "あちらの自動券売機で千円札を崩すか、こちらの窓口で両替いたしますよ！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/kyoto_change_money_info.wav",
+   "next": "",
+   "translation": "Anda bisa memecah uang 1.000 yen di mesin tiket otomatis sana, atau menukarnya di loket ini!",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "助かります！両替をお願いします。",
+     "next": "kyoto_5_ticket_pay",
+     "translation": "Sangat membantu! Tolong tukarkan uangnya."
+    },
+    {
+     "text": "券売機で崩してきます！",
+     "next": "kyoto_5_ticket_pay",
+     "translation": "Saya akan memecahkannya di mesin tiket!"
+    }
+   ]
+  },
+  "kyoto_5_ticket_pay": {
+   "speaker": "まるこ駅員",
+   "text": "お待たせいたしました。京都までの特急券と乗車券で、お会計は3,000円になります。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_point.png",
+   "audio": "assets/audio/kyoto_tokkyu_pay.wav",
+   "next": "",
+   "translation": "Maaf menunggu. Untuk tiket ekspres terbatas dan tiket perjalanan ke Kyoto, totalnya 3.000 yen.",
+   "chapter": "4. Membayar Tiket",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "はい、3,000円ちょうど払います。",
+     "next": "kyoto_6_friend_arrival",
+     "translation": "Ya, saya bayar pas 3.000 yen."
+    },
+    {
+     "text": "ICカードでの支払いは可能ですか？",
+     "next": "kyoto_5_ic_answer",
+     "translation": "Apakah bisa membayar dengan kartu IC?"
+    }
+   ]
+  },
+  "kyoto_5_ic_answer": {
+   "speaker": "まるこ駅員",
+   "text": "申し訳ございません。特急券はICカードでのお支払いができません。現金かクレジットカードでお願いいたします。",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_think.png",
+   "audio": "assets/audio/kyoto_ic_notice.wav",
+   "next": "",
+   "translation": "Mohon maaf. Tiket ekspres terbatas tidak bisa dibayar dengan kartu IC. Mohon bayar tunai atau dengan kartu kredit.",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "では、3,000円ちょうど払います。",
+     "next": "kyoto_6_friend_arrival",
+     "translation": "Kalau begitu, saya bayar pas 3.000 yen."
+    },
+    {
+     "text": "クレジットカードで払います。",
+     "next": "kyoto_6_friend_arrival",
+     "translation": "Saya bayar dengan kartu kredit."
+    }
+   ]
+  },
+  "kyoto_6_friend_arrival": {
+   "speaker": "田中（友達）",
+   "text": "おーい！待たせたな！京都行きの手配はバッチリか？",
+   "background": "assets/background/station.png",
+   "character": "assets/character/tanaka_smile.png",
+   "audio": "assets/audio/tanaka_arrival.wav",
+   "next": "",
+   "translation": "Hei! Maaf menunggu! Urusan tiket ke Kyoto sudah beres?",
+   "chapter": "5. Bertemu Tanaka",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "おっ、田中！ちょうど特急券を買ったところだよ！",
+     "next": "kyoto_7_tanaka_talk",
+     "translation": "Oh, Tanaka! Aku baru saja beli tiket ekspres terbatas!"
+    },
+    {
+     "text": "遅いよ田中！もう出発しちゃうよ！",
+     "next": "kyoto_7_tanaka_talk",
+     "translation": "Kamu lambat, Tanaka! Keretanya sebentar lagi berangkat!"
+    }
+   ]
+  },
+  "kyoto_7_tanaka_talk": {
+   "speaker": "田中（友達）",
+   "text": "すまんすまん！駅の売店で京都の観光ガイドブックを買ってたんだよ！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/tanaka_laugh.png",
+   "audio": "assets/audio/tanaka_guidebook.wav",
+   "next": "",
+   "translation": "Maaf, maaf! Aku tadi beli buku panduan wisata Kyoto di toko stasiun!",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "ガイドブック？どこに行く予定？",
+     "next": "kyoto_8_kinkakuji",
+     "translation": "Buku panduan? Kita mau ke mana?"
+    },
+    {
+     "text": "抹茶パフェのお店は載ってる？",
+     "next": "kyoto_8_sweets",
+     "translation": "Ada toko parfait matcha di dalamnya?"
+    }
+   ]
+  },
+  "kyoto_8_kinkakuji": {
+   "speaker": "田中（友達）",
+   "text": "まずは定番の金閣寺に行って、それから清水寺の夜間拝観に行こうぜ！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/tanaka_excited.png",
+   "audio": "assets/audio/tanaka_kinkakuji_plan.wav",
+   "next": "",
+   "translation": "Pertama ke Kinkakuji yang klasik, lalu ikut kunjungan malam di Kiyomizudera!",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "いいね！最高のルートだ！",
+     "next": "kyoto_9_ekiin_advice",
+     "translation": "Bagus! Rute terbaik!"
+    },
+    {
+     "text": "金閣寺行きのバスってどこから出るの？",
+     "next": "kyoto_9_ekiin_advice",
+     "translation": "Bus ke Kinkakuji berangkat dari mana?"
+    }
+   ]
+  },
+  "kyoto_8_sweets": {
+   "speaker": "田中（友達）",
+   "text": "もちろんだよ！祇園にある創業100年の老舗抹茶スイーツ店が載ってるぞ！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/tanaka_excited.png",
+   "audio": "assets/audio/tanaka_sweets_plan.wav",
+   "next": "",
+   "translation": "Tentu saja! Ada toko dessert matcha tua berusia 100 tahun di Gion!",
+   "chapter": "",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "絶対行こう！楽しみになってきた！",
+     "next": "kyoto_9_ekiin_advice",
+     "translation": "Pasti kita ke sana! Jadi tidak sabar!"
+    },
+    {
+     "text": "駅員さん、京都駅からのバスもすぐわかりますか？",
+     "next": "kyoto_9_ekiin_advice",
+     "translation": "Petugas, apakah bus dari Stasiun Kyoto juga mudah ditemukan?"
+    }
+   ]
+  },
+  "kyoto_9_ekiin_advice": {
+   "speaker": "まるこ駅員",
+   "text": "京都駅の烏丸口を出てすぐ目の前にバスターミナルがございますよ！",
+   "background": "assets/background/station.png",
+   "character": "assets/character/maruko_smile.png",
+   "audio": "assets/audio/kyoto_bus_terminal_info.wav",
+   "next": "",
+   "translation": "Begitu keluar dari Pintu Karasuma Stasiun Kyoto, terminal bus ada tepat di depan Anda!",
+   "chapter": "6. Menuju Wisata Kyoto",
+   "ending": "",
+   "endingTitle": "",
+   "theme": "",
+   "choices": [
+    {
+     "text": "駅員さん、親切にありがとうございました！",
+     "next": "kyoto_10_ending",
+     "translation": "Petugas, terima kasih atas keramahannya!"
+    },
+    {
+     "text": "田中、特急の3番線ホームへ急ごう！",
+     "next": "kyoto_10_ending",
+     "translation": "Tanaka, ayo cepat ke peron 3 untuk ekspres terbatas!"
+    }
+   ]
+  },
+  "kyoto_10_ending": {
+   "speaker": "システム",
+   "text": "3番線から特急サンダーバードに乗車しました！田中と一緒に京都観光へ出発です！",
+   "background": "assets/background/kyoto.png",
+   "character": "assets/character/none.png",
+   "audio": "assets/audio/train_departure2.wav",
+   "next": "",
+   "translation": "Anda naik ekspres terbatas Thunderbird dari peron jalur 3! Berangkat berwisata ke Kyoto bersama Tanaka!",
+   "chapter": "",
+   "ending": "good",
+   "endingTitle": "Ending 2 - Wisata ke Kyoto",
+   "theme": "",
+   "choices": [
+    {
+     "text": "最初からもう一度プレイする",
+     "next": "stasiun_awal",
+     "translation": "Main lagi dari awal"
+    },
+    {
+     "text": "タイトル画面に戻る",
+     "next": "stasiun_awal",
+     "translation": "Kembali ke layar judul"
+    }
+   ]
+  }
+ },
+ "vocab": [
+  {
+   "kanji": "駅",
+   "yomi": "えき",
+   "romaji": "eki",
+   "arti": "stasiun"
+  },
+  {
+   "kanji": "駅員",
+   "yomi": "えきいん",
+   "romaji": "ekiin",
+   "arti": "petugas stasiun"
+  },
+  {
+   "kanji": "",
+   "yomi": "いらっしゃいませ",
+   "romaji": "irasshaimase",
+   "arti": "selamat datang (sapaan toko/stasiun)"
+  },
+  {
+   "kanji": "",
+   "yomi": "ようこそ",
+   "romaji": "yōkoso",
+   "arti": "selamat datang"
+  },
+  {
+   "kanji": "本日",
+   "yomi": "ほんじつ",
+   "romaji": "honjitsu",
+   "arti": "hari ini (bentuk sopan)"
+  },
+  {
+   "kanji": "東京",
+   "yomi": "とうきょう",
+   "romaji": "Tōkyō",
+   "arti": "Tokyo"
+  },
+  {
+   "kanji": "京都",
+   "yomi": "きょうと",
+   "romaji": "Kyōto",
+   "arti": "Kyoto"
+  },
+  {
+   "kanji": "新幹線",
+   "yomi": "しんかんせん",
+   "romaji": "shinkansen",
+   "arti": "Shinkansen (kereta cepat)"
+  },
+  {
+   "kanji": "在来線",
+   "yomi": "ざいらいせん",
+   "romaji": "zairaisen",
+   "arti": "jalur/kereta konvensional (non-Shinkansen)"
+  },
+  {
+   "kanji": "普通電車",
+   "yomi": "ふつうでんしゃ",
+   "romaji": "futsū densha",
+   "arti": "kereta biasa (lokal)"
+  },
+  {
+   "kanji": "普通列車",
+   "yomi": "ふつうれっしゃ",
+   "romaji": "futsū ressha",
+   "arti": "kereta api biasa (lokal)"
+  },
+  {
+   "kanji": "特急",
+   "yomi": "とっきゅう",
+   "romaji": "tokkyū",
+   "arti": "kereta ekspres terbatas"
+  },
+  {
+   "kanji": "席",
+   "yomi": "せき",
+   "romaji": "seki",
+   "arti": "kursi / tempat duduk"
+  },
+  {
+   "kanji": "指定席",
+   "yomi": "していせき",
+   "romaji": "shiteiseki",
+   "arti": "kursi reserved (bernomor)"
+  },
+  {
+   "kanji": "自由席",
+   "yomi": "じゆうせき",
+   "romaji": "jiyūseki",
+   "arti": "kursi bebas (tanpa reservasi)"
+  },
+  {
+   "kanji": "窓側",
+   "yomi": "まどがわ",
+   "romaji": "madogawa",
+   "arti": "sisi jendela"
+  },
+  {
+   "kanji": "富士山",
+   "yomi": "ふじさん",
+   "romaji": "Fujisan",
+   "arti": "Gunung Fuji"
+  },
+  {
+   "kanji": "切符",
+   "yomi": "きっぷ",
+   "romaji": "kippu",
+   "arti": "tiket"
+  },
+  {
+   "kanji": "乗車券",
+   "yomi": "じょうしゃけん",
+   "romaji": "jōshaken",
+   "arti": "tiket perjalanan (tarif dasar)"
+  },
+  {
+   "kanji": "特急券",
+   "yomi": "とっきゅうけん",
+   "romaji": "tokkyūken",
+   "arti": "tiket tambahan ekspres terbatas"
+  },
+  {
+   "kanji": "大人",
+   "yomi": "おとな",
+   "romaji": "otona",
+   "arti": "dewasa"
+  },
+  {
+   "kanji": "枚",
+   "yomi": "まい",
+   "romaji": "mai",
+   "arti": "penghitung benda tipis/lembaran (tiket, kertas)"
+  },
+  {
+   "kanji": "合計",
+   "yomi": "ごうけい",
+   "romaji": "gōkei",
+   "arti": "total"
+  },
+  {
+   "kanji": "現金",
+   "yomi": "げんきん",
+   "romaji": "genkin",
+   "arti": "uang tunai"
+  },
+  {
+   "kanji": "領収書",
+   "yomi": "りょうしゅうしょ",
+   "romaji": "ryōshūsho",
+   "arti": "kuitansi"
+  },
+  {
+   "kanji": "支払い",
+   "yomi": "しはらい",
+   "romaji": "shiharai",
+   "arti": "pembayaran"
+  },
+  {
+   "kanji": "払う",
+   "yomi": "はらう",
+   "romaji": "harau",
+   "arti": "membayar"
+  },
+  {
+   "kanji": "暗証番号",
+   "yomi": "あんしょうばんごう",
+   "romaji": "anshō bangō",
+   "arti": "nomor PIN"
+  },
+  {
+   "kanji": "精算機",
+   "yomi": "せいさんき",
+   "romaji": "seisanki",
+   "arti": "mesin seisan (penyesuaian tarif/saldo kartu IC)"
+  },
+  {
+   "kanji": "改札",
+   "yomi": "かいさつ",
+   "romaji": "kaisatsu",
+   "arti": "gerbang tiket"
+  },
+  {
+   "kanji": "番線",
+   "yomi": "ばんせん",
+   "romaji": "bansen",
+   "arti": "nomor jalur/peron"
+  },
+  {
+   "kanji": "",
+   "yomi": "ホーム",
+   "romaji": "hōmu",
+   "arti": "peron"
+  },
+  {
+   "kanji": "駅弁",
+   "yomi": "えきべん",
+   "romaji": "ekiben",
+   "arti": "bento stasiun"
+  },
+  {
+   "kanji": "売店",
+   "yomi": "ばいてん",
+   "romaji": "baiten",
+   "arti": "kios / toko kecil"
+  },
+  {
+   "kanji": "お茶",
+   "yomi": "おちゃ",
+   "romaji": "ocha",
+   "arti": "teh"
+  },
+  {
+   "kanji": "荷物",
+   "yomi": "にもつ",
+   "romaji": "nimotsu",
+   "arti": "bagasi / barang bawaan"
+  },
+  {
+   "kanji": "預ける",
+   "yomi": "あずける",
+   "romaji": "azukeru",
+   "arti": "menitipkan"
+  },
+  {
+   "kanji": "両替",
+   "yomi": "りょうがえ",
+   "romaji": "ryōgae",
+   "arti": "penukaran uang"
+  },
+  {
+   "kanji": "券売機",
+   "yomi": "けんばいき",
+   "romaji": "kenbaiki",
+   "arti": "mesin tiket otomatis"
+  },
+  {
+   "kanji": "乗り換え",
+   "yomi": "のりかえ",
+   "romaji": "norikae",
+   "arti": "transit / pindah kereta"
+  },
+  {
+   "kanji": "途中下車",
+   "yomi": "とちゅうげしゃ",
+   "romaji": "tochū gesha",
+   "arti": "turun di tengah perjalanan"
+  },
+  {
+   "kanji": "景色",
+   "yomi": "けしき",
+   "romaji": "keshiki",
+   "arti": "pemandangan"
+  },
+  {
+   "kanji": "安い",
+   "yomi": "やすい",
+   "romaji": "yasui",
+   "arti": "murah"
+  },
+  {
+   "kanji": "混雑",
+   "yomi": "こんざつ",
+   "romaji": "konzatsu",
+   "arti": "ramai / padat"
+  },
+  {
+   "kanji": "並ぶ",
+   "yomi": "ならぶ",
+   "romaji": "narabu",
+   "arti": "antre / berbaris"
+  },
+  {
+   "kanji": "出発",
+   "yomi": "しゅっぱつ",
+   "romaji": "shuppatsu",
+   "arti": "keberangkatan"
+  },
+  {
+   "kanji": "発車",
+   "yomi": "はっしゃ",
+   "romaji": "hassha",
+   "arti": "(kereta) berangkat"
+  },
+  {
+   "kanji": "大丈夫",
+   "yomi": "だいじょうぶ",
+   "romaji": "daijōbu",
+   "arti": "tidak apa-apa / aman"
+  },
+  {
+   "kanji": "友達",
+   "yomi": "ともだち",
+   "romaji": "tomodachi",
+   "arti": "teman"
+  },
+  {
+   "kanji": "観光",
+   "yomi": "かんこう",
+   "romaji": "kankō",
+   "arti": "wisata"
+  },
+  {
+   "kanji": "観光ガイドブック",
+   "yomi": "かんこうガイドブック",
+   "romaji": "kankō gaidobukku",
+   "arti": "buku panduan wisata"
+  },
+  {
+   "kanji": "金閣寺",
+   "yomi": "きんかくじ",
+   "romaji": "Kinkakuji",
+   "arti": "Kinkakuji (Paviliun Emas)"
+  },
+  {
+   "kanji": "清水寺",
+   "yomi": "きよみずでら",
+   "romaji": "Kiyomizudera",
+   "arti": "Kiyomizudera"
+  },
+  {
+   "kanji": "抹茶",
+   "yomi": "まっちゃ",
+   "romaji": "matcha",
+   "arti": "matcha / teh hijau bubuk"
+  },
+  {
+   "kanji": "老舗",
+   "yomi": "しにせ",
+   "romaji": "shinise",
+   "arti": "toko ternama yang sudah lama berdiri"
+  },
+  {
+   "kanji": "烏丸口",
+   "yomi": "からすまぐち",
+   "romaji": "Karasumaguchi",
+   "arti": "pintu keluar Karasuma (Stasiun Kyoto)"
+  },
+  {
+   "kanji": "承知いたしました",
+   "yomi": "しょうちいたしました",
+   "romaji": "shōchi itashimashita",
+   "arti": "baik, saya mengerti (sangat sopan)"
+  },
+  {
+   "kanji": "",
+   "yomi": "かしこまりました",
+   "romaji": "kashikomarimashita",
+   "arti": "baik, siap (sangat sopan)"
+  },
+  {
+   "kanji": "申し訳ございません",
+   "yomi": "もうしわけございません",
+   "romaji": "mōshiwake gozaimasen",
+   "arti": "mohon maaf (sangat sopan)"
+  }
+ ],
+ "grammar": [
+  {
+   "pola": "〜へ行きたいです",
+   "arti": "Ingin pergi ke ... (kata kerja bentuk -masu tanpa -masu + たい = ingin ...)",
+   "contoh": "東京へ行きたいです。",
+   "terjemahan": "Saya ingin pergi ke Tokyo."
+  },
+  {
+   "pola": "〜ですね！",
+   "arti": "Penegasan/konfirmasi ramah: “... ya!”",
+   "contoh": "東京ですね！",
+   "terjemahan": "Tokyo ya!"
+  },
+  {
+   "pola": "AとB、どちらが〜ですか？",
+   "arti": "Antara A dan B, yang mana ...? (pertanyaan memilih dua hal)",
+   "contoh": "指定席と自由席、どちらがよろしいですか？",
+   "terjemahan": "Kursi reserved atau kursi bebas, yang mana yang Anda inginkan?"
+  },
+  {
+   "pola": "〜で行く／〜に乗る",
+   "arti": "〜で = menunjukkan alat/cara (naik/dengan ...). 〜に乗る = naik ke kendaraan.",
+   "contoh": "新幹線で行きたいです！",
+   "terjemahan": "Saya ingin pergi dengan Shinkansen!"
+  },
+  {
+   "pola": "〜にします",
+   "arti": "Memutuskan memilih ...",
+   "contoh": "それは長いですね。新幹線にします！",
+   "terjemahan": "Itu lama sekali ya. Saya pilih Shinkansen saja!"
+  },
+  {
+   "pola": "〜をお願いします",
+   "arti": "Tolong ... / Saya minta ... (meminta sesuatu dengan sopan)",
+   "contoh": "大人1枚お願いします。",
+   "terjemahan": "Dewasa 1 lembar, tolong."
+  },
+  {
+   "pola": "〜枚（まい）",
+   "arti": "Penghitung benda tipis/lembaran: 1枚 いちまい, 2枚 にまい, 3枚 さんまい",
+   "contoh": "大人2枚お願いします。",
+   "terjemahan": "Dewasa 2 lembar, tolong."
+  },
+  {
+   "pola": "〜で払えますか？",
+   "arti": "Bisakah (saya) membayar dengan ...? Bentuk potensial: 払う → 払える (bisa membayar)",
+   "contoh": "ICカード（Suica）で払えますか？",
+   "terjemahan": "Bisakah saya bayar dengan kartu IC (Suica)?"
+  },
+  {
+   "pola": "お／ご〜ください",
+   "arti": "Permintaan sopan: “mohon ...” (お + kata kerja bentuk -masu tanpa -masu + ください)",
+   "contoh": "早めにホームにお並びくださいね。",
+   "terjemahan": "Mohon antre di peron lebih awal ya."
+  },
+  {
+   "pola": "〜ので、〜",
+   "arti": "Karena ..., maka ... (alasan, nada sopan/lembut)",
+   "contoh": "本日は混雑しておりますので、早めにホームにお並びくださいね。",
+   "terjemahan": "Karena hari ini ramai, mohon antre di peron lebih awal ya."
+  },
+  {
+   "pola": "〜と、〜ます",
+   "arti": "Kalau ..., maka ... (akibat yang pasti/biasa terjadi)",
+   "contoh": "窓側の席（E席）にすると、途中で富士山がきれいに見えますよ！",
+   "terjemahan": "Kalau memilih kursi jendela (kursi E), Gunung Fuji terlihat indah di tengah perjalanan!"
+  },
+  {
+   "pola": "〜ほど",
+   "arti": "Kira-kira / sekitar (perkiraan jumlah atau waktu)",
+   "contoh": "発車時刻の15分ほど前から並ばれると、座れる確率が高くなりますよ。",
+   "terjemahan": "Kalau Anda antre sekitar 15 menit sebelum jam berangkat, peluang mendapat tempat duduk lebih besar."
+  },
+  {
+   "pola": "どちらの〜でも大丈夫です",
+   "arti": "Yang mana pun ... tidak masalah (〜でも = apa pun/mana pun)",
+   "contoh": "どちらの席でも大丈夫です。",
+   "terjemahan": "Kursi yang mana pun tidak masalah."
+  },
+  {
+   "pola": "〜ておきたいです",
+   "arti": "Ingin melakukan ... terlebih dahulu / sebagai persiapan (V-te + おく)",
+   "contoh": "ICカードの精算もしておきたいです。",
+   "terjemahan": "Saya juga ingin menyelesaikan seisan kartu IC lebih dulu."
+  },
+  {
+   "pola": "〜たところだ",
+   "arti": "Baru saja melakukan ... (V-ta + ところ)",
+   "contoh": "ちょうど特急券を買ったところだよ！",
+   "terjemahan": "Aku baru saja beli tiket ekspres terbatas!"
+  },
+  {
+   "pola": "〜んだよ",
+   "arti": "Menjelaskan alasan/keadaan dengan nada akrab (percakapan teman)",
+   "contoh": "駅の売店で京都の観光ガイドブックを買ってたんだよ！",
+   "terjemahan": "Aku tadi beli buku panduan wisata Kyoto di toko stasiun, lho!"
+  },
+  {
+   "pola": "〜て、それから〜",
+   "arti": "Melakukan ..., lalu ... (urutan kegiatan)",
+   "contoh": "まずは定番の金閣寺に行って、それから清水寺の夜間拝観に行こうぜ！",
+   "terjemahan": "Pertama ke Kinkakuji yang klasik, lalu ayo ikut kunjungan malam di Kiyomizudera!"
+  },
+  {
+   "pola": "お／ご〜いたします",
+   "arti": "Bentuk merendah (kenjōgo) petugas/pelayan: “saya akan ...”",
+   "contoh": "それでは、切符は何枚ご用意いたしましょうか？",
+   "terjemahan": "Kalau begitu, berapa lembar tiket yang perlu saya siapkan?"
+  },
+  {
+   "pola": "〜ございません／〜ございます",
+   "arti": "Bentuk sangat sopan dari ありません / あります",
+   "contoh": "申し訳ございません。特急券はICカードでのお支払いができません。",
+   "terjemahan": "Mohon maaf. Tiket ekspres terbatas tidak bisa dibayar dengan kartu IC."
+  }
+ ],
+ "themes": []
+}

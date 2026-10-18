@@ -132,8 +132,9 @@
       window.addEventListener("error", function (e) {
         var t = e.target;
         if (t && t !== window) {
-          if (t.tagName === "SCRIPT") errors.push("File gagal dimuat: " + t.src);
-          else if (t.tagName === "LINK") errors.push("Stylesheet gagal dimuat: " + t.href);
+          // Hanya Script.js dan Style.css yang kritis; font dan kamus furigana boleh gagal tanpa menghentikan game
+          if (t.tagName === "SCRIPT" && /Script\.js/.test(t.src)) errors.push("File gagal dimuat: " + t.src);
+          else if (t.tagName === "LINK" && /Style\.css/.test(t.href)) errors.push("File gagal dimuat: " + t.href);
           else return;
         } else {
           errors.push((e.message || "Error tidak dikenal") + (e.lineno ? " (baris " + e.lineno + ")" : ""));
