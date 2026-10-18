@@ -5,7 +5,8 @@ const API_URL = "https://script.google.com/macros/s/AKfycbwf0-Rt3MElohK2vq4Xo57k
 
 const CONFIG = {
   START_NODE: "stasiun_awal",
-  FETCH_TIMEOUT: 15000,   // batas waktu ambil data (ms)
+  FETCH_TIMEOUT: 10000,   // batas waktu ambil data dari Google Sheets (ms)
+  FALLBACK_URL: "data/story.json",   // cadangan lokal jika Google Sheets/Apps Script gagal dimuat
   IMAGE_WAIT: 2500,       // maksimal menunggu gambar adegan (ms)
   BGM_VOLUME: 0.3,        // volume backsound (0 - 1)
 
@@ -376,11 +377,11 @@ function normalize(data) {
   };
 }
 
-async function fetchStory() {
+async function fetchFrom(url, timeoutMs) {
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), CONFIG.FETCH_TIMEOUT);
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
-    const res = await fetch(API_URL, { signal: ctrl.signal });
+    const res = await fetch(url, { signal: ctrl.signal });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = normalize(await res.json());
     if (!data.story[CONFIG.START_NODE]) {
@@ -389,6 +390,24 @@ async function fetchStory() {
     return data;
   } finally {
     clearTimeout(timer);
+  }
+}
+
+// Ambil dari Google Sheets; jika gagal, pakai berkas cadangan data/story.json
+async function fetchStory() {
+  try {
+    return await fetchFrom(API_URL, CONFIG.FETCH_TIMEOUT);
+  } catch (apiErr) {
+    window.__nihongoApiError = `${apiErr.name}: ${apiErr.message}`;
+    console.warn("Google Sheets gagal dimuat, memakai data cadangan:", apiErr);
+    if (!CONFIG.FALLBACK_URL) throw apiErr;
+    try {
+      const data = await fetchFrom(CONFIG.FALLBACK_URL, 8000);
+      data._fallback = true;
+      return data;
+    } catch (fallbackErr) {
+      throw apiErr;
+    }
   }
 }
 
@@ -417,7 +436,7 @@ function friendlyError(err) {
   if (err && /Node ".*" tidak ditemukan/.test(err.message)) {
     return `${err.message} Pastikan kolom id di Google Sheets berisi "${CONFIG.START_NODE}".`;
   }
-  return "Gagal memuat cerita. Periksa koneksi internet atau URL API, lalu coba lagi.";
+  return "Gagal memuat cerita. Periksa koneksi internet atau URL API, lalu coba lagi." + (err && err.message ? ` [${err.name}: ${err.message}]` : "");
 }
 
 // ---------- Layar judul ----------
@@ -533,7 +552,7 @@ function replayAction() {
 async function refreshForScene(key) {
   try {
     const data = await fetchStory();
-    writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
+    if (!data._fallback) writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
     useData(data);
     return getNode(key);
   } catch (err) {
@@ -1212,6 +1231,7 @@ async function init() {
     await showTitle();
     fetchStory()
       .then((data) => {
+        if (data._fallback) return; // jangan timpa cache yang lebih baru dengan data cadangan
         useData(data);
         writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
       })
@@ -1224,8 +1244,8 @@ async function init() {
     const data = await fetchStory();
     window.__nihongoStep = "memproses data";
     useData(data);
-    writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
-    console.log("Data berhasil dimuat dari Google Sheets:", data);
+    if (!data._fallback) writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
+    console.log(data._fallback ? "Memakai data cadangan (data/story.json):" : "Data berhasil dimuat dari Google Sheets:", data);
     window.__nihongoStep = "menyiapkan menu utama (memuat gambar)";
     await showTitle();
   } catch (err) {
