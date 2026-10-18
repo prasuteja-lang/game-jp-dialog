@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cek Nihongo Adventure</title>
+<style>
+  body{font-family:system-ui,Arial,sans-serif;background:#0d1117;color:#e6edf3;margin:0;padding:20px;line-height:1.5}
+  h1{font-size:20px;margin:0 0 4px} p.sub{color:#9aa7b4;margin:0 0 16px;font-size:14px}
+  table{border-collapse:collapse;width:100%;max-width:980px}
+  td,th{border-bottom:1px solid #263041;padding:8px 10px;text-align:left;vertical-align:top;font-size:14px}
+  th{color:#9aa7b4;font-weight:600}
+  .ok{color:#3fb950;font-weight:700}.bad{color:#f85149;font-weight:700}.warn{color:#d29922;font-weight:700}.wait{color:#9aa7b4}
+  code{background:#161b22;padding:1px 5px;border-radius:4px;word-break:break-all}
+  button{background:#238636;color:#fff;border:0;border-radius:6px;padding:10px 16px;font-size:14px;cursor:pointer;margin:14px 8px 0 0}
+  #frame{width:1px;height:1px;border:0;position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<h1>Pemeriksa Nihongo Adventure</h1>
+<p class="sub">Biarkan halaman ini terbuka sampai muncul tulisan <b>SELESAI</b> (maksimal ± 30 detik), lalu kirim screenshot atau tekan "Salin hasil".</p>
+<table id="t"><thead><tr><th style="width:34%">Pemeriksaan</th><th style="width:12%">Hasil</th><th>Detail</th></tr></thead><tbody></tbody></table>
+<p id="done" class="wait">Sedang memeriksa…</p>
+<button id="copy" type="button">Salin hasil</button><button onclick="location.reload()" type="button">Ulangi</button>
+
+<script>
+var API_URL = "https://script.google.com/macros/s/AKfycbwf0-Rt3MElohK2vq4Xo57kYGPfprWcROqid4gZd0-92ObUrGg6YbbrIsdxCS3HDIJP/exec";
+var tbody = document.querySelector("#t tbody"), lines = [];
+function row(name){
+  var tr=document.createElement("tr");
+  tr.innerHTML='<td></td><td class="wait">…</td><td class="wait">menunggu</td>';
+  tr.children[0].textContent=name; tbody.appendChild(tr);
+  return function(status,detail){
+    var c={ok:"ok",bad:"bad",warn:"warn"}[status]||"wait";
+    tr.children[1].className=c; tr.children[1].textContent={ok:"OK",bad:"GAGAL",warn:"CEK"}[status]||"…";
+    tr.children[2].className=""; tr.children[2].textContent=detail;
+    lines.push("["+(({ok:"OK",bad:"GAGAL",warn:"CEK"})[status]||"?")+"] "+name+" -> "+detail);
+  };
+}
+function timed(url,ms,opts){
+  var ctrl=new AbortController(), t0=performance.now(), to=setTimeout(function(){ctrl.abort()},ms);
+  opts=Object.assign({cache:"no-store",signal:ctrl.signal},opts||{});
+  return fetch(url,opts).then(function(r){return r.text().then(function(txt){clearTimeout(to);return {r:r,txt:txt,ms:Math.round(performance.now()-t0)}})})
+    .catch(function(e){clearTimeout(to);var err=new Error(e.name==="AbortError"?"tidak ada jawaban dalam "+ms/1000+" detik (timeout)":e.name+": "+e.message);err.ms=Math.round(performance.now()-t0);throw err});
+}
+function fileCheck(name,url,markers,minBytes){
+  var set=row(name);
+  return timed(url,10000).then(function(o){
+    if(!o.r.ok){set("bad","HTTP "+o.r.status+" untuk "+url+(o.r.status==404?" (file tidak ada / nama tidak sama persis, perhatikan huruf besar-kecil)":""));return;}
+    var miss=markers.filter(function(m){return o.txt.indexOf(m)<0});
+    var info=o.txt.length+" karakter, "+o.txt.split("\n").length+" baris, "+o.ms+" ms";
+    if(o.txt.length<minBytes) set("bad","terlalu pendek ("+info+") - file kemungkinan terpotong/rusak");
+    else if(miss.length) set("warn","VERSI LAMA? tidak menemukan: "+miss.join(", ")+" ("+info+")");
+    else set("ok","versi terbaru ("+info+")");
+  }).catch(function(e){set("bad",e.message)});
+}
+function assetCheck(name,url){
+  var set=row(name);
+  return timed(url,10000,{method:"GET"}).then(function(o){
+    set(o.r.ok?"ok":"bad","HTTP "+o.r.status+" ("+o.ms+" ms) "+url);
+  }).catch(function(e){set("bad",e.message+" - "+url)});
+}
+var p=[];
+p.push(fileCheck("index.html di situs","index.html",["__nihongoStarted","preload"],3000));
+p.push(fileCheck("Script.js di situs","Script.js",["FALLBACK_URL","MENU_BGM","__nihongoStep"],20000));
+p.push(fileCheck("Style.css di situs","Style.css",["ending-title","ov-actions"],18000));
+
+// Data cadangan
+p.push((function(){
+  var set=row("data/story.json (cadangan)");
+  return timed("data/story.json",10000).then(function(o){
+    if(!o.r.ok){set("bad","HTTP "+o.r.status+" - folder 'data' atau file story.json belum ada di GitHub");return;}
+    try{var d=JSON.parse(o.txt);set(d.story&&d.story.stasiun_awal?"ok":"bad",Object.keys(d.story||{}).length+" adegan, "+(d.vocab||[]).length+" kosakata, "+(d.grammar||[]).length+" tata bahasa");}
+    catch(e){set("bad","isi bukan JSON valid: "+e.message)}
+  }).catch(function(e){set("bad",e.message)});
+})());
+
+// Apps Script
+p.push((function(){
+  var set=row("Google Sheets (Apps Script)");
+  return timed(API_URL,15000).then(function(o){
+    var ct=o.r.headers.get("content-type")||"";
+    if(!o.r.ok){set("bad","HTTP "+o.r.status+" ("+o.ms+" ms)");return;}
+    try{
+      var d=JSON.parse(o.txt),n=Object.keys(d.story||{}).length;
+      var tr=Object.keys(d.story||{}).filter(function(k){return d.story[k].translation}).length;
+      var ends=Object.keys(d.story||{}).filter(function(k){return d.story[k].ending}).map(function(k){return k+"="+d.story[k].ending});
+      set(n?"ok":"warn",n+" adegan, "+tr+" bertranslasi, "+(d.vocab||[]).length+" kosakata, "+(d.grammar||[]).length+" tata bahasa ("+o.ms+" ms). Ending: "+(ends.join(", ")||"-")+(d.story&&d.story.stasiun_awal?"":" | ID 'stasiun_awal' TIDAK ADA"));
+    }catch(e){
+      set("bad","jawaban bukan JSON (content-type: "+ct+", "+o.ms+" ms). Awal isi: "+o.txt.replace(/\s+/g," ").slice(0,140)+" -> biasanya halaman login Google / error: atur deployment ke 'Anyone'");
+    }
+  }).catch(function(e){set("bad",e.message+" -> Apps Script tidak terjangkau dari browser ini")});
+})());
+
+// Contoh aset
+p.push(assetCheck("Gambar latar contoh","assets/background/station.png"));
+p.push(assetCheck("Gambar karakter contoh","assets/character/maruko_smile.png"));
+p.push(assetCheck("Musik menu","assets/audio/"+encodeURIComponent("冒険の調べ.mp3")));
+
+// Jalankan game di iframe tersembunyi
+p.push((function(){
+  var set=row("Game berjalan (uji nyata di frame)");
+  return new Promise(function(resolve){
+    var f=document.createElement("iframe");f.id="frame";f.src="index.html?cek="+Date.now();document.body.appendChild(f);
+    var tries=0,iv=setInterval(function(){
+      tries++;var w=f.contentWindow,d;
+      try{d=w.document}catch(e){clearInterval(iv);set("bad","tidak bisa membaca frame: "+e.message);return resolve()}
+      var ov=d&&d.getElementById("overlay"),title=d&&d.getElementById("title");
+      var titleOn=title&&!title.classList.contains("is-hidden"),ovHidden=ov&&ov.classList.contains("is-hidden");
+      if(titleOn&&ovHidden){clearInterval(iv);set("ok","menu utama tampil dalam ±"+tries+" detik. Sumber data: "+(w.__nihongoApiError?"CADANGAN (Sheets gagal: "+w.__nihongoApiError+")":"Google Sheets"));return resolve()}
+      if(tries>=30){
+        clearInterval(iv);
+        var msg=d&&d.getElementById("ov-msg")?d.getElementById("ov-msg").textContent:"?";
+        set("bad","menu tidak muncul dalam 30 detik. Script mulai: "+(w.__nihongoStarted?"ya":"TIDAK (Script.js tidak berjalan)")+" | tahap: "+(w.__nihongoStep||"-")+" | error API: "+(w.__nihongoApiError||"-")+" | teks layar: "+msg);
+        resolve();
+      }
+    },1000);
+  });
+})());
+
+Promise.all(p).then(function(){
+  var el=document.getElementById("done");el.className="ok";el.textContent="SELESAI. Kirim screenshot halaman ini atau tekan \"Salin hasil\".";
+});
+document.getElementById("copy").onclick=function(){
+  var txt="Cek "+location.href+"\n"+navigator.userAgent+"\n"+lines.join("\n");
+  (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){alert("Hasil disalin")}).catch(function(){prompt("Salin teks ini:",txt)});
+};
+</script>
+</body>
+</html>
