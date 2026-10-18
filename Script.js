@@ -769,7 +769,12 @@ function showChoicesOrNext() {
 // ---------- Ending ----------
 function getEnding(node) {
   const e = String(node.ending || "").trim().toLowerCase();
-  if (e) return ["challenge", "tantangan", "bad", "gagal"].includes(e) ? "challenge" : "good";
+  if (e) {
+    if (["challenge", "tantangan", "bad", "gagal"].includes(e)) return "challenge";
+    if (["good", "tamat", "end", "ending", "berhasil", "sukses"].includes(e)) return "good";
+    // Nilai tak dikenal (mis. kolom Google Sheets bergeser): jangan anggap sebagai ending
+    console.warn(`Kolom "ending" berisi "${node.ending}" pada adegan "${state.nodeKey}"; diabaikan. Isi dengan good / challenge atau kosongkan.`);
+  }
   if (!(node.choices || []).length && !node.next) return "end";
   return null;
 }
