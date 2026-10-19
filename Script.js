@@ -10,8 +10,9 @@ const CONFIG = {
   IMAGE_WAIT: 2500,       // maksimal menunggu gambar adegan (ms)
   BGM_VOLUME: 0.3,        // volume backsound (0 - 1)
 
-  // Furigana otomatis di nonaktifkan agar unduhan/pemrosesan kamus besar tidak membebani browser.
-  AUTO_FURIGANA: false,
+  // Furigana otomatis aktif: kanji diberi cara baca (furigana) secara otomatis
+  // agar pemain bisa belajar membaca. Kamus diunduh sekali lalu di-cache browser.
+  AUTO_FURIGANA: true,
   KUROSHIRO_URL: "https://cdn.jsdelivr.net/npm/kuroshiro@1.2.0/dist/kuroshiro.min.js",
   ANALYZER_URL: "https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js",
   DICT_PATH: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/",
@@ -420,13 +421,11 @@ function useData(data) {
   state.grammar = data.grammar;
   state.themes = {};
   state.themeList = (data.themes || []).filter((t) => t.tema);
+  // URL musik disimpan apa adanya; jika berkas gagal dimuat, pemutar otomatis
+  // mencoba ekstensi lain (.mp3 <-> .wav) lewat bgmCandidates().
   state.themeList.forEach((t) => {
-    if (t.assets) {
-      const asset = t.tema.trim().toLowerCase() === "station" && /stationback\.mp3$/i.test(t.assets)
-        ? t.assets.replace(/\.mp3$/i, ".wav")
-        : t.assets;
-      state.themes[t.tema.trim().toLowerCase()] = asset;
-    }
+    const tema = String(t.tema || "").trim().toLowerCase();
+    if (tema && t.assets) state.themes[tema] = t.assets;
   });
   if (AUTO.ready) prepareAll();
 }
@@ -641,25 +640,61 @@ function fadeAudio(a, to, ms, done) {
   }, 40);
 }
 
+// Susunan kandidat sumber musik. Untuk berkas lokal, URL di-encode; dan jika nama
+// berkas berakhiran .mp3/.wav/.ogg/.m4a, sediakan juga pasangan dengan ekstensi lain —
+// jadi kalau salah satu berkas belum diunggah / tidak didukung browser, yang satunya dipakai.
+function bgmCandidates(raw) {
+  raw = String(raw || "").trim();
+  if (!raw) return [];
+  if (/drive\.google\.com/.test(raw)) return [mediaUrl(raw, "audio")];
+  const list = [encodeURI(raw)];
+  const swapped = raw.replace(/\.(mp3|wav|ogg|m4a|aac)$/i, (m, ext) =>
+    "." + (ext.toLowerCase() === "mp3" ? "wav" : "mp3")
+  );
+  if (swapped !== raw) list.push(encodeURI(swapped));
+  return list;
+}
+
 function setBgm(url) {
   if (url === state.bgmUrl) return; // tema sama: biarkan terus berputar
   state.bgmUrl = url;
 
   const old = state.bgm;
   state.bgm = null;
-  if (old) fadeAudio(old, 0, 600, () => old.pause());
-  if (!url) return;
+  if (old) {
+    fadeAudio(old, 0, 600, () => {
+      old.pause();
+      old.removeAttribute("src");
+      old.load();
+    });
+  }
 
-  const a = new Audio(url);
+  const candidates = bgmCandidates(url);
+  if (!candidates.length) return;
+  playBgm(candidates, 0);
+}
+
+function playBgm(candidates, index) {
+  const a = new Audio();
   a.loop = true;
   a.volume = 0;
   a.muted = !state.settings.sound;
+  a.preload = "auto";
+
   state.bgm = a;
   state.bgmBlocked = false;
+
   a.addEventListener("error", () => {
-    if (state.bgm === a) state.bgmBlocked = false;
-    console.warn("Musik latar gagal dimuat:", url);
+    if (state.bgm !== a) return;
+    if (index + 1 < candidates.length) {
+      playBgm(candidates, index + 1); // berkas ini tidak ada/tidak didukung: coba ekstensi lain
+    } else {
+      state.bgm = null;
+      console.warn("Musik latar gagal dimuat. Periksa nama & lokasi berkas ini lalu unggah ke GitHub:", candidates.join(" | "));
+    }
   });
+
+  a.src = candidates[index];
   startBgm(a);
 }
 
@@ -690,7 +725,7 @@ function startBgm(a) {
 );
 
 // Musik menu utama
-const menuBgmUrl = () => (CONFIG.MENU_BGM ? encodeURI(CONFIG.MENU_BGM) : "");
+const menuBgmUrl = () => CONFIG.MENU_BGM || "";
 
 document.addEventListener("visibilitychange", () => {
   [state.audio, state.bgm].forEach((a) => {
