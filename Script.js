@@ -10,8 +10,8 @@ const CONFIG = {
   IMAGE_WAIT: 2500,       // maksimal menunggu gambar adegan (ms)
   BGM_VOLUME: 0.3,        // volume backsound (0 - 1)
 
-  // Furigana otomatis (Kuroshiro + Kuromoji). Butuh internet; kamus ~12 MB diunduh sekali lalu tersimpan di cache browser.
-  AUTO_FURIGANA: true,
+  // Furigana otomatis di nonaktifkan agar unduhan/pemrosesan kamus besar tidak membebani browser.
+  AUTO_FURIGANA: false,
   KUROSHIRO_URL: "https://cdn.jsdelivr.net/npm/kuroshiro@1.2.0/dist/kuroshiro.min.js",
   ANALYZER_URL: "https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js",
   DICT_PATH: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/",
