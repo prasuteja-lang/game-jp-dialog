@@ -10,11 +10,12 @@ const CONFIG = {
   IMAGE_WAIT: 2500,       // maksimal menunggu gambar adegan (ms)
   BGM_VOLUME: 0.3,        // volume backsound (0 - 1)
 
-  // Jangan unduh/pindai kamus besar otomatis saat startup; furigana manual tetap tersedia.
-  AUTO_FURIGANA: false,
   KUROSHIRO_URL: "https://cdn.jsdelivr.net/npm/kuroshiro@1.2.0/dist/kuroshiro.min.js",
   ANALYZER_URL: "https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js",
-  DICT_PATH: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/",
+  KUROMOJI_SOURCES: [
+    { js: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js", dict: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/" },
+    { js: "https://unpkg.com/kuromoji@0.1.2/build/kuromoji.js", dict: "https://unpkg.com/kuromoji@0.1.2/dict/" },
+  ],
   CACHE_KEY: "vn_story_cache_v3",   // dinaikkan agar cache lama (tanpa terjemahan / adegan baru) dibuang
 
   // Musik latar menu utama (letakkan file di folder ini; nama berkas Jepang di-encode otomatis)
@@ -24,7 +25,7 @@ const CONFIG = {
 };
 
 const SPEEDS = { lambat: 55, normal: 32, cepat: 14, instan: 0 };
-const DEFAULT_SETTINGS = { speed: "normal", sound: true, furigana: true, translation: true };
+const DEFAULT_SETTINGS = { speed: "normal", sound: true, furigana: false, translation: true };
 
 // ---------- Ikon ----------
 const svg = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
@@ -192,26 +193,39 @@ function loadScript(src) {
 }
 
 function initAutoFurigana() {
-  if (!CONFIG.AUTO_FURIGANA) return Promise.resolve(false);
   if (AUTO.loading) return AUTO.loading;
   AUTO.loading = (async () => {
     try {
       await loadScript(CONFIG.KUROSHIRO_URL);
-      await loadScript(CONFIG.ANALYZER_URL);
       const K = window.Kuroshiro && (window.Kuroshiro.default || window.Kuroshiro);
-      const A = window.KuromojiAnalyzer && (window.KuromojiAnalyzer.default || window.KuromojiAnalyzer);
-      if (!K || !A) throw new Error("Pustaka Kuroshiro tidak ditemukan");
-      const kuro = new K();
-      await kuro.init(new A({ dictPath: CONFIG.DICT_PATH }));
-      AUTO.kuro = kuro;
-      AUTO.ready = true;
-      console.log("Furigana otomatis siap.");
-      return true;
+      if (!K) throw new Error("Pustaka Kuroshiro tidak ditemukan");
+
+      let lastError;
+      for (const source of CONFIG.KUROMOJI_SOURCES) {
+        try {
+          await loadScript(source.js);
+          await loadScript(CONFIG.ANALYZER_URL);
+          const A = window.KuromojiAnalyzer && (window.KuromojiAnalyzer.default || window.KuromojiAnalyzer);
+          if (!A) throw new Error("Pustaka analyzer Kuromoji tidak ditemukan");
+          const kuro = new K();
+          await kuro.init(new A({ dictPath: source.dict }));
+          AUTO.kuro = kuro;
+          AUTO.ready = true;
+          console.log("Furigana otomatis siap.");
+          return true;
+        } catch (err) {
+          lastError = err;
+          console.warn("Gagal memuat kamus furigana dari " + source.dict + "; mencoba sumber berikutnya.", err);
+        }
+      }
+      throw lastError || new Error("Semua sumber kamus furigana gagal dimuat");
     } catch (err) {
       console.warn("Furigana otomatis tidak aktif (furigana manual tetap berfungsi):", err);
       return false;
     }
-  })();
+  })().finally(() => {
+    if (!AUTO.ready) AUTO.loading = null;
+  });
   return AUTO.loading;
 }
 
@@ -250,24 +264,26 @@ async function prepareNode(node) {
   await Promise.all(texts.map(annotateText));
 }
 
-// Siapkan semua teks cerita di latar belakang agar adegan berikutnya langsung berfurigana
-async function prepareAll() {
-  if (!AUTO.ready) return;
-  const texts = [];
-  Object.values(state.story).forEach((n) => {
-    texts.push(n.text);
-    (n.choices || []).forEach((c) => texts.push(c.text));
-  });
-  state.grammar.forEach((g) => texts.push(g.contoh));
-  for (const t of texts) {
-    await annotateText(t);
-    await sleep(0);
-  }
+// Furigana otomatis bersifat opsional; jangan tahan adegan saat kamus diunduh.
+async function refreshCurrentFurigana() {
+  const node = state.node;
+  if (!state.started || !node) return;
+  await prepareNode(node);
+  if (!state.settings.furigana || state.node !== node || state.typing) return;
+  el.text.innerHTML = richHTML(node.text);
+  showChoicesOrNext();
 }
 
-// Furigana otomatis bersifat opsional; jangan tahan adegan saat kamus diunduh.
-async function ensureFurigana() {
-  if (CONFIG.AUTO_FURIGANA && !AUTO.ready && !AUTO.loading) initAutoFurigana();
+function ensureFurigana() {
+  if (!state.settings.furigana) return;
+  if (AUTO.ready) {
+    refreshCurrentFurigana();
+    return;
+  }
+  if (AUTO.loading) return;
+  initAutoFurigana().then((ready) => {
+    if (ready && state.settings.furigana) refreshCurrentFurigana();
+  });
 }
 
 // ---------- Link Google Drive -> link yang bisa dipakai <img>/<audio> ----------
@@ -331,6 +347,7 @@ function applySettings() {
   el.muteBtn.setAttribute("aria-label", s.sound ? "Matikan suara" : "Nyalakan suara");
   if (state.audio) state.audio.muted = !s.sound;
   if (state.bgm) state.bgm.muted = !s.sound;
+  if (s.furigana) ensureFurigana();
 }
 
 // ---------- Layar memuat / error ----------
@@ -426,7 +443,6 @@ function useData(data) {
     const tema = String(t.tema || "").trim().toLowerCase();
     if (tema && t.assets) state.themes[tema] = t.assets;
   });
-  if (AUTO.ready) prepareAll();
 }
 
 function friendlyError(err) {
@@ -781,6 +797,9 @@ function typeText(text) {
 function endTyping() {
   state.typing = false;
   state.finishTyping = null;
+  if (AUTO.ready && state.settings.furigana && state.node) {
+    el.text.innerHTML = richHTML(state.node.text);
+  }
   el.trans.classList.remove("is-pending");
   showChoicesOrNext();
 }
@@ -906,8 +925,7 @@ async function loadScene(key) {
   const ch = mediaUrl(node.character, "image");
   const audio = mediaUrl(node.audio, "audio");
 
-  // Tunggu kamus furigana (hanya jika belum siap), lalu gambar (maksimal beberapa detik)
-  await ensureFurigana();
+  // Furigana dimuat di latar belakang hanya jika diaktifkan di pengaturan.
   await Promise.race([Promise.all([preloadImage(bg), preloadImage(ch)]), sleep(CONFIG.IMAGE_WAIT)]);
   await prepareNode(node);
   if (token !== state.token) return;
@@ -1190,7 +1208,7 @@ function renderSettings(box) {
   // Sakelar
   [
     ["sound", "Suara"],
-    ["furigana", "Furigana (cara baca di atas kanji)"],
+    ["furigana", "Furigana otomatis (unduh kamus saat diaktifkan)"],
     ["translation", "Terjemahan Indonesia"],
   ].forEach(([key, label]) => {
     const row = h("div", "switch-row");
@@ -1245,8 +1263,6 @@ function openAbout() {
 // ---------- Mulai ----------
 async function init() {
   state.settings = loadSettings();
-  initAutoFurigana().then((ok) => { if (ok) prepareAll(); });
-
   el.vocabBtn.innerHTML = ICON.book;
   el.settingsBtn.innerHTML = ICON.gear;
   el.speakBtn.innerHTML = ICON.volume;
