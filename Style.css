@@ -651,7 +651,73 @@ rt {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(18, 58, 122, 0.6) 0%, rgba(18, 58, 122, 0.25) 45%, rgba(18, 58, 122, 0) 70%);
+  background:
+    radial-gradient(60% 50% at 85% 15%, rgba(255, 122, 184, 0.28) 0%, rgba(255, 122, 184, 0) 70%),
+    linear-gradient(90deg, rgba(18, 58, 122, 0.78) 0%, rgba(24, 62, 132, 0.42) 45%, rgba(18, 58, 122, 0.05) 72%);
+}
+
+/* Karakter judul: pelan-pelan mengambang */
+.title-char {
+  animation: char-bob 4.5s ease-in-out infinite;
+}
+
+@keyframes char-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5em);
+  }
+}
+
+/* Kelopak sakura berjatuhan */
+.petals {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.petals span {
+  position: absolute;
+  top: -6%;
+  font-size: 1.1em;
+  line-height: 1;
+  opacity: 0.9;
+  animation: petal-fall linear infinite;
+  will-change: top, transform;
+}
+
+.petals span::before {
+  content: "🌸";
+}
+
+.petals span:nth-child(1) { left: 5%;  animation-duration: 8.5s;  animation-delay: 0s;   font-size: 1.05em; }
+.petals span:nth-child(2) { left: 16%; animation-duration: 11s;  animation-delay: 1.8s; font-size: 0.7em; }
+.petals span:nth-child(3) { left: 28%; animation-duration: 9.5s;  animation-delay: 3.4s; font-size: 1.2em; }
+.petals span:nth-child(4) { left: 42%; animation-duration: 12.5s; animation-delay: 0.9s; font-size: 0.85em; }
+.petals span:nth-child(5) { left: 55%; animation-duration: 9s;   animation-delay: 5.2s; font-size: 1em; }
+.petals span:nth-child(6) { left: 68%; animation-duration: 13s;  animation-delay: 2.6s; font-size: 0.75em; }
+.petals span:nth-child(7) { left: 80%; animation-duration: 10s;  animation-delay: 4.1s; font-size: 1.15em; }
+.petals span:nth-child(8) { left: 92%; animation-duration: 11.5s; animation-delay: 1.2s; font-size: 0.9em; }
+
+@keyframes petal-fall {
+  0% {
+    top: -6%;
+    transform: translateX(0) rotate(0deg);
+  }
+  30% {
+    transform: translateX(1.4em) rotate(110deg);
+  }
+  60% {
+    transform: translateX(-0.6em) rotate(230deg);
+  }
+  100% {
+    top: 106%;
+    transform: translateX(0.8em) rotate(340deg);
+  }
 }
 
 .title-char {
@@ -697,13 +763,17 @@ rt {
   align-items: flex-start;
   gap: 0.1em;
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2.6em;
   font-weight: 700;
   line-height: 1.05;
   color: #fff;
+  background: linear-gradient(180deg, #ffffff 25%, #ffdcea 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.07em var(--blue-900);
   paint-order: stroke fill;
-  text-shadow: 0 0.06em 0.15em rgba(0, 0, 0, 0.35);
+  filter: drop-shadow(0 0.08em 0.18em rgba(0, 0, 0, 0.35));
 }
 
 .logo-sakura {
@@ -742,23 +812,29 @@ rt {
   display: inline-flex;
   align-items: center;
   gap: 0.7em;
-  width: 12em;
-  padding: 0.45em 1em;
+  width: 12.5em;
+  padding: 0.5em 1em;
   font: inherit;
   font-weight: 700;
   text-align: left;
   color: #fff;
-  background: rgba(18, 58, 122, 0.9);
-  border: 0;
-  border-radius: 0.9em;
-  box-shadow: 0 0.3em 0.9em rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1.3em;
+  box-shadow: 0 0.35em 1em rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   cursor: pointer;
   transition: background-color 0.15s ease, transform 0.15s ease;
 }
 
 .t-btn svg {
-  width: 1.3em;
-  height: 1.3em;
+  flex: none;
+  width: 1.9em;
+  height: 1.9em;
+  padding: 0.32em;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
 }
 
 .t-btn:hover,
@@ -769,12 +845,25 @@ rt {
 }
 
 .t-primary {
-  background: var(--pink);
+  background: linear-gradient(135deg, var(--pink) 0%, #ff7ab8 100%);
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0.4em 1.4em rgba(255, 75, 134, 0.45);
+  animation: primary-pulse 2.4s ease-in-out infinite;
 }
 
 .t-primary:hover,
 .t-primary:focus-visible {
-  background: var(--pink-dark);
+  background: linear-gradient(135deg, var(--pink-dark) 0%, var(--pink) 100%);
+}
+
+@keyframes primary-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0.4em 1.4em rgba(255, 75, 134, 0.45);
+  }
+  50% {
+    box-shadow: 0 0.4em 2em rgba(255, 75, 134, 0.75);
+  }
 }
 
 .title-foot {
@@ -1326,8 +1415,8 @@ rt {
   }
 
   #char-image {
-    bottom: 24%;
-    max-height: 62%;
+    bottom: 14%; /* tepi bawah sprite disembunyikan di balik panel dialog/pilihan */
+    max-height: 84%;
     max-width: 100%;
   }
 
@@ -1343,11 +1432,14 @@ rt {
     left: 3%;
     right: 3%;
     bottom: max(4%, env(safe-area-inset-bottom));
+    flex-direction: column-reverse; /* HP: dialog di atas, pilihan jawaban di bawah */
   }
 
   .choices {
     align-self: stretch;
     width: auto;
+    margin-top: 0.9em;
+    margin-bottom: 0;
   }
 
   #dialog-box {
@@ -1370,8 +1462,8 @@ rt {
   .title-char {
     left: 50%;
     right: auto;
-    bottom: 34%;
-    height: 58%;
+    bottom: 13%; /* tepi potongan sprite tertutup area judul/tombol */
+    height: 86%;
     max-width: 100%;
     transform: translateX(-50%);
     object-position: bottom center;
@@ -1460,5 +1552,24 @@ rt {
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* =========================================================
+   Tambahan: layar judul versi HP
+   ========================================================= */
+@media (orientation: portrait) and (max-width: 900px) {
+  .title-char {
+    animation-name: char-bob-center;
+  }
+}
+
+@keyframes char-bob-center {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-0.5em);
   }
 }
