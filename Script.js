@@ -421,7 +421,12 @@ function useData(data) {
   state.themes = {};
   state.themeList = (data.themes || []).filter((t) => t.tema);
   state.themeList.forEach((t) => {
-    if (t.assets) state.themes[t.tema.toLowerCase()] = t.assets;
+    if (t.assets) {
+      const asset = t.tema.trim().toLowerCase() === "station" && /stationback\.mp3$/i.test(t.assets)
+        ? t.assets.replace(/\.mp3$/i, ".wav")
+        : t.assets;
+      state.themes[t.tema.trim().toLowerCase()] = asset;
+    }
   });
   if (AUTO.ready) prepareAll();
 }

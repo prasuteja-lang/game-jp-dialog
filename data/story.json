@@ -1373,5 +1373,15 @@
    "terjemahan": "Mohon maaf. Tiket ekspres terbatas tidak bisa dibayar dengan kartu IC."
   }
  ],
- "themes": []
+ "themes": [
+  {
+   "tema": "Station",
+   "assets": "assets/audio/stationback.wav",
+   "start": "stasiun_awal",
+   "title": "Stasiun",
+   "titleJp": "駅",
+   "desc": "Beli tiket dan naik kereta ke kota tujuan",
+   "icon": "🚉"
+  }
+ ]
 }
