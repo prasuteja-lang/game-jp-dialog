@@ -125,7 +125,7 @@
         if (a && !a.children.length) {
           var b = document.createElement("button");
           b.type = "button"; b.className = "t-btn t-primary"; b.textContent = "Muat ulang";
-          b.onclick = function () { try { localStorage.clear(); } catch (e) {} location.reload(); };
+          b.onclick = function () { location.reload(); };
           a.appendChild(b);
         }
       }

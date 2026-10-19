@@ -12,7 +12,6 @@ const CONFIG = {
 
   // Furigana otomatis (Kuroshiro + Kuromoji). Butuh internet; kamus ~12 MB diunduh sekali lalu tersimpan di cache browser.
   AUTO_FURIGANA: true,
-  FURIGANA_WAIT: 20000,   // maksimal menunggu kamus saat game dimulai (ms)
   KUROSHIRO_URL: "https://cdn.jsdelivr.net/npm/kuroshiro@1.2.0/dist/kuroshiro.min.js",
   ANALYZER_URL: "https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js",
   DICT_PATH: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/",
@@ -266,17 +265,9 @@ async function prepareAll() {
   }
 }
 
-// Saat game dimulai, tunggu kamus sebentar jika belum selesai diunduh
+// Furigana otomatis bersifat opsional; jangan tahan adegan saat kamus diunduh.
 async function ensureFurigana() {
-  if (!CONFIG.AUTO_FURIGANA || AUTO.ready || !AUTO.loading) return;
-  let shown = false;
-  const timer = setTimeout(() => {
-    shown = true;
-    showOverlay({ msg: "Menyiapkan furigana otomatis… (pertama kali agak lama)", loading: true });
-  }, 500);
-  await Promise.race([AUTO.loading, sleep(CONFIG.FURIGANA_WAIT)]);
-  clearTimeout(timer);
-  if (shown) hideOverlay();
+  if (CONFIG.AUTO_FURIGANA && !AUTO.ready && !AUTO.loading) initAutoFurigana();
 }
 
 // ---------- Link Google Drive -> link yang bisa dipakai <img>/<audio> ----------
@@ -406,7 +397,11 @@ async function fetchStory() {
       data._fallback = true;
       return data;
     } catch (fallbackErr) {
-      throw apiErr;
+      const err = new Error(
+        `Apps Script gagal: ${apiErr.message}; data GitHub (${CONFIG.FALLBACK_URL}) gagal: ${fallbackErr.message}`
+      );
+      err.name = "StoryLoadError";
+      throw err;
     }
   }
 }
@@ -435,6 +430,10 @@ function friendlyError(err) {
   if (err && err.name === "AbortError") return "Koneksi terlalu lama. Periksa internet Anda lalu coba lagi.";
   if (err && /Node ".*" tidak ditemukan/.test(err.message)) {
     return `${err.message} Pastikan kolom id di Google Sheets berisi "${CONFIG.START_NODE}".`;
+  }
+  if (err && err.name === "StoryLoadError") {
+    return "Gagal memuat cerita dari Apps Script maupun data cadangan GitHub. Periksa koneksi internet, URL API, dan file data/story.json." +
+      (err.message ? ` [${err.message}]` : "");
   }
   return "Gagal memuat cerita. Periksa koneksi internet atau URL API, lalu coba lagi." + (err && err.message ? ` [${err.name}: ${err.message}]` : "");
 }
@@ -1240,14 +1239,41 @@ async function init() {
   }
 
   try {
-    window.__nihongoStep = "mengambil data dari Google Sheets (Apps Script)";
-    const data = await fetchStory();
+    window.__nihongoStep = "memuat cerita dari GitHub";
+    let data;
+    try {
+      data = await fetchFrom(CONFIG.FALLBACK_URL, 8000);
+      data._fallback = true;
+    } catch (fallbackErr) {
+      window.__nihongoStep = "mengambil data dari Google Sheets (Apps Script)";
+      try {
+        data = await fetchFrom(API_URL, CONFIG.FETCH_TIMEOUT);
+      } catch (apiErr) {
+        const err = new Error(
+          `Data GitHub (${CONFIG.FALLBACK_URL}) gagal: ${fallbackErr.message}; Apps Script gagal: ${apiErr.message}`
+        );
+        err.name = "StoryLoadError";
+        throw err;
+      }
+    }
     window.__nihongoStep = "memproses data";
     useData(data);
     if (!data._fallback) writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
     console.log(data._fallback ? "Memakai data cadangan (data/story.json):" : "Data berhasil dimuat dari Google Sheets:", data);
     window.__nihongoStep = "menyiapkan menu utama (memuat gambar)";
     await showTitle();
+    if (data._fallback) {
+      fetchStory()
+        .then((freshData) => {
+          if (freshData._fallback) return;
+          useData(freshData);
+          writeStore(CONFIG.CACHE_KEY, JSON.stringify(freshData));
+          window.__nihongoApiError = "";
+        })
+        .catch((err) => {
+          console.warn("Google Sheets tidak dapat diperbarui; cerita GitHub tetap digunakan:", err);
+        });
+    }
   } catch (err) {
     console.error("Gagal mengambil data dari Google Sheets:", err);
     showOverlay({
