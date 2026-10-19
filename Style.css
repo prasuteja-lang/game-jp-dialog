@@ -775,11 +775,23 @@ rt {
 .logo-sakura {
   font-size: 0.5em;
   -webkit-text-stroke: 0;
+  transform-origin: center;
+  animation: sakura-float 2.8s ease-in-out infinite;
 }
 
 .logo-sakura {
   font-size: 0.5em;
   -webkit-text-stroke: 0;
+}
+
+@keyframes sakura-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-0.35em) rotate(8deg);
+  }
 }
 
 .logo-jp {
