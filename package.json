@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "generate:furigana": "node scripts/generate-furigana.js"
+  },
+  "devDependencies": {
+    "kuromoji": "0.1.2"
+  }
+}

@@ -10,12 +10,7 @@ const CONFIG = {
   IMAGE_WAIT: 2500,       // maksimal menunggu gambar adegan (ms)
   BGM_VOLUME: 0.3,        // volume backsound (0 - 1)
 
-  KUROSHIRO_URL: "https://cdn.jsdelivr.net/npm/kuroshiro@1.2.0/dist/kuroshiro.min.js",
-  ANALYZER_URL: "https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js",
-  KUROMOJI_SOURCES: [
-    { js: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js", dict: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/" },
-    { js: "https://unpkg.com/kuromoji@0.1.2/build/kuromoji.js", dict: "https://unpkg.com/kuromoji@0.1.2/dict/" },
-  ],
+  FURIGANA_URL: "data/furigana.json",
   CACHE_KEY: "vn_story_cache_v3",   // dinaikkan agar cache lama (tanpa terjemahan / adegan baru) dibuang
 
   // Musik latar menu utama (letakkan file di folder ini; nama berkas Jepang di-encode otomatis)
@@ -176,114 +171,61 @@ const plainText = (text) => String(text || "").replace(RUBY_RE, (m, base, a, b, 
 
 // ---------- Furigana otomatis ----------
 // Teks yang sudah diberi furigana manual (漢字[かん字] / 漢字（かんじ）) tidak diubah.
-const AUTO = { kuro: null, ready: false, loading: null, cache: new Map() };
+const AUTO = { ready: false, loading: null, cache: new Map(), readings: null };
 const KANJI_RE = /[\u3400-\u9fff々]/;
 
 // Ambil versi berfurigana dari cache (jika belum ada, pakai teks asli)
 const annSync = (text) => (AUTO.cache.has(text) ? AUTO.cache.get(text) : text);
 
-function loadScript(src) {
-  return new Promise((resolve, reject) => {
-    const s = document.createElement("script");
-    s.src = src;
-    s.onload = resolve;
-    s.onerror = () => reject(new Error("Gagal memuat " + src));
-    document.head.appendChild(s);
-  });
-}
-
-function initAutoFurigana() {
+function loadPrecomputedFurigana() {
   if (AUTO.loading) return AUTO.loading;
-  AUTO.loading = (async () => {
-    try {
-      await loadScript(CONFIG.KUROSHIRO_URL);
-      const K = window.Kuroshiro && (window.Kuroshiro.default || window.Kuroshiro);
-      if (!K) throw new Error("Pustaka Kuroshiro tidak ditemukan");
-
-      let lastError;
-      for (const source of CONFIG.KUROMOJI_SOURCES) {
-        try {
-          await loadScript(source.js);
-          await loadScript(CONFIG.ANALYZER_URL);
-          const A = window.KuromojiAnalyzer && (window.KuromojiAnalyzer.default || window.KuromojiAnalyzer);
-          if (!A) throw new Error("Pustaka analyzer Kuromoji tidak ditemukan");
-          const kuro = new K();
-          await kuro.init(new A({ dictPath: source.dict }));
-          AUTO.kuro = kuro;
-          AUTO.ready = true;
-          console.log("Furigana otomatis siap.");
-          return true;
-        } catch (err) {
-          lastError = err;
-          console.warn("Gagal memuat kamus furigana dari " + source.dict + "; mencoba sumber berikutnya.", err);
-        }
+  AUTO.loading = fetch(CONFIG.FURIGANA_URL)
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status} saat memuat ${CONFIG.FURIGANA_URL}`);
+      return res.json();
+    })
+    .then((readings) => {
+      if (!readings || typeof readings !== "object" || Array.isArray(readings)) {
+        throw new Error("Format data furigana tidak valid.");
       }
-      throw lastError || new Error("Semua sumber kamus furigana gagal dimuat");
-    } catch (err) {
-      console.warn("Furigana otomatis tidak aktif (furigana manual tetap berfungsi):", err);
+      AUTO.readings = readings;
+      AUTO.ready = true;
+      registerFurigana(state.story);
+      return true;
+    })
+    .catch((err) => {
+      console.error("Furigana yang sudah disiapkan gagal dimuat:", err);
       return false;
-    }
-  })().finally(() => {
-    if (!AUTO.ready) AUTO.loading = null;
-  });
+    })
+    .finally(() => {
+      AUTO.loading = null;
+    });
   return AUTO.loading;
 }
 
-async function convertPlain(s) {
-  if (!s || !KANJI_RE.test(s)) return s;
-  try {
-    const html = await AUTO.kuro.convert(s, { mode: "furigana", to: "hiragana" });
-    return html
-      .replace(/<ruby>([^<]*?)(?:<rp>[^<]*<\/rp>)?<rt>([^<]*?)<\/rt>(?:<rp>[^<]*<\/rp>)?<\/ruby>/g, "\uE000$1\uE001$2\uE002")
-      .replace(/<[^>]+>/g, "");
-  } catch (e) {
-    return s;
-  }
+function registerFurigana(story) {
+  if (!AUTO.readings || !story) return;
+  Object.entries(story).forEach(([id, node]) => {
+    const reading = AUTO.readings[id];
+    if (!reading || node.text !== reading.sourceText) return;
+    AUTO.cache.set(node.text, reading.text);
+    (node.choices || []).forEach((choice, index) => {
+      const choiceReading = reading.choices && reading.choices[index];
+      if (choiceReading && choice.text === choiceReading.source) {
+        AUTO.cache.set(choice.text, choiceReading.text);
+      }
+    });
+  });
 }
 
-async function annotateText(text) {
-  text = String(text || "");
-  if (!AUTO.ready || !KANJI_RE.test(text)) return text;
-  if (AUTO.cache.has(text)) return AUTO.cache.get(text);
-
-  const manual = new RegExp(RUBY_RE.source, "g");
-  let out = "";
-  let last = 0;
-  let m;
-  while ((m = manual.exec(text)) !== null) {
-    out += (await convertPlain(text.slice(last, m.index))) + m[0];
-    last = m.index + m[0].length;
-  }
-  out += await convertPlain(text.slice(last));
-  AUTO.cache.set(text, out);
-  return out;
-}
-
-async function prepareNode(node) {
-  const texts = [node.text, ...(node.choices || []).map((c) => c.text)];
-  await Promise.all(texts.map(annotateText));
-}
-
-// Furigana otomatis bersifat opsional; jangan tahan adegan saat kamus diunduh.
-async function refreshCurrentFurigana() {
+async function ensureFurigana() {
+  if (!state.settings.furigana) return;
+  if (!AUTO.ready && !(await loadPrecomputedFurigana())) return;
   const node = state.node;
   if (!state.started || !node) return;
-  await prepareNode(node);
   if (!state.settings.furigana || state.node !== node || state.typing) return;
   el.text.innerHTML = richHTML(node.text);
   showChoicesOrNext();
-}
-
-function ensureFurigana() {
-  if (!state.settings.furigana) return;
-  if (AUTO.ready) {
-    refreshCurrentFurigana();
-    return;
-  }
-  if (AUTO.loading) return;
-  initAutoFurigana().then((ready) => {
-    if (ready && state.settings.furigana) refreshCurrentFurigana();
-  });
 }
 
 // ---------- Link Google Drive -> link yang bisa dipakai <img>/<audio> ----------
@@ -326,7 +268,6 @@ function prefetchNeighbors(node) {
     if (!n) return;
     preloadImage(mediaUrl(n.background, "image"));
     preloadImage(mediaUrl(n.character, "image"));
-    prepareNode(n);
   });
 }
 
@@ -443,6 +384,7 @@ function useData(data) {
     const tema = String(t.tema || "").trim().toLowerCase();
     if (tema && t.assets) state.themes[tema] = t.assets;
   });
+  if (AUTO.ready) registerFurigana(data.story);
 }
 
 function friendlyError(err) {
@@ -927,7 +869,6 @@ async function loadScene(key) {
 
   // Furigana dimuat di latar belakang hanya jika diaktifkan di pengaturan.
   await Promise.race([Promise.all([preloadImage(bg), preloadImage(ch)]), sleep(CONFIG.IMAGE_WAIT)]);
-  await prepareNode(node);
   if (token !== state.token) return;
 
   state.nodeKey = key;
@@ -1208,7 +1149,7 @@ function renderSettings(box) {
   // Sakelar
   [
     ["sound", "Suara"],
-    ["furigana", "Furigana otomatis (unduh kamus saat diaktifkan)"],
+    ["furigana", "Furigana (bacaan siap, bisa dinyalakan/matikan)"],
     ["translation", "Terjemahan Indonesia"],
   ].forEach(([key, label]) => {
     const row = h("div", "switch-row");
