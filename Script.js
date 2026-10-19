@@ -10,9 +10,8 @@ const CONFIG = {
   IMAGE_WAIT: 2500,       // maksimal menunggu gambar adegan (ms)
   BGM_VOLUME: 0.3,        // volume backsound (0 - 1)
 
-  // Furigana otomatis aktif: kanji diberi cara baca (furigana) secara otomatis
-  // agar pemain bisa belajar membaca. Kamus diunduh sekali lalu di-cache browser.
-  AUTO_FURIGANA: true,
+  // Jangan unduh/pindai kamus besar otomatis saat startup; furigana manual tetap tersedia.
+  AUTO_FURIGANA: false,
   KUROSHIRO_URL: "https://cdn.jsdelivr.net/npm/kuroshiro@1.2.0/dist/kuroshiro.min.js",
   ANALYZER_URL: "https://cdn.jsdelivr.net/npm/kuroshiro-analyzer-kuromoji@1.1.0/dist/kuroshiro-analyzer-kuromoji.min.js",
   DICT_PATH: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/",
