@@ -20,9 +20,10 @@ const CONFIG = {
 
   // Layar judul & pilihan karakter (sesuaikan folder jika file Anda ada di tempat lain)
   TITLE_BG: "assets/background/bg_sakura.png",
+  PLAYER_KEY: "vn_player_v1",
   PLAYERS: [
-    { id: "girl", name: "Perempuan", jp: "女の子", img: "assets/character/char_girl.png" },
-    { id: "boy",  name: "Laki-laki", jp: "男の子", img: "assets/character/char_boy.png" },
+    { id: "girl", name: "あやの", img: "assets/character/char_girl.png" },
+    { id: "boy",  name: "そら",   img: "assets/character/char_boy.png" },
   ],
 };
 
@@ -68,9 +69,8 @@ const el = {
   title: $("title"),
   titleGirl: $("title-girl"),
   titleBoy: $("title-boy"),
-  charselect: $("charselect"),
-  charGrid: $("charselect-grid"),
-  charBack: $("charselect-back"),
+  pickLabel: $("pick-label"),
+  pickCards: Array.from(document.querySelectorAll(".pick-card")),
   btnStart: $("btn-start"),
   btnContinue: $("btn-continue"),
   btnSettings: $("btn-settings"),
@@ -99,7 +99,7 @@ const state = {
   settings: Object.assign({}, DEFAULT_SETTINGS),
   nodeKey: null,
   node: null,
-  player: "",
+  player: (() => { const v = readStore(CONFIG.PLAYER_KEY); return CONFIG.PLAYERS.some((p) => p.id === v) ? v : ""; })(),
   started: false,
   busy: false,
   typing: false,
@@ -467,6 +467,7 @@ async function showTitle() {
     img.hidden = false;
     img.src = url;
   });
+  renderPick();
 
   const saved = readJSON(CONFIG.SAVE_KEY);
   const canContinue = saved && saved.key && saved.key !== CONFIG.START_NODE && state.story[saved.key];
@@ -495,50 +496,43 @@ function startGame(key, saved, themeName) {
   el.stage.classList.remove("is-menu");
   el.title.classList.add("is-hidden");
   el.themes.classList.add("is-hidden");
-  el.charselect.classList.add("is-hidden");
   closeModal();
   loadScene(key);
 }
 
-// ---------- Pilih karakter ----------
-function showCharacterSelect() {
-  const cards = CONFIG.PLAYERS.map((p, index) => {
-    const btn = h("button", "char-card");
-    btn.type = "button";
-    btn.style.setProperty("--i", String(index));
-    btn.setAttribute("aria-pressed", String(state.player === p.id));
-
-    const img = h("img");
-    img.alt = "";
-    img.src = mediaUrl(p.img, "image");
-    img.addEventListener("error", () => { img.style.visibility = "hidden"; });
-
-    const jp = h("div", "char-jp", p.jp);
-    jp.lang = "ja";
-
-    btn.append(img, h("div", "char-name", p.name), jp);
-    btn.addEventListener("click", () => {
-      state.player = p.id;
-      el.charselect.classList.add("is-hidden");
-      if (state.themeList.length) showThemeSelect();
-      else startGame(CONFIG.START_NODE);
-    });
-    return btn;
+// ---------- Pilih karakter (langsung di menu utama) ----------
+function renderPick() {
+  el.pickCards.forEach((card) => {
+    const p = CONFIG.PLAYERS.find((x) => x.id === card.dataset.player);
+    const nameEl = card.querySelector(".pick-name");
+    if (p && nameEl) nameEl.textContent = p.name;
+    const on = card.dataset.player === state.player;
+    card.classList.toggle("is-selected", on);
+    card.classList.toggle("is-dim", Boolean(state.player) && !on);
+    card.setAttribute("aria-pressed", String(on));
   });
-
-  el.charGrid.replaceChildren(...cards);
-  el.charselect.classList.remove("is-hidden");
-  const first = el.charGrid.querySelector("button");
-  if (first) first.focus({ preventScroll: true });
 }
 
-// Setelah memilih tema, mulai dari adegan intro (mis. stasiun_intro_01) jika ada;
-// kalau tidak ada, langsung ke adegan awal tema seperti biasa.
-function introStart(theme) {
-  const prefix = String(theme.start || "").split("_")[0];
-  const candidates = [prefix, String(theme.tema || "")].filter(Boolean).map((p) => `${p}_intro_01`);
-  return candidates.find((id) => getNode(id)) || theme.start;
+function choosePlayer(id) {
+  state.player = id;
+  writeStore(CONFIG.PLAYER_KEY, id);
+  el.pickLabel.classList.remove("is-nudge");
+  renderPick();
 }
+
+function startNewGame() {
+  if (!state.player) {
+    // Belum memilih karakter: goyangkan tulisan "Pilih Karakter"
+    el.pickLabel.classList.remove("is-nudge");
+    void el.pickLabel.offsetWidth;
+    el.pickLabel.classList.add("is-nudge");
+    return;
+  }
+  if (state.themeList.length) showThemeSelect();
+  else startGame(CONFIG.START_NODE);
+}
+
+el.pickCards.forEach((card) => card.addEventListener("click", () => choosePlayer(card.dataset.player)));
 
 // ---------- Pilih tema ----------
 function showThemeSelect() {
@@ -585,7 +579,6 @@ function showMenu() {
   el.stage.classList.remove("has-choices");
   el.ending.classList.add("is-hidden");
   el.themes.classList.add("is-hidden");
-  el.charselect.classList.add("is-hidden");
   closeModal();
   showTitle();
 }
@@ -1027,7 +1020,7 @@ async function loadScene(key) {
 
 // ---------- Interaksi ----------
 function uiBlocked() {
-  return !isHidden(el.overlay) || !isHidden(el.title) || !isHidden(el.themes) || !isHidden(el.charselect) || !isHidden(el.modal) || !isHidden(el.ending);
+  return !isHidden(el.overlay) || !isHidden(el.title) || !isHidden(el.themes) || !isHidden(el.modal) || !isHidden(el.ending);
 }
 
 function advance() {
@@ -1075,12 +1068,8 @@ el.settingsBtn.addEventListener("click", (e) => {
   openSettings();
 });
 
-el.btnStart.addEventListener("click", showCharacterSelect);
-el.charBack.addEventListener("click", () => el.charselect.classList.add("is-hidden"));
-el.themesBack.addEventListener("click", () => {
-  el.themes.classList.add("is-hidden");
-  showCharacterSelect();
-});
+el.btnStart.addEventListener("click", startNewGame);
+el.themesBack.addEventListener("click", () => el.themes.classList.add("is-hidden"));
 el.btnSettings.addEventListener("click", openSettings);
 el.btnAbout.addEventListener("click", openAbout);
 

@@ -12,7 +12,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"></noscript>
 
-  <link rel="stylesheet" href="Style.css?v=4">
+  <link rel="stylesheet" href="Style.css?v=5">
 <base target="_blank">
 <base target="_blank">
 </head>
@@ -69,13 +69,22 @@
         <span></span><span></span><span></span><span></span>
       </div>
 
-      <div class="title-chars" aria-hidden="true">
-        <img id="title-girl" alt="">
-        <img id="title-boy" alt="">
+      <div class="title-pick">
+        <p id="pick-label" class="pick-label">Pilih Karakter</p>
+        <div class="pick-row">
+          <button class="pick-card" type="button" data-player="girl" aria-pressed="false">
+            <span class="pick-name" lang="ja"></span>
+            <img id="title-girl" alt="">
+          </button>
+          <button class="pick-card" type="button" data-player="boy" aria-pressed="false">
+            <span class="pick-name" lang="ja"></span>
+            <img id="title-boy" alt="">
+          </button>
+        </div>
       </div>
       <div class="title-main">
         <h1 class="logo">
-          <span class="logo-en">Nihongo<br>Adventure</span>
+          <span class="logo-en">Nihongo <br>Adventure</span>
           <span class="logo-sakura" aria-hidden="true">🌸</span>
         </h1>
         <p class="logo-jp" lang="ja">by 漢字大好き</p>
@@ -88,16 +97,6 @@
         </div>
         <p class="title-foot" lang="ja">一緒にがんばりましょう！<span>Mari belajar bersama!</span></p>
       </div>
-    </section>
-
-    <!-- Layar pilih karakter -->
-    <section id="charselect" class="themes charsel is-hidden">
-      <div class="themes-head">
-        <button id="charselect-back" class="back-btn" type="button">‹ Kembali</button>
-        <h2 class="themes-title">Pilih Karakter</h2>
-        <p class="themes-sub">Siapa yang akan kamu mainkan?</p>
-      </div>
-      <div id="charselect-grid" class="charsel-grid"></div>
     </section>
 
     <!-- Layar pilih tema -->
@@ -180,6 +179,6 @@
   </script>
 
   <noscript>Game ini membutuhkan JavaScript agar bisa berjalan.</noscript>
-  <script src="Script.js?v=intro-tema-20261020"></script>
+  <script src="Script.js?v=pilih-menu-20261020"></script>
 </body>
 </html>
