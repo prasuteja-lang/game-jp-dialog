@@ -16,8 +16,8 @@
 // Furigana: tulis kanji lalu cara bacanya dalam kurung siku, mis.
 //  駅[えき]はどこですか？   ->  tampil dengan furigana di atas 駅
 //
-// SHEET "Kosakata" (opsional): A kanji | B yomi | C romaji | D arti
-// SHEET "Tata Bahasa" (opsional): A pola | B arti | C contoh | D terjemahan_contoh
+// SHEET "Kosakata" (opsional): A tema | B kanji | C yomi | D romaji | E arti
+// SHEET "Tata Bahasa" (opsional): A tema | B pola | C arti | D contoh | E terjemahan_contoh
 // SHEET "Tema" (pilihan tema di menu): A NO | B Tema | C Assets (backsound) | D Mulai (id adegan awal)
 //                                      | E Judul | F Judul_JP | G Deskripsi | H Ikon (emoji)
 // =====================================================================
@@ -117,10 +117,11 @@ function readVocab_(sheet) {
     var r = rows[i];
     if (!clean_(r[0]) && !clean_(r[1])) continue;
     list.push({
-      kanji: clean_(r[0]),
-      yomi: clean_(r[1]),
-      romaji: clean_(r[2]),
-      arti: clean_(r[3])
+      tema: clean_(r[0]),
+      kanji: clean_(r[1]),
+      yomi: clean_(r[2]),
+      romaji: clean_(r[3]),
+      arti: clean_(r[4])
     });
   }
   return list;
@@ -131,12 +132,13 @@ function readGrammar_(sheet) {
   var list = [];
   for (var i = 0; i < rows.length; i++) {
     var r = rows[i];
-    if (!clean_(r[0])) continue;
+    if (!clean_(r[0]) && !clean_(r[1])) continue;
     list.push({
-      pola: clean_(r[0]),
-      arti: clean_(r[1]),
-      contoh: clean_(r[2]),
-      terjemahan: clean_(r[3])
+      tema: clean_(r[0]),
+      pola: clean_(r[1]),
+      arti: clean_(r[2]),
+      contoh: clean_(r[3]),
+      terjemahan: clean_(r[4])
     });
   }
   return list;

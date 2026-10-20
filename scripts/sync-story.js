@@ -24,6 +24,9 @@ async function main() {
   if (!data.story || !data.story.stasiun_awal || !data.story.kb_start) {
     throw new Error("Data API harus berisi adegan stasiun_awal dan kb_start sebelum disimpan.");
   }
+  if ([...(data.vocab || []), ...(data.grammar || [])].some((row) => !String(row.tema || "").trim())) {
+    throw new Error("Kolom Tema belum tersedia pada respons API. Perbarui dan deploy Google Apps Script sebelum sinkronisasi.");
+  }
 
   Object.values(data.story).forEach((node) => {
     node.background = normalizeAsset(node.background, "image");

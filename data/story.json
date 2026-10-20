@@ -909,7 +909,7 @@
       "next": "",
       "translation": "Hai, kerja bagus! Hari ini panas banget kan? Ngadem di konbini yuk.",
       "chapter": "1. Depan Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -934,7 +934,7 @@
       "next": "",
       "translation": "Oh, oke. Aku numpang baca majalah di dalam ya.",
       "chapter": "1. Depan Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -959,7 +959,7 @@
       "next": "",
       "translation": "(Menarik uang di ATM, lalu menghampiri Ken)",
       "chapter": "1. Depan Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -984,7 +984,7 @@
       "next": "",
       "translation": "Ada-ada aja (haha). Buruan tarik uangnya sana.",
       "chapter": "1. Depan Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1009,7 +1009,7 @@
       "next": "",
       "translation": "Nah, mau beli apa? Lapar? Atau minum aja?",
       "chapter": "2. Masuk Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1034,7 +1034,7 @@
       "next": "",
       "translation": "Oh, manga ini keluar volume barunya!",
       "chapter": "2. Masuk Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1059,7 +1059,7 @@
       "next": "",
       "translation": "Yah, nanti aku beli e-booknya aja deh. Pokoknya kita lihat minuman yuk.",
       "chapter": "2. Masuk Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1084,7 +1084,7 @@
       "next": "",
       "translation": "Minum apa? Aku kan udah kelar kerja, mau beli bir ah.",
       "chapter": "3. Minuman",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1109,7 +1109,7 @@
       "next": "",
       "translation": "Sip. Lanjut makanan gimana? Bento porsi besar?",
       "chapter": "4. Makanan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1134,7 +1134,7 @@
       "next": "",
       "translation": "Oh, ada katsudon nih. Sisa satu!",
       "chapter": "4. Makanan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1159,7 +1159,7 @@
       "next": "",
       "translation": "Kalau onigiri sih udah pasti tuna mayo!",
       "chapter": "4. Makanan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1184,7 +1184,7 @@
       "next": "",
       "translation": "Hot snack pesannya di kasir aja nanti... Ayo ke kasir sekarang.",
       "chapter": "4. Makanan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1209,7 +1209,7 @@
       "next": "",
       "translation": "Dessert? Punya perut terpisah buat yang manis-manis ceritanya (haha).",
       "chapter": "4. Makanan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1234,7 +1234,7 @@
       "next": "",
       "translation": "Wah, kasirnya lumayan antre.",
       "chapter": "5. Kasir (Antre)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1259,7 +1259,7 @@
       "next": "",
       "translation": "Pelanggan berikutnya yang menunggu, silakan ke kasir sebelah sini!",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1284,7 +1284,7 @@
       "next": "",
       "translation": "Selamat datang. Apakah Anda memiliki kartu poin?",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1309,7 +1309,7 @@
       "next": "",
       "translation": "Saya scan ya. ...Terima kasih.",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1334,7 +1334,7 @@
       "next": "",
       "translation": "Baik, mengerti.",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1359,7 +1359,7 @@
       "next": "",
       "translation": "Ah, permisi. Minta Famichiki-nya satu, dan bakpao daging satu.",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1384,7 +1384,7 @@
       "next": "",
       "translation": "Famichiki dan bakpao daging ya. Baik.",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1409,7 +1409,7 @@
       "next": "",
       "translation": "Anda membeli alkohol ya. Mohon maaf, silakan sentuh tombol konfirmasi usia di layar.",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1434,7 +1434,7 @@
       "next": "",
       "translation": "Terima kasih. Saat ini cafe latte sedang diskon 50 yen, apakah Anda mau sekalian?",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1459,7 +1459,7 @@
       "next": "",
       "translation": "Apakah Anda akan menggunakan kantong plastik? Tergantung ukuran, harganya 3 atau 5 yen.",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1484,7 +1484,7 @@
       "next": "",
       "translation": "Barang yang panas dan yang dingin, kantongnya mau dipisah?",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1509,7 +1509,7 @@
       "next": "",
       "translation": "Baik. Apakah ada yang perlu dihangatkan?",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1534,7 +1534,7 @@
       "next": "",
       "translation": "Tunggu sebentar. ...(Suara microwave)",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1559,7 +1559,7 @@
       "next": "",
       "translation": "Terima kasih sudah menunggu. Mau disertakan sumpit atau sendok?",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1584,7 +1584,7 @@
       "next": "",
       "translation": "Apakah Anda membutuhkan tisu basah (oshibori)?",
       "chapter": "6. Kasir (Interaksi)",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1609,7 +1609,7 @@
       "next": "",
       "translation": "Total tagihannya menjadi 1.850 yen.",
       "chapter": "7. Pembayaran",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1634,7 +1634,7 @@
       "next": "",
       "translation": "(Pi pi pi...) Mohon maaf, sepertinya saldo Suica Anda tidak mencukupi.",
       "chapter": "7. Pembayaran",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1659,7 +1659,7 @@
       "next": "",
       "translation": "Ya, bisa. Kekurangannya adalah 350 yen.",
       "chapter": "7. Pembayaran",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1684,7 +1684,7 @@
       "next": "",
       "translation": "Oops, kalau nggak ada uang tunai mau kupinjami?",
       "chapter": "7. Pembayaran",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1709,7 +1709,7 @@
       "next": "",
       "translation": "Saya terima uangnya. Ini kembaliannya.",
       "chapter": "7. Pembayaran",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1734,7 +1734,7 @@
       "next": "",
       "translation": "Apakah Anda memerlukan struknya?",
       "chapter": "7. Pembayaran",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1759,7 +1759,7 @@
       "next": "",
       "translation": "Terima kasih banyak. Silakan datang kembali!",
       "chapter": "8. Keluar Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1784,7 +1784,7 @@
       "next": "",
       "translation": "Fuh, udah beli! Makan di bangku luar yuk.",
       "chapter": "8. Keluar Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1809,7 +1809,7 @@
       "next": "",
       "translation": "(Duduk di bangku luar, lalu membuka barang belanjaan)",
       "chapter": "8. Keluar Konbini",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1834,7 +1834,7 @@
       "next": "",
       "translation": "Enak! Birnya juga mantap! ...Eh, ngomong-ngomong rencana liburan musim panas udah ada belum?",
       "chapter": "9. Liburan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1859,7 +1859,7 @@
       "next": "",
       "translation": "Masa? Kalau gitu mau pergi ke pantai bareng-bareng nggak?",
       "chapter": "9. Liburan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1884,7 +1884,7 @@
       "next": "",
       "translation": "Oh, pulang kampung ya. Jangan lupa oleh-oleh lho! (haha)",
       "chapter": "9. Liburan",
-      "ending": "false",
+      "ending": "",
       "endingTitle": "",
       "theme": "Konbini",
       "choices": [
@@ -1978,474 +1978,1483 @@
   },
   "vocab": [
     {
+      "tema": "Station",
       "kanji": "駅",
       "yomi": "えき",
       "romaji": "eki",
       "arti": "stasiun"
     },
     {
+      "tema": "Station",
       "kanji": "駅員",
       "yomi": "えきいん",
       "romaji": "ekiin",
       "arti": "petugas stasiun"
     },
     {
+      "tema": "Station",
       "kanji": "",
       "yomi": "いらっしゃいませ",
       "romaji": "irasshaimase",
       "arti": "selamat datang (sapaan toko/stasiun)"
     },
     {
+      "tema": "Station",
       "kanji": "",
       "yomi": "ようこそ",
       "romaji": "yōkoso",
       "arti": "selamat datang"
     },
     {
+      "tema": "Station",
       "kanji": "本日",
       "yomi": "ほんじつ",
       "romaji": "honjitsu",
       "arti": "hari ini (bentuk sopan)"
     },
     {
+      "tema": "Station",
       "kanji": "東京",
       "yomi": "とうきょう",
       "romaji": "Tōkyō",
       "arti": "Tokyo"
     },
     {
+      "tema": "Station",
       "kanji": "京都",
       "yomi": "きょうと",
       "romaji": "Kyōto",
       "arti": "Kyoto"
     },
     {
+      "tema": "Station",
       "kanji": "新幹線",
       "yomi": "しんかんせん",
       "romaji": "shinkansen",
       "arti": "Shinkansen (kereta cepat)"
     },
     {
+      "tema": "Station",
       "kanji": "在来線",
       "yomi": "ざいらいせん",
       "romaji": "zairaisen",
       "arti": "jalur/kereta konvensional (non-Shinkansen)"
     },
     {
+      "tema": "Station",
       "kanji": "普通電車",
       "yomi": "ふつうでんしゃ",
       "romaji": "futsū densha",
       "arti": "kereta biasa (lokal)"
     },
     {
+      "tema": "Station",
       "kanji": "普通列車",
       "yomi": "ふつうれっしゃ",
       "romaji": "futsū ressha",
       "arti": "kereta api biasa (lokal)"
     },
     {
+      "tema": "Station",
       "kanji": "特急",
       "yomi": "とっきゅう",
       "romaji": "tokkyū",
       "arti": "kereta ekspres terbatas"
     },
     {
+      "tema": "Station",
       "kanji": "席",
       "yomi": "せき",
       "romaji": "seki",
       "arti": "kursi / tempat duduk"
     },
     {
+      "tema": "Station",
       "kanji": "指定席",
       "yomi": "していせき",
       "romaji": "shiteiseki",
       "arti": "kursi reserved (bernomor)"
     },
     {
+      "tema": "Station",
       "kanji": "自由席",
       "yomi": "じゆうせき",
       "romaji": "jiyūseki",
       "arti": "kursi bebas (tanpa reservasi)"
     },
     {
+      "tema": "Station",
       "kanji": "窓側",
       "yomi": "まどがわ",
       "romaji": "madogawa",
       "arti": "sisi jendela"
     },
     {
+      "tema": "Station",
       "kanji": "富士山",
       "yomi": "ふじさん",
       "romaji": "Fujisan",
       "arti": "Gunung Fuji"
     },
     {
+      "tema": "Station",
       "kanji": "切符",
       "yomi": "きっぷ",
       "romaji": "kippu",
       "arti": "tiket"
     },
     {
+      "tema": "Station",
       "kanji": "乗車券",
       "yomi": "じょうしゃけん",
       "romaji": "jōshaken",
       "arti": "tiket perjalanan (tarif dasar)"
     },
     {
+      "tema": "Station",
       "kanji": "特急券",
       "yomi": "とっきゅうけん",
       "romaji": "tokkyūken",
       "arti": "tiket tambahan ekspres terbatas"
     },
     {
+      "tema": "Station",
       "kanji": "大人",
       "yomi": "おとな",
       "romaji": "otona",
       "arti": "dewasa"
     },
     {
+      "tema": "Station",
       "kanji": "枚",
       "yomi": "まい",
       "romaji": "mai",
       "arti": "penghitung benda tipis/lembaran (tiket, kertas)"
     },
     {
+      "tema": "Station",
       "kanji": "合計",
       "yomi": "ごうけい",
       "romaji": "gōkei",
       "arti": "total"
     },
     {
+      "tema": "Station",
       "kanji": "現金",
       "yomi": "げんきん",
       "romaji": "genkin",
       "arti": "uang tunai"
     },
     {
+      "tema": "Station",
       "kanji": "領収書",
       "yomi": "りょうしゅうしょ",
       "romaji": "ryōshūsho",
       "arti": "kuitansi"
     },
     {
+      "tema": "Station",
       "kanji": "支払い",
       "yomi": "しはらい",
       "romaji": "shiharai",
       "arti": "pembayaran"
     },
     {
+      "tema": "Station",
       "kanji": "払う",
       "yomi": "はらう",
       "romaji": "harau",
       "arti": "membayar"
     },
     {
+      "tema": "Station",
       "kanji": "暗証番号",
       "yomi": "あんしょうばんごう",
       "romaji": "anshō bangō",
       "arti": "nomor PIN"
     },
     {
+      "tema": "Station",
       "kanji": "精算機",
       "yomi": "せいさんき",
       "romaji": "seisanki",
       "arti": "mesin seisan (penyesuaian tarif/saldo kartu IC)"
     },
     {
+      "tema": "Station",
       "kanji": "改札",
       "yomi": "かいさつ",
       "romaji": "kaisatsu",
       "arti": "gerbang tiket"
     },
     {
+      "tema": "Station",
       "kanji": "番線",
       "yomi": "ばんせん",
       "romaji": "bansen",
       "arti": "nomor jalur/peron"
     },
     {
+      "tema": "Station",
       "kanji": "",
       "yomi": "ホーム",
       "romaji": "hōmu",
       "arti": "peron"
     },
     {
+      "tema": "Station",
       "kanji": "駅弁",
       "yomi": "えきべん",
       "romaji": "ekiben",
       "arti": "bento stasiun"
     },
     {
+      "tema": "Station",
       "kanji": "売店",
       "yomi": "ばいてん",
       "romaji": "baiten",
       "arti": "kios / toko kecil"
     },
     {
+      "tema": "Station",
       "kanji": "お茶",
       "yomi": "おちゃ",
       "romaji": "ocha",
       "arti": "teh"
     },
     {
+      "tema": "Station",
       "kanji": "荷物",
       "yomi": "にもつ",
       "romaji": "nimotsu",
       "arti": "bagasi / barang bawaan"
     },
     {
+      "tema": "Station",
       "kanji": "預ける",
       "yomi": "あずける",
       "romaji": "azukeru",
       "arti": "menitipkan"
     },
     {
+      "tema": "Station",
       "kanji": "両替",
       "yomi": "りょうがえ",
       "romaji": "ryōgae",
       "arti": "penukaran uang"
     },
     {
+      "tema": "Station",
       "kanji": "券売機",
       "yomi": "けんばいき",
       "romaji": "kenbaiki",
       "arti": "mesin tiket otomatis"
     },
     {
+      "tema": "Station",
       "kanji": "乗り換え",
       "yomi": "のりかえ",
       "romaji": "norikae",
       "arti": "transit / pindah kereta"
     },
     {
+      "tema": "Station",
       "kanji": "途中下車",
       "yomi": "とちゅうげしゃ",
       "romaji": "tochū gesha",
       "arti": "turun di tengah perjalanan"
     },
     {
+      "tema": "Station",
       "kanji": "景色",
       "yomi": "けしき",
       "romaji": "keshiki",
       "arti": "pemandangan"
     },
     {
+      "tema": "Station",
       "kanji": "安い",
       "yomi": "やすい",
       "romaji": "yasui",
       "arti": "murah"
     },
     {
+      "tema": "Station",
       "kanji": "混雑",
       "yomi": "こんざつ",
       "romaji": "konzatsu",
       "arti": "ramai / padat"
     },
     {
+      "tema": "Station",
       "kanji": "並ぶ",
       "yomi": "ならぶ",
       "romaji": "narabu",
       "arti": "antre / berbaris"
     },
     {
+      "tema": "Station",
       "kanji": "出発",
       "yomi": "しゅっぱつ",
       "romaji": "shuppatsu",
       "arti": "keberangkatan"
     },
     {
+      "tema": "Station",
       "kanji": "発車",
       "yomi": "はっしゃ",
       "romaji": "hassha",
       "arti": "(kereta) berangkat"
     },
     {
+      "tema": "Station",
       "kanji": "大丈夫",
       "yomi": "だいじょうぶ",
       "romaji": "daijōbu",
       "arti": "tidak apa-apa / aman"
     },
     {
+      "tema": "Station",
       "kanji": "友達",
       "yomi": "ともだち",
       "romaji": "tomodachi",
       "arti": "teman"
     },
     {
+      "tema": "Station",
       "kanji": "観光",
       "yomi": "かんこう",
       "romaji": "kankō",
       "arti": "wisata"
     },
     {
+      "tema": "Station",
       "kanji": "観光ガイドブック",
       "yomi": "かんこうガイドブック",
       "romaji": "kankō gaidobukku",
       "arti": "buku panduan wisata"
     },
     {
+      "tema": "Station",
       "kanji": "金閣寺",
       "yomi": "きんかくじ",
       "romaji": "Kinkakuji",
       "arti": "Kinkakuji (Paviliun Emas)"
     },
     {
+      "tema": "Station",
       "kanji": "清水寺",
       "yomi": "きよみずでら",
       "romaji": "Kiyomizudera",
       "arti": "Kiyomizudera"
     },
     {
+      "tema": "Station",
       "kanji": "抹茶",
       "yomi": "まっちゃ",
       "romaji": "matcha",
       "arti": "matcha / teh hijau bubuk"
     },
     {
+      "tema": "Station",
       "kanji": "老舗",
       "yomi": "しにせ",
       "romaji": "shinise",
       "arti": "toko ternama yang sudah lama berdiri"
     },
     {
+      "tema": "Station",
       "kanji": "烏丸口",
       "yomi": "からすまぐち",
       "romaji": "Karasumaguchi",
       "arti": "pintu keluar Karasuma (Stasiun Kyoto)"
     },
     {
+      "tema": "Station",
       "kanji": "承知いたしました",
       "yomi": "しょうちいたしました",
       "romaji": "shōchi itashimashita",
       "arti": "baik, saya mengerti (sangat sopan)"
     },
     {
+      "tema": "Station",
       "kanji": "",
       "yomi": "かしこまりました",
       "romaji": "kashikomarimashita",
       "arti": "baik, siap (sangat sopan)"
     },
     {
+      "tema": "Station",
       "kanji": "申し訳ございません",
       "yomi": "もうしわけございません",
       "romaji": "mōshiwake gozaimasen",
       "arti": "mohon maaf (sangat sopan)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "コンビニ",
+      "romaji": "konbini",
+      "arti": "minimarket (convenience store)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "お疲れ",
+      "yomi": "おつかれ",
+      "romaji": "otsukare",
+      "arti": "kerja bagus / halo (sapaan antar rekan)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "暑い",
+      "yomi": "あつい",
+      "romaji": "atsui",
+      "arti": "panas (cuaca)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "涼む",
+      "yomi": "すずむ",
+      "romaji": "suzumu",
+      "arti": "mendinginkan diri, berteduh di tempat sejuk"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "賛成",
+      "yomi": "さんせい",
+      "romaji": "sansei",
+      "arti": "setuju"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "喉",
+      "yomi": "のど",
+      "romaji": "nodo",
+      "arti": "tenggorokan (喉カラカラ = haus sekali)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "ATM",
+      "yomi": "エーティーエム",
+      "romaji": "ētīemu",
+      "arti": "ATM"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "お金",
+      "yomi": "おかね",
+      "romaji": "okane",
+      "arti": "uang"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "下ろす",
+      "yomi": "おろす",
+      "romaji": "orosu",
+      "arti": "menarik (uang dari ATM)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "雑誌",
+      "yomi": "ざっし",
+      "romaji": "zasshi",
+      "arti": "majalah"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "立ち読み",
+      "yomi": "たちよみ",
+      "romaji": "tachiyomi",
+      "arti": "membaca sambil berdiri di toko tanpa membeli"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "漫画",
+      "yomi": "まんが",
+      "romaji": "manga",
+      "arti": "komik (manga)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "新刊",
+      "yomi": "しんかん",
+      "romaji": "shinkan",
+      "arti": "terbitan baru"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "電子書籍",
+      "yomi": "でんししょせき",
+      "romaji": "denshi shoseki",
+      "arti": "buku elektronik (e-book)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "飲み物",
+      "yomi": "のみもの",
+      "romaji": "nomimono",
+      "arti": "minuman"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "仕事終わり",
+      "yomi": "しごとおわり",
+      "romaji": "shigoto owari",
+      "arti": "selesai kerja"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "ビール",
+      "romaji": "bīru",
+      "arti": "bir"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "お茶",
+      "yomi": "おちゃ",
+      "romaji": "ocha",
+      "arti": "teh"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "弁当",
+      "yomi": "べんとう",
+      "romaji": "bentō",
+      "arti": "bento (kotak makan)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "おにぎり",
+      "romaji": "onigiri",
+      "arti": "onigiri (nasi kepal)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "腹が減る",
+      "yomi": "はらがへる",
+      "romaji": "hara ga heru",
+      "arti": "lapar (kasual)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "ガッツリ",
+      "romaji": "gattsuri",
+      "arti": "porsi banyak, mengenyangkan (kasual)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "カツ丼",
+      "yomi": "かつどん",
+      "romaji": "katsudon",
+      "arti": "katsudon (nasi dengan irisan daging babi goreng)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "幕の内弁当",
+      "yomi": "まくのうちべんとう",
+      "romaji": "makunouchi bentō",
+      "arti": "bento makunouchi (nasi dengan beragam lauk)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "脂っこい",
+      "yomi": "あぶらっこい",
+      "romaji": "aburakkoi",
+      "arti": "berminyak"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "ツナマヨ",
+      "romaji": "tsuna mayo",
+      "arti": "isian tuna mayones"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "明太子",
+      "yomi": "めんたいこ",
+      "romaji": "mentaiko",
+      "arti": "mentaiko (telur ikan pollock berbumbu pedas)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "一択",
+      "yomi": "いったく",
+      "romaji": "ittaku",
+      "arti": "satu-satunya pilihan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "ホットスナック",
+      "romaji": "hotto sunakku",
+      "arti": "camilan panas (gorengan di etalase kasir)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "デザート",
+      "romaji": "dezāto",
+      "arti": "makanan penutup"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "プリン",
+      "romaji": "purin",
+      "arti": "puding"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "アイス",
+      "romaji": "aisu",
+      "arti": "es krim"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "別腹",
+      "yomi": "べつばら",
+      "romaji": "betsubara",
+      "arti": "\"perut lain\" khusus makanan manis"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "レジ",
+      "romaji": "reji",
+      "arti": "kasir"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "並ぶ",
+      "yomi": "ならぶ",
+      "romaji": "narabu",
+      "arti": "mengantre"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "夕方",
+      "yomi": "ゆうがた",
+      "romaji": "yūgata",
+      "arti": "sore hari"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "店員",
+      "yomi": "てんいん",
+      "romaji": "ten'in",
+      "arti": "pegawai toko"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "お客様",
+      "yomi": "おきゃくさま",
+      "romaji": "okyakusama",
+      "arti": "pelanggan (bentuk hormat)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "ポイントカード",
+      "romaji": "pointo kādo",
+      "arti": "kartu poin"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "アプリ",
+      "romaji": "apuri",
+      "arti": "aplikasi"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "スマホ",
+      "romaji": "sumaho",
+      "arti": "ponsel pintar"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "スキャン",
+      "romaji": "sukyan",
+      "arti": "memindai (scan)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "肉まん",
+      "yomi": "にくまん",
+      "romaji": "nikuman",
+      "arti": "bakpao daging"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "ファミチキ",
+      "romaji": "famichiki",
+      "arti": "ayam goreng khas FamilyMart (Famichiki)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "年齢確認",
+      "yomi": "ねんれいかくにん",
+      "romaji": "nenrei kakunin",
+      "arti": "konfirmasi usia"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "画面",
+      "yomi": "がめん",
+      "romaji": "gamen",
+      "arti": "layar"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "タッチ",
+      "romaji": "tacchi",
+      "arti": "menyentuh (layar)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "購入",
+      "yomi": "こうにゅう",
+      "romaji": "kōnyū",
+      "arti": "pembelian"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "恐れ入ります",
+      "yomi": "おそれいります",
+      "romaji": "osoreirimasu",
+      "arti": "mohon maaf (sopan, saat merepotkan)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "50円引き",
+      "yomi": "ごじゅうえんびき",
+      "romaji": "gojū en biki",
+      "arti": "diskon 50 yen"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "一緒",
+      "yomi": "いっしょ",
+      "romaji": "issho",
+      "arti": "bersama"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "レジ袋",
+      "yomi": "レジぶくろ",
+      "romaji": "reji bukuro",
+      "arti": "kantong plastik kasir"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "マイバッグ",
+      "romaji": "mai baggu",
+      "arti": "tas belanja sendiri"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "袋",
+      "yomi": "ふくろ",
+      "romaji": "fukuro",
+      "arti": "kantong"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "分ける",
+      "yomi": "わける",
+      "romaji": "wakeru",
+      "arti": "memisahkan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "温かい",
+      "yomi": "あたたかい",
+      "romaji": "atatakai",
+      "arti": "hangat (makanan/minuman)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "冷たい",
+      "yomi": "つめたい",
+      "romaji": "tsumetai",
+      "arti": "dingin (benda/minuman)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "温める",
+      "yomi": "あたためる",
+      "romaji": "atatameru",
+      "arti": "menghangatkan / memanaskan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "電子レンジ",
+      "yomi": "でんしレンジ",
+      "romaji": "denshi renji",
+      "arti": "microwave"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "少々",
+      "yomi": "しょうしょう",
+      "romaji": "shōshō",
+      "arti": "sebentar (sopan)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "箸",
+      "yomi": "はし",
+      "romaji": "hashi",
+      "arti": "sumpit"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "スプーン",
+      "romaji": "supūn",
+      "arti": "sendok"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "お手拭き",
+      "yomi": "おてふき",
+      "romaji": "otefuki",
+      "arti": "tisu/handuk basah kecil (disebut juga oshibori)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "会計",
+      "yomi": "かいけい",
+      "romaji": "kaikei",
+      "arti": "pembayaran / tagihan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "合計",
+      "yomi": "ごうけい",
+      "romaji": "gōkei",
+      "arti": "total"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "円",
+      "yomi": "えん",
+      "romaji": "en",
+      "arti": "yen"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "残高",
+      "yomi": "ざんだか",
+      "romaji": "zandaka",
+      "arti": "saldo"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "不足",
+      "yomi": "ふそく",
+      "romaji": "fusoku",
+      "arti": "kurang / tidak cukup"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "現金",
+      "yomi": "げんきん",
+      "romaji": "genkin",
+      "arti": "uang tunai"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "手持ち",
+      "yomi": "てもち",
+      "romaji": "temochi",
+      "arti": "uang/barang yang sedang dibawa"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "貸す",
+      "yomi": "かす",
+      "romaji": "kasu",
+      "arti": "meminjamkan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "預かる",
+      "yomi": "あずかる",
+      "romaji": "azukaru",
+      "arti": "menerima titipan (お預かりします = saya terima)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "お釣り",
+      "yomi": "おつり",
+      "romaji": "otsuri",
+      "arti": "uang kembalian"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "レシート",
+      "romaji": "reshīto",
+      "arti": "struk"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "家計簿",
+      "yomi": "かけいぼ",
+      "romaji": "kakeibo",
+      "arti": "buku catatan keuangan rumah tangga"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "捨てる",
+      "yomi": "すてる",
+      "romaji": "suteru",
+      "arti": "membuang"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "会釈",
+      "yomi": "えしゃく",
+      "romaji": "eshaku",
+      "arti": "anggukan hormat ringan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "頷く",
+      "yomi": "うなずく",
+      "romaji": "unazuku",
+      "arti": "mengangguk"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "夏休み",
+      "yomi": "なつやすみ",
+      "romaji": "natsuyasumi",
+      "arti": "libur musim panas"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "予定",
+      "yomi": "よてい",
+      "romaji": "yotei",
+      "arti": "rencana / jadwal"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "実家",
+      "yomi": "じっか",
+      "romaji": "jikka",
+      "arti": "rumah orang tua"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "帰省",
+      "yomi": "きせい",
+      "romaji": "kisei",
+      "arti": "pulang kampung"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "お土産",
+      "yomi": "おみやげ",
+      "romaji": "omiyage",
+      "arti": "oleh-oleh"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "海",
+      "yomi": "うみ",
+      "romaji": "umi",
+      "arti": "laut / pantai"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "山",
+      "yomi": "やま",
+      "romaji": "yama",
+      "arti": "gunung"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "キャンプ",
+      "romaji": "kyanpu",
+      "arti": "kemping"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "バーベキュー",
+      "romaji": "bābekyū",
+      "arti": "barbekyu"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "計画",
+      "yomi": "けいかく",
+      "romaji": "keikaku",
+      "arti": "rencana"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "期待",
+      "yomi": "きたい",
+      "romaji": "kitai",
+      "arti": "harapan; mengharapkan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "遅れる",
+      "yomi": "おくれる",
+      "romaji": "okureru",
+      "arti": "terlambat"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "いただきます",
+      "romaji": "itadakimasu",
+      "arti": "ucapan sebelum makan"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "腹ペコ",
+      "yomi": "はらぺこ",
+      "romaji": "harapeko",
+      "arti": "lapar sekali (kasual)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "冷める",
+      "yomi": "さめる",
+      "romaji": "sameru",
+      "arti": "menjadi dingin (makanan yang tadinya hangat)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "",
+      "yomi": "ベンチ",
+      "romaji": "benchi",
+      "arti": "bangku"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "美味い",
+      "yomi": "うまい",
+      "romaji": "umai",
+      "arti": "enak (kasual, biasanya dipakai pria)"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "最高",
+      "yomi": "さいこう",
+      "romaji": "saikō",
+      "arti": "terbaik / mantap"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "相談",
+      "yomi": "そうだん",
+      "romaji": "sōdan",
+      "arti": "berdiskusi / konsultasi"
+    },
+    {
+      "tema": "Konbini",
+      "kanji": "決まり",
+      "yomi": "きまり",
+      "romaji": "kimari",
+      "arti": "sudah diputuskan (決まり！= deal!)"
     }
   ],
   "grammar": [
     {
+      "tema": "Station",
       "pola": "〜へ行きたいです",
       "arti": "Ingin pergi ke ... (kata kerja bentuk -masu tanpa -masu + たい = ingin ...)",
       "contoh": "東京へ行きたいです。",
       "terjemahan": "Saya ingin pergi ke Tokyo."
     },
     {
+      "tema": "Station",
       "pola": "〜ですね！",
       "arti": "Penegasan/konfirmasi ramah: “... ya!”",
       "contoh": "東京ですね！",
       "terjemahan": "Tokyo ya!"
     },
     {
+      "tema": "Station",
       "pola": "AとB、どちらが〜ですか？",
       "arti": "Antara A dan B, yang mana ...? (pertanyaan memilih dua hal)",
       "contoh": "指定席と自由席、どちらがよろしいですか？",
       "terjemahan": "Kursi reserved atau kursi bebas, yang mana yang Anda inginkan?"
     },
     {
+      "tema": "Station",
       "pola": "〜で行く／〜に乗る",
       "arti": "〜で = menunjukkan alat/cara (naik/dengan ...). 〜に乗る = naik ke kendaraan.",
       "contoh": "新幹線で行きたいです！",
       "terjemahan": "Saya ingin pergi dengan Shinkansen!"
     },
     {
+      "tema": "Station",
       "pola": "〜にします",
       "arti": "Memutuskan memilih ...",
       "contoh": "それは長いですね。新幹線にします！",
       "terjemahan": "Itu lama sekali ya. Saya pilih Shinkansen saja!"
     },
     {
+      "tema": "Station",
       "pola": "〜をお願いします",
       "arti": "Tolong ... / Saya minta ... (meminta sesuatu dengan sopan)",
       "contoh": "大人1枚お願いします。",
       "terjemahan": "Dewasa 1 lembar, tolong."
     },
     {
+      "tema": "Station",
       "pola": "〜枚（まい）",
       "arti": "Penghitung benda tipis/lembaran: 1枚 いちまい, 2枚 にまい, 3枚 さんまい",
       "contoh": "大人2枚お願いします。",
       "terjemahan": "Dewasa 2 lembar, tolong."
     },
     {
+      "tema": "Station",
       "pola": "〜で払えますか？",
       "arti": "Bisakah (saya) membayar dengan ...? Bentuk potensial: 払う → 払える (bisa membayar)",
       "contoh": "ICカード（Suica）で払えますか？",
       "terjemahan": "Bisakah saya bayar dengan kartu IC (Suica)?"
     },
     {
+      "tema": "Station",
       "pola": "お／ご〜ください",
       "arti": "Permintaan sopan: “mohon ...” (お + kata kerja bentuk -masu tanpa -masu + ください)",
       "contoh": "早めにホームにお並びくださいね。",
       "terjemahan": "Mohon antre di peron lebih awal ya."
     },
     {
+      "tema": "Station",
       "pola": "〜ので、〜",
       "arti": "Karena ..., maka ... (alasan, nada sopan/lembut)",
       "contoh": "本日は混雑しておりますので、早めにホームにお並びくださいね。",
       "terjemahan": "Karena hari ini ramai, mohon antre di peron lebih awal ya."
     },
     {
+      "tema": "Station",
       "pola": "〜と、〜ます",
       "arti": "Kalau ..., maka ... (akibat yang pasti/biasa terjadi)",
       "contoh": "窓側の席（E席）にすると、途中で富士山がきれいに見えますよ！",
       "terjemahan": "Kalau memilih kursi jendela (kursi E), Gunung Fuji terlihat indah di tengah perjalanan!"
     },
     {
+      "tema": "Station",
       "pola": "〜ほど",
       "arti": "Kira-kira / sekitar (perkiraan jumlah atau waktu)",
       "contoh": "発車時刻の15分ほど前から並ばれると、座れる確率が高くなりますよ。",
       "terjemahan": "Kalau Anda antre sekitar 15 menit sebelum jam berangkat, peluang mendapat tempat duduk lebih besar."
     },
     {
+      "tema": "Station",
       "pola": "どちらの〜でも大丈夫です",
       "arti": "Yang mana pun ... tidak masalah (〜でも = apa pun/mana pun)",
       "contoh": "どちらの席でも大丈夫です。",
       "terjemahan": "Kursi yang mana pun tidak masalah."
     },
     {
+      "tema": "Station",
       "pola": "〜ておきたいです",
       "arti": "Ingin melakukan ... terlebih dahulu / sebagai persiapan (V-te + おく)",
       "contoh": "ICカードの精算もしておきたいです。",
       "terjemahan": "Saya juga ingin menyelesaikan seisan kartu IC lebih dulu."
     },
     {
+      "tema": "Station",
       "pola": "〜たところだ",
       "arti": "Baru saja melakukan ... (V-ta + ところ)",
       "contoh": "ちょうど特急券を買ったところだよ！",
       "terjemahan": "Aku baru saja beli tiket ekspres terbatas!"
     },
     {
+      "tema": "Station",
       "pola": "〜んだよ",
       "arti": "Menjelaskan alasan/keadaan dengan nada akrab (percakapan teman)",
       "contoh": "駅の売店で京都の観光ガイドブックを買ってたんだよ！",
       "terjemahan": "Aku tadi beli buku panduan wisata Kyoto di toko stasiun, lho!"
     },
     {
+      "tema": "Station",
       "pola": "〜て、それから〜",
       "arti": "Melakukan ..., lalu ... (urutan kegiatan)",
       "contoh": "まずは定番の金閣寺に行って、それから清水寺の夜間拝観に行こうぜ！",
       "terjemahan": "Pertama ke Kinkakuji yang klasik, lalu ayo ikut kunjungan malam di Kiyomizudera!"
     },
     {
+      "tema": "Station",
       "pola": "お／ご〜いたします",
       "arti": "Bentuk merendah (kenjōgo) petugas/pelayan: “saya akan ...”",
       "contoh": "それでは、切符は何枚ご用意いたしましょうか？",
       "terjemahan": "Kalau begitu, berapa lembar tiket yang perlu saya siapkan?"
     },
     {
+      "tema": "Station",
       "pola": "〜ございません／〜ございます",
       "arti": "Bentuk sangat sopan dari ありません / あります",
       "contoh": "申し訳ございません。特急券はICカードでのお支払いができません。",
       "terjemahan": "Mohon maaf. Tiket ekspres terbatas tidak bisa dibayar dengan kartu IC."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜くない？／〜じゃない？",
+      "arti": "Menanyakan persetujuan secara kasual: \"... kan?\"",
+      "contoh": "今日めっちゃ暑くない？",
+      "terjemahan": "Hari ini panas banget, kan?"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜ようぜ／〜ていこうぜ",
+      "arti": "Ajakan kasual (gaya pria): \"ayo ...\"",
+      "contoh": "コンビニで涼んで行こうぜ。",
+      "terjemahan": "Ayo ngadem di konbini."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜てもいい？",
+      "arti": "Meminta izin: \"boleh ...?\"",
+      "contoh": "その前にATM寄ってもいい？",
+      "terjemahan": "Boleh mampir ke ATM dulu sebelum itu?"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜てる（〜ている）＋わ",
+      "arti": "Sedang melakukan sesuatu (bentuk kasual); わ = penegas ringan",
+      "contoh": "雑誌コーナーで立ち読みしてるわ。",
+      "terjemahan": "Aku lagi baca-baca di bagian majalah ya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜てくれる？",
+      "arti": "Meminta tolong secara kasual: \"bisa ... untukku?\"",
+      "contoh": "ごめん、一緒に来てくれる？",
+      "terjemahan": "Maaf, bisa ikut denganku?"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜てくる／〜てこい",
+      "arti": "Pergi melakukan sesuatu lalu kembali",
+      "contoh": "早く下ろしてこいよ。",
+      "terjemahan": "Cepat sana tarik uangnya (lalu balik)."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜（よ）うかな",
+      "arti": "Mempertimbangkan sendiri: \"kira-kira ... ya\"",
+      "contoh": "本当だ！買おうかな。",
+      "terjemahan": "Bener juga! Beli aja kali ya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜じゃん",
+      "arti": "Menyadari/menegaskan sesuatu: \"kan / lho\"",
+      "contoh": "この漫画の新刊出てるじゃん！",
+      "terjemahan": "Lho, manga ini ada volume barunya!"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜だろ",
+      "arti": "Penegasan kasual: \"pasti ... kan\"",
+      "contoh": "おにぎりなら、ツナマヨ一択だろ！",
+      "terjemahan": "Kalau onigiri, ya pasti tuna mayo kan!"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜にする",
+      "arti": "Memutuskan pilihan: \"aku pilih ...\"",
+      "contoh": "俺は冷たいお茶にするよ。",
+      "terjemahan": "Aku pilih teh dingin."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "A の方が B",
+      "arti": "Perbandingan: \"A lebih B\"",
+      "contoh": "明太子の方が美味いって。",
+      "terjemahan": "Mentaiko lebih enak, tahu."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜なら",
+      "arti": "\"Kalau soal ... / kalau ...\"",
+      "contoh": "おにぎりなら、ツナマヨ一択だろ！",
+      "terjemahan": "Kalau soal onigiri, ya tuna mayo!"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜ないか（〜でも〜ないか）",
+      "arti": "Ajakan kasual: \"bagaimana kalau ...?\"",
+      "contoh": "みんなで海でも行かないか？",
+      "terjemahan": "Bagaimana kalau kita ke pantai bareng-bareng?"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜し",
+      "arti": "Menyebut salah satu alasan: \"lagipula ...\"",
+      "contoh": "夕方だし仕方ないね。",
+      "terjemahan": "Namanya juga sore, mau gimana lagi."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "仕方ない／しょうがない",
+      "arti": "Tidak ada pilihan lain / apa boleh buat",
+      "contoh": "しょうがねーな（笑）",
+      "terjemahan": "Ada-ada aja (haha)."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜として…",
+      "arti": "\"Anggap saja ... (lalu lanjut)\"",
+      "contoh": "ホットスナックはレジで頼むとして…",
+      "terjemahan": "Anggap saja hot snack dipesan di kasir nanti..."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜ってやつ",
+      "arti": "\"Yang namanya ...\"",
+      "contoh": "甘いものは別腹ってやつか。",
+      "terjemahan": "Yang namanya perut terpisah untuk makanan manis ya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "お〜ですか（お持ちですか）",
+      "arti": "Bentuk hormat (sonkeigo) untuk bertanya kepada pelanggan",
+      "contoh": "ポイントカードはお持ちですか？",
+      "terjemahan": "Apakah Anda punya kartu poin?"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "お／ご〜になりますか",
+      "arti": "Bentuk hormat: \"apakah Anda akan ...?\"",
+      "contoh": "レジ袋はお使いになりますか？",
+      "terjemahan": "Apakah Anda akan memakai kantong plastik?"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "お／ご〜いたします",
+      "arti": "Bentuk rendah hati (kenjōgo): \"saya akan ...\"",
+      "contoh": "お預かりいたします。",
+      "terjemahan": "Saya terima (uangnya)."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "お〜ください",
+      "arti": "Permintaan sopan: \"mohon ...\"",
+      "contoh": "少々お待ちください。",
+      "terjemahan": "Mohon tunggu sebentar."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "恐れ入りますが、〜てください",
+      "arti": "\"Mohon maaf, tolong ...\" (sangat sopan)",
+      "contoh": "恐れ入りますが、画面の年齢確認ボタンをタッチしてください。",
+      "terjemahan": "Mohon maaf, tolong sentuh tombol konfirmasi usia di layar."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜になります",
+      "arti": "Menyebut jumlah/hasil dengan sopan (di kasir)",
+      "contoh": "お会計、合計で1,850円になります。",
+      "terjemahan": "Tagihannya totalnya menjadi 1.850 yen."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "N を（数量）ください／お願いします",
+      "arti": "Memesan atau meminta sesuatu",
+      "contoh": "ファミチキ一つと、肉まん一つください。",
+      "terjemahan": "Minta Famichiki satu dan bakpao daging satu."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜ずつ",
+      "arti": "\"Masing-masing ...\"",
+      "contoh": "ファミチキと肉まんが一つずつですね。",
+      "terjemahan": "Famichiki dan bakpao daging masing-masing satu ya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜ですね",
+      "arti": "Mengonfirmasi sesuatu: \"... ya\"",
+      "contoh": "お酒をご購入ですね。",
+      "terjemahan": "Anda membeli alkohol ya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜はいかがですか",
+      "arti": "Menawarkan dengan sopan: \"bagaimana kalau ...?\"",
+      "contoh": "ご一緒にいかがですか？",
+      "terjemahan": "Bagaimana kalau sekalian?"
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜によって",
+      "arti": "\"Tergantung ...\"",
+      "contoh": "サイズによって3円か5円になります。",
+      "terjemahan": "Tergantung ukurannya, harganya 3 atau 5 yen."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜ので",
+      "arti": "Alasan: \"karena ...\"",
+      "contoh": "マイバッグがあるので不要です。",
+      "terjemahan": "Karena saya bawa tas belanja sendiri, tidak perlu."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜で大丈夫です／〜でいいです",
+      "arti": "\"... saja sudah cukup\"",
+      "contoh": "一緒で大丈夫です。",
+      "terjemahan": "Disatukan saja tidak apa-apa."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜てもらう",
+      "arti": "Meminta/mendapat bantuan orang lain melakukan sesuatu",
+      "contoh": "ケンにタッチしてもらう。",
+      "terjemahan": "Minta Ken yang menyentuhnya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜ないうちに",
+      "arti": "\"Selagi belum ...\"",
+      "contoh": "ファミチキ冷めないうちにね。",
+      "terjemahan": "Selagi Famichikinya belum dingin ya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜予定だ",
+      "arti": "Menyatakan rencana: \"berencana ...\"",
+      "contoh": "実家に帰る予定だよ。",
+      "terjemahan": "Rencananya mau pulang ke rumah orang tua."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "〜なかったら",
+      "arti": "Syarat negatif: \"kalau tidak ...\"",
+      "contoh": "忘れなかったらね。",
+      "terjemahan": "Kalau nggak lupa ya."
+    },
+    {
+      "tema": "Konbini",
+      "pola": "またお越しくださいませ",
+      "arti": "Ucapan sopan pegawai: \"silakan datang kembali\"",
+      "contoh": "ありがとうございました。またお越しくださいませ！",
+      "terjemahan": "Terima kasih. Silakan datang kembali!"
     }
   ],
   "themes": [

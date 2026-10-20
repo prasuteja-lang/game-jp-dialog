@@ -322,11 +322,33 @@ function hideOverlay() {
 // ---------- Ambil data dari Google Sheets ----------
 function normalize(data) {
   const story = data && data.story ? data.story : data;
+  const themes = data && Array.isArray(data.themes) ? data.themes : [];
+  const themeNames = new Set(themes.map((theme) => normKey(theme.tema)).filter(Boolean));
+  const vocab = data && Array.isArray(data.vocab) ? data.vocab : [];
+  const grammar = data && Array.isArray(data.grammar) ? data.grammar : [];
   return {
     story: story && typeof story === "object" ? story : {},
-    vocab: data && Array.isArray(data.vocab) ? data.vocab : [],
-    grammar: data && Array.isArray(data.grammar) ? data.grammar : [],
-    themes: data && Array.isArray(data.themes) ? data.themes : [],
+    vocab: vocab.map((row) => {
+      if (row.tema || !themeNames.has(normKey(row.kanji))) return row;
+      return {
+        tema: row.kanji,
+        kanji: row.yomi || "",
+        yomi: row.romaji || "",
+        romaji: row.arti || "",
+        arti: "",
+      };
+    }),
+    grammar: grammar.map((row) => {
+      if (row.tema || !themeNames.has(normKey(row.pola))) return row;
+      return {
+        tema: row.pola,
+        pola: row.arti || "",
+        arti: row.contoh || "",
+        contoh: row.terjemahan || "",
+        terjemahan: "",
+      };
+    }),
+    themes,
   };
 }
 
@@ -1054,15 +1076,21 @@ function openKnowledge(tabId) {
   );
 }
 
+function knowledgeForCurrentTheme(rows) {
+  const theme = normKey(state.theme);
+  return theme ? rows.filter((row) => normKey(row.tema) === theme) : rows;
+}
+
 function renderVocab(box) {
-  if (!state.vocab.length) {
-    box.appendChild(h("p", "empty", "Belum ada kosakata. Tambahkan di sheet “Kosakata” pada Google Sheets."));
+  const vocab = knowledgeForCurrentTheme(state.vocab);
+  if (!vocab.length) {
+    box.appendChild(h("p", "empty", `Belum ada kosakata untuk tema ${state.theme || "ini"}. Isi kolom Tema pada sheet “Kosakata” di Google Sheets.`));
     return;
   }
   box.appendChild(h("h3", "sec-title", "Kosakata baru"));
   const table = h("table", "vocab-table");
   const tbody = document.createElement("tbody");
-  state.vocab.forEach((v) => {
+  vocab.forEach((v) => {
     const tr = document.createElement("tr");
     const jp = h("td");
     jp.lang = "ja";
@@ -1076,12 +1104,13 @@ function renderVocab(box) {
 }
 
 function renderGrammar(box) {
-  if (!state.grammar.length) {
-    box.appendChild(h("p", "empty", "Belum ada penjelasan tata bahasa. Tambahkan di sheet “Tata Bahasa” pada Google Sheets."));
+  const grammar = knowledgeForCurrentTheme(state.grammar);
+  if (!grammar.length) {
+    box.appendChild(h("p", "empty", `Belum ada penjelasan tata bahasa untuk tema ${state.theme || "ini"}. Isi kolom Tema pada sheet “Tata Bahasa” di Google Sheets.`));
     return;
   }
   box.appendChild(h("h3", "sec-title", "Pola kalimat penting"));
-  state.grammar.forEach((g) => {
+  grammar.forEach((g) => {
     const card = h("div", "g-card");
     card.appendChild(h("div", "g-pola", g.pola || ""));
     if (g.arti) card.appendChild(h("div", "g-arti", g.arti));
@@ -1099,11 +1128,14 @@ function renderGrammar(box) {
 function renderSummary(box, foot) {
   box.appendChild(h("h3", "sec-title", state.endingTitle || "Ringkasan petualanganmu"));
 
+  const vocab = knowledgeForCurrentTheme(state.vocab);
+  const grammar = knowledgeForCurrentTheme(state.grammar);
   const stats = h("div", "stats");
   [
     [state.read, "dialog dibaca"],
     [state.history.length, "jawaban dipilih"],
-    [state.vocab.length, "kosakata"],
+    [vocab.length, "kosakata tema"],
+    [grammar.length, "pola tata bahasa"],
   ].forEach(([num, label]) => {
     const s = h("div", "stat");
     s.append(h("b", "", String(num)), h("span", "", label));
