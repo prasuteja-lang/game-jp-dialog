@@ -231,7 +231,11 @@ async function ensureFurigana() {
 // ---------- Link Google Drive -> link yang bisa dipakai <img>/<audio> ----------
 function mediaUrl(url, kind) {
   url = String(url || "").trim();
-  if (!url) return "";
+  if (!url || url === "-") return "";
+  url = url.replace(/^assets\/bg\//i, "assets/background/");
+  if (kind === "audio" && /^assets\/audio\/kb_.*\.wav$/i.test(url)) {
+    url = url.replace(/\.wav$/i, ".WAV");
+  }
   const m = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]+)/);
   if (!m) return url;
   return kind === "audio"
@@ -377,7 +381,14 @@ function useData(data) {
   state.vocab = data.vocab;
   state.grammar = data.grammar;
   state.themes = {};
-  state.themeList = (data.themes || []).filter((t) => t.tema);
+  state.themeList = (data.themes || []).filter((t) => t.tema).map((theme) => {
+    const start = getNode(theme.start)
+      ? theme.start
+      : normKey(theme.tema) === "konbini" && getNode("kb_start")
+        ? "kb_start"
+        : theme.start;
+    return Object.assign({}, theme, { start });
+  });
   // URL musik disimpan apa adanya; jika berkas gagal dimuat, pemutar otomatis
   // mencoba ekstensi lain (.mp3 <-> .wav) lewat bgmCandidates().
   state.themeList.forEach((t) => {
@@ -788,6 +799,7 @@ function showChoicesOrNext() {
 function getEnding(node) {
   const e = String(node.ending || "").trim().toLowerCase();
   if (e) {
+    if (e === "true" || e === "1") return "good";
     if (["challenge", "tantangan", "bad", "gagal"].includes(e)) return "challenge";
     if (["good", "tamat", "end", "ending", "berhasil", "sukses"].includes(e)) return "good";
     // Nilai tak dikenal (mis. kolom Google Sheets bergeser): jangan anggap sebagai ending

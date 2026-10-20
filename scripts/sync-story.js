@@ -1,0 +1,52 @@
+"use strict";
+
+const fs = require("node:fs");
+const path = require("node:path");
+
+const API_URL = "https://script.google.com/macros/s/AKfycbwf0-Rt3MElohK2vq4Xo57kYGPfprWcROqid4gZd0-92ObUrGg6YbbrIsdxCS3HDIJP/exec";
+const outputPath = path.resolve(__dirname, "..", "data", "story.json");
+
+function normalizeAsset(value, kind) {
+  let asset = String(value || "").trim();
+  if (!asset || asset === "-") return "";
+  asset = asset.replace(/^assets\/bg\//i, "assets/background/");
+  if (kind === "audio" && /^assets\/audio\/kb_.*\.wav$/i.test(asset)) {
+    asset = asset.replace(/\.wav$/i, ".WAV");
+  }
+  return asset;
+}
+
+async function main() {
+  const response = await fetch(API_URL);
+  if (!response.ok) throw new Error(`Apps Script menjawab HTTP ${response.status}`);
+
+  const data = await response.json();
+  if (!data.story || !data.story.stasiun_awal || !data.story.kb_start) {
+    throw new Error("Data API harus berisi adegan stasiun_awal dan kb_start sebelum disimpan.");
+  }
+
+  Object.values(data.story).forEach((node) => {
+    node.background = normalizeAsset(node.background, "image");
+    node.character = normalizeAsset(node.character, "image");
+    node.audio = normalizeAsset(node.audio, "audio");
+  });
+
+  data.themes = (data.themes || []).map((theme) => {
+    const start = theme.tema.trim().toLowerCase() === "konbini" && !data.story[theme.start]
+      ? "kb_start"
+      : theme.start;
+    return Object.assign({}, theme, {
+      assets: normalizeAsset(theme.assets, "audio"),
+      start,
+    });
+  });
+
+  const json = JSON.stringify(data, null, 2) + "\n";
+  fs.writeFileSync(outputPath, json, "utf8");
+  console.log(`Tersimpan ${Object.keys(data.story).length} adegan dan ${(data.themes || []).length} tema ke data/story.json`);
+}
+
+main().catch((error) => {
+  console.error("Gagal menyinkronkan cerita dari Apps Script:", error);
+  process.exitCode = 1;
+});
