@@ -4,7 +4,7 @@
 const API_URL = "https://script.google.com/macros/s/AKfycbwf0-Rt3MElohK2vq4Xo57kYGPfprWcROqid4gZd0-92ObUrGg6YbbrIsdxCS3HDIJP/exec";
 
 const CONFIG = {
-  START_NODE: "stasiun_awal",
+  START_NODE: "stasiun_intro_01",
   FETCH_TIMEOUT: 10000,   // batas waktu ambil data dari Google Sheets (ms)
   FALLBACK_URL: "data/story.json",   // cadangan lokal jika Google Sheets/Apps Script gagal dimuat
   IMAGE_WAIT: 2500,       // maksimal menunggu gambar adegan (ms)
@@ -820,7 +820,8 @@ function showChoicesOrNext() {
 // ---------- Ending ----------
 function getEnding(node) {
   const e = String(node.ending || "").trim().toLowerCase();
-  if (e) {
+  // "FALSE" / "0" / "-" di kolom ending = bukan ending; abaikan tanpa peringatan
+  if (e && e !== "false" && e !== "0" && e !== "-" && e !== "no") {
     if (e === "true" || e === "1") return "good";
     if (["challenge", "tantangan", "bad", "gagal"].includes(e)) return "challenge";
     if (["good", "tamat", "end", "ending", "berhasil", "sukses"].includes(e)) return "good";
@@ -843,16 +844,34 @@ function showEnding(node, type) {
   el.endingBadge.textContent = challenge ? "Challenge Ending" : type === "good" ? "Good Ending" : "Tamat";
   el.endingDesc.textContent = node.translation || "";
 
-  const primary = h("button", "btn-blue", challenge ? "Coba Lagi" : "Lihat Ringkasan");
-  primary.type = "button";
-  primary.addEventListener("click", challenge ? retryFromChoice : () => openKnowledge("summary"));
+  // Jika adegan ending punya pilihan di Google Sheets, pilihan itu menjadi tombol kartu
+  // ending (mis. "Main lagi dari awal" -> stasiun_intro_01, "Kembali ke layar judul" -> __menu__).
+  const sheetChoices = (node.choices || []).slice(0, 2);
+  if (sheetChoices.length) {
+    el.endingActions.replaceChildren(
+      ...sheetChoices.map((choice, i) => {
+        const b = h("button", i === 0 ? "btn-blue" : "btn-link", choice.translation || plainText(choice.text));
+        b.type = "button";
+        b.addEventListener("click", () => {
+          el.ending.classList.add("is-hidden");
+          state.history.push({ text: choice.text, translation: choice.translation || "" });
+          loadScene(choice.next);
+        });
+        return b;
+      })
+    );
+  } else {
+    const primary = h("button", "btn-blue", challenge ? "Coba Lagi" : "Lihat Ringkasan");
+    primary.type = "button";
+    primary.addEventListener("click", challenge ? retryFromChoice : () => openKnowledge("summary"));
 
-  const again = replayAction();
-  const secondary = h("button", "btn-link", challenge ? "Lihat Ringkasan" : again.label);
-  secondary.type = "button";
-  secondary.addEventListener("click", challenge ? () => openKnowledge("summary") : again.run);
+    const again = replayAction();
+    const secondary = h("button", "btn-link", challenge ? "Lihat Ringkasan" : again.label);
+    secondary.type = "button";
+    secondary.addEventListener("click", challenge ? () => openKnowledge("summary") : again.run);
 
-  el.endingActions.replaceChildren(primary, secondary);
+    el.endingActions.replaceChildren(primary, secondary);
+  }
   el.ending.classList.remove("is-hidden");
 }
 
@@ -869,6 +888,12 @@ function retryFromChoice() {
 
 // ---------- Memuat adegan ----------
 async function loadScene(key) {
+  key = String(key == null ? "" : key).trim();
+  // Target khusus yang boleh ditulis di kolom "next" / pilihan di Google Sheets:
+  //   __menu__   -> kembali ke layar judul
+  //   __themes__ -> kembali ke layar pilih tema
+  if (key === "__menu__" || key === "__title__") { showMenu(); return; }
+  if (key === "__themes__") { chooseAnotherTheme(); return; }
   const fromKey = state.nodeKey;
   let node = getNode(key);
   if (!node) {
