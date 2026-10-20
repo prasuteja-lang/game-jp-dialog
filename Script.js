@@ -534,6 +534,14 @@ function startNewGame() {
 
 el.pickCards.forEach((card) => card.addEventListener("click", () => choosePlayer(card.dataset.player)));
 
+// Setelah memilih tema, mulai dari adegan intro (mis. stasiun_intro_01) jika ada;
+// kalau tidak ada, langsung ke adegan awal tema seperti biasa.
+function introStart(theme) {
+  const prefix = String(theme.start || "").split("_")[0];
+  const candidates = [prefix, String(theme.tema || "")].filter(Boolean).map((p) => `${p}_intro_01`);
+  return candidates.find((id) => getNode(id)) || theme.start;
+}
+
 // ---------- Pilih tema ----------
 function showThemeSelect() {
   const cards = state.themeList.map((t, index) => {
