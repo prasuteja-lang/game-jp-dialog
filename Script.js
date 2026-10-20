@@ -22,8 +22,8 @@ const CONFIG = {
   TITLE_BG: "assets/background/bg_sakura.png",
   PLAYER_KEY: "vn_player_v1",
   PLAYERS: [
-    { id: "girl", name: "あやの", img: "assets/character/char_girl.png" },
-    { id: "boy",  name: "そら",   img: "assets/character/char_boy.png" },
+    { id: "girl", name: "あやの", img: "assets/character/char_girl.png", voice: "assets/audio/ayano_voice.mp3" },
+    { id: "boy",  name: "そら",   img: "assets/character/char_boy.png", voice: "assets/audio/sora_voice.mp3" },
   ],
 };
 
@@ -272,6 +272,11 @@ function preloadImage(url) {
 
 // Cari adegan berdasarkan id; toleran terhadap spasi dan huruf besar/kecil
 const normKey = (k) => String(k == null ? "" : k).trim().toLowerCase();
+function themeKey(theme) {
+  const key = normKey(theme);
+  return key === "berbelanja" ? "belanja" : key;
+}
+
 function getNode(key) {
   if (!key) return null;
   return state.story[key] || state.storyIndex[normKey(key)] || null;
@@ -345,7 +350,7 @@ function hideOverlay() {
 function normalize(data) {
   const story = data && data.story ? data.story : data;
   const themes = data && Array.isArray(data.themes) ? data.themes : [];
-  const themeNames = new Set(themes.map((theme) => normKey(theme.tema)).filter(Boolean));
+  const themeNames = new Set(themes.map((theme) => themeKey(theme.tema)).filter(Boolean));
   const vocab = data && Array.isArray(data.vocab) ? data.vocab : [];
   const grammar = data && Array.isArray(data.grammar) ? data.grammar : [];
   return {
@@ -426,17 +431,16 @@ function useData(data) {
   state.grammar = data.grammar;
   state.themes = {};
   state.themeList = (data.themes || []).filter((t) => t.tema).map((theme) => {
-    const start = getNode(theme.start)
-      ? theme.start
-      : normKey(theme.tema) === "konbini" && getNode("kb_start")
-        ? "kb_start"
-        : theme.start;
+    const themeNodes = Object.entries(data.story).filter(([, node]) => themeKey(node.theme) === themeKey(theme.tema));
+    const intro = themeNodes.find(([id]) => /_intro_01$/i.test(id));
+    const namedStart = themeNodes.find(([id]) => /_(start|awal)$/i.test(id));
+    const start = getNode(theme.start) ? theme.start : (intro || namedStart || [])[0] || theme.start;
     return Object.assign({}, theme, { start });
   });
   // URL musik disimpan apa adanya; jika berkas gagal dimuat, pemutar otomatis
   // mencoba ekstensi lain (.mp3 <-> .wav) lewat bgmCandidates().
   state.themeList.forEach((t) => {
-    const tema = String(t.tema || "").trim().toLowerCase();
+    const tema = themeKey(t.tema);
     if (tema && t.assets) state.themes[tema] = t.assets;
   });
   if (AUTO.ready) registerFurigana(data.story);
@@ -480,7 +484,7 @@ async function showTitle() {
 }
 
 function themeStart(name) {
-  const t = state.themeList.find((x) => x.tema.toLowerCase() === String(name).toLowerCase());
+  const t = state.themeList.find((x) => themeKey(x.tema) === themeKey(name));
   return t && t.start ? t.start : CONFIG.START_NODE;
 }
 
@@ -514,10 +518,13 @@ function renderPick() {
 }
 
 function choosePlayer(id) {
+  const player = CONFIG.PLAYERS.find((candidate) => candidate.id === id);
+  if (!player) return;
   state.player = id;
   writeStore(CONFIG.PLAYER_KEY, id);
   el.pickLabel.classList.remove("is-nudge");
   renderPick();
+  playAudio(mediaUrl(player.voice, "audio"));
 }
 
 function startNewGame() {
@@ -537,9 +544,10 @@ el.pickCards.forEach((card) => card.addEventListener("click", () => choosePlayer
 // Setelah memilih tema, mulai dari adegan intro (mis. stasiun_intro_01) jika ada;
 // kalau tidak ada, langsung ke adegan awal tema seperti biasa.
 function introStart(theme) {
-  const prefix = String(theme.start || "").split("_")[0];
-  const candidates = [prefix, String(theme.tema || "")].filter(Boolean).map((p) => `${p}_intro_01`);
-  return candidates.find((id) => getNode(id)) || theme.start;
+  const intro = Object.entries(state.story).find(([id, node]) =>
+    /_intro_01$/i.test(id) && themeKey(node.theme) === themeKey(theme.tema)
+  );
+  return intro ? intro[0] : theme.start;
 }
 
 // ---------- Pilih tema ----------
@@ -1006,7 +1014,7 @@ async function loadScene(key) {
   setBackground(bg);
   setCharacter(ch);
   playAudio(audio);
-  setBgm(mediaUrl(state.themes[String(state.theme).toLowerCase()], "audio"));
+  setBgm(mediaUrl(state.themes[themeKey(state.theme)], "audio"));
   prefetchNeighbors(node);
 
   if (ending) {
@@ -1162,8 +1170,8 @@ function openKnowledge(tabId) {
 }
 
 function knowledgeForCurrentTheme(rows) {
-  const theme = normKey(state.theme);
-  return theme ? rows.filter((row) => normKey(row.tema) === theme) : rows;
+  const theme = themeKey(state.theme);
+  return theme ? rows.filter((row) => themeKey(row.tema) === theme) : rows;
 }
 
 function renderVocab(box) {

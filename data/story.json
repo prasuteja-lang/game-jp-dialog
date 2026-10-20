@@ -11,7 +11,7 @@
       "chapter": "Pembukaan",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_intro_02": {
@@ -25,7 +25,7 @@
       "chapter": "Pembukaan",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_intro_03": {
@@ -39,7 +39,7 @@
       "chapter": "Pembukaan",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_awal": {
@@ -53,7 +53,7 @@
       "chapter": "1. Di Stasiun",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "東京へ行きたいです。",
@@ -78,7 +78,7 @@
       "chapter": "2. Memilih Kereta",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "新幹線で行きたいです！",
@@ -103,7 +103,7 @@
       "chapter": "3. Memilih Kursi",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "ゆったり座れる指定席で！",
@@ -128,7 +128,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "ぜひ富士山が見えるE席で！",
@@ -153,7 +153,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "アドバイスありがとうございます！",
@@ -178,7 +178,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "なるほど！早めに行きます。",
@@ -203,7 +203,7 @@
       "chapter": "4. Membeli Tiket",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "大人1枚お願いします。",
@@ -228,7 +228,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "ICカード（Suica）で払えますか？",
@@ -253,7 +253,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "まとめて1枚でお願いします。",
@@ -278,7 +278,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "それなら現金で払います！",
@@ -303,7 +303,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "（暗証番号を入力する）",
@@ -328,7 +328,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "ありがとうございます！",
@@ -353,7 +353,7 @@
       "chapter": "5. Menuju Peron",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "車内で食べる駅弁はどこで買えますか？",
@@ -378,7 +378,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "助かりました！行ってきます。",
@@ -403,7 +403,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "美味しそう！絶対買ってみます！",
@@ -428,7 +428,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "最高の旅になりそうです！",
@@ -453,7 +453,7 @@
       "chapter": "",
       "ending": "good",
       "endingTitle": "Ending 1 - Shinkansen ke Tokyo",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "最初からもう一度プレイする",
@@ -478,7 +478,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "それは長いですね。新幹線にします！",
@@ -503,7 +503,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "ありがとうございます！ゆっくり楽しみます。",
@@ -528,7 +528,7 @@
       "chapter": "",
       "ending": "good",
       "endingTitle": "Ending 3 - Perjalanan Santai ke Tokyo",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "最初からもう一度プレイする",
@@ -553,7 +553,7 @@
       "chapter": "2. Memilih Kereta",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "快適な特急電車で！",
@@ -578,7 +578,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "はい、その時間でお願いします！",
@@ -603,7 +603,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "やっぱり10:15発にします！",
@@ -628,7 +628,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "時間に余裕があるので普通列車で！",
@@ -653,7 +653,7 @@
       "chapter": "3. Urusan Bagasi",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "はい、特急の中に置くスペースはありますか？",
@@ -678,7 +678,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "それは安心しました！",
@@ -703,7 +703,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "小銭がないのですが両替できますか？",
@@ -728,7 +728,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "助かります！両替をお願いします。",
@@ -753,7 +753,7 @@
       "chapter": "4. Membayar Tiket",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "はい、3,000円ちょうど払います。",
@@ -778,7 +778,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "では、3,000円ちょうど払います。",
@@ -803,7 +803,7 @@
       "chapter": "5. Bertemu Tanaka",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "おっ、田中！ちょうど特急券を買ったところだよ！",
@@ -828,7 +828,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "ガイドブック？どこに行く予定？",
@@ -853,7 +853,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "いいね！最高のルートだ！",
@@ -878,7 +878,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "絶対行こう！楽しみになってきた！",
@@ -903,7 +903,7 @@
       "chapter": "6. Menuju Wisata Kyoto",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "駅員さん、親切にありがとうございました！",
@@ -928,7 +928,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_outro_tokyo_01": {
@@ -942,7 +942,7 @@
       "chapter": "Penutup",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_outro_tokyo_02": {
@@ -956,7 +956,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_outro_tokyo_03": {
@@ -970,7 +970,7 @@
       "chapter": "",
       "ending": "good",
       "endingTitle": "Ending 1 - Shinkansen ke Tokyo",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "最初からもう一度プレイする",
@@ -995,7 +995,7 @@
       "chapter": "Penutup",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_outro_local_02": {
@@ -1009,7 +1009,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_outro_local_03": {
@@ -1023,7 +1023,7 @@
       "chapter": "",
       "ending": "good",
       "endingTitle": "Ending 3 - Perjalanan Santai ke Tokyo",
-      "theme": "",
+      "theme": "Station",
       "choices": [
         {
           "text": "最初からもう一度プレイする",
@@ -1048,7 +1048,7 @@
       "chapter": "Penutup",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_outro_kyoto_02": {
@@ -1062,7 +1062,7 @@
       "chapter": "",
       "ending": "",
       "endingTitle": "",
-      "theme": "",
+      "theme": "Station",
       "choices": []
     },
     "stasiun_outro_kyoto_03": {
@@ -1101,7 +1101,7 @@
       "chapter": "Pembukaan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_intro_02": {
@@ -1115,7 +1115,7 @@
       "chapter": "Pembukaan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_intro_03": {
@@ -1129,7 +1129,7 @@
       "chapter": "Pembukaan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_start": {
@@ -1143,7 +1143,7 @@
       "chapter": "1. Depan Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "賛成！喉カラカラだよ。",
@@ -1168,7 +1168,7 @@
       "chapter": "1. Depan Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "ありがとう、すぐ戻る！",
@@ -1193,7 +1193,7 @@
       "chapter": "1. Depan Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "お待たせ！行こう。",
@@ -1218,7 +1218,7 @@
       "chapter": "1. Depan Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "サンキュー！",
@@ -1243,7 +1243,7 @@
       "chapter": "2. Masuk Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "まずは飲み物コーナーかな。",
@@ -1268,7 +1268,7 @@
       "chapter": "2. Masuk Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "本当だ！買おうかな。",
@@ -1293,7 +1293,7 @@
       "chapter": "2. Masuk Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "うん、行こう。",
@@ -1318,7 +1318,7 @@
       "chapter": "3. Minuman",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "俺もビールにする！",
@@ -1343,7 +1343,7 @@
       "chapter": "4. Makanan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "お弁当がいいな。",
@@ -1368,7 +1368,7 @@
       "chapter": "4. Makanan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "決まり！それ買う。",
@@ -1393,7 +1393,7 @@
       "chapter": "4. Makanan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "わかる！ツナマヨ最高。",
@@ -1418,7 +1418,7 @@
       "chapter": "4. Makanan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "うん、行こう。",
@@ -1443,7 +1443,7 @@
       "chapter": "4. Makanan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "この新作プリン買う！",
@@ -1468,7 +1468,7 @@
       "chapter": "5. Kasir (Antre)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "夕方だし仕方ないね。",
@@ -1493,7 +1493,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "はい。（レジへ進む）",
@@ -1518,7 +1518,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "はい、アプリで。（スマホを出す）",
@@ -1543,7 +1543,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "（スマホをしまう）",
@@ -1568,7 +1568,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "（頷く）",
@@ -1593,7 +1593,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "俺もファミチキ一つお願いします。",
@@ -1618,7 +1618,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "（頷く）",
@@ -1643,7 +1643,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "はい。（「20歳以上」をタッチする）",
@@ -1668,7 +1668,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "じゃあ、一つください！",
@@ -1693,7 +1693,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "3円の袋を一枚お願いします。",
@@ -1718,7 +1718,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "はい、分けてください。",
@@ -1743,7 +1743,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "はい、温めてください。",
@@ -1768,7 +1768,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "（待つ）",
@@ -1793,7 +1793,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "お箸を2膳お願いします。",
@@ -1818,7 +1818,7 @@
       "chapter": "6. Kasir (Interaksi)",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "はい、２つお願いします。",
@@ -1843,7 +1843,7 @@
       "chapter": "7. Pembayaran",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "Suicaで払います。（スマホをかざす）",
@@ -1868,7 +1868,7 @@
       "chapter": "7. Pembayaran",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "えっ！じゃあ現金で払います。",
@@ -1893,7 +1893,7 @@
       "chapter": "7. Pembayaran",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "じゃあこれで。（現金を追加で出す）",
@@ -1918,7 +1918,7 @@
       "chapter": "7. Pembayaran",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "大丈夫、現金あるから！",
@@ -1943,7 +1943,7 @@
       "chapter": "7. Pembayaran",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "ありがとうございます。",
@@ -1968,7 +1968,7 @@
       "chapter": "7. Pembayaran",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "はい、家計簿つけるので。",
@@ -1993,7 +1993,7 @@
       "chapter": "8. Keluar Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "（会釈して店を出る）",
@@ -2018,7 +2018,7 @@
       "chapter": "8. Keluar Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "うん、腹ペコだよ。",
@@ -2043,7 +2043,7 @@
       "chapter": "8. Keluar Konbini",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "いただきます！",
@@ -2068,7 +2068,7 @@
       "chapter": "9. Liburan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "まだ決まってないよ。",
@@ -2093,7 +2093,7 @@
       "chapter": "9. Liburan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "いいね！絶対行こう。",
@@ -2118,7 +2118,7 @@
       "chapter": "9. Liburan",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "もちろん！買ってくるよ。",
@@ -2143,7 +2143,7 @@
       "chapter": "10. Ending",
       "ending": "true",
       "endingTitle": "Rencana ke Pantai",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "楽しみだね！",
@@ -2168,7 +2168,7 @@
       "chapter": "10. Ending",
       "ending": "true",
       "endingTitle": "Rencana ke Gunung",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "テントは任せて！",
@@ -2193,7 +2193,7 @@
       "chapter": "10. Ending",
       "ending": "true",
       "endingTitle": "Pulang Kampung",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": [
         {
           "text": "了解、遅れないよ！",
@@ -2218,7 +2218,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_sea_02": {
@@ -2232,7 +2232,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_sea_03": {
@@ -2246,7 +2246,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_sea_04": {
@@ -2260,7 +2260,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_sea_05": {
@@ -2274,7 +2274,7 @@
       "chapter": "10. Ending",
       "ending": "true",
       "endingTitle": "Rencana ke Pantai",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_mountain_01": {
@@ -2288,7 +2288,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_mountain_02": {
@@ -2302,7 +2302,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_mountain_03": {
@@ -2316,7 +2316,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_mountain_04": {
@@ -2330,7 +2330,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_mountain_05": {
@@ -2344,7 +2344,7 @@
       "chapter": "10. Ending",
       "ending": "true",
       "endingTitle": "Rencana ke Gunung",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_hometown_01": {
@@ -2358,7 +2358,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_hometown_02": {
@@ -2372,7 +2372,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_hometown_03": {
@@ -2386,7 +2386,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_hometown_04": {
@@ -2400,7 +2400,7 @@
       "chapter": "10. Ending",
       "ending": "false",
       "endingTitle": "",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
     },
     "kb_outro_hometown_05": {
@@ -2414,8 +2414,3562 @@
       "chapter": "10. Ending",
       "ending": "true",
       "endingTitle": "Pulang Kampung",
-      "theme": "Konbini",
+      "theme": "konbini",
       "choices": []
+    },
+    "rst_intro_01": {
+      "speaker": "システム",
+      "text": "お昼どき。友達のゆうたと一緒に、駅前のレストランの前に来た。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_intro_02",
+      "translation": "Waktu makan siang. Kamu datang bersama temanmu, Yuta, ke depan sebuah restoran dekat stasiun.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_intro_02": {
+      "speaker": "システム",
+      "text": "お店の中からいい匂いがしてきて、おなかがぐーっと鳴った。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_intro_03",
+      "translation": "Aroma harum tercium dari dalam restoran, dan perutmu pun berbunyi.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_intro_03": {
+      "speaker": "システム",
+      "text": "今日は日本語で、注文からお会計まで挑戦してみよう！",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_start",
+      "translation": "Hari ini, coba tantang dirimu memakai bahasa Jepang dari memesan sampai membayar!",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_start": {
+      "speaker": "みさき店員",
+      "text": "いらっしゃいませ！お二人様ですか？",
+      "background": "assets/background/restoran_in.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_start.wav",
+      "next": "",
+      "translation": "Selamat datang! Berdua?",
+      "chapter": "1. Masuk Restoran",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "はい、二人です。",
+          "next": "rst_seat_01",
+          "translation": "Ya, berdua."
+        },
+        {
+          "text": "はい、二人です。窓際の席は空いていますか？",
+          "next": "rst_window",
+          "translation": "Ya, berdua. Apakah ada kursi dekat jendela yang kosong?"
+        }
+      ]
+    },
+    "rst_window": {
+      "speaker": "みさき店員",
+      "text": "窓際の席ですね。ちょうど空いておりますので、ご案内いたします。",
+      "background": "assets/background/restoran_in.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_window.wav",
+      "next": "",
+      "translation": "Kursi dekat jendela ya. Kebetulan masih kosong, mari saya antar.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ありがとうございます！",
+          "next": "rst_seat_01",
+          "translation": "Terima kasih!"
+        },
+        {
+          "text": "わあ、景色がよさそう！",
+          "next": "rst_seat_01",
+          "translation": "Wah, pemandangannya kelihatannya bagus!"
+        }
+      ]
+    },
+    "rst_seat_01": {
+      "speaker": "みさき店員",
+      "text": "こちらのお席へどうぞ。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_normal.png",
+      "audio": "assets/audio/rst_seat_01.wav",
+      "next": "",
+      "translation": "Silakan, kursi di sebelah sini.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "rst_menu_01",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "荷物はどこに置けばいいですか？",
+          "next": "rst_luggage",
+          "translation": "Barang bawaan sebaiknya ditaruh di mana?"
+        }
+      ]
+    },
+    "rst_luggage": {
+      "speaker": "みさき店員",
+      "text": "椅子の下にカゴがございますので、ご利用ください。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_point.png",
+      "audio": "assets/audio/rst_luggage.wav",
+      "next": "",
+      "translation": "Ada keranjang di bawah kursi, silakan dipakai.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "助かります！",
+          "next": "rst_menu_01",
+          "translation": "Sangat membantu!"
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "rst_menu_01",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "rst_menu_01": {
+      "speaker": "みさき店員",
+      "text": "こちらがメニューです。お決まりになりましたら、テーブルのボタンでお呼びください。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_menu_01.wav",
+      "next": "",
+      "translation": "Ini menunya. Kalau sudah memutuskan, silakan panggil dengan tombol di meja.",
+      "chapter": "2. Memesan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "はい、わかりました。",
+          "next": "rst_menu_02",
+          "translation": "Ya, saya mengerti."
+        },
+        {
+          "text": "おすすめはありますか？",
+          "next": "rst_recommend",
+          "translation": "Apakah ada menu rekomendasi?"
+        }
+      ]
+    },
+    "rst_recommend": {
+      "speaker": "みさき店員",
+      "text": "本日のおすすめは、チーズハンバーグ定食と焼き魚定食でございます。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_point.png",
+      "audio": "assets/audio/rst_recommend.wav",
+      "next": "",
+      "translation": "Rekomendasi hari ini adalah set hamburg keju dan set ikan bakar.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "おいしそう！",
+          "next": "rst_menu_02",
+          "translation": "Kelihatannya enak!"
+        },
+        {
+          "text": "どちらも気になります。",
+          "next": "rst_menu_02",
+          "translation": "Keduanya menarik perhatianku."
+        }
+      ]
+    },
+    "rst_menu_02": {
+      "speaker": "ゆうた（友達）",
+      "text": "どれにする？ぼくはもう決まったよ。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/yuta_smile.png",
+      "audio": "assets/audio/rst_menu_02.wav",
+      "next": "",
+      "translation": "Kamu mau yang mana? Aku sudah memutuskan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "まだ迷ってる。",
+          "next": "rst_menu_03",
+          "translation": "Masih bingung."
+        },
+        {
+          "text": "決まった！ボタンを押そう。",
+          "next": "rst_order_01",
+          "translation": "Sudah memutuskan! Ayo tekan tombolnya."
+        }
+      ]
+    },
+    "rst_menu_03": {
+      "speaker": "ゆうた（友達）",
+      "text": "ゆっくり選んでいいよ。ここは定食がおいしいんだって。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/yuta_normal.png",
+      "audio": "assets/audio/rst_menu_03.wav",
+      "next": "",
+      "translation": "Pilih saja pelan-pelan. Katanya set menu di sini enak.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "じゃあ、ボタンを押すね。",
+          "next": "rst_order_01",
+          "translation": "Kalau begitu, aku tekan tombolnya ya."
+        },
+        {
+          "text": "ゆうたと同じものにしようかな。",
+          "next": "rst_order_01",
+          "translation": "Mungkin aku pilih yang sama dengan Yuta."
+        }
+      ]
+    },
+    "rst_order_01": {
+      "speaker": "みさき店員",
+      "text": "お待たせいたしました。ご注文はお決まりですか？",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_order_01.wav",
+      "next": "",
+      "translation": "Maaf menunggu. Apakah Anda sudah memutuskan pesanannya?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ハンバーグ定食をお願いします。",
+          "next": "rst_meat_01",
+          "translation": "Tolong set hamburg."
+        },
+        {
+          "text": "焼き魚定食をお願いします。",
+          "next": "rst_fish_01",
+          "translation": "Tolong set ikan bakar."
+        }
+      ]
+    },
+    "rst_meat_01": {
+      "speaker": "みさき店員",
+      "text": "ハンバーグ定食ですね。ソースは、デミグラスとおろしポン酢がございますが、どちらになさいますか？",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_point.png",
+      "audio": "assets/audio/rst_meat_01.wav",
+      "next": "",
+      "translation": "Set hamburg ya. Untuk sausnya ada demi-glace dan oroshi ponzu, mau yang mana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "デミグラスでお願いします。",
+          "next": "rst_set_01",
+          "translation": "Tolong yang demi-glace."
+        },
+        {
+          "text": "おろしポン酢でお願いします。",
+          "next": "rst_set_01",
+          "translation": "Tolong yang oroshi ponzu."
+        }
+      ]
+    },
+    "rst_fish_01": {
+      "speaker": "みさき店員",
+      "text": "焼き魚定食ですね。本日はサバと鮭がございますが、どちらになさいますか？",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_point.png",
+      "audio": "assets/audio/rst_fish_01.wav",
+      "next": "",
+      "translation": "Set ikan bakar ya. Hari ini ada makerel dan salmon, mau yang mana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "サバでお願いします。",
+          "next": "rst_set_01",
+          "translation": "Tolong yang makerel."
+        },
+        {
+          "text": "鮭でお願いします。",
+          "next": "rst_set_01",
+          "translation": "Tolong yang salmon."
+        }
+      ]
+    },
+    "rst_set_01": {
+      "speaker": "みさき店員",
+      "text": "ご飯は白米と十穀米が選べます。大盛りは無料ですが、いかがなさいますか？",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_set_01.wav",
+      "next": "",
+      "translation": "Nasinya bisa dipilih nasi putih atau nasi sepuluh biji-bijian. Porsi besar gratis, bagaimana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "白米を大盛りでお願いします。",
+          "next": "rst_allergy",
+          "translation": "Nasi putih porsi besar, tolong."
+        },
+        {
+          "text": "十穀米を普通盛りでお願いします。",
+          "next": "rst_allergy",
+          "translation": "Nasi sepuluh biji-bijian porsi biasa, tolong."
+        }
+      ]
+    },
+    "rst_allergy": {
+      "speaker": "みさき店員",
+      "text": "アレルギーや、苦手な食べ物はございますか？",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_think.png",
+      "audio": "assets/audio/rst_allergy.wav",
+      "next": "",
+      "translation": "Apakah ada alergi atau makanan yang tidak Anda sukai?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "特にありません。",
+          "next": "rst_drink",
+          "translation": "Tidak ada yang khusus."
+        },
+        {
+          "text": "卵のアレルギーがあります。",
+          "next": "rst_allergy_2",
+          "translation": "Saya alergi telur."
+        }
+      ]
+    },
+    "rst_allergy_2": {
+      "speaker": "みさき店員",
+      "text": "卵ですね。確認いたしますので、少々お待ちください。……お待たせいたしました。卵を使わない調理に変更できますので、ご安心ください。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_allergy_2.wav",
+      "next": "",
+      "translation": "Telur ya. Saya cek dulu, mohon tunggu sebentar. ...Maaf menunggu. Kami bisa menyesuaikan pengolahannya tanpa telur, jadi tenang saja.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ありがとうございます。安心しました。",
+          "next": "rst_drink",
+          "translation": "Terima kasih. Saya jadi tenang."
+        },
+        {
+          "text": "助かります。",
+          "next": "rst_drink",
+          "translation": "Sangat membantu."
+        }
+      ]
+    },
+    "rst_drink": {
+      "speaker": "みさき店員",
+      "text": "お飲み物は、ドリンクバーをセットにすると200円になりますが、いかがなさいますか？",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_drink.wav",
+      "next": "",
+      "translation": "Untuk minuman, kalau dijadikan set dengan drink bar, tambahannya 200 yen. Bagaimana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ドリンクバーをお願いします。",
+          "next": "rst_confirm",
+          "translation": "Tolong tambah drink bar."
+        },
+        {
+          "text": "お水で大丈夫です。",
+          "next": "rst_confirm",
+          "translation": "Air putih saja cukup."
+        }
+      ]
+    },
+    "rst_confirm": {
+      "speaker": "みさき店員",
+      "text": "ご注文を確認いたします。以上でよろしいでしょうか？",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_normal.png",
+      "audio": "assets/audio/rst_confirm.wav",
+      "next": "",
+      "translation": "Saya konfirmasi pesanannya. Apakah itu saja?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "はい、お願いします。",
+          "next": "rst_wait_01",
+          "translation": "Ya, tolong."
+        },
+        {
+          "text": "あ、サラダも追加でお願いします。",
+          "next": "rst_salad",
+          "translation": "Oh, tolong tambah salad juga."
+        }
+      ]
+    },
+    "rst_salad": {
+      "speaker": "みさき店員",
+      "text": "サラダですね。かしこまりました。ドレッシングは和風とゴマがございます。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_salad.wav",
+      "next": "",
+      "translation": "Salad ya. Baik. Untuk dressing ada gaya Jepang dan wijen.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "和風でお願いします。",
+          "next": "rst_wait_01",
+          "translation": "Gaya Jepang, tolong."
+        },
+        {
+          "text": "ゴマでお願いします。",
+          "next": "rst_wait_01",
+          "translation": "Wijen, tolong."
+        }
+      ]
+    },
+    "rst_wait_01": {
+      "speaker": "ゆうた（友達）",
+      "text": "料理が来るまで、ちょっと時間がかかりそうだね。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/yuta_normal.png",
+      "audio": "assets/audio/rst_wait_01.wav",
+      "next": "",
+      "translation": "Sepertinya makanannya butuh waktu sampai datang ya.",
+      "chapter": "3. Menunggu",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "お水をもらおうよ。",
+          "next": "rst_water",
+          "translation": "Minta air putih yuk."
+        },
+        {
+          "text": "お箸を取ってもいい？",
+          "next": "rst_chopsticks",
+          "translation": "Boleh aku ambil sumpitnya?"
+        }
+      ]
+    },
+    "rst_water": {
+      "speaker": "みさき店員",
+      "text": "お水のおかわりですね。すぐにお持ちします。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_water.wav",
+      "next": "",
+      "translation": "Isi ulang air ya. Segera saya bawakan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "rst_food_01",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "氷なしでお願いします。",
+          "next": "rst_food_01",
+          "translation": "Tolong tanpa es."
+        }
+      ]
+    },
+    "rst_chopsticks": {
+      "speaker": "みさき店員",
+      "text": "お箸はテーブルの横の箱にございます。ご自由にお取りください。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_point.png",
+      "audio": "assets/audio/rst_chopsticks.wav",
+      "next": "",
+      "translation": "Sumpit ada di kotak di samping meja. Silakan ambil sendiri.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ありがとうございます！",
+          "next": "rst_food_01",
+          "translation": "Terima kasih!"
+        },
+        {
+          "text": "スプーンもありますか？",
+          "next": "rst_food_01",
+          "translation": "Apakah ada sendok juga?"
+        }
+      ]
+    },
+    "rst_food_01": {
+      "speaker": "みさき店員",
+      "text": "お待たせいたしました。熱いので、お気をつけください。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_food_01.wav",
+      "next": "",
+      "translation": "Maaf menunggu. Panas, jadi hati-hati.",
+      "chapter": "4. Makan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ありがとうございます！",
+          "next": "rst_eat_01",
+          "translation": "Terima kasih!"
+        },
+        {
+          "text": "いい匂い！いただきます。",
+          "next": "rst_eat_01",
+          "translation": "Wangi sekali! Selamat makan."
+        }
+      ]
+    },
+    "rst_eat_01": {
+      "speaker": "ゆうた（友達）",
+      "text": "いただきます！……うまっ！ここ、当たりだね！",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/yuta_laugh.png",
+      "audio": "assets/audio/rst_eat_01.wav",
+      "next": "",
+      "translation": "Selamat makan! ...Enak banget! Restoran ini pilihan yang tepat ya!",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "本当だね、おいしい！",
+          "next": "rst_eat_02",
+          "translation": "Benar, enak!"
+        },
+        {
+          "text": "一口もらってもいい？",
+          "next": "rst_eat_02",
+          "translation": "Boleh aku coba sesuap?"
+        }
+      ]
+    },
+    "rst_eat_02": {
+      "speaker": "ゆうた（友達）",
+      "text": "ところで、日本では食べ終わったあと、お会計はレジでするんだよ。",
+      "background": "assets/background/restoran_meja.png",
+      "character": "assets/character/yuta_smile.png",
+      "audio": "assets/audio/rst_eat_02.wav",
+      "next": "",
+      "translation": "Oh iya, di Jepang setelah selesai makan, bayarnya biasanya di kasir lho.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "そうなんだ！覚えておく。",
+          "next": "rst_pay_01",
+          "translation": "Oh begitu! Aku ingat-ingat."
+        },
+        {
+          "text": "テーブルで払うお店もあるよね？",
+          "next": "rst_pay_01",
+          "translation": "Ada juga restoran yang bayarnya di meja, kan?"
+        }
+      ]
+    },
+    "rst_pay_01": {
+      "speaker": "みさき店員",
+      "text": "ありがとうございました。お会計は、ご一緒でよろしいですか？",
+      "background": "assets/background/restoran_kasir.png",
+      "character": "assets/character/misaki_normal.png",
+      "audio": "assets/audio/rst_pay_01.wav",
+      "next": "",
+      "translation": "Terima kasih. Apakah pembayarannya digabung?",
+      "chapter": "5. Membayar",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "はい、一緒でお願いします。",
+          "next": "rst_pay_together",
+          "translation": "Ya, digabung saja."
+        },
+        {
+          "text": "別々でお願いします。",
+          "next": "rst_pay_sep",
+          "translation": "Tolong dipisah."
+        }
+      ]
+    },
+    "rst_pay_together": {
+      "speaker": "みさき店員",
+      "text": "合計で2,640円になります。",
+      "background": "assets/background/restoran_kasir.png",
+      "character": "assets/character/misaki_normal.png",
+      "audio": "assets/audio/rst_pay_together.wav",
+      "next": "",
+      "translation": "Totalnya 2.640 yen.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "rst_pay_03",
+          "translation": "Baik."
+        },
+        {
+          "text": "結構いい値段ですね。",
+          "next": "rst_pay_03",
+          "translation": "Lumayan juga harganya ya."
+        }
+      ]
+    },
+    "rst_pay_sep": {
+      "speaker": "みさき店員",
+      "text": "かしこまりました。お一人様、1,320円になります。",
+      "background": "assets/background/restoran_kasir.png",
+      "character": "assets/character/misaki_normal.png",
+      "audio": "assets/audio/rst_pay_sep.wav",
+      "next": "",
+      "translation": "Baik. Per orang 1.320 yen.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "rst_pay_03",
+          "translation": "Baik."
+        },
+        {
+          "text": "先に私が払います。",
+          "next": "rst_pay_03",
+          "translation": "Aku bayar duluan."
+        }
+      ]
+    },
+    "rst_pay_03": {
+      "speaker": "みさき店員",
+      "text": "お支払いは、現金とカード、QRコード決済がご利用いただけます。いかがなさいますか？",
+      "background": "assets/background/restoran_kasir.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_pay_03.wav",
+      "next": "",
+      "translation": "Pembayaran bisa dengan tunai, kartu, atau QR code. Bagaimana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "現金でお願いします。",
+          "next": "rst_pay_cash",
+          "translation": "Tolong tunai."
+        },
+        {
+          "text": "QRコード決済で払えますか？",
+          "next": "rst_pay_qr",
+          "translation": "Apakah bisa bayar dengan QR code?"
+        }
+      ]
+    },
+    "rst_pay_cash": {
+      "speaker": "みさき店員",
+      "text": "お預かりいたします。こちら、お釣りとレシートです。",
+      "background": "assets/background/restoran_kasir.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_pay_cash.wav",
+      "next": "",
+      "translation": "Saya terima uangnya. Ini kembalian dan struknya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ごちそうさまでした。",
+          "next": "rst_out_01",
+          "translation": "Terima kasih makanannya."
+        },
+        {
+          "text": "おいしかったです。",
+          "next": "rst_out_01",
+          "translation": "Enak sekali."
+        }
+      ]
+    },
+    "rst_pay_qr": {
+      "speaker": "みさき店員",
+      "text": "はい、ご利用いただけます。こちらのコードをお読み取りください。……ありがとうございます。",
+      "background": "assets/background/restoran_kasir.png",
+      "character": "assets/character/misaki_smile.png",
+      "audio": "assets/audio/rst_pay_qr.wav",
+      "next": "",
+      "translation": "Ya, bisa digunakan. Silakan pindai kode ini. ...Terima kasih.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "ごちそうさまでした。",
+          "next": "rst_out_01",
+          "translation": "Terima kasih makanannya."
+        },
+        {
+          "text": "おいしかったです。",
+          "next": "rst_out_01",
+          "translation": "Enak sekali."
+        }
+      ]
+    },
+    "rst_out_01": {
+      "speaker": "ゆうた（友達）",
+      "text": "ごちそうさま！お腹いっぱいだね。このあと、どうする？",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/yuta_laugh.png",
+      "audio": "assets/audio/rst_out_01.wav",
+      "next": "",
+      "translation": "Terima kasih makanannya! Kenyang ya. Habis ini mau ngapain?",
+      "chapter": "6. Keluar Restoran",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "満腹だから、少し散歩しよう。",
+          "next": "rst_end_walk",
+          "translation": "Karena kenyang, jalan-jalan santai yuk."
+        },
+        {
+          "text": "デザートを食べに行こう！",
+          "next": "rst_out_02",
+          "translation": "Yuk makan dessert!"
+        }
+      ]
+    },
+    "rst_out_02": {
+      "speaker": "ゆうた（友達）",
+      "text": "いいね！近くにおいしいカフェがあるよ。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/yuta_smile.png",
+      "audio": "assets/audio/rst_out_02.wav",
+      "next": "",
+      "translation": "Boleh! Dekat sini ada kafe yang enak.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "行こう行こう！",
+          "next": "rst_end_cafe",
+          "translation": "Ayo ayo!"
+        },
+        {
+          "text": "やっぱり今日はもう帰ろう。",
+          "next": "rst_end_home",
+          "translation": "Kayaknya hari ini pulang saja."
+        }
+      ]
+    },
+    "rst_end_walk": {
+      "speaker": "システム",
+      "text": "ゆうたと一緒に、駅前の並木道をのんびり散歩することにした。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_walk_01",
+      "translation": "Kamu memutuskan jalan-jalan santai bersama Yuta di jalan berpohon dekat stasiun.",
+      "chapter": "7. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_walk_01": {
+      "speaker": "システム",
+      "text": "お腹もいっぱい、心もいっぱい。気持ちのいい午後だ。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_walk_02",
+      "translation": "Perut kenyang, hati pun penuh. Sore yang menyenangkan.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_walk_02": {
+      "speaker": "システム",
+      "text": "席の案内、注文、お会計。レストランで使う日本語をたくさん練習できたね。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_walk_03",
+      "translation": "Diantar ke kursi, memesan, membayar. Kamu sudah banyak berlatih bahasa Jepang yang dipakai di restoran.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_walk_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 1 - Jalan Santai Setelah Makan",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "rst_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "rst_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "rst_end_cafe": {
+      "speaker": "システム",
+      "text": "近くのカフェで、おいしいパフェを食べることにした。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_cafe_01",
+      "translation": "Kamu memutuskan makan parfait enak di kafe terdekat.",
+      "chapter": "7. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_cafe_01": {
+      "speaker": "システム",
+      "text": "甘いものは別腹。おしゃべりはまだまだ終わらなさそうだ。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_cafe_02",
+      "translation": "Makanan manis itu perut lain. Obrolan sepertinya belum akan selesai.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_cafe_02": {
+      "speaker": "システム",
+      "text": "席の案内、注文、お会計。レストランで使う日本語をたくさん練習できたね。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_cafe_03",
+      "translation": "Diantar ke kursi, memesan, membayar. Kamu sudah banyak berlatih bahasa Jepang yang dipakai di restoran.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_cafe_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 2 - Lanjut ke Kafe",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "rst_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "rst_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "rst_end_home": {
+      "speaker": "システム",
+      "text": "満足した気持ちで、それぞれの家へ帰っていった。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_home_01",
+      "translation": "Dengan perasaan puas, kalian pulang ke rumah masing-masing.",
+      "chapter": "7. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_home_01": {
+      "speaker": "システム",
+      "text": "今日のごはんの味を思い出しながら、家路についた。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_home_02",
+      "translation": "Sambil mengingat rasa makanan hari ini, kamu berjalan pulang.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_home_02": {
+      "speaker": "システム",
+      "text": "席の案内、注文、お会計。レストランで使う日本語をたくさん練習できたね。",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "rst_outro_home_03",
+      "translation": "Diantar ke kursi, memesan, membayar. Kamu sudah banyak berlatih bahasa Jepang yang dipakai di restoran.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Restoran",
+      "choices": []
+    },
+    "rst_outro_home_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/restoran_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 3 - Pulang dengan Perut Kenyang",
+      "theme": "Restoran",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "rst_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "rst_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "htl_intro_01": {
+      "speaker": "システム",
+      "text": "夕方、旅行先のホテルに着いた。長い一日で、足はくたくただ。",
+      "background": "assets/background/hotel_lobby.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_intro_02",
+      "translation": "Sore hari, kamu tiba di hotel tempat tujuan wisata. Setelah hari yang panjang, kakimu sudah sangat lelah.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_intro_02": {
+      "speaker": "システム",
+      "text": "ロビーは明るく、静かで、いい香りがする。",
+      "background": "assets/background/hotel_lobby.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_intro_03",
+      "translation": "Lobi hotel terang, tenang, dan beraroma harum.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_intro_03": {
+      "speaker": "システム",
+      "text": "今日は日本語で、チェックインからチェックアウトまで挑戦してみよう！",
+      "background": "assets/background/hotel_lobby.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_start",
+      "translation": "Hari ini, coba tantang dirimu memakai bahasa Jepang dari check-in sampai check-out!",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_start": {
+      "speaker": "ゆかりフロント",
+      "text": "いらっしゃいませ。ご予約はございますか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_start.wav",
+      "next": "",
+      "translation": "Selamat datang. Apakah Anda sudah memesan?",
+      "chapter": "1. Check-in",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、予約しています。",
+          "next": "htl_name",
+          "translation": "Ya, saya sudah memesan."
+        },
+        {
+          "text": "いいえ、予約していません。空いている部屋はありますか？",
+          "next": "htl_walkin",
+          "translation": "Belum. Apakah ada kamar kosong?"
+        }
+      ]
+    },
+    "htl_walkin": {
+      "speaker": "ゆかりフロント",
+      "text": "少々お待ちください。……はい、洋室と和室のどちらも空いております。どちらになさいますか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_think.png",
+      "audio": "assets/audio/htl_walkin.wav",
+      "next": "",
+      "translation": "Mohon tunggu sebentar. ...Ya, kamar bergaya Barat maupun Jepang sama-sama kosong. Mau yang mana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "洋室でお願いします。",
+          "next": "htl_nights",
+          "translation": "Tolong kamar bergaya Barat."
+        },
+        {
+          "text": "和室に泊まってみたいです。",
+          "next": "htl_nights",
+          "translation": "Saya ingin mencoba menginap di kamar bergaya Jepang."
+        }
+      ]
+    },
+    "htl_nights": {
+      "speaker": "ゆかりフロント",
+      "text": "何泊のご予定でしょうか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_nights.wav",
+      "next": "",
+      "translation": "Rencananya menginap berapa malam?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "二泊をお願いします。",
+          "next": "htl_form",
+          "translation": "Dua malam, tolong."
+        },
+        {
+          "text": "まだ決まっていません。",
+          "next": "htl_nights_2",
+          "translation": "Belum diputuskan."
+        }
+      ]
+    },
+    "htl_nights_2": {
+      "speaker": "ゆかりフロント",
+      "text": "では、まず一泊でご案内いたします。延長も可能ですので、お気軽にお申し付けください。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_nights_2.wav",
+      "next": "",
+      "translation": "Kalau begitu, saya siapkan satu malam dulu. Perpanjangan juga bisa, jadi jangan ragu untuk memberi tahu kami.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_form",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "助かります。",
+          "next": "htl_form",
+          "translation": "Sangat membantu."
+        }
+      ]
+    },
+    "htl_name": {
+      "speaker": "ゆかりフロント",
+      "text": "ご予約のお名前を、お伺いしてもよろしいでしょうか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_name.wav",
+      "next": "",
+      "translation": "Boleh saya tahu nama pemesan reservasinya?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "鈴木と申します。",
+          "next": "htl_confirm",
+          "translation": "Nama saya Suzuki."
+        },
+        {
+          "text": "ネットで予約しました。確認メールがあります。",
+          "next": "htl_confirm",
+          "translation": "Saya memesan lewat internet. Ada email konfirmasinya."
+        }
+      ]
+    },
+    "htl_confirm": {
+      "speaker": "ゆかりフロント",
+      "text": "鈴木様ですね。確認できました。二泊のご予約でお間違いないでしょうか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_confirm.wav",
+      "next": "",
+      "translation": "Bapak/Ibu Suzuki ya. Sudah saya konfirmasi. Apakah benar reservasinya untuk dua malam?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、間違いありません。",
+          "next": "htl_form",
+          "translation": "Ya, benar."
+        },
+        {
+          "text": "すみません、三泊に変更できますか？",
+          "next": "htl_change",
+          "translation": "Maaf, bisakah diubah menjadi tiga malam?"
+        }
+      ]
+    },
+    "htl_change": {
+      "speaker": "ゆかりフロント",
+      "text": "三泊ですね。空き状況を確認いたしますので、少々お待ちください。……大丈夫です。三泊に変更いたしました。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_think.png",
+      "audio": "assets/audio/htl_change.wav",
+      "next": "",
+      "translation": "Tiga malam ya. Saya cek ketersediaan dulu, mohon tunggu sebentar. ...Tidak masalah. Sudah saya ubah menjadi tiga malam.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます！",
+          "next": "htl_form",
+          "translation": "Terima kasih!"
+        },
+        {
+          "text": "助かります。",
+          "next": "htl_form",
+          "translation": "Sangat membantu."
+        }
+      ]
+    },
+    "htl_form": {
+      "speaker": "ゆかりフロント",
+      "text": "こちらの宿泊カードにご記入をお願いいたします。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/htl_form.wav",
+      "next": "",
+      "translation": "Mohon isi kartu menginap ini.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、書きます。",
+          "next": "htl_id",
+          "translation": "Ya, saya isi."
+        },
+        {
+          "text": "ペンをお借りできますか？",
+          "next": "htl_id",
+          "translation": "Bolehkah saya meminjam pulpen?"
+        }
+      ]
+    },
+    "htl_id": {
+      "speaker": "ゆかりフロント",
+      "text": "ありがとうございます。身分証明書を拝見してもよろしいでしょうか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_id.wav",
+      "next": "",
+      "translation": "Terima kasih. Boleh saya melihat kartu identitas Anda?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、パスポートです。",
+          "next": "htl_pay",
+          "translation": "Ya, ini paspor saya."
+        },
+        {
+          "text": "運転免許証でもいいですか？",
+          "next": "htl_pay",
+          "translation": "Bolehkah SIM saja?"
+        }
+      ]
+    },
+    "htl_pay": {
+      "speaker": "ゆかりフロント",
+      "text": "宿泊料金は、チェックアウトの時にお支払いいただきます。朝食はご利用になりますか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_pay.wav",
+      "next": "",
+      "translation": "Biaya menginap dibayar saat check-out. Apakah Anda akan memakai sarapan?",
+      "chapter": "2. Pembayaran dan Informasi",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、朝食もお願いします。",
+          "next": "htl_breakfast",
+          "translation": "Ya, tolong sekalian sarapannya."
+        },
+        {
+          "text": "朝食は結構です。",
+          "next": "htl_wifi",
+          "translation": "Tidak perlu sarapan."
+        }
+      ]
+    },
+    "htl_breakfast": {
+      "speaker": "ゆかりフロント",
+      "text": "朝食は一階のレストランで、朝七時から九時半までです。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/htl_breakfast.wav",
+      "next": "",
+      "translation": "Sarapan di restoran lantai satu, mulai pukul tujuh sampai setengah sepuluh pagi.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_wifi",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "七時に行きます。",
+          "next": "htl_wifi",
+          "translation": "Saya akan datang jam tujuh."
+        }
+      ]
+    },
+    "htl_wifi": {
+      "speaker": "ゆかりフロント",
+      "text": "Wi-Fiのパスワードは、カードキーの台紙に書いてございます。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/htl_wifi.wav",
+      "next": "",
+      "translation": "Kata sandi Wi-Fi tertulis di kertas pembungkus kartu kunci.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "htl_key",
+          "translation": "Baik, saya mengerti."
+        },
+        {
+          "text": "大浴場はありますか？",
+          "next": "htl_bath",
+          "translation": "Apakah ada pemandian umum?"
+        }
+      ]
+    },
+    "htl_bath": {
+      "speaker": "ゆかりフロント",
+      "text": "はい、最上階に大浴場がございます。夜十一時までご利用いただけます。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_bath.wav",
+      "next": "",
+      "translation": "Ya, ada pemandian umum di lantai paling atas. Bisa dipakai sampai pukul sebelas malam.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "楽しみです！",
+          "next": "htl_key",
+          "translation": "Saya tidak sabar!"
+        },
+        {
+          "text": "入る前に気をつけることはありますか？",
+          "next": "htl_bath_rule",
+          "translation": "Apakah ada hal yang perlu diperhatikan sebelum masuk?"
+        }
+      ]
+    },
+    "htl_bath_rule": {
+      "speaker": "ゆかりフロント",
+      "text": "湯船に入る前に、体を洗ってください。タオルはお湯に入れないでくださいね。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/htl_bath_rule.wav",
+      "next": "",
+      "translation": "Sebelum masuk ke bak, mohon cuci badan dulu. Jangan masukkan handuk ke dalam air panas ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "htl_key",
+          "translation": "Baik, saya mengerti."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_key",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "htl_key": {
+      "speaker": "ゆかりフロント",
+      "text": "こちらがお部屋のカードキーです。お部屋は十二階の1205号室でございます。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_key.wav",
+      "next": "",
+      "translation": "Ini kartu kunci kamar Anda. Kamarnya di lantai 12, nomor 1205.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_elev",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "荷物を運んでいただけますか？",
+          "next": "htl_bellboy",
+          "translation": "Bisakah Anda membawakan barang bawaan saya?"
+        }
+      ]
+    },
+    "htl_bellboy": {
+      "speaker": "ゆかりフロント",
+      "text": "かしこまりました。係の者がお部屋までお持ちいたします。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_bellboy.wav",
+      "next": "",
+      "translation": "Baik. Petugas kami akan membawanya sampai ke kamar.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_elev",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "お願いします。",
+          "next": "htl_elev",
+          "translation": "Tolong ya."
+        }
+      ]
+    },
+    "htl_elev": {
+      "speaker": "ゆかりフロント",
+      "text": "エレベーターは、フロントの右手奥にございます。ごゆっくりお過ごしください。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_elev.wav",
+      "next": "",
+      "translation": "Lift ada di bagian dalam sebelah kanan meja resepsionis. Silakan beristirahat dengan nyaman.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_room_01",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "チェックアウトは何時ですか？",
+          "next": "htl_checkout_info",
+          "translation": "Check-out jam berapa?"
+        }
+      ]
+    },
+    "htl_checkout_info": {
+      "speaker": "ゆかりフロント",
+      "text": "チェックアウトは、朝十時まででございます。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_checkout_info.wav",
+      "next": "",
+      "translation": "Check-out paling lambat pukul sepuluh pagi.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "htl_room_01",
+          "translation": "Baik, saya mengerti."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_room_01",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "htl_room_01": {
+      "speaker": "システム",
+      "text": "部屋に入ると、大きな窓から夜景が見えた。ふとんもふかふかだ。",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Begitu masuk kamar, pemandangan malam terlihat dari jendela besar. Futonnya pun empuk.",
+      "chapter": "3. Di Kamar",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "わあ、きれい！",
+          "next": "htl_room_02",
+          "translation": "Wah, indah sekali!"
+        },
+        {
+          "text": "少し休もう。",
+          "next": "htl_room_02",
+          "translation": "Istirahat sebentar."
+        }
+      ]
+    },
+    "htl_room_02": {
+      "speaker": "システム",
+      "text": "部屋が少し暑い。エアコンの温度を調整したいけれど、使い方がわからない。",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Kamarnya agak panas. Ingin mengatur suhu AC, tetapi tidak tahu cara memakainya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "フロントに電話してみよう。",
+          "next": "htl_phone",
+          "translation": "Coba telepon resepsionis."
+        },
+        {
+          "text": "リモコンを探してみよう。",
+          "next": "htl_remote",
+          "translation": "Coba cari remotnya."
+        }
+      ]
+    },
+    "htl_remote": {
+      "speaker": "システム",
+      "text": "リモコンには「冷房」「暖房」「温度」と書いてある。冷房を押して、温度を下げた。",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Di remote tertulis \"pendingin\", \"pemanas\", dan \"suhu\". Kamu menekan pendingin dan menurunkan suhunya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "これでばっちり！",
+          "next": "htl_room_03",
+          "translation": "Beres!"
+        },
+        {
+          "text": "まだ暑いから、電話してみよう。",
+          "next": "htl_phone",
+          "translation": "Masih panas, coba telepon."
+        }
+      ]
+    },
+    "htl_phone": {
+      "speaker": "ゆかりフロント",
+      "text": "はい、フロントでございます。いかがなさいましたか？",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_phone.wav",
+      "next": "",
+      "translation": "Ya, resepsionis di sini. Ada yang bisa kami bantu?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "エアコンの使い方がわかりません。",
+          "next": "htl_phone_2",
+          "translation": "Saya tidak tahu cara memakai AC."
+        },
+        {
+          "text": "タオルをもう一枚いただけますか？",
+          "next": "htl_phone_3",
+          "translation": "Bolehkah saya minta satu handuk lagi?"
+        }
+      ]
+    },
+    "htl_phone_2": {
+      "speaker": "ゆかりフロント",
+      "text": "1205号室でございますね。係の者がすぐにお伺いいたします。",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_phone_2.wav",
+      "next": "",
+      "translation": "Kamar 1205 ya. Petugas kami akan segera datang.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_room_03",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "お願いします。",
+          "next": "htl_room_03",
+          "translation": "Tolong ya."
+        }
+      ]
+    },
+    "htl_phone_3": {
+      "speaker": "ゆかりフロント",
+      "text": "タオルですね。すぐにお持ちいたします。",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_phone_3.wav",
+      "next": "",
+      "translation": "Handuk ya. Segera kami bawakan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_room_03",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "お願いします。",
+          "next": "htl_room_03",
+          "translation": "Tolong ya."
+        }
+      ]
+    },
+    "htl_room_03": {
+      "speaker": "システム",
+      "text": "問題が解決して、ほっとした。明日は朝早く出かけたいので、モーニングコールを頼んでみよう。",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Masalah sudah selesai, kamu pun lega. Besok ingin berangkat pagi-pagi, jadi coba minta morning call.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "モーニングコールをお願いする。",
+          "next": "htl_morning",
+          "translation": "Meminta morning call."
+        },
+        {
+          "text": "自分のアラームで起きるから大丈夫。",
+          "next": "htl_checkout_01",
+          "translation": "Tidak perlu, aku bangun dengan alarmku sendiri."
+        }
+      ]
+    },
+    "htl_morning": {
+      "speaker": "ゆかりフロント",
+      "text": "モーニングコールは何時がよろしいでしょうか？",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_morning.wav",
+      "next": "",
+      "translation": "Morning call-nya pukul berapa?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "朝七時にお願いします。",
+          "next": "htl_morning_2",
+          "translation": "Pukul tujuh pagi, tolong."
+        },
+        {
+          "text": "六時半にお願いします。",
+          "next": "htl_morning_2",
+          "translation": "Pukul setengah tujuh, tolong."
+        }
+      ]
+    },
+    "htl_morning_2": {
+      "speaker": "ゆかりフロント",
+      "text": "かしこまりました。おやすみなさいませ。",
+      "background": "assets/background/hotel_room.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_morning_2.wav",
+      "next": "",
+      "translation": "Baik. Selamat beristirahat.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "おやすみなさい。",
+          "next": "htl_checkout_01",
+          "translation": "Selamat malam."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_checkout_01",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "htl_checkout_01": {
+      "speaker": "システム",
+      "text": "翌朝。荷物をまとめて、フロントへ向かった。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Keesokan paginya. Kamu membereskan barang dan menuju resepsionis.",
+      "chapter": "4. Check-out",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "チェックアウトをお願いします。",
+          "next": "htl_co_02",
+          "translation": "Tolong check-out."
+        },
+        {
+          "text": "荷物を預けてもいいですか？",
+          "next": "htl_co_bag",
+          "translation": "Bolehkah saya menitipkan barang?"
+        }
+      ]
+    },
+    "htl_co_bag": {
+      "speaker": "ゆかりフロント",
+      "text": "はい、お預かりいたします。こちらが預かり札です。夕方五時までにお取りにいらしてください。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_co_bag.wav",
+      "next": "",
+      "translation": "Ya, saya terima titipannya. Ini kartu tanda titipnya. Mohon diambil paling lambat pukul lima sore.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_co_02",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "わかりました。",
+          "next": "htl_co_02",
+          "translation": "Baik, saya mengerti."
+        }
+      ]
+    },
+    "htl_co_02": {
+      "speaker": "ゆかりフロント",
+      "text": "おはようございます。お部屋のカードキーをお返しください。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_co_02.wav",
+      "next": "",
+      "translation": "Selamat pagi. Mohon kembalikan kartu kunci kamar Anda.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、お返しします。",
+          "next": "htl_co_03",
+          "translation": "Ya, saya kembalikan."
+        },
+        {
+          "text": "あ、カードキーを部屋に忘れました！",
+          "next": "htl_co_lost",
+          "translation": "Oh, kartu kuncinya tertinggal di kamar!"
+        }
+      ]
+    },
+    "htl_co_lost": {
+      "speaker": "ゆかりフロント",
+      "text": "大丈夫です。スペアを確認いたしますので、少々お待ちください。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_think.png",
+      "audio": "assets/audio/htl_co_lost.wav",
+      "next": "",
+      "translation": "Tidak apa-apa. Saya cek kunci cadangannya, mohon tunggu sebentar.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "すみません、お願いします。",
+          "next": "htl_co_03",
+          "translation": "Maaf, tolong ya."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "htl_co_03",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "htl_co_03": {
+      "speaker": "ゆかりフロント",
+      "text": "お会計は、合計24,000円になります。ミニバーのご利用はございましたか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_co_03.wav",
+      "next": "",
+      "translation": "Tagihannya totalnya 24.000 yen. Apakah Anda memakai minibar?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "いいえ、使っていません。",
+          "next": "htl_co_pay",
+          "translation": "Tidak, saya tidak memakainya."
+        },
+        {
+          "text": "はい、水を一本飲みました。",
+          "next": "htl_co_mini",
+          "translation": "Ya, saya minum satu botol air."
+        }
+      ]
+    },
+    "htl_co_mini": {
+      "speaker": "ゆかりフロント",
+      "text": "ミニバーのお水一本ですね。200円を追加させていただきます。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_co_mini.wav",
+      "next": "",
+      "translation": "Satu botol air dari minibar ya. Kami tambahkan 200 yen.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "htl_co_pay",
+          "translation": "Baik."
+        },
+        {
+          "text": "はい、大丈夫です。",
+          "next": "htl_co_pay",
+          "translation": "Ya, tidak masalah."
+        }
+      ]
+    },
+    "htl_co_pay": {
+      "speaker": "ゆかりフロント",
+      "text": "お支払いは、現金とクレジットカードがご利用いただけます。いかがなさいますか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_co_pay.wav",
+      "next": "",
+      "translation": "Pembayaran bisa dengan tunai atau kartu kredit. Bagaimana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "カードでお願いします。",
+          "next": "htl_co_card",
+          "translation": "Tolong dengan kartu."
+        },
+        {
+          "text": "現金で払います。",
+          "next": "htl_co_cash",
+          "translation": "Saya bayar tunai."
+        }
+      ]
+    },
+    "htl_co_card": {
+      "speaker": "ゆかりフロント",
+      "text": "クレジットカードですね。こちらの端末にカードを差し込んでください。……ありがとうございます。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/htl_co_card.wav",
+      "next": "",
+      "translation": "Kartu kredit ya. Mohon masukkan kartu ke mesin ini. ...Terima kasih.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございました。",
+          "next": "htl_co_receipt",
+          "translation": "Terima kasih banyak."
+        },
+        {
+          "text": "領収書をお願いします。",
+          "next": "htl_co_receipt",
+          "translation": "Tolong kuitansinya."
+        }
+      ]
+    },
+    "htl_co_cash": {
+      "speaker": "ゆかりフロント",
+      "text": "お預かりいたします。こちら、お釣りです。……ありがとうございます。",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_co_cash.wav",
+      "next": "",
+      "translation": "Saya terima uangnya. Ini kembaliannya. ...Terima kasih.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "ありがとうございました。",
+          "next": "htl_co_receipt",
+          "translation": "Terima kasih banyak."
+        },
+        {
+          "text": "領収書をお願いします。",
+          "next": "htl_co_receipt",
+          "translation": "Tolong kuitansinya."
+        }
+      ]
+    },
+    "htl_co_receipt": {
+      "speaker": "ゆかりフロント",
+      "text": "お客様、お忘れ物はございませんか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/htl_co_receipt.wav",
+      "next": "",
+      "translation": "Apakah ada barang yang tertinggal?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、大丈夫です。",
+          "next": "htl_out_01",
+          "translation": "Ya, tidak ada."
+        },
+        {
+          "text": "傘を部屋に忘れたかもしれません。",
+          "next": "htl_lost",
+          "translation": "Mungkin payung saya tertinggal di kamar."
+        }
+      ]
+    },
+    "htl_lost": {
+      "speaker": "ゆかりフロント",
+      "text": "確認いたしますので、少々お待ちください。……ございました！こちらでお間違いないでしょうか？",
+      "background": "assets/background/hotel_front.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_lost.wav",
+      "next": "",
+      "translation": "Saya cek dulu, mohon tunggu sebentar. ...Ketemu! Apakah ini payung Anda?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "はい、それです。ありがとうございます。",
+          "next": "htl_out_01",
+          "translation": "Ya, itu. Terima kasih."
+        },
+        {
+          "text": "助かりました！",
+          "next": "htl_out_01",
+          "translation": "Sangat membantu!"
+        }
+      ]
+    },
+    "htl_out_01": {
+      "speaker": "ゆかりフロント",
+      "text": "ご宿泊、ありがとうございました。またのお越しをお待ちしております。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/htl_out_01.wav",
+      "next": "",
+      "translation": "Terima kasih sudah menginap. Kami menantikan kedatangan Anda kembali.",
+      "chapter": "5. Keluar Hotel",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "お世話になりました。",
+          "next": "htl_out_02",
+          "translation": "Terima kasih atas bantuannya."
+        },
+        {
+          "text": "とても快適でした。また来ます！",
+          "next": "htl_out_02",
+          "translation": "Sangat nyaman. Saya akan datang lagi!"
+        }
+      ]
+    },
+    "htl_out_02": {
+      "speaker": "システム",
+      "text": "ホテルを出ると、朝の街が静かに広がっていた。さて、今日はこれからどうしよう？",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Begitu keluar hotel, kota di pagi hari terbentang tenang. Nah, hari ini mau ke mana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "観光に出かけよう。",
+          "next": "htl_end_sight",
+          "translation": "Ayo pergi wisata."
+        },
+        {
+          "text": "駅へ向かおう。",
+          "next": "htl_out_03",
+          "translation": "Ayo menuju stasiun."
+        }
+      ]
+    },
+    "htl_out_03": {
+      "speaker": "システム",
+      "text": "駅へ向かう途中、タクシー乗り場が見えた。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Dalam perjalanan ke stasiun, terlihat tempat pangkalan taksi.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "タクシーで行こう。",
+          "next": "htl_end_taxi",
+          "translation": "Naik taksi saja."
+        },
+        {
+          "text": "歩いていこう。",
+          "next": "htl_end_walk",
+          "translation": "Jalan kaki saja."
+        }
+      ]
+    },
+    "htl_end_sight": {
+      "speaker": "システム",
+      "text": "朝の街を歩きながら、観光地へ向かうことにした。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_sight_01",
+      "translation": "Kamu memutuskan pergi ke tempat wisata sambil berjalan di kota yang masih pagi.",
+      "chapter": "6. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_sight_01": {
+      "speaker": "システム",
+      "text": "ぐっすり眠ったおかげで、足取りも軽い。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_sight_02",
+      "translation": "Berkat tidur nyenyak, langkahmu terasa ringan.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_sight_02": {
+      "speaker": "システム",
+      "text": "チェックイン、お支払い、お部屋の使い方、チェックアウト。ホテルで使う日本語をたくさん練習できたね。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_sight_03",
+      "translation": "Check-in, pembayaran, cara memakai kamar, check-out. Kamu sudah banyak berlatih bahasa Jepang yang dipakai di hotel.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_sight_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 1 - Wisata di Pagi Hari",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "htl_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "htl_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "htl_end_taxi": {
+      "speaker": "システム",
+      "text": "タクシーに乗って、駅へ向かうことにした。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_taxi_01",
+      "translation": "Kamu memutuskan naik taksi menuju stasiun.",
+      "chapter": "6. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_taxi_01": {
+      "speaker": "システム",
+      "text": "窓の外を流れる景色を見ながら、旅の次の目的地を思い浮かべた。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_taxi_02",
+      "translation": "Sambil menatap pemandangan yang berlalu di luar jendela, kamu membayangkan tujuan perjalanan berikutnya.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_taxi_02": {
+      "speaker": "システム",
+      "text": "チェックイン、お支払い、お部屋の使い方、チェックアウト。ホテルで使う日本語をたくさん練習できたね。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_taxi_03",
+      "translation": "Check-in, pembayaran, cara memakai kamar, check-out. Kamu sudah banyak berlatih bahasa Jepang yang dipakai di hotel.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_taxi_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 2 - Naik Taksi ke Stasiun",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "htl_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "htl_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "htl_end_walk": {
+      "speaker": "システム",
+      "text": "荷物を引きながら、のんびり駅まで歩いていくことにした。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_walk_01",
+      "translation": "Kamu memutuskan berjalan santai ke stasiun sambil menarik kopermu.",
+      "chapter": "6. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_walk_01": {
+      "speaker": "システム",
+      "text": "朝の空気が気持ちいい。いい旅になりそうだ。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_walk_02",
+      "translation": "Udara pagi terasa segar. Sepertinya akan jadi perjalanan yang menyenangkan.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_walk_02": {
+      "speaker": "システム",
+      "text": "チェックイン、お支払い、お部屋の使い方、チェックアウト。ホテルで使う日本語をたくさん練習できたね。",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "htl_outro_walk_03",
+      "translation": "Check-in, pembayaran, cara memakai kamar, check-out. Kamu sudah banyak berlatih bahasa Jepang yang dipakai di hotel.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Hotel",
+      "choices": []
+    },
+    "htl_outro_walk_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/hotel_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 3 - Berjalan ke Stasiun",
+      "theme": "Hotel",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "htl_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "htl_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "shp_intro_01": {
+      "speaker": "システム",
+      "text": "休日の午後、日本のデパートにやってきた。お土産と、自分用の服を買いたい。",
+      "background": "assets/background/shop_entrance.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_intro_02",
+      "translation": "Sore hari di hari libur, kamu datang ke sebuah department store di Jepang. Kamu ingin membeli oleh-oleh dan pakaian untuk dirimu sendiri.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_intro_02": {
+      "speaker": "システム",
+      "text": "店の中は明るくて、にぎやかで、いろいろな商品が並んでいる。",
+      "background": "assets/background/shop_entrance.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_intro_03",
+      "translation": "Di dalam toko terang, ramai, dan berbagai barang tertata rapi.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_intro_03": {
+      "speaker": "システム",
+      "text": "今日は日本語で、入店からお会計まで挑戦してみよう！",
+      "background": "assets/background/shop_entrance.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_start",
+      "translation": "Hari ini, coba tantang dirimu memakai bahasa Jepang dari masuk toko sampai membayar di kasir!",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_start": {
+      "speaker": "ゆかり店員",
+      "text": "いらっしゃいませ。何かお探しですか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_start.wav",
+      "next": "",
+      "translation": "Selamat datang. Sedang mencari sesuatu?",
+      "chapter": "1. Masuk Toko",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "はい、服を探しています。",
+          "next": "shp_item",
+          "translation": "Ya, saya sedang mencari pakaian."
+        },
+        {
+          "text": "お土産を探しています。",
+          "next": "shp_souvenir",
+          "translation": "Saya sedang mencari oleh-oleh."
+        }
+      ]
+    },
+    "shp_souvenir": {
+      "speaker": "ゆかり店員",
+      "text": "お土産でしたら、お菓子と雑貨がございます。どちらをご覧になりますか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_think.png",
+      "audio": "assets/audio/shp_souvenir.wav",
+      "next": "",
+      "translation": "Kalau oleh-oleh, kami punya kue/camilan dan barang-barang kecil. Anda ingin melihat yang mana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "お菓子をお願いします。",
+          "next": "shp_budget",
+          "translation": "Tolong tunjukkan camilannya."
+        },
+        {
+          "text": "雑貨を見てみたいです。",
+          "next": "shp_budget",
+          "translation": "Saya ingin melihat barang-barang kecil."
+        }
+      ]
+    },
+    "shp_budget": {
+      "speaker": "ゆかり店員",
+      "text": "ご予算は、どのくらいでしょうか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_budget.wav",
+      "next": "",
+      "translation": "Kira-kira berapa anggarannya?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "二千円くらいです。",
+          "next": "shp_look",
+          "translation": "Sekitar dua ribu yen."
+        },
+        {
+          "text": "まだ決まっていません。",
+          "next": "shp_budget_2",
+          "translation": "Belum ditentukan."
+        }
+      ]
+    },
+    "shp_budget_2": {
+      "speaker": "ゆかり店員",
+      "text": "では、まず人気のものをご案内いたします。お気軽にお申し付けください。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_budget_2.wav",
+      "next": "",
+      "translation": "Kalau begitu, saya tunjukkan dulu yang populer. Jangan ragu untuk memberi tahu kami.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_look",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "助かります。",
+          "next": "shp_look",
+          "translation": "Sangat membantu."
+        }
+      ]
+    },
+    "shp_item": {
+      "speaker": "ゆかり店員",
+      "text": "どのような服をお探しでしょうか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_item.wav",
+      "next": "",
+      "translation": "Pakaian seperti apa yang Anda cari?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "シャツを探しています。",
+          "next": "shp_color",
+          "translation": "Saya sedang mencari kemeja."
+        },
+        {
+          "text": "ネットで見た、この服はありますか？",
+          "next": "shp_color",
+          "translation": "Apakah ada pakaian ini yang saya lihat di internet?"
+        }
+      ]
+    },
+    "shp_color": {
+      "speaker": "ゆかり店員",
+      "text": "はい、こちらでございますね。色は白と青がございます。どちらになさいますか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_color.wav",
+      "next": "",
+      "translation": "Ya, yang ini ya. Warnanya ada putih dan biru. Anda pilih yang mana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "白をください。",
+          "next": "shp_look",
+          "translation": "Tolong yang putih."
+        },
+        {
+          "text": "青の方が好きです。在庫はありますか？",
+          "next": "shp_stock",
+          "translation": "Saya lebih suka yang biru. Apakah ada stoknya?"
+        }
+      ]
+    },
+    "shp_stock": {
+      "speaker": "ゆかり店員",
+      "text": "在庫を確認いたしますので、少々お待ちください。……はい、ございます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_think.png",
+      "audio": "assets/audio/shp_stock.wav",
+      "next": "",
+      "translation": "Saya cek stoknya dulu, mohon tunggu sebentar. ...Ya, ada.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "よかった！",
+          "next": "shp_look",
+          "translation": "Syukurlah!"
+        },
+        {
+          "text": "助かります。",
+          "next": "shp_look",
+          "translation": "Sangat membantu."
+        }
+      ]
+    },
+    "shp_look": {
+      "speaker": "ゆかり店員",
+      "text": "こちらが人気の商品でございます。どうぞ、お手に取ってご覧ください。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/shp_look.wav",
+      "next": "",
+      "translation": "Ini produk yang populer. Silakan pegang dan lihat.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_price",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "ちょっと触ってみてもいいですか？",
+          "next": "shp_price",
+          "translation": "Bolehkah saya coba pegang sebentar?"
+        }
+      ]
+    },
+    "shp_price": {
+      "speaker": "ゆかり店員",
+      "text": "お値段は、こちらの値札に書いてございます。税抜きで三千円でございます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_price.wav",
+      "next": "",
+      "translation": "Harganya tertulis di label harga ini. Sebelum pajak, harganya 3.000 yen.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "意外と安いですね。",
+          "next": "shp_tax",
+          "translation": "Ternyata murah juga ya."
+        },
+        {
+          "text": "少し高いですね。",
+          "next": "shp_tax",
+          "translation": "Agak mahal ya."
+        }
+      ]
+    },
+    "shp_tax": {
+      "speaker": "ゆかり店員",
+      "text": "税込みで、三千三百円になります。免税もできますが、パスポートはお持ちですか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_tax.wav",
+      "next": "",
+      "translation": "Termasuk pajak, jadinya 3.300 yen. Bisa bebas pajak juga, apakah Anda membawa paspor?",
+      "chapter": "2. Harga dan Informasi",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "はい、免税でお願いします。",
+          "next": "shp_taxfree",
+          "translation": "Ya, tolong bebas pajak."
+        },
+        {
+          "text": "免税は結構です。",
+          "next": "shp_sale",
+          "translation": "Tidak perlu bebas pajak."
+        }
+      ]
+    },
+    "shp_taxfree": {
+      "speaker": "ゆかり店員",
+      "text": "免税カウンターは、五階にございます。お会計の前に、パスポートをお見せください。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/shp_taxfree.wav",
+      "next": "",
+      "translation": "Konter bebas pajak ada di lantai lima. Sebelum membayar, mohon tunjukkan paspor Anda.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_sale",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "五階ですね。行ってみます。",
+          "next": "shp_sale",
+          "translation": "Lantai lima ya. Saya akan coba ke sana."
+        }
+      ]
+    },
+    "shp_sale": {
+      "speaker": "ゆかり店員",
+      "text": "今日は、二点お買い上げで、二点目が半額になります。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/shp_sale.wav",
+      "next": "",
+      "translation": "Hari ini, kalau membeli dua barang, barang kedua setengah harga.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "お得ですね。もう一点選びます。",
+          "next": "shp_gift",
+          "translation": "Wah, hemat. Saya pilih satu lagi."
+        },
+        {
+          "text": "もう少し安いものはありますか？",
+          "next": "shp_cheaper",
+          "translation": "Apakah ada yang lebih murah?"
+        }
+      ]
+    },
+    "shp_cheaper": {
+      "speaker": "ゆかり店員",
+      "text": "こちらのコーナーは、セール品で、三割引きでございます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_cheaper.wav",
+      "next": "",
+      "translation": "Pojok ini adalah barang obral, diskon 30 persen.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "それはいいですね！",
+          "next": "shp_gift",
+          "translation": "Wah, bagus sekali!"
+        },
+        {
+          "text": "セールはいつまでですか？",
+          "next": "shp_sale_rule",
+          "translation": "Obralnya sampai kapan?"
+        }
+      ]
+    },
+    "shp_sale_rule": {
+      "speaker": "ゆかり店員",
+      "text": "今週の日曜日までです。セール品は返品できないので、ご注意くださいね。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/shp_sale_rule.wav",
+      "next": "",
+      "translation": "Sampai hari Minggu minggu ini. Barang obral tidak bisa dikembalikan, jadi mohon berhati-hati ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "shp_gift",
+          "translation": "Baik, saya mengerti."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_gift",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "shp_gift": {
+      "speaker": "ゆかり店員",
+      "text": "プレゼント用でしたら、無料で包装いたします。いかがなさいますか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_gift.wav",
+      "next": "",
+      "translation": "Kalau untuk hadiah, kami bungkus gratis. Bagaimana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "はい、包んでください。",
+          "next": "shp_where",
+          "translation": "Ya, tolong dibungkus."
+        },
+        {
+          "text": "重いので、ホテルまで送っていただけますか？",
+          "next": "shp_deliver",
+          "translation": "Karena berat, bisakah Anda mengirimkannya ke hotel?"
+        }
+      ]
+    },
+    "shp_deliver": {
+      "speaker": "ゆかり店員",
+      "text": "かしこまりました。配送サービスがございます。送料は八百円でございます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_deliver.wav",
+      "next": "",
+      "translation": "Baik. Kami punya layanan pengiriman. Ongkos kirimnya 800 yen.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_where",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "お願いします。",
+          "next": "shp_where",
+          "translation": "Tolong ya."
+        }
+      ]
+    },
+    "shp_where": {
+      "speaker": "ゆかり店員",
+      "text": "試着室は、二階のレジの右手奥にございます。タグは切らないでくださいね。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_where.wav",
+      "next": "",
+      "translation": "Ruang ganti ada di lantai dua, bagian dalam sebelah kanan kasir. Tolong jangan potong labelnya ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_fit_01",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "閉店は何時ですか？",
+          "next": "shp_hours",
+          "translation": "Tokonya tutup jam berapa?"
+        }
+      ]
+    },
+    "shp_hours": {
+      "speaker": "ゆかり店員",
+      "text": "閉店は、夜九時でございます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_hours.wav",
+      "next": "",
+      "translation": "Toko tutup pukul sembilan malam.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "shp_fit_01",
+          "translation": "Baik, saya mengerti."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_fit_01",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "shp_fit_01": {
+      "speaker": "システム",
+      "text": "気になる服を持って、試着室に入った。鏡が大きくて、とても明るい。",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sambil membawa pakaian yang menarik perhatianmu, kamu masuk ke ruang ganti. Cerminnya besar dan sangat terang.",
+      "chapter": "3. Di Ruang Ganti",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "着てみよう。",
+          "next": "shp_fit_02",
+          "translation": "Coba dipakai."
+        },
+        {
+          "text": "まず鏡で見てみよう。",
+          "next": "shp_fit_02",
+          "translation": "Lihat dulu di cermin."
+        }
+      ]
+    },
+    "shp_fit_02": {
+      "speaker": "システム",
+      "text": "服を着てみると、少し小さすぎる。サイズを変えたいけれど、変え方がわからない。",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Begitu dipakai, ternyata agak terlalu kecil. Ingin mengganti ukuran, tetapi tidak tahu cara menggantinya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "店員さんを呼んでみよう。",
+          "next": "shp_call",
+          "translation": "Coba panggil pegawai toko."
+        },
+        {
+          "text": "タグを見てみよう。",
+          "next": "shp_tag",
+          "translation": "Coba lihat labelnya."
+        }
+      ]
+    },
+    "shp_tag": {
+      "speaker": "システム",
+      "text": "タグには「S」「M」「L」と書いてある。今のはSだ。Mを探して、手に取った。",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Di label tertulis \"S\", \"M\", dan \"L\". Yang sekarang ukuran S. Kamu mencari ukuran M dan mengambilnya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "これでばっちり！",
+          "next": "shp_fit_03",
+          "translation": "Beres!"
+        },
+        {
+          "text": "まだ小さいから、店員さんを呼んでみよう。",
+          "next": "shp_call",
+          "translation": "Masih kecil, coba panggil pegawai toko."
+        }
+      ]
+    },
+    "shp_call": {
+      "speaker": "ゆかり店員",
+      "text": "はい、お客様。いかがなさいましたか？",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_call.wav",
+      "next": "",
+      "translation": "Ya, Tuan/Nyonya. Ada yang bisa kami bantu?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "サイズが小さすぎます。",
+          "next": "shp_call_size",
+          "translation": "Ukurannya terlalu kecil."
+        },
+        {
+          "text": "色違いはありますか？",
+          "next": "shp_call_color",
+          "translation": "Apakah ada warna lain?"
+        }
+      ]
+    },
+    "shp_call_size": {
+      "speaker": "ゆかり店員",
+      "text": "Mサイズですね。すぐにお持ちいたします。",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_call_size.wav",
+      "next": "",
+      "translation": "Ukuran M ya. Segera kami bawakan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_fit_03",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "お願いします。",
+          "next": "shp_fit_03",
+          "translation": "Tolong ya."
+        }
+      ]
+    },
+    "shp_call_color": {
+      "speaker": "ゆかり店員",
+      "text": "色違いですね。青と黒がございます。すぐにお持ちいたします。",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_call_color.wav",
+      "next": "",
+      "translation": "Warna lain ya. Ada biru dan hitam. Segera kami bawakan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_fit_03",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "お願いします。",
+          "next": "shp_fit_03",
+          "translation": "Tolong ya."
+        }
+      ]
+    },
+    "shp_fit_03": {
+      "speaker": "システム",
+      "text": "ちょうどいいサイズが見つかって、ほっとした。そういえば、ポイントカードを作るとお得らしい。",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Setelah menemukan ukuran yang pas, kamu merasa lega. Katanya, membuat kartu poin akan lebih hemat.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ポイントカードを作ってみる。",
+          "next": "shp_point",
+          "translation": "Coba buat kartu poin."
+        },
+        {
+          "text": "このままレジへ行こう。",
+          "next": "shp_reji_01",
+          "translation": "Langsung ke kasir saja."
+        }
+      ]
+    },
+    "shp_point": {
+      "speaker": "ゆかり店員",
+      "text": "ポイントカードでございますね。すでにお持ちでしょうか？",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_point.wav",
+      "next": "",
+      "translation": "Kartu poin ya. Apakah Anda sudah punya?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "いいえ、持っていません。",
+          "next": "shp_point_2",
+          "translation": "Tidak, saya belum punya."
+        },
+        {
+          "text": "はい、アプリにあります。",
+          "next": "shp_point_2",
+          "translation": "Ya, ada di aplikasi."
+        }
+      ]
+    },
+    "shp_point_2": {
+      "speaker": "ゆかり店員",
+      "text": "かしこまりました。では、お会計の時に、レジでお申し付けください。",
+      "background": "assets/background/shop_fitting.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_point_2.wav",
+      "next": "",
+      "translation": "Baik. Kalau begitu, silakan sampaikan di kasir saat membayar.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "はい、わかりました。",
+          "next": "shp_reji_01",
+          "translation": "Ya, saya mengerti."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_reji_01",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "shp_reji_01": {
+      "speaker": "システム",
+      "text": "服を持って、レジへ向かった。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sambil membawa pakaian, kamu menuju kasir.",
+      "chapter": "4. Di Kasir",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "お会計をお願いします。",
+          "next": "shp_reji_02",
+          "translation": "Tolong dihitung (dibayar)."
+        },
+        {
+          "text": "この服を取り置きしてもらえますか？",
+          "next": "shp_hold",
+          "translation": "Bisakah pakaian ini disimpan dulu untuk saya?"
+        }
+      ]
+    },
+    "shp_hold": {
+      "speaker": "ゆかり店員",
+      "text": "はい、お取り置きいたします。こちらが引換券です。夕方五時までにお取りにいらしてください。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_hold.wav",
+      "next": "",
+      "translation": "Ya, kami simpankan. Ini kartu penukarnya. Mohon diambil paling lambat pukul lima sore.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_reji_02",
+          "translation": "Terima kasih."
+        },
+        {
+          "text": "わかりました。",
+          "next": "shp_reji_02",
+          "translation": "Baik, saya mengerti."
+        }
+      ]
+    },
+    "shp_reji_02": {
+      "speaker": "ゆかり店員",
+      "text": "お待たせいたしました。こちらの商品でよろしいでしょうか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_reji_02.wav",
+      "next": "",
+      "translation": "Maaf menunggu. Apakah barang ini sudah benar?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "はい、お願いします。",
+          "next": "shp_total",
+          "translation": "Ya, tolong."
+        },
+        {
+          "text": "あ、割引クーポンがあります！",
+          "next": "shp_coupon",
+          "translation": "Oh, saya punya kupon diskon!"
+        }
+      ]
+    },
+    "shp_coupon": {
+      "speaker": "ゆかり店員",
+      "text": "大丈夫です。バーコードを読み取りますので、スマホの画面を見せてください。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_think.png",
+      "audio": "assets/audio/shp_coupon.wav",
+      "next": "",
+      "translation": "Tidak apa-apa. Saya akan memindai barcodenya, jadi mohon tunjukkan layar ponsel Anda.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "すみません、お願いします。",
+          "next": "shp_total",
+          "translation": "Maaf, tolong ya."
+        },
+        {
+          "text": "ありがとうございます。",
+          "next": "shp_total",
+          "translation": "Terima kasih."
+        }
+      ]
+    },
+    "shp_total": {
+      "speaker": "ゆかり店員",
+      "text": "お会計は、合計8,500円になります。袋はご利用になりますか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_total.wav",
+      "next": "",
+      "translation": "Totalnya 8.500 yen. Apakah Anda memakai kantong?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "いいえ、エコバッグがあります。",
+          "next": "shp_pay",
+          "translation": "Tidak, saya punya tas belanja sendiri."
+        },
+        {
+          "text": "はい、袋をお願いします。",
+          "next": "shp_bag",
+          "translation": "Ya, tolong kantongnya."
+        }
+      ]
+    },
+    "shp_bag": {
+      "speaker": "ゆかり店員",
+      "text": "袋は一枚、三円でございます。追加させていただきます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_bag.wav",
+      "next": "",
+      "translation": "Satu kantong 3 yen. Kami tambahkan ke tagihan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "わかりました。",
+          "next": "shp_pay",
+          "translation": "Baik."
+        },
+        {
+          "text": "はい、大丈夫です。",
+          "next": "shp_pay",
+          "translation": "Ya, tidak masalah."
+        }
+      ]
+    },
+    "shp_pay": {
+      "speaker": "ゆかり店員",
+      "text": "お支払いは、現金、クレジットカード、電子マネーがご利用いただけます。いかがなさいますか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_pay.wav",
+      "next": "",
+      "translation": "Pembayaran bisa dengan tunai, kartu kredit, atau uang elektronik. Bagaimana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "カードでお願いします。",
+          "next": "shp_card",
+          "translation": "Tolong dengan kartu."
+        },
+        {
+          "text": "現金で払います。",
+          "next": "shp_cash",
+          "translation": "Saya bayar tunai."
+        }
+      ]
+    },
+    "shp_card": {
+      "speaker": "ゆかり店員",
+      "text": "クレジットカードですね。こちらの端末にカードを差し込んでください。……ありがとうございます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_point.png",
+      "audio": "assets/audio/shp_card.wav",
+      "next": "",
+      "translation": "Kartu kredit ya. Mohon masukkan kartu ke mesin ini. ...Terima kasih.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございました。",
+          "next": "shp_receipt",
+          "translation": "Terima kasih banyak."
+        },
+        {
+          "text": "レシートをお願いします。",
+          "next": "shp_receipt",
+          "translation": "Tolong struknya."
+        }
+      ]
+    },
+    "shp_cash": {
+      "speaker": "ゆかり店員",
+      "text": "お預かりいたします。こちら、お釣りです。……ありがとうございます。",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_cash.wav",
+      "next": "",
+      "translation": "Saya terima uangnya. Ini kembaliannya. ...Terima kasih.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "ありがとうございました。",
+          "next": "shp_receipt",
+          "translation": "Terima kasih banyak."
+        },
+        {
+          "text": "レシートをお願いします。",
+          "next": "shp_receipt",
+          "translation": "Tolong struknya."
+        }
+      ]
+    },
+    "shp_receipt": {
+      "speaker": "ゆかり店員",
+      "text": "お客様、お忘れ物はございませんか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_normal.png",
+      "audio": "assets/audio/shp_receipt.wav",
+      "next": "",
+      "translation": "Apakah ada barang yang tertinggal?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "はい、大丈夫です。",
+          "next": "shp_out_01",
+          "translation": "Ya, tidak ada."
+        },
+        {
+          "text": "スマホを試着室に忘れたかもしれません。",
+          "next": "shp_lost",
+          "translation": "Mungkin ponsel saya tertinggal di ruang ganti."
+        }
+      ]
+    },
+    "shp_lost": {
+      "speaker": "ゆかり店員",
+      "text": "確認いたしますので、少々お待ちください。……ございました！こちらでお間違いないでしょうか？",
+      "background": "assets/background/shop_counter.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_lost.wav",
+      "next": "",
+      "translation": "Saya cek dulu, mohon tunggu sebentar. ...Ketemu! Apakah ini benar ponsel Anda?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "はい、それです。ありがとうございます。",
+          "next": "shp_out_01",
+          "translation": "Ya, itu. Terima kasih."
+        },
+        {
+          "text": "助かりました！",
+          "next": "shp_out_01",
+          "translation": "Sangat membantu!"
+        }
+      ]
+    },
+    "shp_out_01": {
+      "speaker": "ゆかり店員",
+      "text": "お買い上げ、ありがとうございました。またのお越しをお待ちしております。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/yukari_smile.png",
+      "audio": "assets/audio/shp_out_01.wav",
+      "next": "",
+      "translation": "Terima kasih atas pembeliannya. Kami menantikan kedatangan Anda kembali.",
+      "chapter": "5. Keluar Toko",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "お世話になりました。",
+          "next": "shp_out_02",
+          "translation": "Terima kasih atas bantuannya."
+        },
+        {
+          "text": "とても楽しかったです。また来ます！",
+          "next": "shp_out_02",
+          "translation": "Sangat menyenangkan. Saya akan datang lagi!"
+        }
+      ]
+    },
+    "shp_out_02": {
+      "speaker": "システム",
+      "text": "店を出ると、夕方の街がにぎやかに広がっていた。さて、これからどうしよう？",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Begitu keluar toko, kota di sore hari terbentang ramai. Nah, sekarang mau bagaimana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "もう少し買い物を続けよう。",
+          "next": "shp_end_more",
+          "translation": "Ayo lanjut belanja sedikit lagi."
+        },
+        {
+          "text": "ホテルへ帰ろう。",
+          "next": "shp_out_03",
+          "translation": "Ayo pulang ke hotel."
+        }
+      ]
+    },
+    "shp_out_03": {
+      "speaker": "システム",
+      "text": "ホテルへ帰る途中、タクシー乗り場が見えた。荷物は少し重い。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Dalam perjalanan pulang ke hotel, terlihat pangkalan taksi. Barang bawaan agak berat.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "タクシーで帰ろう。",
+          "next": "shp_end_taxi",
+          "translation": "Naik taksi saja."
+        },
+        {
+          "text": "歩いて帰ろう。",
+          "next": "shp_end_walk",
+          "translation": "Jalan kaki saja."
+        }
+      ]
+    },
+    "shp_end_more": {
+      "speaker": "システム",
+      "text": "もう少し買い物を続けることにした。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_more_01",
+      "translation": "Kamu memutuskan melanjutkan belanja sedikit lagi.",
+      "chapter": "6. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_more_01": {
+      "speaker": "システム",
+      "text": "いい買い物ができたおかげで、足取りも軽い。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_more_02",
+      "translation": "Berkat belanja yang memuaskan, langkahmu terasa ringan.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_more_02": {
+      "speaker": "システム",
+      "text": "商品の探し方、値段の聞き方、試着、お会計。買い物で使う日本語をたくさん練習できたね。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_more_03",
+      "translation": "Cara mencari barang, cara menanyakan harga, mencoba pakaian, pembayaran. Kamu sudah banyak berlatih bahasa Jepang yang dipakai saat berbelanja.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_more_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 1 - Lanjut Berbelanja",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "shp_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "shp_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "shp_end_taxi": {
+      "speaker": "システム",
+      "text": "タクシーに乗って、ホテルへ帰ることにした。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_taxi_01",
+      "translation": "Kamu memutuskan naik taksi pulang ke hotel.",
+      "chapter": "6. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_taxi_01": {
+      "speaker": "システム",
+      "text": "窓の外を流れる景色を見ながら、今日買ったものを一つずつ思い返した。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_taxi_02",
+      "translation": "Sambil menatap pemandangan yang berlalu di luar jendela, kamu mengingat satu per satu barang yang dibeli hari ini.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_taxi_02": {
+      "speaker": "システム",
+      "text": "商品の探し方、値段の聞き方、試着、お会計。買い物で使う日本語をたくさん練習できたね。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_taxi_03",
+      "translation": "Cara mencari barang, cara menanyakan harga, mencoba pakaian, pembayaran. Kamu sudah banyak berlatih bahasa Jepang yang dipakai saat berbelanja.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_taxi_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 2 - Naik Taksi ke Hotel",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "shp_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "shp_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
+    },
+    "shp_end_walk": {
+      "speaker": "システム",
+      "text": "荷物を持って、のんびりホテルまで歩いて帰ることにした。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_walk_01",
+      "translation": "Kamu memutuskan berjalan santai pulang ke hotel sambil menenteng belanjaan.",
+      "chapter": "6. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_walk_01": {
+      "speaker": "システム",
+      "text": "夕方の風が気持ちいい。いい一日になった。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_walk_02",
+      "translation": "Angin sore terasa segar. Hari yang menyenangkan.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_walk_02": {
+      "speaker": "システム",
+      "text": "商品の探し方、値段の聞き方、試着、お会計。買い物で使う日本語をたくさん練習できたね。",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "shp_outro_walk_03",
+      "translation": "Cara mencari barang, cara menanyakan harga, mencoba pakaian, pembayaran. Kamu sudah banyak berlatih bahasa Jepang yang dipakai saat berbelanja.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "Belanja",
+      "choices": []
+    },
+    "shp_outro_walk_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/shop_depan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 3 - Berjalan Pulang ke Hotel",
+      "theme": "Belanja",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "shp_intro_01",
+          "translation": "Main lagi dari awal"
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "shp_intro_01",
+          "translation": "Kembali ke layar judul"
+        }
+      ]
     }
   },
   "vocab": [
@@ -3517,6 +7071,1623 @@
       "yomi": "きまり",
       "romaji": "kimari",
       "arti": "sudah diputuskan (決まり！= deal!)"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "ホテル",
+      "romaji": "hoteru",
+      "arti": "hotel"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "フロント",
+      "romaji": "furonto",
+      "arti": "resepsionis"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "ロビー",
+      "romaji": "robī",
+      "arti": "lobi"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "予約",
+      "yomi": "よやく",
+      "romaji": "yoyaku",
+      "arti": "reservasi"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "空く",
+      "yomi": "あく",
+      "romaji": "aku",
+      "arti": "kosong / tersedia"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "部屋",
+      "yomi": "へや",
+      "romaji": "heya",
+      "arti": "kamar"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "洋室",
+      "yomi": "ようしつ",
+      "romaji": "yōshitsu",
+      "arti": "kamar gaya Barat"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "和室",
+      "yomi": "わしつ",
+      "romaji": "washitsu",
+      "arti": "kamar gaya Jepang (tatami)"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "一泊",
+      "yomi": "いっぱく",
+      "romaji": "ippaku",
+      "arti": "satu malam menginap"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "二泊",
+      "yomi": "にはく",
+      "romaji": "nihaku",
+      "arti": "dua malam menginap"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "三泊",
+      "yomi": "さんぱく",
+      "romaji": "sanpaku",
+      "arti": "tiga malam menginap"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "宿泊",
+      "yomi": "しゅくはく",
+      "romaji": "shukuhaku",
+      "arti": "menginap"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "記入",
+      "yomi": "きにゅう",
+      "romaji": "kinyū",
+      "arti": "mengisi (formulir)"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "身分証明書",
+      "yomi": "みぶんしょうめいしょ",
+      "romaji": "mibun shōmeisho",
+      "arti": "kartu identitas"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "パスポート",
+      "romaji": "pasupōto",
+      "arti": "paspor"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "運転免許証",
+      "yomi": "うんてんめんきょしょう",
+      "romaji": "unten menkyoshō",
+      "arti": "SIM / surat izin mengemudi"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "拝見",
+      "yomi": "はいけん",
+      "romaji": "haiken",
+      "arti": "melihat (bentuk rendah hati)"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "料金",
+      "yomi": "りょうきん",
+      "romaji": "ryōkin",
+      "arti": "biaya / tarif"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "チェックイン",
+      "romaji": "chekkuin",
+      "arti": "check-in"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "チェックアウト",
+      "romaji": "chekkuauto",
+      "arti": "check-out"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "朝食",
+      "yomi": "ちょうしょく",
+      "romaji": "chōshoku",
+      "arti": "sarapan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "パスワード",
+      "romaji": "pasuwādo",
+      "arti": "kata sandi"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "カードキー",
+      "romaji": "kādo kī",
+      "arti": "kartu kunci"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "台紙",
+      "yomi": "だいし",
+      "romaji": "daishi",
+      "arti": "kertas pembungkus/alas"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "大浴場",
+      "yomi": "だいよくじょう",
+      "romaji": "daiyokujō",
+      "arti": "pemandian umum"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "最上階",
+      "yomi": "さいじょうかい",
+      "romaji": "saijōkai",
+      "arti": "lantai paling atas"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "タオル",
+      "romaji": "taoru",
+      "arti": "handuk"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "湯船",
+      "yomi": "ゆぶね",
+      "romaji": "yubune",
+      "arti": "bak mandi air panas"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "お湯",
+      "yomi": "おゆ",
+      "romaji": "oyu",
+      "arti": "air panas"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "号室",
+      "yomi": "ごうしつ",
+      "romaji": "gōshitsu",
+      "arti": "nomor kamar"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "階",
+      "yomi": "かい",
+      "romaji": "kai",
+      "arti": "lantai"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "エレベーター",
+      "romaji": "erebētā",
+      "arti": "lift"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "右手",
+      "yomi": "みぎて",
+      "romaji": "migite",
+      "arti": "sebelah kanan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "奥",
+      "yomi": "おく",
+      "romaji": "oku",
+      "arti": "bagian dalam"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "荷物",
+      "yomi": "にもつ",
+      "romaji": "nimotsu",
+      "arti": "barang bawaan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "運ぶ",
+      "yomi": "はこぶ",
+      "romaji": "hakobu",
+      "arti": "membawa / mengangkut"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "係",
+      "yomi": "かかり",
+      "romaji": "kakari",
+      "arti": "petugas / bagian yang bertugas"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "夜景",
+      "yomi": "やけい",
+      "romaji": "yakei",
+      "arti": "pemandangan malam"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "ふとん",
+      "romaji": "futon",
+      "arti": "futon (kasur lipat Jepang)"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "エアコン",
+      "romaji": "eakon",
+      "arti": "AC"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "リモコン",
+      "romaji": "rimokon",
+      "arti": "remote"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "冷房",
+      "yomi": "れいぼう",
+      "romaji": "reibō",
+      "arti": "pendingin ruangan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "暖房",
+      "yomi": "だんぼう",
+      "romaji": "danbō",
+      "arti": "pemanas ruangan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "温度",
+      "yomi": "おんど",
+      "romaji": "ondo",
+      "arti": "suhu"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "内線",
+      "yomi": "ないせん",
+      "romaji": "naisen",
+      "arti": "telepon internal"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "モーニングコール",
+      "romaji": "mōningu kōru",
+      "arti": "morning call (panggilan bangun pagi)"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "起きる",
+      "yomi": "おきる",
+      "romaji": "okiru",
+      "arti": "bangun"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "預かる",
+      "yomi": "あずかる",
+      "romaji": "azukaru",
+      "arti": "menerima titipan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "預かり札",
+      "yomi": "あずかりふだ",
+      "romaji": "azukari fuda",
+      "arti": "kartu tanda titipan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "返す",
+      "yomi": "かえす",
+      "romaji": "kaesu",
+      "arti": "mengembalikan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "忘れる",
+      "yomi": "わすれる",
+      "romaji": "wasureru",
+      "arti": "lupa / tertinggal"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "忘れ物",
+      "yomi": "わすれもの",
+      "romaji": "wasuremono",
+      "arti": "barang tertinggal"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "スペア",
+      "romaji": "supea",
+      "arti": "cadangan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "ミニバー",
+      "romaji": "minibā",
+      "arti": "minibar"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "領収書",
+      "yomi": "りょうしゅうしょ",
+      "romaji": "ryōshūsho",
+      "arti": "kuitansi"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "差し込む",
+      "yomi": "さしこむ",
+      "romaji": "sashikomu",
+      "arti": "memasukkan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "端末",
+      "yomi": "たんまつ",
+      "romaji": "tanmatsu",
+      "arti": "mesin / terminal"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "傘",
+      "yomi": "かさ",
+      "romaji": "kasa",
+      "arti": "payung"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "お世話になりました",
+      "yomi": "おせわになりました",
+      "romaji": "osewa ni narimashita",
+      "arti": "terima kasih atas bantuannya"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "快適",
+      "yomi": "かいてき",
+      "romaji": "kaiteki",
+      "arti": "nyaman"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "タクシー",
+      "romaji": "takushī",
+      "arti": "taksi"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "乗り場",
+      "yomi": "のりば",
+      "romaji": "noriba",
+      "arti": "tempat naik (pangkalan)"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "観光",
+      "yomi": "かんこう",
+      "romaji": "kankō",
+      "arti": "wisata"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "駅",
+      "yomi": "えき",
+      "romaji": "eki",
+      "arti": "stasiun"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "延長",
+      "yomi": "えんちょう",
+      "romaji": "enchō",
+      "arti": "perpanjangan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "変更",
+      "yomi": "へんこう",
+      "romaji": "henkō",
+      "arti": "perubahan"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "確認",
+      "yomi": "かくにん",
+      "romaji": "kakunin",
+      "arti": "konfirmasi"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "空き状況",
+      "yomi": "あきじょうきょう",
+      "romaji": "aki jōkyō",
+      "arti": "ketersediaan kamar"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "解決",
+      "yomi": "かいけつ",
+      "romaji": "kaiketsu",
+      "arti": "penyelesaian"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "",
+      "yomi": "ほっとする",
+      "romaji": "hotto suru",
+      "arti": "merasa lega"
+    },
+    {
+      "tema": "Hotel",
+      "kanji": "足取り",
+      "yomi": "あしどり",
+      "romaji": "ashidori",
+      "arti": "langkah kaki"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "レストラン",
+      "romaji": "resutoran",
+      "arti": "restoran"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "いらっしゃいませ",
+      "romaji": "irasshaimase",
+      "arti": "selamat datang (sapaan pelayan)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "名様",
+      "yomi": "めいさま",
+      "romaji": "meisama",
+      "arti": "... orang (hormat, untuk jumlah tamu)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "お二人様",
+      "yomi": "おふたりさま",
+      "romaji": "ofutarisama",
+      "arti": "berdua (hormat)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "窓際",
+      "yomi": "まどぎわ",
+      "romaji": "madogiwa",
+      "arti": "dekat jendela"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "席",
+      "yomi": "せき",
+      "romaji": "seki",
+      "arti": "kursi / tempat duduk"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "案内",
+      "yomi": "あんない",
+      "romaji": "annai",
+      "arti": "pemandu / mengantar"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "空く",
+      "yomi": "あく",
+      "romaji": "aku",
+      "arti": "kosong / tersedia"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "荷物",
+      "yomi": "にもつ",
+      "romaji": "nimotsu",
+      "arti": "barang bawaan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "椅子",
+      "yomi": "いす",
+      "romaji": "isu",
+      "arti": "kursi"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "カゴ",
+      "romaji": "kago",
+      "arti": "keranjang"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "メニュー",
+      "romaji": "menyū",
+      "arti": "menu"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "決まる",
+      "yomi": "きまる",
+      "romaji": "kimaru",
+      "arti": "(sudah) diputuskan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ボタン",
+      "romaji": "botan",
+      "arti": "tombol"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "呼ぶ",
+      "yomi": "よぶ",
+      "romaji": "yobu",
+      "arti": "memanggil"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "おすすめ",
+      "romaji": "osusume",
+      "arti": "rekomendasi"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "本日",
+      "yomi": "ほんじつ",
+      "romaji": "honjitsu",
+      "arti": "hari ini (formal)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ハンバーグ",
+      "romaji": "hanbāgu",
+      "arti": "hamburg (steik daging cincang)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "定食",
+      "yomi": "ていしょく",
+      "romaji": "teishoku",
+      "arti": "set menu (nasi, lauk, sup)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "焼き魚",
+      "yomi": "やきざかな",
+      "romaji": "yakizakana",
+      "arti": "ikan bakar"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "サバ",
+      "romaji": "saba",
+      "arti": "makerel"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "鮭",
+      "yomi": "さけ",
+      "romaji": "sake",
+      "arti": "salmon"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ソース",
+      "romaji": "sōsu",
+      "arti": "saus"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "デミグラス",
+      "romaji": "demigurasu",
+      "arti": "demi-glace (saus cokelat)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "おろしポン酢",
+      "romaji": "oroshi ponzu",
+      "arti": "ponzu dengan lobak parut"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "ご飯",
+      "yomi": "ごはん",
+      "romaji": "gohan",
+      "arti": "nasi / makan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "白米",
+      "yomi": "はくまい",
+      "romaji": "hakumai",
+      "arti": "nasi putih"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "十穀米",
+      "yomi": "じゅっこくまい",
+      "romaji": "jukkokumai",
+      "arti": "nasi sepuluh biji-bijian"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "大盛り",
+      "yomi": "おおもり",
+      "romaji": "ōmori",
+      "arti": "porsi besar"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "普通盛り",
+      "yomi": "ふつうもり",
+      "romaji": "futsūmori",
+      "arti": "porsi biasa"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "無料",
+      "yomi": "むりょう",
+      "romaji": "muryō",
+      "arti": "gratis"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "アレルギー",
+      "romaji": "arerugī",
+      "arti": "alergi"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "卵",
+      "yomi": "たまご",
+      "romaji": "tamago",
+      "arti": "telur"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "苦手",
+      "yomi": "にがて",
+      "romaji": "nigate",
+      "arti": "tidak suka / tidak bisa"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "食べ物",
+      "yomi": "たべもの",
+      "romaji": "tabemono",
+      "arti": "makanan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ドリンクバー",
+      "romaji": "dorinku bā",
+      "arti": "drink bar (minum sepuasnya)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "セット",
+      "romaji": "setto",
+      "arti": "set / paket"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "お水",
+      "yomi": "おみず",
+      "romaji": "omizu",
+      "arti": "air putih"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "注文",
+      "yomi": "ちゅうもん",
+      "romaji": "chūmon",
+      "arti": "pesanan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "確認",
+      "yomi": "かくにん",
+      "romaji": "kakunin",
+      "arti": "konfirmasi"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "以上",
+      "yomi": "いじょう",
+      "romaji": "ijō",
+      "arti": "itu saja / sekian"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "追加",
+      "yomi": "ついか",
+      "romaji": "tsuika",
+      "arti": "tambahan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "サラダ",
+      "romaji": "sarada",
+      "arti": "salad"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ドレッシング",
+      "romaji": "doresshingu",
+      "arti": "dressing"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "和風",
+      "yomi": "わふう",
+      "romaji": "wafū",
+      "arti": "gaya Jepang"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ゴマ",
+      "romaji": "goma",
+      "arti": "wijen"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "料理",
+      "yomi": "りょうり",
+      "romaji": "ryōri",
+      "arti": "masakan / hidangan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "おかわり",
+      "romaji": "okawari",
+      "arti": "tambah / isi ulang"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "氷",
+      "yomi": "こおり",
+      "romaji": "kōri",
+      "arti": "es (batu)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "箸",
+      "yomi": "はし",
+      "romaji": "hashi",
+      "arti": "sumpit"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "スプーン",
+      "romaji": "supūn",
+      "arti": "sendok"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "ご自由に",
+      "yomi": "ごじゆうに",
+      "romaji": "gojiyū ni",
+      "arti": "silakan sesuka hati"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "熱い",
+      "yomi": "あつい",
+      "romaji": "atsui",
+      "arti": "panas (benda/makanan)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "気をつける",
+      "yomi": "きをつける",
+      "romaji": "ki o tsukeru",
+      "arti": "berhati-hati"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "当たり",
+      "yomi": "あたり",
+      "romaji": "atari",
+      "arti": "tepat / beruntung (pilihan bagus)"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "一口",
+      "yomi": "ひとくち",
+      "romaji": "hitokuchi",
+      "arti": "sesuap"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "いただきます",
+      "romaji": "itadakimasu",
+      "arti": "ucapan sebelum makan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ごちそうさま",
+      "romaji": "gochisōsama",
+      "arti": "ucapan setelah makan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "お腹いっぱい",
+      "yomi": "おなかいっぱい",
+      "romaji": "onaka ippai",
+      "arti": "kenyang"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "満腹",
+      "yomi": "まんぷく",
+      "romaji": "manpuku",
+      "arti": "kenyang sekali"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "会計",
+      "yomi": "かいけい",
+      "romaji": "kaikei",
+      "arti": "pembayaran / tagihan"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "別々",
+      "yomi": "べつべつ",
+      "romaji": "betsubetsu",
+      "arti": "terpisah"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "一緒",
+      "yomi": "いっしょ",
+      "romaji": "issho",
+      "arti": "bersama / digabung"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "合計",
+      "yomi": "ごうけい",
+      "romaji": "gōkei",
+      "arti": "total"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "支払い",
+      "yomi": "しはらい",
+      "romaji": "shiharai",
+      "arti": "pembayaran"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "現金",
+      "yomi": "げんきん",
+      "romaji": "genkin",
+      "arti": "uang tunai"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "カード",
+      "romaji": "kādo",
+      "arti": "kartu"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "QRコード決済",
+      "romaji": "kyū āru kōdo kessai",
+      "arti": "pembayaran dengan QR code"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "読み取る",
+      "yomi": "よみとる",
+      "romaji": "yomitoru",
+      "arti": "memindai / membaca"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "お釣り",
+      "yomi": "おつり",
+      "romaji": "otsuri",
+      "arti": "uang kembalian"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "レシート",
+      "romaji": "reshīto",
+      "arti": "struk"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "ちょうど",
+      "romaji": "chōdo",
+      "arti": "pas / tepat"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "散歩",
+      "yomi": "さんぽ",
+      "romaji": "sanpo",
+      "arti": "jalan-jalan santai"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "並木道",
+      "yomi": "なみきみち",
+      "romaji": "namikimichi",
+      "arti": "jalan berpohon di kedua sisi"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "カフェ",
+      "romaji": "kafe",
+      "arti": "kafe"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "",
+      "yomi": "パフェ",
+      "romaji": "pafe",
+      "arti": "parfait"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "満足",
+      "yomi": "まんぞく",
+      "romaji": "manzoku",
+      "arti": "puas"
+    },
+    {
+      "tema": "Restoran",
+      "kanji": "家路",
+      "yomi": "いえじ",
+      "romaji": "ieji",
+      "arti": "jalan pulang"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "デパート",
+      "romaji": "depāto",
+      "arti": "department store"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "お土産",
+      "yomi": "おみやげ",
+      "romaji": "omiyage",
+      "arti": "oleh-oleh"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "商品",
+      "yomi": "しょうひん",
+      "romaji": "shōhin",
+      "arti": "barang / produk"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "入店",
+      "yomi": "にゅうてん",
+      "romaji": "nyūten",
+      "arti": "masuk toko"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "お会計",
+      "yomi": "おかいけい",
+      "romaji": "okaikei",
+      "arti": "pembayaran di kasir / tagihan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "探す",
+      "yomi": "さがす",
+      "romaji": "sagasu",
+      "arti": "mencari"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "服",
+      "yomi": "ふく",
+      "romaji": "fuku",
+      "arti": "pakaian"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "お菓子",
+      "yomi": "おかし",
+      "romaji": "okashi",
+      "arti": "kue / camilan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "雑貨",
+      "yomi": "ざっか",
+      "romaji": "zakka",
+      "arti": "barang-barang kecil / perlengkapan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "ご覧になる",
+      "yomi": "ごらんになる",
+      "romaji": "goran ni naru",
+      "arti": "melihat (bentuk hormat)"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "予算",
+      "yomi": "よさん",
+      "romaji": "yosan",
+      "arti": "anggaran"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "人気",
+      "yomi": "にんき",
+      "romaji": "ninki",
+      "arti": "populer"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "案内",
+      "yomi": "あんない",
+      "romaji": "annai",
+      "arti": "memandu / menunjukkan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "申し付ける",
+      "yomi": "もうしつける",
+      "romaji": "mōshitsukeru",
+      "arti": "menyampaikan permintaan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "シャツ",
+      "romaji": "shatsu",
+      "arti": "kemeja"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "ネット",
+      "romaji": "netto",
+      "arti": "internet"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "色",
+      "yomi": "いろ",
+      "romaji": "iro",
+      "arti": "warna"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "在庫",
+      "yomi": "ざいこ",
+      "romaji": "zaiko",
+      "arti": "stok barang"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "手に取る",
+      "yomi": "てにとる",
+      "romaji": "te ni toru",
+      "arti": "memegang / mengambil di tangan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "触る",
+      "yomi": "さわる",
+      "romaji": "sawaru",
+      "arti": "menyentuh"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "値段",
+      "yomi": "ねだん",
+      "romaji": "nedan",
+      "arti": "harga"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "値札",
+      "yomi": "ねふだ",
+      "romaji": "nefuda",
+      "arti": "label harga"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "税抜き",
+      "yomi": "ぜいぬき",
+      "romaji": "zeinuki",
+      "arti": "harga sebelum pajak"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "税込み",
+      "yomi": "ぜいこみ",
+      "romaji": "zeikomi",
+      "arti": "harga sudah termasuk pajak"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "免税",
+      "yomi": "めんぜい",
+      "romaji": "menzei",
+      "arti": "bebas pajak"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "パスポート",
+      "romaji": "pasupōto",
+      "arti": "paspor"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "結構",
+      "yomi": "けっこう",
+      "romaji": "kekkō",
+      "arti": "tidak perlu / cukup"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "カウンター",
+      "romaji": "kauntā",
+      "arti": "konter"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "階",
+      "yomi": "かい",
+      "romaji": "kai",
+      "arti": "lantai"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "見せる",
+      "yomi": "みせる",
+      "romaji": "miseru",
+      "arti": "menunjukkan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "点",
+      "yomi": "てん",
+      "romaji": "ten",
+      "arti": "buah (penghitung barang)"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "半額",
+      "yomi": "はんがく",
+      "romaji": "hangaku",
+      "arti": "setengah harga"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "お得",
+      "yomi": "おとく",
+      "romaji": "otoku",
+      "arti": "hemat / menguntungkan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "セール",
+      "romaji": "sēru",
+      "arti": "obral"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "割引き",
+      "yomi": "わりびき",
+      "romaji": "waribiki",
+      "arti": "diskon"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "返品",
+      "yomi": "へんぴん",
+      "romaji": "henpin",
+      "arti": "pengembalian barang"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "プレゼント",
+      "romaji": "purezento",
+      "arti": "hadiah"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "無料",
+      "yomi": "むりょう",
+      "romaji": "muryō",
+      "arti": "gratis"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "包装",
+      "yomi": "ほうそう",
+      "romaji": "hōsō",
+      "arti": "pembungkusan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "包む",
+      "yomi": "つつむ",
+      "romaji": "tsutsumu",
+      "arti": "membungkus"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "送る",
+      "yomi": "おくる",
+      "romaji": "okuru",
+      "arti": "mengirim"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "配送",
+      "yomi": "はいそう",
+      "romaji": "haisō",
+      "arti": "pengiriman"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "送料",
+      "yomi": "そうりょう",
+      "romaji": "sōryō",
+      "arti": "ongkos kirim"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "試着室",
+      "yomi": "しちゃくしつ",
+      "romaji": "shichakushitsu",
+      "arti": "ruang ganti"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "レジ",
+      "romaji": "reji",
+      "arti": "kasir"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "右手",
+      "yomi": "みぎて",
+      "romaji": "migite",
+      "arti": "sebelah kanan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "奥",
+      "yomi": "おく",
+      "romaji": "oku",
+      "arti": "bagian dalam"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "タグ",
+      "romaji": "tagu",
+      "arti": "label / tag"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "切る",
+      "yomi": "きる",
+      "romaji": "kiru",
+      "arti": "memotong"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "閉店",
+      "yomi": "へいてん",
+      "romaji": "heiten",
+      "arti": "tutup toko"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "気になる",
+      "yomi": "きになる",
+      "romaji": "ki ni naru",
+      "arti": "menarik perhatian / penasaran"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "鏡",
+      "yomi": "かがみ",
+      "romaji": "kagami",
+      "arti": "cermin"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "着る",
+      "yomi": "きる",
+      "romaji": "kiru",
+      "arti": "memakai (pakaian)"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "サイズ",
+      "romaji": "saizu",
+      "arti": "ukuran"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "色違い",
+      "yomi": "いろちがい",
+      "romaji": "irochigai",
+      "arti": "warna lain"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "ほっとする",
+      "romaji": "hotto suru",
+      "arti": "merasa lega"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "ポイントカード",
+      "romaji": "pointo kādo",
+      "arti": "kartu poin"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "取り置き",
+      "yomi": "とりおき",
+      "romaji": "tori-oki",
+      "arti": "menyimpankan barang untuk pelanggan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "引換券",
+      "yomi": "ひきかえけん",
+      "romaji": "hikikaeken",
+      "arti": "kartu penukar"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "クーポン",
+      "romaji": "kūpon",
+      "arti": "kupon"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "読み取る",
+      "yomi": "よみとる",
+      "romaji": "yomitoru",
+      "arti": "memindai"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "スマホ",
+      "romaji": "sumaho",
+      "arti": "ponsel pintar"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "画面",
+      "yomi": "がめん",
+      "romaji": "gamen",
+      "arti": "layar"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "合計",
+      "yomi": "ごうけい",
+      "romaji": "gōkei",
+      "arti": "total"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "袋",
+      "yomi": "ふくろ",
+      "romaji": "fukuro",
+      "arti": "kantong"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "エコバッグ",
+      "romaji": "ekobaggu",
+      "arti": "tas belanja ramah lingkungan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "現金",
+      "yomi": "げんきん",
+      "romaji": "genkin",
+      "arti": "tunai"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "クレジットカード",
+      "romaji": "kurejitto kādo",
+      "arti": "kartu kredit"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "電子マネー",
+      "yomi": "でんしマネー",
+      "romaji": "denshi manē",
+      "arti": "uang elektronik"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "端末",
+      "yomi": "たんまつ",
+      "romaji": "tanmatsu",
+      "arti": "mesin / terminal"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "差し込む",
+      "yomi": "さしこむ",
+      "romaji": "sashikomu",
+      "arti": "memasukkan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "お釣り",
+      "yomi": "おつり",
+      "romaji": "otsuri",
+      "arti": "uang kembalian"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "",
+      "yomi": "レシート",
+      "romaji": "reshīto",
+      "arti": "struk"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "忘れ物",
+      "yomi": "わすれもの",
+      "romaji": "wasuremono",
+      "arti": "barang tertinggal"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "お世話になりました",
+      "yomi": "おせわになりました",
+      "romaji": "osewa ni narimashita",
+      "arti": "terima kasih atas bantuannya"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "賑やか",
+      "yomi": "にぎやか",
+      "romaji": "nigiyaka",
+      "arti": "ramai"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "続ける",
+      "yomi": "つづける",
+      "romaji": "tsuzukeru",
+      "arti": "melanjutkan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "荷物",
+      "yomi": "にもつ",
+      "romaji": "nimotsu",
+      "arti": "barang bawaan"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "重い",
+      "yomi": "おもい",
+      "romaji": "omoi",
+      "arti": "berat"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "帰る",
+      "yomi": "かえる",
+      "romaji": "kaeru",
+      "arti": "pulang"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "思い返す",
+      "yomi": "おもいかえす",
+      "romaji": "omoikaesu",
+      "arti": "mengingat kembali"
+    },
+    {
+      "tema": "Berbelanja",
+      "kanji": "足取り",
+      "yomi": "あしどり",
+      "romaji": "ashidori",
+      "arti": "langkah kaki"
     }
   ],
   "grammar": [
@@ -3897,6 +9068,335 @@
       "arti": "Ucapan sopan pegawai: \"silakan datang kembali\"",
       "contoh": "ありがとうございました。またお越しくださいませ！",
       "terjemahan": "Terima kasih. Silakan datang kembali!"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜名様ですか",
+      "arti": "Menanyakan jumlah tamu secara hormat",
+      "contoh": "お二人様ですか？",
+      "terjemahan": "Berdua?"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜は空いていますか",
+      "arti": "Menanyakan apakah sesuatu kosong/tersedia",
+      "contoh": "窓際の席は空いていますか？",
+      "terjemahan": "Apakah kursi dekat jendela kosong?"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜ばいいですか",
+      "arti": "Sebaiknya bagaimana/di mana ...? (meminta petunjuk)",
+      "contoh": "荷物はどこに置けばいいですか？",
+      "terjemahan": "Barang bawaan sebaiknya ditaruh di mana?"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "お〜になりましたら",
+      "arti": "Bentuk hormat: \"kalau Anda sudah ...\"",
+      "contoh": "お決まりになりましたら、ボタンでお呼びください。",
+      "terjemahan": "Kalau sudah memutuskan, silakan panggil dengan tombol."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜がございます／〜はございますか",
+      "arti": "Bentuk sopan dari あります: \"ada ...\" / \"apakah ada ...?\"",
+      "contoh": "アレルギーはございますか？",
+      "terjemahan": "Apakah ada alergi?"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜になさいますか",
+      "arti": "Bentuk hormat dari 〜にしますか: \"mau memilih ...?\"",
+      "contoh": "どちらになさいますか？",
+      "terjemahan": "Mau pilih yang mana?"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜でよろしいでしょうか",
+      "arti": "Konfirmasi sopan: \"apakah ... sudah cukup / benar?\"",
+      "contoh": "以上でよろしいでしょうか？",
+      "terjemahan": "Apakah itu saja?"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜が選べます",
+      "arti": "Bentuk potensial: \"bisa memilih ...\"",
+      "contoh": "ご飯は白米と十穀米が選べます。",
+      "terjemahan": "Nasinya bisa dipilih nasi putih atau nasi sepuluh biji-bijian."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜にすると〜になります",
+      "arti": "Kalau dijadikan ..., menjadi ...",
+      "contoh": "セットにすると200円になります。",
+      "terjemahan": "Kalau dijadikan set, harganya 200 yen."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜ておりません",
+      "arti": "Bentuk rendah hati dari 〜ていません: \"tidak ...\"",
+      "contoh": "卵を使っておりません。",
+      "terjemahan": "Kami tidak memakai telur."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "V-stem ＋ そうだ",
+      "arti": "Dugaan dari penampilan: \"sepertinya ...\"",
+      "contoh": "時間がかかりそうだね。",
+      "terjemahan": "Sepertinya butuh waktu ya."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜んだって",
+      "arti": "Menyampaikan kabar (kasual): \"katanya ...\"",
+      "contoh": "ここは定食がおいしいんだって。",
+      "terjemahan": "Katanya set menu di sini enak."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "V-stem ＋ に行く",
+      "arti": "Menyatakan tujuan pergi: \"pergi untuk ...\"",
+      "contoh": "デザートを食べに行こう！",
+      "terjemahan": "Ayo pergi makan dessert!"
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜（よ）う",
+      "arti": "Ajakan / niat: \"ayo ...\" / \"mari ...\"",
+      "contoh": "少し散歩しよう。",
+      "terjemahan": "Ayo jalan-jalan santai sebentar."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "やっぱり〜",
+      "arti": "Ternyata / kayaknya tetap ... (mengubah keputusan)",
+      "contoh": "やっぱり今日はもう帰ろう。",
+      "terjemahan": "Kayaknya hari ini pulang saja."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜たあと／〜のあと",
+      "arti": "Setelah ...",
+      "contoh": "食べ終わったあと、お会計はレジでするんだよ。",
+      "terjemahan": "Setelah selesai makan, bayarnya di kasir."
+    },
+    {
+      "tema": "Restoran",
+      "pola": "〜ていただけます",
+      "arti": "Bentuk sangat sopan: \"bisa digunakan / bisa Anda ...\"",
+      "contoh": "QRコード決済もご利用いただけます。",
+      "terjemahan": "Pembayaran QR code juga bisa digunakan."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜てもよろしいでしょうか",
+      "arti": "Meminta izin dengan sangat sopan: \"bolehkah saya ...?\"",
+      "contoh": "身分証明書を拝見してもよろしいでしょうか？",
+      "terjemahan": "Bolehkah saya melihat kartu identitas Anda?"
+    },
+    {
+      "tema": "Hotel",
+      "pola": "お〜できますか",
+      "arti": "Bentuk rendah hati dari potensial: \"bolehkah saya ...?\"",
+      "contoh": "ペンをお借りできますか？",
+      "terjemahan": "Bolehkah saya meminjam pulpen?"
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜ていただけますか",
+      "arti": "Meminta tolong dengan sangat sopan: \"bisakah Anda ...?\"",
+      "contoh": "荷物を運んでいただけますか？",
+      "terjemahan": "Bisakah Anda membawakan barang bawaan saya?"
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜と申します",
+      "arti": "Memperkenalkan nama secara sopan: \"nama saya ...\"",
+      "contoh": "鈴木と申します。",
+      "terjemahan": "Nama saya Suzuki."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "お伺いする",
+      "arti": "Bentuk rendah hati dari 聞く: \"bertanya / menanyakan\"",
+      "contoh": "お名前をお伺いしてもよろしいでしょうか？",
+      "terjemahan": "Boleh saya tahu nama Anda?"
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜でお間違いないでしょうか",
+      "arti": "Konfirmasi sopan: \"apakah benar ...?\"",
+      "contoh": "二泊のご予約でお間違いないでしょうか？",
+      "terjemahan": "Apakah benar reservasinya untuk dua malam?"
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜させていただきます",
+      "arti": "Bentuk rendah hati: \"izinkan saya melakukan ...\"",
+      "contoh": "200円を追加させていただきます。",
+      "terjemahan": "Kami tambahkan 200 yen."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜のご予定でしょうか",
+      "arti": "Menanyakan rencana dengan sopan: \"rencananya ...?\"",
+      "contoh": "何泊のご予定でしょうか？",
+      "terjemahan": "Rencananya menginap berapa malam?"
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜まで／〜までに",
+      "arti": "まで = sampai (batas); までに = paling lambat (tenggat)",
+      "contoh": "夕方五時までにお取りにいらしてください。",
+      "terjemahan": "Mohon diambil paling lambat pukul lima sore."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "V-辞書形 ＋ 前に",
+      "arti": "Sebelum melakukan ...",
+      "contoh": "湯船に入る前に、体を洗ってください。",
+      "terjemahan": "Sebelum masuk ke bak, mohon cuci badan."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜ないでください",
+      "arti": "Larangan: \"tolong jangan ...\"",
+      "contoh": "タオルはお湯に入れないでくださいね。",
+      "terjemahan": "Tolong jangan masukkan handuk ke air panas ya."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜てみたいです",
+      "arti": "Ingin mencoba: \"ingin mencoba ...\"",
+      "contoh": "和室に泊まってみたいです。",
+      "terjemahan": "Saya ingin mencoba menginap di kamar bergaya Jepang."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "〜かもしれません",
+      "arti": "Mungkin ...",
+      "contoh": "傘を部屋に忘れたかもしれません。",
+      "terjemahan": "Mungkin payung saya tertinggal di kamar."
+    },
+    {
+      "tema": "Hotel",
+      "pola": "いかがなさいましたか",
+      "arti": "Pertanyaan sopan staf: \"ada apa? / ada yang bisa dibantu?\"",
+      "contoh": "はい、フロントでございます。いかがなさいましたか？",
+      "terjemahan": "Ya, resepsionis di sini. Ada yang bisa kami bantu?"
+    },
+    {
+      "tema": "Hotel",
+      "pola": "V-ます ＋ 方",
+      "arti": "Cara melakukan sesuatu: \"cara ...\"",
+      "contoh": "エアコンの使い方がわかりません。",
+      "terjemahan": "Saya tidak tahu cara memakai AC."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "お〜ですか",
+      "arti": "Bentuk hormat untuk bertanya: \"apakah Anda sedang ...?\"",
+      "contoh": "何かお探しですか？",
+      "terjemahan": "Sedang mencari sesuatu?"
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜てみたいです",
+      "arti": "Ingin mencoba: \"ingin mencoba ...\"",
+      "contoh": "雑貨を見てみたいです。",
+      "terjemahan": "Saya ingin melihat barang-barang kecil."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜はありますか",
+      "arti": "Menanyakan ketersediaan: \"apakah ada ...?\"",
+      "contoh": "色違いはありますか？",
+      "terjemahan": "Apakah ada warna lain?"
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜の方が好きです",
+      "arti": "Menyatakan pilihan/perbandingan: \"lebih suka ...\"",
+      "contoh": "青の方が好きです。",
+      "terjemahan": "Saya lebih suka yang biru."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜てもいいですか",
+      "arti": "Meminta izin: \"bolehkah saya ...?\"",
+      "contoh": "ちょっと触ってみてもいいですか？",
+      "terjemahan": "Bolehkah saya coba pegang sebentar?"
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜になります",
+      "arti": "Menyebutkan jumlah dengan sopan (di kasir): \"jadinya / totalnya ...\"",
+      "contoh": "税込みで、三千三百円になります。",
+      "terjemahan": "Termasuk pajak, jadinya 3.300 yen."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜まで／〜までに",
+      "arti": "まで = sampai (batas); までに = paling lambat (tenggat)",
+      "contoh": "夕方五時までにお取りにいらしてください。",
+      "terjemahan": "Mohon diambil paling lambat pukul lima sore."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜ので",
+      "arti": "Menyatakan alasan: \"karena ...\"",
+      "contoh": "セール品は返品できないので、ご注意くださいね。",
+      "terjemahan": "Karena barang obral tidak bisa dikembalikan, mohon berhati-hati ya."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜ていただけますか",
+      "arti": "Meminta tolong dengan sangat sopan: \"bisakah Anda ...?\"",
+      "contoh": "ホテルまで送っていただけますか？",
+      "terjemahan": "Bisakah Anda mengirimkannya ke hotel?"
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜ないでください",
+      "arti": "Larangan: \"tolong jangan ...\"",
+      "contoh": "タグは切らないでくださいね。",
+      "terjemahan": "Tolong jangan potong labelnya ya."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜すぎる",
+      "arti": "Berlebihan: \"terlalu ...\"",
+      "contoh": "サイズが小さすぎます。",
+      "terjemahan": "Ukurannya terlalu kecil."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "V-stem ＋ 方",
+      "arti": "Cara melakukan sesuatu: \"cara ...\"",
+      "contoh": "サイズの変え方がわかりません。",
+      "terjemahan": "Saya tidak tahu cara mengganti ukuran."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜てもらえますか",
+      "arti": "Meminta tolong (lebih santai dari いただけますか): \"bisakah ...?\"",
+      "contoh": "この服を取り置きしてもらえますか？",
+      "terjemahan": "Bisakah pakaian ini disimpan dulu untuk saya?"
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜させていただきます",
+      "arti": "Bentuk rendah hati: \"izinkan saya melakukan ...\"",
+      "contoh": "追加させていただきます。",
+      "terjemahan": "Kami tambahkan (ke tagihan)."
+    },
+    {
+      "tema": "Berbelanja",
+      "pola": "〜かもしれません",
+      "arti": "Mungkin ...",
+      "contoh": "スマホを試着室に忘れたかもしれません。",
+      "terjemahan": "Mungkin ponsel saya tertinggal di ruang ganti."
     }
   ],
   "themes": [
@@ -3912,7 +9412,7 @@
     {
       "tema": "konbini",
       "assets": "assets/audio/konbiniback.mp3",
-      "start": "kb_start",
+      "start": "kb_intro_01",
       "title": "Konbini",
       "titleJp": "コンビニ",
       "desc": "Belanja dan membayar di minimarket",
@@ -3921,7 +9421,7 @@
     {
       "tema": "Restoran",
       "assets": "assets/audio/restoranback.mp3",
-      "start": "resto_awal",
+      "start": "rst_intro_01",
       "title": "Restoran",
       "titleJp": "レストラン",
       "desc": "Memesan makanan dan membayar",
@@ -3930,7 +9430,7 @@
     {
       "tema": "Hotel",
       "assets": "assets/audio/hotelback.mp3",
-      "start": "hotel_awal",
+      "start": "htl_intro_01",
       "title": "Hotel",
       "titleJp": "ホテル",
       "desc": "Check-in dan bertanya ke resepsionis",
@@ -3939,7 +9439,7 @@
     {
       "tema": "Belanja",
       "assets": "assets/audio/belanjaback.mp3",
-      "start": "belanja_awal",
+      "start": "shp_intro_01",
       "title": "Belanja",
       "titleJp": "買い物",
       "desc": "Mencari dan membeli pakaian di toko",

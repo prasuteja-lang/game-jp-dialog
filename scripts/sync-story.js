@@ -16,6 +16,11 @@ function normalizeAsset(value, kind) {
   return asset;
 }
 
+function themeKey(value) {
+  const key = String(value || "").trim().toLowerCase();
+  return key === "berbelanja" ? "belanja" : key;
+}
+
 async function main() {
   const response = await fetch(API_URL);
   if (!response.ok) throw new Error(`Apps Script menjawab HTTP ${response.status}`);
@@ -34,10 +39,18 @@ async function main() {
     node.audio = normalizeAsset(node.audio, "audio");
   });
 
-  data.themes = (data.themes || []).map((theme) => {
-    const start = theme.tema.trim().toLowerCase() === "konbini" && !data.story[theme.start]
-      ? "kb_start"
-      : theme.start;
+  const themes = data.themes || [];
+  const themeByKey = new Map(themes.map((theme) => [themeKey(theme.tema), theme.tema]));
+  Object.values(data.story).forEach((node) => {
+    const canonicalTheme = themeByKey.get(themeKey(node.theme));
+    if (canonicalTheme) node.theme = canonicalTheme;
+  });
+
+  data.themes = themes.map((theme) => {
+    const matchingScenes = Object.entries(data.story).filter(([, node]) => themeKey(node.theme) === themeKey(theme.tema));
+    const intro = matchingScenes.find(([id]) => /_intro_01$/i.test(id));
+    const namedStart = matchingScenes.find(([id]) => /_(start|awal)$/i.test(id));
+    const start = data.story[theme.start] ? theme.start : (intro || namedStart || [])[0] || theme.start;
     return Object.assign({}, theme, {
       assets: normalizeAsset(theme.assets, "audio"),
       start,
