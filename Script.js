@@ -532,6 +532,14 @@ function showCharacterSelect() {
   if (first) first.focus({ preventScroll: true });
 }
 
+// Setelah memilih tema, mulai dari adegan intro (mis. stasiun_intro_01) jika ada;
+// kalau tidak ada, langsung ke adegan awal tema seperti biasa.
+function introStart(theme) {
+  const prefix = String(theme.start || "").split("_")[0];
+  const candidates = [prefix, String(theme.tema || "")].filter(Boolean).map((p) => `${p}_intro_01`);
+  return candidates.find((id) => getNode(id)) || theme.start;
+}
+
 // ---------- Pilih tema ----------
 function showThemeSelect() {
   const cards = state.themeList.map((t, index) => {
@@ -551,7 +559,7 @@ function showThemeSelect() {
     body.append(h("div", "theme-name", t.title || t.tema), jp, h("div", "theme-desc", ready ? t.desc || "" : "Segera hadir"));
 
     btn.append(icon, body);
-    btn.addEventListener("click", () => startGame(t.start, null, t.tema));
+    btn.addEventListener("click", () => startGame(introStart(t), null, t.tema));
     return btn;
   });
 
