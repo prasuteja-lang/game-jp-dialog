@@ -821,6 +821,19 @@ rt {
   margin-top: 0.2em;
 }
 
+.refresh-status {
+  max-width: 23em;
+  margin: 0;
+  font-size: 0.75em;
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: 0 0.08em 0.3em rgba(0, 0, 0, 0.6);
+}
+
+.refresh-status.is-error {
+  color: #ffe0e8;
+}
+
 .t-btn {
   display: inline-flex;
   align-items: center;

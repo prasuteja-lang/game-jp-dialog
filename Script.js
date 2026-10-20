@@ -75,6 +75,9 @@ const el = {
   btnContinue: $("btn-continue"),
   btnSettings: $("btn-settings"),
   btnAbout: $("btn-about"),
+  btnRefresh: $("btn-refresh"),
+  refreshLabel: $("refresh-label"),
+  refreshStatus: $("refresh-status"),
   themes: $("themes"),
   themesGrid: $("themes-grid"),
   themesBack: $("themes-back"),
@@ -122,6 +125,7 @@ const state = {
   lastChoiceKey: null,
   endingTitle: "",
   modal: null,
+  refreshing: false,
 };
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -379,11 +383,17 @@ function normalize(data) {
   };
 }
 
-async function fetchFrom(url, timeoutMs) {
+async function fetchFrom(url, timeoutMs, forceFresh = false) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
-    const res = await fetch(url, { signal: ctrl.signal });
+    const requestUrl = forceFresh
+      ? `${url}${url.includes("?") ? "&" : "?"}_refresh=${Date.now()}`
+      : url;
+    const res = await fetch(requestUrl, {
+      signal: ctrl.signal,
+      cache: forceFresh ? "no-store" : "default",
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = normalize(await res.json());
     if (!data.story[CONFIG.START_NODE]) {
@@ -396,15 +406,15 @@ async function fetchFrom(url, timeoutMs) {
 }
 
 // Ambil dari Google Sheets; jika gagal, pakai berkas cadangan data/story.json
-async function fetchStory() {
+async function fetchStory(forceFresh = false) {
   try {
-    return await fetchFrom(API_URL, CONFIG.FETCH_TIMEOUT);
+    return await fetchFrom(API_URL, CONFIG.FETCH_TIMEOUT, forceFresh);
   } catch (apiErr) {
     window.__nihongoApiError = `${apiErr.name}: ${apiErr.message}`;
     console.warn("Google Sheets gagal dimuat, memakai data cadangan:", apiErr);
     if (!CONFIG.FALLBACK_URL) throw apiErr;
     try {
-      const data = await fetchFrom(CONFIG.FALLBACK_URL, 8000);
+      const data = await fetchFrom(CONFIG.FALLBACK_URL, 8000, forceFresh);
       data._fallback = true;
       return data;
     } catch (fallbackErr) {
@@ -1339,6 +1349,43 @@ function openAbout() {
 }
 
 // ---------- Mulai ----------
+async function refreshStoryData() {
+  if (state.refreshing) return;
+  state.refreshing = true;
+  el.btnRefresh.disabled = true;
+  el.btnStart.disabled = true;
+  el.btnContinue.disabled = true;
+  el.refreshLabel.textContent = "Memperbarui...";
+  el.refreshStatus.hidden = false;
+  el.refreshStatus.textContent = "Menghapus cache lama dan mengambil data terbaru...";
+  el.refreshStatus.classList.remove("is-error");
+  removeStore(CONFIG.CACHE_KEY);
+
+  try {
+    const data = await fetchStory(true);
+    useData(data);
+    const serialized = JSON.stringify(data);
+    writeStore(CONFIG.CACHE_KEY, serialized);
+    const cacheSaved = readStore(CONFIG.CACHE_KEY) === serialized;
+    const saved = readJSON(CONFIG.SAVE_KEY);
+    el.btnContinue.hidden = !(saved && saved.key && saved.key !== CONFIG.START_NODE && state.story[saved.key]);
+    window.__nihongoApiError = data._fallback ? window.__nihongoApiError : "";
+    el.refreshStatus.textContent = data._fallback
+      ? "Data live belum terjangkau; salinan GitHub terbaru berhasil dimuat."
+      : "Data terbaru berhasil dimuat." + (cacheSaved ? "" : " Cache browser tidak dapat disimpan.");
+  } catch (err) {
+    console.error("Gagal memperbarui data cerita:", err);
+    el.refreshStatus.textContent = `Gagal mengambil data terbaru (${err.message}). Data yang sedang terbuka tetap bisa dipakai; coba lagi.`;
+    el.refreshStatus.classList.add("is-error");
+  } finally {
+    state.refreshing = false;
+    el.btnRefresh.disabled = false;
+    el.btnStart.disabled = false;
+    el.btnContinue.disabled = false;
+    el.refreshLabel.textContent = "Perbarui data";
+  }
+}
+
 async function init() {
   state.settings = loadSettings();
   el.vocabBtn.innerHTML = ICON.book;
@@ -1416,4 +1463,5 @@ async function init() {
   }
 }
 
+el.btnRefresh.addEventListener("click", refreshStoryData);
 document.addEventListener("DOMContentLoaded", init);

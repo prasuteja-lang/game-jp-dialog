@@ -88,13 +88,18 @@
           <span class="logo-sakura" aria-hidden="true">🌸</span>
         </h1>
         <p class="logo-jp" lang="ja">by <ruby>漢字<rt>かんじ</rt></ruby><ruby>大好<rt>だいす</rt></ruby>き</p>
-        <p class="tagline">Belajar bahasa Jepang melalui interaktif cerita, setiap pilihan adalah ending mu. </p>
+        <p class="tagline">Belajar bahasa Jepang melalui interaktif cerita, setiap pilihan adalah jalan ceritamu. </p>
         <div class="title-actions">
           <button id="btn-start" class="t-btn t-primary" type="button">Mulai</button>
           <button id="btn-continue" class="t-btn t-primary" type="button" hidden>Lanjutkan</button>
           <button id="btn-settings" class="t-btn" type="button">Pengaturan</button>
           <button id="btn-about" class="t-btn" type="button">Tentang</button>
+          <button id="btn-refresh" class="t-btn" type="button" aria-label="Hapus cache lama dan perbarui data">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.65 6.35A7.95 7.95 0 0 0 12 4a8 8 0 1 0 7.93 9h-2.02A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+            <span id="refresh-label">Perbarui data</span>
+          </button>
         </div>
+        <p id="refresh-status" class="refresh-status" role="status" aria-live="polite" hidden></p>
         <p class="title-foot" lang="ja"><ruby>一緒<rt>いっしょ</rt></ruby>にがんばりましょう！<span>Mari belajar bersama!</span></p>
       </div>
     </section>
@@ -179,6 +184,6 @@
   </script>
 
   <noscript>Game ini membutuhkan JavaScript agar bisa berjalan.</noscript>
-  <script src="Script.js?v=voices-all-themes-20261020"></script>
+  <script src="Script.js?v=menu-refresh-20261020"></script>
 </body>
 </html>
