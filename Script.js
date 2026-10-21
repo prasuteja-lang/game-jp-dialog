@@ -207,6 +207,7 @@ function loadPrecomputedFurigana() {
       AUTO.readings = readings;
       AUTO.ready = true;
       registerFurigana(state.story);
+      registerThemeFurigana(state.themeList);
       return true;
     })
     .catch((err) => {
@@ -232,6 +233,20 @@ function registerFurigana(story) {
       }
     });
   });
+}
+
+function registerThemeFurigana(themes) {
+  if (!AUTO.readings || !Array.isArray(AUTO.readings.themes) || !themes) return;
+  const titles = new Set(themes.map((theme) => String(theme.titleJp || "")));
+  AUTO.readings.themes.forEach((reading) => {
+    if (titles.has(reading.source) && reading.text) AUTO.cache.set(reading.source, reading.text);
+  });
+  if (!isHidden(el.themes)) {
+    Array.from(el.themesGrid.querySelectorAll(".theme-jp")).forEach((label, index) => {
+      const theme = state.themeList[index];
+      if (theme) label.innerHTML = richHTML(annSync(theme.titleJp || ""));
+    });
+  }
 }
 
 async function ensureFurigana() {
@@ -453,7 +468,10 @@ function useData(data) {
     const tema = themeKey(t.tema);
     if (tema && t.assets) state.themes[tema] = t.assets;
   });
-  if (AUTO.ready) registerFurigana(data.story);
+  if (AUTO.ready) {
+    registerFurigana(data.story);
+    registerThemeFurigana(state.themeList);
+  }
 }
 
 function friendlyError(err) {
@@ -572,7 +590,8 @@ function showThemeSelect() {
     const icon = h("div", "theme-icon", t.icon || "📖");
     icon.setAttribute("aria-hidden", "true");
 
-    const jp = h("div", "theme-jp", t.titleJp || "");
+    const jp = h("div", "theme-jp");
+    jp.innerHTML = richHTML(annSync(t.titleJp || ""));
     jp.lang = "ja";
 
     const body = h("div", "theme-body");

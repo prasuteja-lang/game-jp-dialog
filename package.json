@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "sync:story": "node scripts/sync-story.js",
+    "sync:story": "node scripts/sync-story.js && node scripts/generate-furigana.js",
     "generate:furigana": "node scripts/generate-furigana.js"
   },
   "devDependencies": {

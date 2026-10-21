@@ -23,22 +23,46 @@ function toHiragana(reading) {
 function annotatePlain(text, tokenizer) {
   return tokenizer.tokenize(text).map((token) => {
     const surface = token.surface_form;
-    const match = surface.match(/^([\u3040-\u309f]*)([\u3400-\u9fff々〆ヶ]+)([\u3040-\u309f]*)$/);
-    if (!match || !token.reading || token.reading === "*") return surface;
+    if (!token.reading || token.reading === "*" || !kanji.test(surface)) return surface;
 
-    let reading = toHiragana(token.reading);
-    const [, prefix, base, suffix] = match;
-    if (prefix) {
-      if (!reading.startsWith(prefix)) return surface;
-      reading = reading.slice(prefix.length);
-    }
-    if (suffix) {
-      if (!reading.endsWith(suffix)) return surface;
-      reading = reading.slice(0, -suffix.length);
-    }
-    if (!reading || !kanji.test(base)) return surface;
+    const segments = surface.match(/[\u3400-\u9fff々〆ヶ]+|[\u3040-\u30ffー]+/g);
+    if (!segments || segments.join("") !== surface) return surface;
 
-    return `${prefix}${base}[${reading}]${suffix}`;
+    const reading = toHiragana(token.reading);
+    let readingOffset = 0;
+    let pendingKanji = "";
+    let output = "";
+
+    for (const segment of segments) {
+      if (kanji.test(segment)) {
+        pendingKanji += segment;
+        continue;
+      }
+
+      const kana = toHiragana(segment);
+      const kanaOffset = reading.indexOf(kana, readingOffset);
+      if (kanaOffset < 0) return surface;
+
+      if (pendingKanji) {
+        const kanjiReading = reading.slice(readingOffset, kanaOffset);
+        if (!kanjiReading) return surface;
+        output += `${pendingKanji}[${kanjiReading}]`;
+        pendingKanji = "";
+      } else if (kanaOffset !== readingOffset) {
+        return surface;
+      }
+      output += segment;
+      readingOffset = kanaOffset + kana.length;
+    }
+
+    if (pendingKanji) {
+      const kanjiReading = reading.slice(readingOffset);
+      if (!kanjiReading) return surface;
+      output += `${pendingKanji}[${kanjiReading}]`;
+      readingOffset = reading.length;
+    }
+
+    return readingOffset === reading.length ? output : surface;
   }).join("");
 }
 
@@ -73,9 +97,15 @@ function generate(tokenizer) {
       })),
     };
   }
+  result.themes = (Array.isArray(source.themes) ? source.themes : []).map((theme) => ({
+    source: String(theme.titleJp || ""),
+    text: annotate(theme.titleJp, tokenizer),
+  }));
 
   fs.writeFileSync(outputPath, JSON.stringify(result, null, 2) + "\n", "utf8");
-  console.log(`Furigana dibuat untuk ${Object.keys(result).length} adegan: ${path.relative(root, outputPath)}`);
+  console.log(
+    `Furigana dibuat untuk ${Object.keys(source.story).length} adegan dan ${result.themes.length} judul tema: ${path.relative(root, outputPath)}`
+  );
 }
 
 kuromoji.builder({ dicPath: dictionaryPath }).build((error, tokenizer) => {
