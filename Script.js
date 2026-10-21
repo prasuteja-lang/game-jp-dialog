@@ -11,7 +11,7 @@ const CONFIG = {
   BGM_VOLUME: 0.3,        // volume backsound (0 - 1)
 
   FURIGANA_URL: "data/furigana.json",
-  CACHE_KEY: "vn_story_cache_v3",   // dinaikkan agar cache lama (tanpa terjemahan / adegan baru) dibuang
+  CACHE_KEY: "vn_story_cache_v4",   // dinaikkan agar cache lama (tanpa audio pilihan Ayano/Sora) dibuang
 
   // Musik latar menu utama (letakkan file di folder ini; nama berkas Jepang di-encode otomatis)
   MENU_BGM: "assets/audio/冒険の調べ.mp3",
@@ -715,6 +715,36 @@ function playAudio(url, force) {
   a.play().catch(() => { /* autoplay diblokir / file gagal: abaikan */ });
 }
 
+// Suara pilihan sesuai karakter yang dipilih (girl = Ayano, boy = Sora)
+function choiceAudioUrl(choice) {
+  const raw = state.player === "boy"
+    ? (choice.audioSora || choice.audioAyano)
+    : (choice.audioAyano || choice.audioSora);
+  return mediaUrl(raw, "audio");
+}
+
+// Putar suara pilihan, lalu panggil done() setelah selesai (maksimal 6 detik).
+// Jika tidak ada audio, suara dimatikan, atau gagal diputar: langsung done().
+function playChoiceThen(choice, done) {
+  const url = choiceAudioUrl(choice);
+  if (!url || !state.settings.sound) { done(); return; }
+  stopAudio();
+  const a = new Audio(url);
+  a.preload = "auto";
+  state.audio = a;
+  let finished = false;
+  const timer = setTimeout(() => go(), 6000);
+  function go() {
+    if (finished) return;
+    finished = true;
+    clearTimeout(timer);
+    done();
+  }
+  a.addEventListener("ended", go);
+  a.addEventListener("error", go);
+  a.play().catch(go);
+}
+
 // ---------- Backsound (musik latar per tema) ----------
 function fadeAudio(a, to, ms, done) {
   const from = a.volume;
@@ -908,7 +938,7 @@ function showChoicesOrNext() {
       el.choices.querySelectorAll("button").forEach((b) => (b.disabled = true));
       state.history.push({ text: choice.text, translation: choice.translation || "" });
       state.lastChoiceKey = state.nodeKey;
-      loadScene(choice.next);
+      playChoiceThen(choice, () => loadScene(choice.next));
     });
     return btn;
   });

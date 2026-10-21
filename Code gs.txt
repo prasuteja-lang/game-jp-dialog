@@ -13,6 +13,15 @@
 //  Q pilihan2_terjemahan
 //  R tema            -> (opsional) ganti tema/backsound di tengah cerita; kosong = tetap
 //
+// KONVENSI INTRO / OUTRO (per tema):
+//  - Setiap tema diawali adegan intro (id bebas, mis. stasiun_intro_01) dan kolom
+//    "Mulai" di sheet Tema mengarah ke adegan intro tersebut.
+//  - Adegan ending (kolom N) TIDAK menampilkan pilihan dari kolom G-J sebagai
+//    jawaban A/B, melainkan pilihan itu menjadi TOMBOL di kartu ending.
+//    Tujuan khusus yang bisa dipakai di kolom next/pilihan:
+//      __menu__   -> kembali ke layar judul
+//      __themes__ -> kembali ke layar pilih tema
+//
 // Furigana: tulis kanji lalu cara bacanya dalam kurung siku, mis.
 //  駅[えき]はどこですか？   ->  tampil dengan furigana di atas 駅
 //
@@ -57,7 +66,8 @@ function cekTautan() {
   rows.forEach(function (r, i) {
     [[7, "choice1_next"], [9, "choice2_next"], [10, "next"]].forEach(function (c) {
       var target = String(r[c[0]] || "").trim();
-      if (target && !ids[target]) {
+      var khusus = target === "__menu__" || target === "__themes__" || target === "__title__";
+      if (target && !khusus && !ids[target]) {
         Logger.log("Baris " + (i + 2) + " (" + r[0] + "): " + c[1] + " menuju '" + target + "' yang tidak ada");
       }
     });
