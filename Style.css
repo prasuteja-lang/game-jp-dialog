@@ -2422,7 +2422,7 @@ rt {
 }
 
 .themes .theme-card.is-special::after {
-  content: "特別 · TOKUBETSU";
+  content: "特別";
   position: absolute;
   top: 0;
   right: 1.4em;
