@@ -131,28 +131,6 @@ rt {
   opacity: 1;
 }
 
-.video-play-prompt {
-  position: absolute;
-  top: 4.2em;
-  left: 50%;
-  z-index: 8;
-  padding: 0.65em 1em;
-  transform: translateX(-50%);
-  color: #fff;
-  font: inherit;
-  font-size: 0.8em;
-  font-weight: 700;
-  background: rgba(18, 58, 122, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 999px;
-  box-shadow: 0 0.2em 0.7em rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.video-play-prompt[hidden] {
-  display: none;
-}
-
 /* ---------- Karakter ---------- */
 #char-image {
   position: absolute;
@@ -2111,7 +2089,8 @@ rt {
     flex-direction: column;
     align-items: stretch;
     gap: 0.45em;
-    padding: max(3.5%, env(safe-area-inset-top)) 5% max(3%, env(safe-area-inset-bottom));
+    /* jarak atas ekstra agar judul tidak menempel jam/baterai (status bar) */
+    padding: max(calc(env(safe-area-inset-top, 0px) + 1.4em), 3.6em) 5% max(3%, env(safe-area-inset-bottom));
   }
 
   .title::before {
@@ -2125,8 +2104,8 @@ rt {
     display: contents;
   }
 
-  .title .logo { order: 1; position: relative; z-index: 3; font-size: 1.8em; }
-  .title .logo-en br { display: none; }
+  .title .logo { order: 1; position: relative; z-index: 3; font-size: 2em; }
+  .title .logo-en br { display: inline; } /* tetap 2 baris: 日本語 / アドベンチャー */
   .title .logo-jp { order: 2; position: relative; z-index: 3; }
   .title .tagline { order: 3; position: relative; z-index: 3; align-self: center; max-width: 21em; font-size: 0.8em; }
 
