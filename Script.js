@@ -47,6 +47,8 @@ const el = {
   stage: $("stage"),
   bgA: $("bg-a"),
   bgB: $("bg-b"),
+  bgVideoA: $("bg-video-a"),
+  bgVideoB: $("bg-video-b"),
   char: $("char-image"),
   chapter: $("chapter"),
   vocabBtn: $("vocab-btn"),
@@ -269,9 +271,17 @@ function mediaUrl(url, kind) {
   }
   const m = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]+)/);
   if (!m) return url;
-  return kind === "audio"
+  return kind === "audio" || kind === "video"
     ? `https://drive.google.com/uc?export=download&id=${m[1]}`
     : `https://drive.google.com/uc?export=view&id=${m[1]}`;
+}
+
+function isVideoUrl(url) {
+  try {
+    return /\.mp4$/i.test(new URL(url, window.location.href).pathname);
+  } catch (err) {
+    return false;
+  }
 }
 
 // ---------- Preload gambar ----------
@@ -316,7 +326,7 @@ function prefetchNeighbors(node) {
   targets.forEach((key) => {
     const n = getNode(key);
     if (!n) return;
-    preloadImage(mediaUrl(n.background, "image"));
+    if (!isVideoUrl(n.background)) preloadImage(mediaUrl(n.background, "image"));
     preloadImage(mediaUrl(sceneCharacter(n.character), "image"));
   });
 }
@@ -668,19 +678,69 @@ function showSceneError(key, fromKey) {
 async function setBackground(url) {
   if (url === state.bgUrl) return;
   state.bgUrl = url;
-  const front = state.bgFront === "a" ? el.bgA : el.bgB;
-  const back = front === el.bgA ? el.bgB : el.bgA;
+  const layers = {
+    a: { image: el.bgA, video: el.bgVideoA },
+    b: { image: el.bgB, video: el.bgVideoB },
+  };
+  const front = layers[state.bgFront];
+  const backKey = state.bgFront === "a" ? "b" : "a";
+  const back = layers[backKey];
 
   if (!url) {
-    front.classList.remove("is-visible");
+    front.image.classList.remove("is-visible");
+    front.video.classList.remove("is-visible");
+    front.video.pause();
+    back.video.pause();
     return;
   }
+
+  if (isVideoUrl(url)) {
+    back.video.pause();
+    back.video.removeAttribute("src");
+    back.video.load();
+    back.image.removeAttribute("src");
+    back.video.muted = false;
+    back.video.loop = true;
+    back.video.playsInline = true;
+    const videoReady = new Promise((resolve) => {
+      back.video.addEventListener("loadeddata", resolve, { once: true });
+      back.video.addEventListener("error", resolve, { once: true });
+    });
+    back.video.src = url;
+    back.video.load();
+
+    await videoReady;
+    if (state.bgUrl !== url) return;
+    if (back.video.error) {
+      console.error(`Gagal memuat video background: ${url}`, back.video.error);
+      state.bgUrl = null;
+      return;
+    }
+
+    back.video.classList.add("is-visible");
+    back.image.classList.remove("is-visible");
+    front.image.classList.remove("is-visible");
+    front.video.classList.remove("is-visible");
+    front.video.pause();
+    state.bgFront = backKey;
+    back.video.play().catch((err) => {
+      console.error(`Video background tidak dapat diputar: ${url}`, err);
+    });
+    return;
+  }
+
+  back.video.pause();
+  back.video.removeAttribute("src");
+  back.video.load();
   await preloadImage(url);
-  if (state.bgUrl !== url) return; // sudah berganti selagi menunggu
-  back.src = url;
-  back.classList.add("is-visible");
-  front.classList.remove("is-visible");
-  state.bgFront = back === el.bgA ? "a" : "b";
+  if (state.bgUrl !== url) return;
+  back.image.src = url;
+  back.image.classList.add("is-visible");
+  back.video.classList.remove("is-visible");
+  front.image.classList.remove("is-visible");
+  front.video.classList.remove("is-visible");
+  front.video.pause();
+  state.bgFront = backKey;
 }
 
 function setCharacter(url) {
@@ -1052,12 +1112,13 @@ async function loadScene(key) {
   el.nextBtn.classList.remove("is-ready");
   el.ending.classList.add("is-hidden");
 
-  const bg = mediaUrl(node.background, "image");
+  const bg = mediaUrl(node.background, isVideoUrl(node.background) ? "video" : "image");
   const ch = mediaUrl(sceneCharacter(node.character), "image");
   const audio = mediaUrl(node.audio, "audio");
 
   // Furigana dimuat di latar belakang hanya jika diaktifkan di pengaturan.
-  await Promise.race([Promise.all([preloadImage(bg), preloadImage(ch)]), sleep(CONFIG.IMAGE_WAIT)]);
+  const bgPreload = isVideoUrl(bg) ? Promise.resolve(true) : preloadImage(bg);
+  await Promise.race([Promise.all([bgPreload, preloadImage(ch)]), sleep(CONFIG.IMAGE_WAIT)]);
   if (token !== state.token) return;
 
   state.nodeKey = key;
