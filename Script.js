@@ -679,7 +679,7 @@ function showSceneError(key, fromKey) {
 async function setBackground(url) {
   if (url === state.bgUrl) return;
   state.bgUrl = url;
-  el.bgVideoPlay.hidden = true;
+  if (el.bgVideoPlay) el.bgVideoPlay.hidden = true;
   const layers = {
     a: { image: el.bgA, video: el.bgVideoA },
     b: { image: el.bgB, video: el.bgVideoB },
@@ -715,7 +715,7 @@ async function setBackground(url) {
       console.error(`Video background tidak dapat diputar: ${url}`, err);
       if (err.name === "NotAllowedError" && state.bgUrl === url) {
         autoplayBlocked = true;
-        if (back.video.classList.contains("is-visible")) el.bgVideoPlay.hidden = false;
+        if (back.video.classList.contains("is-visible") && el.bgVideoPlay) el.bgVideoPlay.hidden = false;
       }
     });
 
@@ -733,7 +733,7 @@ async function setBackground(url) {
     front.video.classList.remove("is-visible");
     front.video.pause();
     state.bgFront = backKey;
-    if (autoplayBlocked) el.bgVideoPlay.hidden = false;
+    if (autoplayBlocked && el.bgVideoPlay) el.bgVideoPlay.hidden = false;
     return;
   }
 
@@ -1213,7 +1213,7 @@ el.settingsBtn.addEventListener("click", (e) => {
 });
 
 el.btnStart.addEventListener("click", startNewGame);
-el.bgVideoPlay.addEventListener("click", () => {
+if (el.bgVideoPlay) el.bgVideoPlay.addEventListener("click", () => {
   const video = [el.bgVideoA, el.bgVideoB].find((layer) => layer.classList.contains("is-visible"));
   if (!video) return;
   video.play().then(() => {
