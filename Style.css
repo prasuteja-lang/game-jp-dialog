@@ -2153,3 +2153,87 @@ rt {
   .title .tagline { font-size: 0.74em; }
   .title .title-foot { display: none; }
 }
+
+
+/* =========================================================
+   Kartu ending v2 – ringkas & tembus pandang agar background tetap terlihat
+   ========================================================= */
+.ending {
+  bottom: 4%;
+  width: min(30em, 92%);
+}
+
+.ending-card {
+  padding: 1.7em 1.2em 0.8em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 1.2em;
+  box-shadow: 0 0.5em 1.6em rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px) saturate(1.15);
+  backdrop-filter: blur(10px) saturate(1.15);
+}
+
+.ending-icon {
+  font-size: 1em;
+}
+
+.ending-title {
+  max-height: 6em;
+  margin: 0 0 0.4em;
+  font-size: 0.95em;
+  line-height: 1.85;
+}
+
+.ending-badge {
+  font-size: 0.72em;
+}
+
+.ending-desc {
+  margin: 0.45em 0 0.7em;
+  font-size: 0.78em;
+  line-height: 1.5;
+  color: #3d4b6b;
+}
+
+.ending-actions {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.ending-actions > * {
+  flex: 1 1 10em;
+}
+
+.ending-card .btn-blue,
+.ending-actions .btn-blue {
+  width: auto;
+  padding: 0.6em 0.9em;
+  font-size: 0.9em;
+}
+
+/* Laptop / layar lebar: kartu lebih lebar tetapi lebih pendek */
+@media (min-width: 901px) {
+  .ending {
+    width: min(36em, 70%);
+  }
+}
+
+/* Layar pendek (HP landscape): rapatkan lagi */
+@media (orientation: landscape) and (max-height: 430px) {
+  .ending {
+    bottom: 3%;
+  }
+
+  .ending-card {
+    padding: 1.5em 1em 0.6em;
+  }
+
+  .ending-title {
+    max-height: 5em;
+  }
+
+  .ending-desc {
+    margin: 0.3em 0 0.5em;
+  }
+}
