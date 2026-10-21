@@ -10,8 +10,13 @@ function normalizeAsset(value, kind) {
   let asset = String(value || "").trim();
   if (!asset || asset === "-") return "";
   asset = asset.replace(/^assets\/bg\//i, "assets/background/");
-  if (kind === "audio" && /^assets\/audio\/kb_.*\.wav$/i.test(asset)) {
-    asset = asset.replace(/\.wav$/i, ".WAV");
+  if (kind === "audio") {
+    const outro = asset.match(/^assets\/audio\/(stasiun_outro_(?:tokyo|local|kyoto)_\d+)$/i);
+    if (outro) {
+      asset = `assets/audio/choice/${outro[1]}.WAV`;
+    } else {
+      asset = asset.replace(/\.wav$/i, ".WAV").replace(/\.mp3$/i, ".MP3");
+    }
   }
   return asset;
 }

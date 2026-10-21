@@ -267,8 +267,13 @@ function mediaUrl(url, kind) {
   url = String(url || "").trim();
   if (!url || url === "-") return "";
   url = url.replace(/^assets\/bg\//i, "assets/background/");
-  if (kind === "audio" && /^assets\/audio\/kb_.*\.wav$/i.test(url)) {
-    url = url.replace(/\.wav$/i, ".WAV");
+  if (kind === "audio") {
+    const outro = url.match(/^assets\/audio\/(stasiun_outro_(?:tokyo|local|kyoto)_\d+)$/i);
+    if (outro) {
+      url = `assets/audio/choice/${outro[1]}.WAV`;
+    } else {
+      url = url.replace(/\.wav$/i, ".WAV").replace(/\.mp3$/i, ".MP3");
+    }
   }
   const m = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]+)/);
   if (!m) return url;
@@ -780,26 +785,25 @@ function playAudio(url, force) {
   a.preload = "auto";
   a.muted = force ? false : !state.settings.sound;
   state.audio = a;
-  a.play().catch(() => { /* autoplay diblokir / file gagal: abaikan */ });
+  a.play().catch((err) => {
+    console.warn(`Suara adegan gagal diputar: ${url}`, err);
+  });
 }
 
-// Suara pilihan sesuai karakter yang dipilih (girl = Ayano, boy = Sora)
-function choiceAudioUrl(choice) {
+// Utamakan suara karakter terpilih, lalu coba rekaman karakter lain jika file pertama tidak ada.
+function choiceAudioUrls(choice) {
   const raw = state.player === "boy"
-    ? (choice.audioSora || choice.audioAyano)
-    : (choice.audioAyano || choice.audioSora);
-  return mediaUrl(raw, "audio");
+    ? [choice.audioSora, choice.audioAyano]
+    : [choice.audioAyano, choice.audioSora];
+  return [...new Set(raw.map((url) => mediaUrl(url, "audio")).filter(Boolean))];
 }
 
 // Putar suara pilihan, lalu panggil done() setelah selesai (maksimal 6 detik).
 // Jika tidak ada audio, suara dimatikan, atau gagal diputar: langsung done().
 function playChoiceThen(choice, done) {
-  const url = choiceAudioUrl(choice);
-  if (!url || !state.settings.sound) { done(); return; }
+  const urls = choiceAudioUrls(choice);
+  if (!urls.length || !state.settings.sound) { done(); return; }
   stopAudio();
-  const a = new Audio(url);
-  a.preload = "auto";
-  state.audio = a;
   let finished = false;
   const timer = setTimeout(() => go(), 6000);
   function go() {
@@ -808,9 +812,26 @@ function playChoiceThen(choice, done) {
     clearTimeout(timer);
     done();
   }
-  a.addEventListener("ended", go);
-  a.addEventListener("error", go);
-  a.play().catch(go);
+  function playCandidate(index) {
+    if (finished) return;
+    const url = urls[index];
+    const a = new Audio(url);
+    a.preload = "auto";
+    state.audio = a;
+    let failed = false;
+    const fail = (err) => {
+      if (failed || finished) return;
+      failed = true;
+      a.pause();
+      console.warn(`Suara pilihan gagal diputar: ${url}`, err);
+      if (index + 1 < urls.length) playCandidate(index + 1);
+      else go();
+    };
+    a.addEventListener("ended", go, { once: true });
+    a.addEventListener("error", () => fail(new Error("File audio tidak dapat dimuat.")), { once: true });
+    a.play().catch(fail);
+  }
+  playCandidate(0);
 }
 
 // ---------- Backsound (musik latar per tema) ----------
