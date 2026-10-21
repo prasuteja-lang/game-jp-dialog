@@ -962,7 +962,7 @@
     "stasiun_outro_tokyo_03": {
       "speaker": "システム",
       "text": "また次のテーマで会おう。いってらっしゃい！",
-      "background": "assets/background/tokyo.png",
+      "background": "assets/background/outro_tokyo.mp4",
       "character": "assets/character/none.png",
       "audio": "",
       "next": "",
