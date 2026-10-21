@@ -6,18 +6,10 @@ const path = require("node:path");
 const API_URL = "https://script.google.com/macros/s/AKfycbwf0-Rt3MElohK2vq4Xo57kYGPfprWcROqid4gZd0-92ObUrGg6YbbrIsdxCS3HDIJP/exec";
 const outputPath = path.resolve(__dirname, "..", "data", "story.json");
 
-function normalizeAsset(value, kind) {
+function normalizeAsset(value) {
   let asset = String(value || "").trim();
   if (!asset || asset === "-") return "";
   asset = asset.replace(/^assets\/bg\//i, "assets/background/");
-  if (kind === "audio") {
-    const outro = asset.match(/^assets\/audio\/(stasiun_outro_(?:tokyo|local|kyoto)_\d+)$/i);
-    if (outro) {
-      asset = `assets/audio/choice/${outro[1]}.WAV`;
-    } else {
-      asset = asset.replace(/\.wav$/i, ".WAV").replace(/\.mp3$/i, ".MP3");
-    }
-  }
   return asset;
 }
 
@@ -39,9 +31,9 @@ async function main() {
   }
 
   Object.values(data.story).forEach((node) => {
-    node.background = normalizeAsset(node.background, "image");
-    node.character = normalizeAsset(node.character, "image");
-    node.audio = normalizeAsset(node.audio, "audio");
+    node.background = normalizeAsset(node.background);
+    node.character = normalizeAsset(node.character);
+    node.audio = normalizeAsset(node.audio);
   });
 
   const themes = data.themes || [];
@@ -57,7 +49,7 @@ async function main() {
     const namedStart = matchingScenes.find(([id]) => /_(start|awal)$/i.test(id));
     const start = data.story[theme.start] ? theme.start : (intro || namedStart || [])[0] || theme.start;
     return Object.assign({}, theme, {
-      assets: normalizeAsset(theme.assets, "audio"),
+      assets: normalizeAsset(theme.assets),
       start,
     });
   });

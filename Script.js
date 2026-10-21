@@ -267,19 +267,33 @@ function mediaUrl(url, kind) {
   url = String(url || "").trim();
   if (!url || url === "-") return "";
   url = url.replace(/^assets\/bg\//i, "assets/background/");
-  if (kind === "audio") {
-    const outro = url.match(/^assets\/audio\/(stasiun_outro_(?:tokyo|local|kyoto)_\d+)$/i);
-    if (outro) {
-      url = `assets/audio/choice/${outro[1]}.WAV`;
-    } else {
-      url = url.replace(/\.wav$/i, ".WAV").replace(/\.mp3$/i, ".MP3");
-    }
-  }
   const m = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=)([\w-]+)/);
   if (!m) return url;
   return kind === "audio" || kind === "video"
     ? `https://drive.google.com/uc?export=download&id=${m[1]}`
     : `https://drive.google.com/uc?export=view&id=${m[1]}`;
+}
+
+function audioUrlCandidates(rawUrl) {
+  const url = mediaUrl(rawUrl, "audio");
+  if (!url) return [];
+  const candidates = [url];
+  const outro = url.match(/^assets\/audio\/(stasiun_outro_(?:tokyo|local|kyoto)_\d+)$/i);
+  if (outro) candidates.push(`assets/audio/choice/${outro[1]}.WAV`);
+  const extension = url.match(/\.(wav|mp3)$/i);
+  if (extension) {
+    const base = url.slice(0, -extension[0].length);
+    const alternateExtension = extension[1] === extension[1].toLowerCase()
+      ? `.${extension[1].toUpperCase()}`
+      : `.${extension[1].toLowerCase()}`;
+    const alternateFormat = extension[1].toLowerCase() === "wav" ? "mp3" : "wav";
+    candidates.push(
+      base + alternateExtension,
+      `${base}.${alternateFormat}`,
+      `${base}.${alternateFormat.toUpperCase()}`
+    );
+  }
+  return [...new Set(candidates)];
 }
 
 function isVideoUrl(url) {
@@ -780,22 +794,33 @@ function stopAudio() {
 
 function playAudio(url, force) {
   stopAudio();
-  if (!url) return;
-  const a = new Audio(url);
-  a.preload = "auto";
-  a.muted = force ? false : !state.settings.sound;
-  state.audio = a;
-  a.play().catch((err) => {
-    console.warn(`Suara adegan gagal diputar: ${url}`, err);
-  });
+  const urls = audioUrlCandidates(url);
+  if (!urls.length) return;
+  function playCandidate(index) {
+    const candidate = urls[index];
+    const a = new Audio(candidate);
+    a.preload = "auto";
+    a.muted = force ? false : !state.settings.sound;
+    state.audio = a;
+    let failed = false;
+    const fail = (err) => {
+      if (failed || state.audio !== a) return;
+      failed = true;
+      if (err && err.name !== "NotAllowedError" && index + 1 < urls.length) {
+        playCandidate(index + 1);
+        return;
+      }
+      console.warn(`Suara adegan gagal diputar: ${candidate}`, err);
+    };
+    a.addEventListener("error", () => fail(new Error("File audio tidak dapat dimuat.")), { once: true });
+    a.play().catch(fail);
+  }
+  playCandidate(0);
 }
 
-// Utamakan suara karakter terpilih, lalu coba rekaman karakter lain jika file pertama tidak ada.
 function choiceAudioUrls(choice) {
-  const raw = state.player === "boy"
-    ? [choice.audioSora, choice.audioAyano]
-    : [choice.audioAyano, choice.audioSora];
-  return [...new Set(raw.map((url) => mediaUrl(url, "audio")).filter(Boolean))];
+  const raw = state.player === "boy" ? choice.audioSora : choice.audioAyano;
+  return audioUrlCandidates(raw);
 }
 
 // Putar suara pilihan, lalu panggil done() setelah selesai (maksimal 6 detik).
@@ -820,12 +845,15 @@ function playChoiceThen(choice, done) {
     state.audio = a;
     let failed = false;
     const fail = (err) => {
-      if (failed || finished) return;
+      if (failed || finished || state.audio !== a) return;
       failed = true;
       a.pause();
+      if ((!err || err.name !== "NotAllowedError") && index + 1 < urls.length) {
+        playCandidate(index + 1);
+        return;
+      }
       console.warn(`Suara pilihan gagal diputar: ${url}`, err);
-      if (index + 1 < urls.length) playCandidate(index + 1);
-      else go();
+      go();
     };
     a.addEventListener("ended", go, { once: true });
     a.addEventListener("error", () => fail(new Error("File audio tidak dapat dimuat.")), { once: true });
