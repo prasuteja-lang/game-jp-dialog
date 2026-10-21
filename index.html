@@ -12,7 +12,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"></noscript>
 
-  <link rel="stylesheet" href="Style.css?v=5">
+  <link rel="stylesheet" href="Style.css?v=6">
 <base target="_blank">
 <base target="_blank">
 </head>
@@ -69,35 +69,42 @@
         <span></span><span></span><span></span><span></span>
       </div>
 
+      <!-- Karakter: kiri & kanan (HP: berdampingan di tengah layar) -->
       <div class="title-pick">
-        <p id="pick-label" class="pick-label">Pilih Karakter</p>
         <div class="pick-row">
           <button class="pick-card" type="button" data-player="girl" aria-pressed="false">
-            <span class="pick-name" lang="ja"></span>
             <img id="title-girl" alt="">
+            <span class="pick-name" lang="ja"></span>
           </button>
           <button class="pick-card" type="button" data-player="boy" aria-pressed="false">
-            <span class="pick-name" lang="ja"></span>
             <img id="title-boy" alt="">
+            <span class="pick-name" lang="ja"></span>
           </button>
         </div>
       </div>
+
+      <!-- Judul + menu utama (tengah) -->
       <div class="title-main">
         <h1 class="logo">
           <span class="logo-en">Nihongo <br>Adventure</span>
           <span class="logo-sakura" aria-hidden="true">🌸</span>
         </h1>
         <p class="logo-jp" lang="ja">by 漢字大好き</p>
-        <p class="tagline">Belajar bahasa Jepang melalui interaktif cerita, setiap pilihan adalah jalan ceritamu. </p>
+        <p class="tagline">Belajar bahasa Jepang melalui interaktif cerita, setiap pilihan adalah jalan ceritamu.</p>
+        <p id="pick-label" class="pick-label">Pilih Karakter</p>
         <div class="title-actions">
-          <button id="btn-start" class="t-btn t-primary" type="button">Mulai</button>
-          <button id="btn-continue" class="t-btn t-primary" type="button" hidden>Lanjutkan</button>
-          <button id="btn-settings" class="t-btn" type="button">Pengaturan</button>
-          <button id="btn-about" class="t-btn" type="button">Tentang</button>
-          <button id="btn-refresh" class="t-btn" type="button" aria-label="Hapus cache lama dan perbarui data">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.65 6.35A7.95 7.95 0 0 0 12 4a8 8 0 1 0 7.93 9h-2.02A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
-            <span id="refresh-label">Perbarui data</span>
-          </button>
+          <div class="title-actions-main">
+            <button id="btn-start" class="t-btn t-primary" type="button">Mulai</button>
+            <button id="btn-continue" class="t-btn t-primary" type="button" hidden>Lanjutkan</button>
+          </div>
+          <div class="title-actions-sub">
+            <button id="btn-settings" class="t-btn" type="button">Pengaturan</button>
+            <button id="btn-about" class="t-btn" type="button">Tentang</button>
+            <button id="btn-refresh" class="t-btn" type="button" aria-label="Hapus cache lama dan perbarui data">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.65 6.35A7.95 7.95 0 0 0 12 4a8 8 0 1 0 7.93 9h-2.02A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+              <span id="refresh-label">Perbarui data</span>
+            </button>
+          </div>
         </div>
         <p id="refresh-status" class="refresh-status" role="status" aria-live="polite" hidden></p>
         <p class="title-foot" lang="ja"><ruby>一緒<rt>いっしょ</rt></ruby>にがんばりましょう！<span>Mari belajar bersama!</span></p>

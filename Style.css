@@ -1774,3 +1774,384 @@ rt {
     padding: 0.4em 1em;
   }
 }
+
+/* =========================================================
+   Menu utama v2 – judul di tengah atas, menu di tengah,
+   karakter di kiri & kanan (laptop) / berdampingan (HP)
+   ========================================================= */
+.title::before {
+  background:
+    radial-gradient(50% 60% at 50% 48%, rgba(10, 30, 72, 0.5) 0%, rgba(10, 30, 72, 0) 100%),
+    radial-gradient(60% 40% at 50% 0%, rgba(255, 214, 130, 0.24) 0%, rgba(255, 214, 130, 0) 70%),
+    linear-gradient(180deg, rgba(10, 28, 66, 0.55) 0%, rgba(10, 28, 66, 0.1) 35%, rgba(10, 28, 66, 0.1) 65%, rgba(10, 28, 66, 0.6) 100%);
+}
+
+.title rt {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ----- Karakter (laptop: kiri & kanan) ----- */
+.title .title-pick {
+  position: absolute;
+  inset: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.title .pick-row {
+  position: absolute;
+  left: 1.5%;
+  right: 1.5%;
+  top: 5%;
+  bottom: 0;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.title .pick-card {
+  flex: 0 0 26%;
+  max-width: none;
+  padding-bottom: 1.2%;
+  justify-content: flex-end;
+}
+
+.title .pick-card img {
+  order: 1;
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 0.5em 0.7em rgba(0, 0, 0, 0.35));
+}
+
+.title .pick-name {
+  order: 2;
+  margin: 0.45em 0 0;
+  padding: 0.2em 1.2em;
+  font-size: 0.92em;
+  color: #fff;
+  background: rgba(14, 40, 92, 0.82);
+  border: 1px solid rgba(255, 214, 130, 0.75);
+  box-shadow: 0 0.2em 0.7em rgba(0, 0, 0, 0.35);
+}
+
+.title .pick-card:hover:not(.is-selected) img,
+.title .pick-card:focus-visible img {
+  transform: scale(1.02);
+}
+
+.title .pick-card.is-selected .pick-name {
+  color: #fff;
+  background: linear-gradient(135deg, var(--pink) 0%, #ff7ab8 100%);
+  border-color: #fff;
+  transform: scale(1.08);
+}
+
+.title .pick-card.is-selected img {
+  filter: drop-shadow(0 0 0.6em rgba(255, 214, 130, 0.95)) drop-shadow(0 0.5em 0.7em rgba(0, 0, 0, 0.35));
+  transform: scale(1.03);
+}
+
+.title .pick-card.is-dim img {
+  filter: brightness(0.72) saturate(0.75) drop-shadow(0 0.5em 0.7em rgba(0, 0, 0, 0.35));
+}
+
+/* ----- Panel tengah: judul + menu ----- */
+.title .title-main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 42%;
+  max-height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+  margin: 0;
+  padding: 1.1em 1.3em 1em;
+  overflow-y: auto;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(160deg, rgba(22, 56, 118, 0.6), rgba(12, 34, 80, 0.48));
+  border: 1px solid rgba(255, 214, 130, 0.5);
+  border-radius: 1.6em;
+  box-shadow: 0 1em 3em rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 0 0 0.3em rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(10px) saturate(1.2);
+  backdrop-filter: blur(10px) saturate(1.2);
+}
+
+.title .title-main > * {
+  flex: none;
+}
+
+/* Judul emas */
+.title .title-main .logo,
+.title .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15em;
+  margin: 0;
+  font-size: 2.3em;
+  line-height: 1.05;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+
+.title .logo-en {
+  display: block;
+  text-align: center;
+  background: linear-gradient(180deg, #fffbe6 0%, #ffe08a 40%, #f2b43e 72%, #c98318 100%);
+  background-size: 100% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0.04em 0 #6b3f08) drop-shadow(0 0.1em 0.18em rgba(0, 0, 0, 0.5));
+  animation: gold-shift 5s ease-in-out infinite alternate;
+}
+
+@keyframes gold-shift {
+  from { background-position: 0 0; }
+  to { background-position: 0 100%; }
+}
+
+.title .logo-sakura {
+  font-size: 0.5em;
+  -webkit-text-fill-color: initial;
+}
+
+.title .logo-jp {
+  align-self: center;
+  margin: 0;
+  padding: 0.15em 1.2em;
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  color: #ffeab0;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 214, 130, 0.6);
+  border-radius: 2em;
+}
+
+.title .tagline {
+  max-width: 22em;
+  margin: 0;
+  font-size: 0.78em;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* "Pilih Karakter" dengan garis hias emas */
+.title .pick-label {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  width: 100%;
+  margin: 0.1em 0 0;
+  padding: 0;
+  font-size: 0.85em;
+  letter-spacing: 0.14em;
+  color: #ffeab0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+.title .pick-label::before,
+.title .pick-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 214, 130, 0), rgba(255, 214, 130, 0.8));
+}
+
+.title .pick-label::after {
+  transform: scaleX(-1);
+}
+
+.title .pick-label.is-nudge {
+  color: #ff9ec4;
+  background: none;
+}
+
+/* ----- Tombol menu ----- */
+.title .title-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5em;
+  width: 100%;
+  margin: 0;
+}
+
+.title .title-actions-main {
+  display: flex;
+  gap: 0.5em;
+}
+
+.title .title-actions-main .t-btn {
+  flex: 1 1 0;
+  font-size: 1.05em;
+  padding: 0.6em 0.8em;
+}
+
+.title .title-actions-sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45em;
+}
+
+.title .t-btn {
+  width: auto;
+  min-width: 0;
+  justify-content: center;
+  gap: 0.55em;
+  padding: 0.5em 0.8em;
+  text-align: center;
+}
+
+.title .t-btn:hover,
+.title .t-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.26);
+  transform: translateY(-0.12em);
+}
+
+.title .title-actions-sub .t-btn {
+  flex-direction: column;
+  gap: 0.25em;
+  padding: 0.5em 0.3em 0.45em;
+  font-size: 0.78em;
+  line-height: 1.15;
+  border-radius: 1em;
+}
+
+.title .title-actions-sub .t-btn svg {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+/* Tombol Mulai: emas mewah */
+.title #btn-start.t-primary {
+  color: #4a2c04;
+  background: linear-gradient(180deg, #fff0b8 0%, #ffd366 48%, #f0a92f 100%);
+  border-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0.35em 1.2em rgba(240, 169, 47, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  animation: gold-pulse 2.6s ease-in-out infinite;
+}
+
+.title #btn-start.t-primary svg {
+  background: rgba(74, 44, 4, 0.14);
+}
+
+.title #btn-start.t-primary:hover,
+.title #btn-start.t-primary:focus-visible {
+  background: linear-gradient(180deg, #fff6d0 0%, #ffdc7d 48%, #f7b73f 100%);
+}
+
+@keyframes gold-pulse {
+  0%, 100% { box-shadow: 0 0.35em 1.2em rgba(240, 169, 47, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.85); }
+  50% { box-shadow: 0 0.35em 2em rgba(240, 169, 47, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.85); }
+}
+
+.title .refresh-status {
+  max-width: none;
+  margin: 0;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.title .title-main .title-foot,
+.title .title-foot {
+  margin: 0;
+  font-size: 0.75em;
+  opacity: 0.95;
+}
+
+/* ----- HP / tablet portrait: judul atas, karakter tengah, menu bawah ----- */
+@media (orientation: portrait) and (max-width: 900px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.45em;
+    padding: max(3.5%, env(safe-area-inset-top)) 5% max(3%, env(safe-area-inset-bottom));
+  }
+
+  .title::before {
+    background:
+      radial-gradient(70% 30% at 50% 0%, rgba(255, 214, 130, 0.25) 0%, rgba(255, 214, 130, 0) 70%),
+      linear-gradient(180deg, rgba(10, 28, 66, 0.72) 0%, rgba(10, 28, 66, 0.12) 30%, rgba(10, 28, 66, 0.1) 52%, rgba(10, 28, 66, 0.85) 100%);
+  }
+
+  /* title-main "melebur" agar anak-anaknya bisa diurutkan di sekitar karakter */
+  .title .title-main {
+    display: contents;
+  }
+
+  .title .logo { order: 1; position: relative; z-index: 3; font-size: 1.75em; flex-wrap: wrap; }
+  .title .logo-jp { order: 2; position: relative; z-index: 3; }
+  .title .tagline { order: 3; position: relative; z-index: 3; align-self: center; max-width: 21em; font-size: 0.8em; }
+
+  .title .title-pick {
+    order: 4;
+    position: relative;
+    inset: auto;
+    z-index: 2;
+    flex: 1 1 0;
+    min-height: 0;
+  }
+
+  .title .pick-row {
+    position: relative;
+    inset: auto;
+    flex: 1;
+    min-height: 0;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .title .pick-card {
+    flex: 1 1 0;
+    max-width: 50%;
+    padding-bottom: 0;
+  }
+
+  .title .pick-label { order: 5; position: relative; z-index: 3; margin-top: 0.2em; }
+  .title .title-actions { order: 6; position: relative; z-index: 3; }
+  .title .refresh-status { order: 7; position: relative; z-index: 3; }
+  .title .title-foot { display: none; }
+
+  .title .t-btn { width: auto; padding: 0.5em 0.8em; }
+  .title .title-actions-main .t-btn { padding: 0.6em 0.8em; }
+  .title .title-actions-sub .t-btn { padding: 0.5em 0.3em 0.45em; }
+}
+
+/* Layar HP landscape yang pendek: rapatkan sedikit agar tidak bertumpuk */
+@media (orientation: landscape) and (max-height: 430px) {
+  .title .title-main {
+    gap: 0.4em;
+    padding: 0.8em 1.1em 0.7em;
+  }
+
+  .title .logo { font-size: 2.1em; }
+  .title .tagline { font-size: 0.74em; }
+  .title .title-foot { display: none; }
+}
