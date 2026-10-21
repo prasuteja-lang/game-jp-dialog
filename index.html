@@ -12,7 +12,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"></noscript>
 
-  <link rel="stylesheet" href="Style.css?v=12">
+  <link rel="stylesheet" href="Style.css?v=13">
 <base target="_blank">
 <base target="_blank">
 </head>
@@ -193,16 +193,50 @@
   </script>
 
   <noscript>Game ini membutuhkan JavaScript agar bisa berjalan.</noscript>
-  <!-- Tandai kartu tema spesial (Interview) agar tampil terpisah di layar Pilih Tema -->
+  <!-- Layar Pilih Tema: tandai kartu Interview (spesial) & ganti ikon emoji dengan gambar karakter -->
   <script>
     (function () {
       var grid = document.getElementById("themes-grid");
       if (!grid || !window.MutationObserver) return;
+
+      // Folder & format gambar. Ubah di sini jika lokasi/nama file berbeda.
+      var FOLDER = "assets/character/";
+      var EXTS = [".png", ".webp", ".jpg"]; // dicoba berurutan sampai ada yang ditemukan
+      var THEME_IMAGES = [
+        { match: /stasiun|station|駅/i,           file: "maruko_smile" },
+        { match: /konbini|コンビニ/i,               file: "clerk_smile" },
+        { match: /belanja|買い物/i,                 file: "maiko_point" },
+        { match: /restoran|レストラン/i,           file: "misaki_point" },
+        { match: /hotel|ホテル/i,                   file: "yukari_smile" }
+      ];
+
+      function setPhoto(icon, file) {
+        var emoji = icon.textContent, i = 0;
+        var img = new Image();
+        img.alt = "";
+        img.decoding = "async";
+        img.onload = function () { icon.classList.add("has-photo"); };
+        img.onerror = function () {
+          i++;
+          if (i < EXTS.length) img.src = FOLDER + file + EXTS[i];
+          else { icon.textContent = emoji; icon.classList.remove("has-photo"); } // gagal semua: kembali ke emoji
+        };
+        img.src = FOLDER + file + EXTS[0];
+        icon.textContent = "";
+        icon.appendChild(img);
+      }
+
       function mark() {
         grid.querySelectorAll(".theme-card").forEach(function (card) {
           var n = card.querySelector(".theme-name"), j = card.querySelector(".theme-jp");
           var txt = (n ? n.textContent : "") + " " + (j ? j.textContent : "");
           card.classList.toggle("is-special", /interview|面接/i.test(txt));
+          var icon = card.querySelector(".theme-icon");
+          if (!icon || card.dataset.photoDone) return;
+          card.dataset.photoDone = "1";
+          for (var k = 0; k < THEME_IMAGES.length; k++) {
+            if (THEME_IMAGES[k].match.test(txt)) { setPhoto(icon, THEME_IMAGES[k].file); break; }
+          }
         });
       }
       new MutationObserver(mark).observe(grid, { childList: true });

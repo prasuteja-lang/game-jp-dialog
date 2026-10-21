@@ -2513,3 +2513,37 @@ rt {
     padding: 1em 1.2em 0.7em 1em;
   }
 }
+
+/* ----- Foto karakter pada ikon tema ----- */
+.themes .theme-icon.has-photo {
+  width: 2.9em;
+  height: 2.9em;
+  font-size: 1.4em;
+  overflow: hidden;
+  background: var(--tone-soft);
+  border: 0.12em solid #fff;
+  box-shadow: 0 0.25em 0.7em rgba(6, 22, 56, 0.25);
+}
+
+.themes .theme-icon.has-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 8%; /* fokus ke wajah; ubah angka ke-2 (mis. 0%–25%) bila perlu */
+}
+
+@media (orientation: portrait) and (max-width: 900px) {
+  .themes .theme-card .theme-icon.has-photo {
+    width: 2.8em;
+    height: 2.8em;
+    font-size: 1.3em;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 430px) {
+  .themes .theme-icon.has-photo {
+    width: 2.6em;
+    height: 2.6em;
+  }
+}
