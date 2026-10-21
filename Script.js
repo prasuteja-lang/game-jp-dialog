@@ -49,6 +49,7 @@ const el = {
   bgB: $("bg-b"),
   bgVideoA: $("bg-video-a"),
   bgVideoB: $("bg-video-b"),
+  bgVideoPlay: $("bg-video-play"),
   char: $("char-image"),
   chapter: $("chapter"),
   vocabBtn: $("vocab-btn"),
@@ -678,6 +679,7 @@ function showSceneError(key, fromKey) {
 async function setBackground(url) {
   if (url === state.bgUrl) return;
   state.bgUrl = url;
+  el.bgVideoPlay.hidden = true;
   const layers = {
     a: { image: el.bgA, video: el.bgVideoA },
     b: { image: el.bgB, video: el.bgVideoB },
@@ -707,7 +709,15 @@ async function setBackground(url) {
       back.video.addEventListener("error", resolve, { once: true });
     });
     back.video.src = url;
-    back.video.load();
+    const playPromise = back.video.play();
+    let autoplayBlocked = false;
+    playPromise.catch((err) => {
+      console.error(`Video background tidak dapat diputar: ${url}`, err);
+      if (err.name === "NotAllowedError" && state.bgUrl === url) {
+        autoplayBlocked = true;
+        if (back.video.classList.contains("is-visible")) el.bgVideoPlay.hidden = false;
+      }
+    });
 
     await videoReady;
     if (state.bgUrl !== url) return;
@@ -723,9 +733,7 @@ async function setBackground(url) {
     front.video.classList.remove("is-visible");
     front.video.pause();
     state.bgFront = backKey;
-    back.video.play().catch((err) => {
-      console.error(`Video background tidak dapat diputar: ${url}`, err);
-    });
+    if (autoplayBlocked) el.bgVideoPlay.hidden = false;
     return;
   }
 
@@ -1115,6 +1123,7 @@ async function loadScene(key) {
   const bg = mediaUrl(node.background, isVideoUrl(node.background) ? "video" : "image");
   const ch = mediaUrl(sceneCharacter(node.character), "image");
   const audio = mediaUrl(node.audio, "audio");
+  setBackground(bg);
 
   // Furigana dimuat di latar belakang hanya jika diaktifkan di pengaturan.
   const bgPreload = isVideoUrl(bg) ? Promise.resolve(true) : preloadImage(bg);
@@ -1131,7 +1140,6 @@ async function loadScene(key) {
   if (ending) state.endingTitle = node.endingTitle || "";
   el.chapter.textContent = ending && node.endingTitle ? node.endingTitle : state.chapter;
 
-  setBackground(bg);
   setCharacter(ch);
   playAudio(audio);
   setBgm(mediaUrl(state.themes[themeKey(state.theme)], "audio"));
@@ -1205,6 +1213,17 @@ el.settingsBtn.addEventListener("click", (e) => {
 });
 
 el.btnStart.addEventListener("click", startNewGame);
+el.bgVideoPlay.addEventListener("click", () => {
+  const video = [el.bgVideoA, el.bgVideoB].find((layer) => layer.classList.contains("is-visible"));
+  if (!video) return;
+  video.play().then(() => {
+    el.bgVideoPlay.hidden = true;
+  }).catch((err) => {
+    console.error("Video background tetap tidak dapat diputar setelah interaksi pengguna:", err);
+    el.bgVideoPlay.textContent = "Video tidak dapat diputar";
+    el.bgVideoPlay.disabled = true;
+  });
+});
 el.themesBack.addEventListener("click", () => el.themes.classList.add("is-hidden"));
 el.btnSettings.addEventListener("click", openSettings);
 el.btnAbout.addEventListener("click", openAbout);
