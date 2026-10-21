@@ -1908,8 +1908,8 @@ rt {
   justify-content: center;
   gap: 0.15em;
   margin: 0;
-  font-size: 2.3em;
-  line-height: 1.05;
+  font-size: 2.1em;
+  line-height: 1.12;
   -webkit-text-stroke: 0;
   text-shadow: none;
 }
@@ -1917,6 +1917,8 @@ rt {
 .title .logo-en {
   display: block;
   text-align: center;
+  padding: 0.1em 0.06em 0.16em; /* ruang ekstra agar tepi huruf tidak terpotong oleh background-clip */
+  letter-spacing: 0.04em;
   background: linear-gradient(180deg, #fffbe6 0%, #ffe08a 40%, #f2b43e 72%, #c98318 100%);
   background-size: 100% 200%;
   -webkit-background-clip: text;
@@ -1930,11 +1932,6 @@ rt {
 @keyframes gold-shift {
   from { background-position: 0 0; }
   to { background-position: 0 100%; }
-}
-
-.title .logo-sakura {
-  font-size: 0.5em;
-  -webkit-text-fill-color: initial;
 }
 
 .title .logo-jp {
@@ -2106,7 +2103,8 @@ rt {
     display: contents;
   }
 
-  .title .logo { order: 1; position: relative; z-index: 3; font-size: 1.75em; flex-wrap: wrap; }
+  .title .logo { order: 1; position: relative; z-index: 3; font-size: 1.8em; }
+  .title .logo-en br { display: none; }
   .title .logo-jp { order: 2; position: relative; z-index: 3; }
   .title .tagline { order: 3; position: relative; z-index: 3; align-self: center; max-width: 21em; font-size: 0.8em; }
 
@@ -2151,7 +2149,7 @@ rt {
     padding: 0.8em 1.1em 0.7em;
   }
 
-  .title .logo { font-size: 2.1em; }
+  .title .logo { font-size: 1.9em; }
   .title .tagline { font-size: 0.74em; }
   .title .title-foot { display: none; }
 }
