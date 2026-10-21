@@ -398,7 +398,24 @@ function hideOverlay() {
 // ---------- Ambil data dari Google Sheets ----------
 function normalize(data) {
   const story = data && data.story ? data.story : data;
-  const themes = data && Array.isArray(data.themes) ? data.themes : [];
+  const themes = data && Array.isArray(data.themes) ? data.themes.slice() : [];
+  const interviewNodes = story && typeof story === "object"
+    ? Object.entries(story).filter(([id]) => /^mns_/i.test(id))
+    : [];
+  interviewNodes.forEach(([, node]) => {
+    if (!String(node.theme || "").trim()) node.theme = "面接";
+  });
+  if (interviewNodes.length && !themes.some((theme) => themeKey(theme.tema) === themeKey("面接"))) {
+    themes.push({
+      tema: "面接",
+      assets: "",
+      start: story.mns_intro_01 ? "mns_intro_01" : "mns_start",
+      title: "Interview",
+      titleJp: "面接",
+      desc: "Berlatih wawancara kerja dalam bahasa Jepang",
+      icon: "💼",
+    });
+  }
   const themeNames = new Set(themes.map((theme) => themeKey(theme.tema)).filter(Boolean));
   const vocab = data && Array.isArray(data.vocab) ? data.vocab : [];
   const grammar = data && Array.isArray(data.grammar) ? data.grammar : [];

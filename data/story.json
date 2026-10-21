@@ -5970,6 +5970,1466 @@
           "translation": "Kembali ke layar judul"
         }
       ]
+    },
+    "mns_intro_01": {
+      "speaker": "システム",
+      "text": "今日は、日本の会社の面接の日。",
+      "background": "assets/background/kaisha_uketsuke.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_intro_02",
+      "translation": "Hari ini adalah hari wawancara di sebuah perusahaan Jepang.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_intro_02": {
+      "speaker": "システム",
+      "text": "受付で名前を伝えると、面接室に案内された。",
+      "background": "assets/background/kaisha_uketsuke.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_intro_03",
+      "translation": "Setelah menyebutkan namamu di resepsionis, kamu diantar ke ruang wawancara.",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_intro_03": {
+      "speaker": "システム",
+      "text": "ドアの向こうには、坂井社長が待っている。今日は日本語で、面接に挑戦してみよう！",
+      "background": "assets/background/kaisha_uketsuke.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_door",
+      "translation": "Di balik pintu, Pak Direktur Sakai sudah menunggu. Hari ini, coba tantang dirimu menjalani wawancara dalam bahasa Jepang!",
+      "chapter": "Pembukaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_door": {
+      "speaker": "坂井社長",
+      "text": "どうぞ、お入りください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_door.wav",
+      "next": "",
+      "translation": "Silakan masuk.",
+      "chapter": "1. Masuk Ruangan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "失礼します。",
+          "next": "mns_seat",
+          "translation": "Permisi.",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "失礼いたします。",
+          "next": "mns_seat",
+          "translation": "Permisi (lebih sopan).",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_seat": {
+      "speaker": "坂井社長",
+      "text": "どうぞ、おかけください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_seat.wav",
+      "next": "",
+      "translation": "Silakan duduk.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "失礼します。",
+          "next": "mns_start",
+          "translation": "Permisi.",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "ありがとうございます。失礼いたします。",
+          "next": "mns_start",
+          "translation": "Terima kasih. Permisi (saya duduk).",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_start": {
+      "speaker": "坂井社長",
+      "text": "それでは、面接を始めます。リラックスして、ゆっくり話してくださいね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_start.wav",
+      "next": "mns_howto",
+      "translation": "Baiklah, wawancara kita mulai. Santai saja dan bicaralah pelan-pelan ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_howto": {
+      "speaker": "システム",
+      "text": "質問には声で答えよう。終わったら「以上です」、聞き取れなかったら「もう一度お願いします」を押してね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_q01",
+      "translation": "Jawab pertanyaan dengan suaramu. Kalau sudah selesai tekan 「以上です」, kalau tidak terdengar jelas tekan 「もう一度お願いします」.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q01": {
+      "speaker": "坂井社長",
+      "text": "それでは、自己紹介をお願いします。まず、名前と呼び方、年齢を教えてください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q01.wav",
+      "next": "",
+      "translation": "Baik, silakan perkenalkan diri. Pertama, sebutkan nama, panggilan, dan umurmu.",
+      "chapter": "2. Perkenalan Diri",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r01",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q01",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r01": {
+      "speaker": "坂井社長",
+      "text": "ありがとうございます。よろしくお願いします。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r01.wav",
+      "next": "mns_q02",
+      "translation": "Terima kasih. Mohon kerja samanya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q02": {
+      "speaker": "坂井社長",
+      "text": "ほかにも、自分のことを教えてください。学歴や趣味、特技、日本で好きなことなどから、二つか三つ選んで話してください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q02.wav",
+      "next": "",
+      "translation": "Ceritakan juga hal lain tentang dirimu. Pilih dua atau tiga, misalnya pendidikan, hobi, keahlian, atau hal yang kamu suka dari Jepang.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r02",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q02",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r02": {
+      "speaker": "坂井社長",
+      "text": "そうですか。よくわかりました。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r02.wav",
+      "next": "mns_q03",
+      "translation": "Begitu ya. Saya sudah mengerti dengan baik.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q03": {
+      "speaker": "坂井社長",
+      "text": "なぜ日本で働きたいですか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q03.wav",
+      "next": "",
+      "translation": "Mengapa kamu ingin bekerja di Jepang?",
+      "chapter": "3. Motivasi",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r03",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q03",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r03": {
+      "speaker": "坂井社長",
+      "text": "そうですね、すごいですね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r03.wav",
+      "next": "mns_q04",
+      "translation": "Begitu ya, hebat sekali.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q04": {
+      "speaker": "坂井社長",
+      "text": "なぜこの仕事をしたいですか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q04.wav",
+      "next": "",
+      "translation": "Mengapa kamu ingin melakukan pekerjaan ini?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r04",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q04",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r04": {
+      "speaker": "坂井社長",
+      "text": "なるほど。その気持ちは大切ですね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r04.wav",
+      "next": "mns_q05",
+      "translation": "Begitu. Perasaan itu penting.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q05": {
+      "speaker": "坂井社長",
+      "text": "当社について、何か知っていますか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q05.wav",
+      "next": "",
+      "translation": "Apakah kamu tahu sesuatu tentang perusahaan kami?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r05",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q05",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r05": {
+      "speaker": "坂井社長",
+      "text": "そうですか。これから、もっと知ってくださいね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r05.wav",
+      "next": "mns_q06",
+      "translation": "Begitu. Mulai sekarang, kenali perusahaan kami lebih jauh ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q06": {
+      "speaker": "坂井社長",
+      "text": "高校や大学では、何を勉強しましたか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q06.wav",
+      "next": "",
+      "translation": "Di SMA atau universitas, apa yang kamu pelajari?",
+      "chapter": "4. Latar Belakang",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r06",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q06",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r06": {
+      "speaker": "坂井社長",
+      "text": "なるほど。しっかり勉強したんですね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r06.wav",
+      "next": "mns_q07",
+      "translation": "Begitu. Kamu belajar dengan sungguh-sungguh ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q07": {
+      "speaker": "坂井社長",
+      "text": "これまでの仕事の経験を教えてください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q07.wav",
+      "next": "",
+      "translation": "Tolong ceritakan pengalaman kerjamu sejauh ini.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r07",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q07",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r07": {
+      "speaker": "坂井社長",
+      "text": "いい経験ですね。日本でも、きっと役に立ちますよ。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r07.wav",
+      "next": "mns_q08",
+      "translation": "Pengalaman yang bagus. Pasti berguna di Jepang juga.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q08": {
+      "speaker": "坂井社長",
+      "text": "日本語は、どれくらい勉強しましたか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q08.wav",
+      "next": "",
+      "translation": "Sudah berapa lama kamu belajar bahasa Jepang?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r08",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q08",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r08": {
+      "speaker": "坂井社長",
+      "text": "おお、よく頑張りましたね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r08.wav",
+      "next": "mns_q09",
+      "translation": "Wah, kamu sudah berusaha keras ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q09": {
+      "speaker": "坂井社長",
+      "text": "自分の性格の長所と短所を教えてください。得意なことも話してください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_think.png",
+      "audio": "assets/audio/mns_q09.wav",
+      "next": "",
+      "translation": "Ceritakan kelebihan dan kekurangan sifatmu. Ceritakan juga hal yang kamu kuasai.",
+      "chapter": "5. Kepribadian",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r09",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q09",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r09": {
+      "speaker": "坂井社長",
+      "text": "なるほど。自分のことをよくわかっていますね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r09.wav",
+      "next": "mns_q10",
+      "translation": "Begitu. Kamu memahami dirimu dengan baik.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q10": {
+      "speaker": "坂井社長",
+      "text": "自己PRをお願いします。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q10.wav",
+      "next": "",
+      "translation": "Silakan sampaikan promosi dirimu (自己PR).",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r10",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q10",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r10": {
+      "speaker": "坂井社長",
+      "text": "いいですね。あなたの強みが伝わりました。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r10.wav",
+      "next": "mns_q11",
+      "translation": "Bagus. Kekuatanmu tersampaikan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q11": {
+      "speaker": "坂井社長",
+      "text": "ご家族は、日本で働くことを応援していますか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q11.wav",
+      "next": "",
+      "translation": "Apakah keluargamu mendukung kamu bekerja di Jepang?",
+      "chapter": "6. Kehidupan di Jepang",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r11",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q11",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r11": {
+      "speaker": "坂井社長",
+      "text": "そうですか。いいご家族ですね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r11.wav",
+      "next": "mns_q12",
+      "translation": "Begitu. Keluarga yang baik ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q12": {
+      "speaker": "坂井社長",
+      "text": "お祈りや食事について、教えてください。お祈りは、仕事中はどうしますか。一回は何分くらいですか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_think.png",
+      "audio": "assets/audio/mns_q12.wav",
+      "next": "",
+      "translation": "Ceritakan tentang salat dan makanan. Bagaimana dengan salat saat bekerja? Satu kali salat kira-kira berapa menit?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r12",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q12",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r12": {
+      "speaker": "坂井社長",
+      "text": "はい、わかりました。教えてくれて、ありがとうございます。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r12.wav",
+      "next": "mns_q13",
+      "translation": "Baik, saya mengerti. Terima kasih sudah menjelaskan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q13": {
+      "speaker": "坂井社長",
+      "text": "日本で困ったことがあったら、どうしますか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_think.png",
+      "audio": "assets/audio/mns_q13.wav",
+      "next": "",
+      "translation": "Kalau kamu mengalami kesulitan di Jepang, apa yang akan kamu lakukan?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r13",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q13",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r13": {
+      "speaker": "坂井社長",
+      "text": "そうですね。ひとりで悩まないことが大切ですよ。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r13.wav",
+      "next": "mns_q14",
+      "translation": "Benar. Yang penting jangan mengkhawatirkan sendirian.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q14": {
+      "speaker": "坂井社長",
+      "text": "将来の夢は何ですか。具体的な計画も教えてください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q14.wav",
+      "next": "",
+      "translation": "Apa mimpimu di masa depan? Ceritakan juga rencana konkretnya.",
+      "chapter": "7. Masa Depan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r14",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q14",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r14": {
+      "speaker": "坂井社長",
+      "text": "そうですね、すごいですね。応援しますよ。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r14.wav",
+      "next": "mns_q15",
+      "translation": "Begitu ya, hebat sekali. Saya mendukungmu.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q15": {
+      "speaker": "坂井社長",
+      "text": "日本で働くときの目標や計画はありますか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q15.wav",
+      "next": "",
+      "translation": "Apakah kamu punya target atau rencana saat bekerja di Jepang?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r15",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q15",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r15": {
+      "speaker": "坂井社長",
+      "text": "なるほど。しっかりした目標ですね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r15.wav",
+      "next": "mns_q16",
+      "translation": "Begitu. Target yang mantap ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q16": {
+      "speaker": "坂井社長",
+      "text": "資格を取りたいですか。取り方も、わかれば教えてください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_think.png",
+      "audio": "assets/audio/mns_q16.wav",
+      "next": "",
+      "translation": "Apakah kamu ingin memperoleh sertifikat? Kalau tahu caranya, ceritakan juga.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r16",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q16",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r16": {
+      "speaker": "坂井社長",
+      "text": "そうですか。資格は大切ですね。がんばってください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r16.wav",
+      "next": "mns_q17",
+      "translation": "Begitu. Sertifikat itu penting. Semangat ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q17": {
+      "speaker": "坂井社長",
+      "text": "仕事以外で、日本で何をしたいですか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q17.wav",
+      "next": "",
+      "translation": "Di luar pekerjaan, apa yang ingin kamu lakukan di Jepang?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r17",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q17",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r17": {
+      "speaker": "坂井社長",
+      "text": "いいですね。日本の生活を楽しんでください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r17.wav",
+      "next": "mns_q18",
+      "translation": "Bagus. Nikmati hidupmu di Jepang ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q18": {
+      "speaker": "坂井社長",
+      "text": "その仕事をしたことがありますか。ない人は、実習の経験でもいいですよ。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q18.wav",
+      "next": "",
+      "translation": "Apakah kamu pernah melakukan pekerjaan itu? Yang belum pernah, pengalaman praktik juga boleh.",
+      "chapter": "8. Pemahaman Pekerjaan",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r18",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q18",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r18": {
+      "speaker": "坂井社長",
+      "text": "そうですか。わかりました。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r18.wav",
+      "next": "mns_q19",
+      "translation": "Begitu. Saya mengerti.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q19": {
+      "speaker": "坂井社長",
+      "text": "そのとき、何をしましたか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q19.wav",
+      "next": "",
+      "translation": "Waktu itu, apa yang kamu kerjakan?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r19",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q19",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r19": {
+      "speaker": "坂井社長",
+      "text": "なるほど。いい経験ですね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r19.wav",
+      "next": "mns_q20",
+      "translation": "Begitu. Pengalaman yang bagus.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q20": {
+      "speaker": "坂井社長",
+      "text": "その仕事をするとき、大切なことは何ですか。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_think.png",
+      "audio": "assets/audio/mns_q20.wav",
+      "next": "",
+      "translation": "Apa hal yang penting saat melakukan pekerjaan itu?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r20",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q20",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r20": {
+      "speaker": "坂井社長",
+      "text": "そうですね。その通りです。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r20.wav",
+      "next": "mns_q21",
+      "translation": "Benar. Memang begitu.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q21": {
+      "speaker": "坂井社長",
+      "text": "この仕事は、どんな仕事ですか。説明してください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_think.png",
+      "audio": "assets/audio/mns_q21.wav",
+      "next": "",
+      "translation": "Pekerjaan ini pekerjaan seperti apa? Tolong jelaskan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r21",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q21",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r21": {
+      "speaker": "坂井社長",
+      "text": "ほう、よく知っていますね。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_nod.png",
+      "audio": "assets/audio/mns_r21.wav",
+      "next": "mns_q22",
+      "translation": "Oh, kamu tahu banyak ya.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q22": {
+      "speaker": "坂井社長",
+      "text": "専門の言葉を、二つか三つ説明してください。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_think.png",
+      "audio": "assets/audio/mns_q22.wav",
+      "next": "",
+      "translation": "Tolong jelaskan dua atau tiga istilah khusus di bidangmu.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r22",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q22",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r22": {
+      "speaker": "坂井社長",
+      "text": "おお、くわしいですね。すごいです。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r22.wav",
+      "next": "mns_q23",
+      "translation": "Wah, kamu paham sekali. Hebat.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q23": {
+      "speaker": "坂井社長",
+      "text": "何か、質問はありますか。この町の観光地や食べ物でもいいですよ。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_q23.wav",
+      "next": "",
+      "translation": "Apakah ada pertanyaan? Boleh juga tentang tempat wisata atau makanan di kota ini.",
+      "chapter": "9. Tanya Jawab dan Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r23",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q23",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r23": {
+      "speaker": "坂井社長",
+      "text": "いい質問ですね。観光なら大阪城、食べ物ならたこ焼きやお好み焼きがおすすめですよ。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r23.wav",
+      "next": "mns_q24",
+      "translation": "Pertanyaan yang bagus. Untuk wisata, Kastil Osaka; untuk makanan, takoyaki atau okonomiyaki sangat direkomendasikan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_q24": {
+      "speaker": "坂井社長",
+      "text": "最後に、何かアピールしたいことはありますか。一言お願いします。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_normal.png",
+      "audio": "assets/audio/mns_q24.wav",
+      "next": "",
+      "translation": "Terakhir, adakah hal yang ingin kamu tonjolkan? Silakan sampaikan sepatah kata.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "以上です。",
+          "next": "mns_r24",
+          "translation": "Sudah selesai (itu saja).",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "もう一度お願いします。",
+          "next": "mns_q24",
+          "translation": "Tolong ulangi sekali lagi.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_r24": {
+      "speaker": "坂井社長",
+      "text": "ありがとうございます。あなたの気持ちは、よく伝わりました。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_r24.wav",
+      "next": "mns_close",
+      "translation": "Terima kasih. Perasaanmu tersampaikan dengan baik.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_close": {
+      "speaker": "坂井社長",
+      "text": "これで面接は終わりです。結果は、後日連絡します。今日は、ありがとうございました。",
+      "background": "assets/background/mensetsu_shitsu.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_close.wav",
+      "next": "",
+      "translation": "Dengan ini wawancara selesai. Hasilnya akan kami hubungi beberapa hari lagi. Terima kasih untuk hari ini.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "お忙しい中お時間をいただき、どうもありがとうございました。",
+          "next": "mns_exit_01",
+          "translation": "Terima kasih sudah meluangkan waktu di tengah kesibukan Anda.",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "ありがとうございました。失礼します。",
+          "next": "mns_exit_01",
+          "translation": "Terima kasih. Permisi (saya pamit).",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_exit_01": {
+      "speaker": "坂井社長",
+      "text": "気をつけて帰ってくださいね。このあと、どうしますか？",
+      "background": "assets/background/kaisha_uketsuke.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_exit_01.wav",
+      "next": "",
+      "translation": "Hati-hati di jalan ya. Setelah ini, kamu mau ke mana?",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "ホテルに帰って、休みます。",
+          "next": "mns_end_rest",
+          "translation": "Pulang ke hotel dan beristirahat.",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "大阪を観光したいです。",
+          "next": "mns_exit_02",
+          "translation": "Saya ingin jalan-jalan di Osaka.",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_exit_02": {
+      "speaker": "坂井社長",
+      "text": "いいですね。大阪城を見るのも、たこ焼きを食べるのもおすすめですよ。",
+      "background": "assets/background/kaisha_uketsuke.png",
+      "character": "assets/character/sakai_smile.png",
+      "audio": "assets/audio/mns_exit_02.wav",
+      "next": "",
+      "translation": "Bagus. Melihat Kastil Osaka atau makan takoyaki sama-sama direkomendasikan.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "大阪城に行きます！",
+          "next": "mns_end_castle",
+          "translation": "Saya akan pergi ke Kastil Osaka!",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "たこ焼きを食べに行きます！",
+          "next": "mns_end_takoyaki",
+          "translation": "Saya akan pergi makan takoyaki!",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_end_rest": {
+      "speaker": "システム",
+      "text": "ホテルに戻って、ゆっくり休むことにした。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_rest_01",
+      "translation": "Kamu memutuskan kembali ke hotel dan beristirahat dengan tenang.",
+      "chapter": "10. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_rest_01": {
+      "speaker": "システム",
+      "text": "全部、日本語で答えられた。ほっとして、そのまま眠ってしまいそうだ。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_rest_02",
+      "translation": "Kamu bisa menjawab semuanya dalam bahasa Jepang. Lega sekali, rasanya langsung bisa tertidur.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_rest_02": {
+      "speaker": "システム",
+      "text": "入室、自己紹介、質問への答え。面接で使う日本語をたくさん練習できたね。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_rest_03",
+      "translation": "Masuk ruangan, perkenalan diri, menjawab pertanyaan. Kamu sudah banyak berlatih bahasa Jepang yang dipakai dalam wawancara.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_rest_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 1 - Pulang dan Beristirahat",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "mns_intro_01",
+          "translation": "Main lagi dari awal",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "mns_intro_01",
+          "translation": "Kembali ke layar judul",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_end_castle": {
+      "speaker": "システム",
+      "text": "大阪城を見に行くことにした。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_castle_01",
+      "translation": "Kamu memutuskan pergi melihat Kastil Osaka.",
+      "chapter": "10. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_castle_01": {
+      "speaker": "システム",
+      "text": "大きなお城を見ながら、深呼吸。結果が楽しみだ。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_castle_02",
+      "translation": "Sambil memandang kastil yang megah, kamu menarik napas dalam-dalam. Tidak sabar menunggu hasilnya.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_castle_02": {
+      "speaker": "システム",
+      "text": "入室、自己紹介、質問への答え。面接で使う日本語をたくさん練習できたね。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_castle_03",
+      "translation": "Masuk ruangan, perkenalan diri, menjawab pertanyaan. Kamu sudah banyak berlatih bahasa Jepang yang dipakai dalam wawancara.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_castle_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 2 - Wisata ke Kastil Osaka",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "mns_intro_01",
+          "translation": "Main lagi dari awal",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "mns_intro_01",
+          "translation": "Kembali ke layar judul",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
+    },
+    "mns_end_takoyaki": {
+      "speaker": "システム",
+      "text": "道頓堀で、熱々のたこ焼きを食べることにした。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_takoyaki_01",
+      "translation": "Kamu memutuskan makan takoyaki yang masih panas mengepul di Dotonbori.",
+      "chapter": "10. Ending",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_takoyaki_01": {
+      "speaker": "システム",
+      "text": "面接のあとのたこ焼きは、格別においしい。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_takoyaki_02",
+      "translation": "Takoyaki setelah wawancara terasa luar biasa enak.",
+      "chapter": "Penutup",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_takoyaki_02": {
+      "speaker": "システム",
+      "text": "入室、自己紹介、質問への答え。面接で使う日本語をたくさん練習できたね。",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "mns_outro_takoyaki_03",
+      "translation": "Masuk ruangan, perkenalan diri, menjawab pertanyaan. Kamu sudah banyak berlatih bahasa Jepang yang dipakai dalam wawancara.",
+      "chapter": "",
+      "ending": "",
+      "endingTitle": "",
+      "theme": "面接",
+      "choices": []
+    },
+    "mns_outro_takoyaki_03": {
+      "speaker": "システム",
+      "text": "また次のテーマで会おう。お疲れさま！",
+      "background": "assets/background/kaisha_gaikan.png",
+      "character": "assets/character/none.png",
+      "audio": "",
+      "next": "",
+      "translation": "Sampai jumpa di tema berikutnya. Kerja bagus!",
+      "chapter": "",
+      "ending": "good",
+      "endingTitle": "Ending 3 - Makan Takoyaki di Osaka",
+      "theme": "面接",
+      "choices": [
+        {
+          "text": "最初からもう一度プレイする",
+          "next": "mns_intro_01",
+          "translation": "Main lagi dari awal",
+          "audioAyano": "",
+          "audioSora": ""
+        },
+        {
+          "text": "タイトル画面に戻る",
+          "next": "mns_intro_01",
+          "translation": "Kembali ke layar judul",
+          "audioAyano": "",
+          "audioSora": ""
+        }
+      ]
     }
   },
   "vocab": [
@@ -9444,6 +10904,15 @@
       "titleJp": "買い物",
       "desc": "Mencari dan membeli pakaian di toko",
       "icon": "🛍️"
+    },
+    {
+      "tema": "面接",
+      "assets": "",
+      "start": "mns_intro_01",
+      "title": "Interview",
+      "titleJp": "面接",
+      "desc": "Berlatih wawancara kerja dalam bahasa Jepang",
+      "icon": "💼"
     }
   ]
 }

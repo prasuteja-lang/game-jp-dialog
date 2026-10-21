@@ -26,8 +26,25 @@ async function main() {
   if (!data.story || !data.story.stasiun_awal || !data.story.kb_start) {
     throw new Error("Data API harus berisi adegan stasiun_awal dan kb_start sebelum disimpan.");
   }
+  data.themes = Array.isArray(data.themes) ? data.themes : [];
   if ([...(data.vocab || []), ...(data.grammar || [])].some((row) => !String(row.tema || "").trim())) {
     throw new Error("Kolom Tema belum tersedia pada respons API. Perbarui dan deploy Google Apps Script sebelum sinkronisasi.");
+  }
+
+  const interviewNodes = Object.entries(data.story).filter(([id]) => /^mns_/i.test(id));
+  interviewNodes.forEach(([, node]) => {
+    if (!String(node.theme || "").trim()) node.theme = "面接";
+  });
+  if (interviewNodes.length && !data.themes.some((theme) => themeKey(theme.tema) === themeKey("面接"))) {
+    data.themes.push({
+      tema: "面接",
+      assets: "",
+      start: data.story.mns_intro_01 ? "mns_intro_01" : "mns_start",
+      title: "Interview",
+      titleJp: "面接",
+      desc: "Berlatih wawancara kerja dalam bahasa Jepang",
+      icon: "💼",
+    });
   }
 
   Object.values(data.story).forEach((node) => {
@@ -36,7 +53,7 @@ async function main() {
     node.audio = normalizeAsset(node.audio);
   });
 
-  const themes = data.themes || [];
+  const themes = data.themes;
   const themeByKey = new Map(themes.map((theme) => [themeKey(theme.tema), theme.tema]));
   Object.values(data.story).forEach((node) => {
     const canonicalTheme = themeByKey.get(themeKey(node.theme));
