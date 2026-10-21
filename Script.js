@@ -1376,25 +1376,23 @@ async function refreshStoryData() {
   el.btnContinue.disabled = true;
   el.refreshLabel.textContent = "Memperbarui...";
   el.refreshStatus.hidden = false;
-  el.refreshStatus.textContent = "Menghapus cache lama dan mengambil data terbaru...";
+  el.refreshStatus.textContent = "Mengambil data terbaru...";
   el.refreshStatus.classList.remove("is-error");
-  removeStore(CONFIG.CACHE_KEY);
 
   try {
     const data = await fetchStory(true);
     useData(data);
-    const serialized = JSON.stringify(data);
-    writeStore(CONFIG.CACHE_KEY, serialized);
-    const cacheSaved = readStore(CONFIG.CACHE_KEY) === serialized;
+    writeStore(CONFIG.CACHE_KEY, JSON.stringify(data));
     const saved = readJSON(CONFIG.SAVE_KEY);
     el.btnContinue.hidden = !(saved && saved.key && saved.key !== CONFIG.START_NODE && state.story[saved.key]);
     window.__nihongoApiError = data._fallback ? window.__nihongoApiError : "";
-    el.refreshStatus.textContent = data._fallback
-      ? "Data live belum terjangkau; salinan GitHub terbaru berhasil dimuat."
-      : "Data terbaru berhasil dimuat." + (cacheSaved ? "" : " Cache browser tidak dapat disimpan.");
+    el.refreshStatus.textContent = "Data terbaru berhasil dimuat. Memuat ulang aplikasi...";
+    const url = new URL(window.location.href);
+    url.searchParams.set("_refresh", String(Date.now()));
+    window.location.replace(url.toString());
   } catch (err) {
     console.error("Gagal memperbarui data cerita:", err);
-    el.refreshStatus.textContent = `Gagal mengambil data terbaru (${err.message}). Data yang sedang terbuka tetap bisa dipakai; coba lagi.`;
+    el.refreshStatus.textContent = `Gagal mengambil data terbaru (${err.message}). Cache lama tetap digunakan; coba lagi.`;
     el.refreshStatus.classList.add("is-error");
   } finally {
     state.refreshing = false;
@@ -1423,8 +1421,9 @@ async function init() {
   // Pakai data tersimpan (jika ada) agar langsung siap, lalu perbarui di latar belakang
   const cached = readJSON(CONFIG.CACHE_KEY);
   const hasCache = cached && cached.story && cached.story[CONFIG.START_NODE];
+  const refreshRequested = new URLSearchParams(window.location.search).has("_refresh");
 
-  if (hasCache) {
+  if (hasCache && !refreshRequested) {
     useData(normalize(cached));
     await showTitle();
     fetchStory()
@@ -1440,19 +1439,38 @@ async function init() {
   try {
     window.__nihongoStep = "memuat cerita dari GitHub";
     let data;
-    try {
-      data = await fetchFrom(CONFIG.FALLBACK_URL, 8000);
-      data._fallback = true;
-    } catch (fallbackErr) {
-      window.__nihongoStep = "mengambil data dari Google Sheets (Apps Script)";
+    if (refreshRequested) {
+      window.__nihongoStep = "mengambil data terbaru";
       try {
-        data = await fetchFrom(API_URL, CONFIG.FETCH_TIMEOUT);
-      } catch (apiErr) {
-        const err = new Error(
-          `Data GitHub (${CONFIG.FALLBACK_URL}) gagal: ${fallbackErr.message}; Apps Script gagal: ${apiErr.message}`
-        );
-        err.name = "StoryLoadError";
-        throw err;
+        data = await fetchStory(true);
+      } catch (err) {
+        if (!hasCache) throw err;
+        console.warn("Data terbaru tidak dapat dimuat setelah refresh; memakai cache lama:", err);
+        useData(normalize(cached));
+        await showTitle();
+        el.refreshStatus.hidden = false;
+        el.refreshStatus.textContent = `Data terbaru gagal dimuat (${err.message}). Cache sebelumnya tetap digunakan.`;
+        el.refreshStatus.classList.add("is-error");
+        const url = new URL(window.location.href);
+        url.searchParams.delete("_refresh");
+        window.history.replaceState(window.history.state, "", url.toString());
+        return;
+      }
+    } else {
+      try {
+        data = await fetchFrom(CONFIG.FALLBACK_URL, 8000);
+        data._fallback = true;
+      } catch (fallbackErr) {
+        window.__nihongoStep = "mengambil data dari Google Sheets (Apps Script)";
+        try {
+          data = await fetchFrom(API_URL, CONFIG.FETCH_TIMEOUT);
+        } catch (apiErr) {
+          const err = new Error(
+            `Data GitHub (${CONFIG.FALLBACK_URL}) gagal: ${fallbackErr.message}; Apps Script gagal: ${apiErr.message}`
+          );
+          err.name = "StoryLoadError";
+          throw err;
+        }
       }
     }
     window.__nihongoStep = "memproses data";
@@ -1461,6 +1479,16 @@ async function init() {
     console.log(data._fallback ? "Memakai data cadangan (data/story.json):" : "Data berhasil dimuat dari Google Sheets:", data);
     window.__nihongoStep = "menyiapkan menu utama (memuat gambar)";
     await showTitle();
+    if (refreshRequested) {
+      el.refreshStatus.hidden = false;
+      el.refreshStatus.textContent = data._fallback
+        ? "Aplikasi dimuat ulang dengan data cadangan terbaru."
+        : "Aplikasi dimuat ulang dengan data terbaru.";
+      const url = new URL(window.location.href);
+      url.searchParams.delete("_refresh");
+      window.history.replaceState(window.history.state, "", url.toString());
+      return;
+    }
     if (data._fallback) {
       fetchStory()
         .then((freshData) => {
