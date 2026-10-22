@@ -294,6 +294,83 @@ rt {
   border-radius: 0.6em;
 }
 
+.interview-recorder-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 0.65em;
+  min-width: 11em;
+  padding: 0.65em 1.1em;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background: var(--blue-700);
+  border: 0;
+  border-radius: 999px;
+  box-shadow: 0 0.2em 0.55em rgba(18, 58, 122, 0.25);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.interview-recorder-btn:hover,
+.interview-recorder-btn:focus-visible {
+  background: var(--blue-900);
+  transform: translateY(-1px);
+  outline: 3px solid var(--blue-200);
+  outline-offset: 2px;
+}
+
+.interview-recorder-btn.is-recording {
+  background: #b42336;
+}
+
+.interview-recorder-btn.is-recording:hover,
+.interview-recorder-btn.is-recording:focus-visible {
+  background: #8f192a;
+}
+
+.interview-waveform {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.16em;
+  height: 1.35em;
+}
+
+.interview-waveform span {
+  width: 0.18em;
+  height: 0.35em;
+  background: currentColor;
+  border-radius: 1em;
+}
+
+.interview-recorder-btn.is-recording .interview-waveform span {
+  animation: interview-wave 0.75s ease-in-out infinite alternate;
+}
+
+.interview-recorder-btn.is-recording .interview-waveform span:nth-child(2),
+.interview-recorder-btn.is-recording .interview-waveform span:nth-child(4) {
+  animation-delay: 0.18s;
+}
+
+.interview-recorder-btn.is-recording .interview-waveform span:nth-child(3) {
+  animation-delay: 0.36s;
+}
+
+.interview-recorder-note {
+  align-self: center;
+  color: var(--muted);
+  font-size: 0.72em;
+  text-align: center;
+}
+
+@keyframes interview-wave {
+  to {
+    height: 1.2em;
+  }
+}
+
 .choice-btn {
   display: flex;
   align-items: flex-start;

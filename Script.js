@@ -126,6 +126,7 @@ const state = {
   history: [],
   read: 0,
   lastChoiceKey: null,
+  interviewResponse: "idle",
   endingTitle: "",
   modal: null,
   refreshing: false,
@@ -1054,6 +1055,40 @@ function showChoicesOrNext() {
     return;
   }
 
+  if (themeKey(state.theme) === themeKey("面接") && state.interviewResponse !== "complete") {
+    const button = h("button", "interview-recorder-btn");
+    button.type = "button";
+    button.classList.toggle("is-recording", state.interviewResponse === "recording");
+    button.setAttribute(
+      "aria-label",
+      state.interviewResponse === "recording" ? "Hentikan simulasi rekaman" : "Mulai simulasi rekaman"
+    );
+
+    const waveform = h("span", "interview-waveform");
+    waveform.setAttribute("aria-hidden", "true");
+    for (let i = 0; i < 5; i++) waveform.appendChild(h("span"));
+    button.append(
+      waveform,
+      h("span", "interview-recorder-label",
+        state.interviewResponse === "recording" ? "Stop" : "Mulai rekaman")
+    );
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      state.interviewResponse = state.interviewResponse === "recording" ? "complete" : "recording";
+      showChoicesOrNext();
+    });
+
+    el.choices.replaceChildren(
+      h("div", "choices-head", "Latihan berbicara"),
+      button,
+      h("div", "interview-recorder-note", "Simulasi saja — suara tidak direkam.")
+    );
+    el.choices.classList.add("is-interview-recorder");
+    el.stage.classList.add("has-choices");
+    return;
+  }
+
+  el.choices.classList.remove("is-interview-recorder");
   const cards = choices.map((choice, index) => {
     const btn = h("button", "choice-btn");
     btn.type = "button";
@@ -1178,10 +1213,12 @@ async function loadScene(key) {
 
   const token = ++state.token;
   state.busy = true;
+  state.interviewResponse = "idle";
   clearTimeout(state.typeTimer);
   state.typing = false;
   state.finishTyping = null;
   el.choices.replaceChildren();
+  el.choices.classList.remove("is-interview-recorder");
   el.stage.classList.remove("has-choices");
   el.nextBtn.classList.remove("is-ready");
   el.ending.classList.add("is-hidden");
