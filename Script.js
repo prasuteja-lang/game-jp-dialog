@@ -1061,7 +1061,7 @@ function showChoicesOrNext() {
     button.classList.toggle("is-recording", state.interviewResponse === "recording");
     button.setAttribute(
       "aria-label",
-      state.interviewResponse === "recording" ? "Hentikan simulasi rekaman" : "Mulai simulasi rekaman"
+      state.interviewResponse === "recording" ? "Hentikan rekaman" : "Mulai rekam suara"
     );
 
     const waveform = h("span", "interview-waveform");
@@ -1081,7 +1081,7 @@ function showChoicesOrNext() {
     el.choices.replaceChildren(
       h("div", "choices-head", "Latihan berbicara"),
       button,
-      h("div", "interview-recorder-note", "Simulasi saja — suara tidak direkam.")
+      h("div", "interview-recorder-note", "")
     );
     el.choices.classList.add("is-interview-recorder");
     el.stage.classList.add("has-choices");
